@@ -1,21 +1,614 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
+        <title>Izenda - Ad Hoc Reporting, Embedded BI & Data Virtualization for SQL Data
+</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Izenda" name="description">
+        <meta content="playlab" name="author">
+        
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'> 
+        <!-- Bootstrap  -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <!-- Font Awesome  -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <!-- iLightbox -->
+        <link rel="stylesheet" type="text/css" href="css/ilightbox.css"/>
+        <link rel="stylesheet" type="text/css" href="dark-skin/skin.css"/>
+        <link rel="stylesheet" type="text/css" href="light-skin/skin.css"/>
+        <link rel="stylesheet" type="text/css" href="mac-skin/skin.css"/>
+        <link rel="stylesheet" type="text/css" href="metro-black-skin/skin.css"/>
+        <link rel="stylesheet" type="text/css" href="metro-white-skin/skin.css"/>
+        <link rel="stylesheet" type="text/css" href="parade-skin/skin.css"/>
+        <link rel="stylesheet" type="text/css" href="smooth-skin/skin.css"/>
+        <!-- Isotope Style -->
+        <link rel="stylesheet" type="text/css" href="css/isotope.css"/>
+        <!-- Flex slider -->
+        <link rel="stylesheet" type="text/css" href="css/flexslider.css"/>
+        <!-- Pie chart css -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.easy-pie-chart.css">
+        <!-- quivee Style -->
+        <link href="css/colors.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet"> 
+        
+        <!-- Favicon and touch icons  -->
+        <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+        <link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+        <link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+        <link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
+        <link href="ico/favicon.png" rel="shortcut icon">
+        
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+      	<script src="js/html5shiv.js"></script>
+    	<![endif]-->
+    	
+    </head>
+    <body class="page-aqua hidden-body">
 
-  <title>HTML5 Sample</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+		<!-- Navigation -->
+		<header>
+			<div class="navbar navbar-fixed-top">
+				<div class="navbar-inner">
+					<div class="container">
+                    
+      <form class="navbar-search">
+                <div class="input-group">
+                    <input type="text" placeholder="Search Support">
+                    <button type="submit" class="button.btn.btn-mini">GO</button>
+                </div>
+            </form>
+						<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+							<span class="icon-bar"></span>
+	
+						</button>
+						<h1 class="logo"><a class="brand" href="#">Izenda</a></h1>
+						<div class="nav-collapse collapse">
+							<ul class="nav">
+                                <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTS  <i class="icon-caret-down"></i></a>
+				<ul class="dropdown-menu">
+				<li><a class="scroll-link" href="#" title="Izenda Reports">Izenda Reports</a></li>
+									    <li><a class="scroll-link" href="#" title="Izenda Reports for MVC">Izenda Reports for MVC</a></li>
+									    <li><a class="scroll-link" href="#" title="Dashboards">Dashboards</a></li>
+									    <li><a class="scroll-link" href="#" title="Maps">Maps</a></li>
+                                        <li><a class="scroll-link" href="#" title="Language Packs">Language Packs</a></li>
+                                        <li><a class="scroll-link" href="#" title="Forms">Forms</a></li>
+                                        <li><a class="scroll-link" href="#" title="Fusion">Fusion</a></li>
+									</ul>
+								</li>
+                                
+                                
+								<li><a class="scroll-link" href="#row5">GALLERY</a></li>
+                                <li><a class="scroll-link" href="#row2">COMPANY</a></li>
+								<li><a class="scroll-link" href="#">SUPPORT</a></li>
+								<li><a class="scroll-link" href="#">BLOG</a></li>
+								<li><a class="scroll-link" href="#row6">DEMO</a></li>
+                                <li><a class="scroll-link" href="#row6">LIVE CHAT</a></li>
+		
+							</ul>
+						</div>
+					</div>
+                    
+        
+                    
+				</div>
+                
+     
+                
+			</div><!-- .navbar -->
+		</header>
+		
+		<!-- Home -->
+        	<section id="first" class="home text-center fullheight" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0" data-stellar-vertical-offset="0" data-stellar-vertical-offset="0" data-stellar-vertical-offset="0">
+            
+			<a class="anchor" id="row1"></a>
+			
+				<div class="headline slides">
+		
+<div class="flex-container">
+  <div class="flexslider">
+    <ul class="slides">
+      <li>
+        <img src="images/m1a.jpg" />
+      </li>
+      <li>
+        <img src="images/m2a.jpg" />
+      </li>
+      <li>
+        <img src="images/m3a.jpg" />
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+		</section>
+        
+        
+        <!-- Services -->
+		<section id="sixth" class="services">
+			<a class="anchor" id="row4"></a>
+			
+			<div class="wrapper2 bg-colored ">	
+				<div class="container">
+					<div class="row">
+						<div class="span12 text-center">
+							<h2>Why Izenda?</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+            
+ 
+			<div class="wrapper bg-white">	
+				<div class="container">			
+				  <div class="row text-center">
+						<div class="span12">
+						  <h3><span class="emphasis">Izenda</span> is the leading embedded analytics and visualization platform. Imagine users creating and customizing reports without involving a developer. <span class="emphasis">Izenda</span> makes it fast and simple to integrate beautiful reports and dynamic dashboards into your application.</h4></br>
+							<hr class="featurette-divider">
+					   </div>
+	<div class="row text-left"></div>
+                    
+                     <div class="featurette text-left">
+        <img src="images/reporting_one.png" width="504" height="418" class="featurette-image pull-left">
+        <h3 class="featurette-heading">Reporting</span></h3>
+        <p class="lead">Izenda Reports embed  quickly into existing applications in days, not months or years. They support  SQL Server, Oracle, DB2, MySQL, ASP.NET, MVC 1.0, 2.0 and 3.0. 100% browser-based AJAX design environment.</p>
+        <p><a href="#">Learn More</a></p>
+        </div>
+        
+          <hr class="featurette-divider">
+        
+        <h3 class="featurette-heading text-left">Dashboards</span></h3>
+        <p class="lead text-left">Izenda Dashboards give you real-time updates on your most crucial reports, all in one place. The Dashboards are dynamic and interactive, and change to keep up with your fast-paced business days. </p>
+        <p><a href="#">Learn More</a></p>
+        
+      </div>
+      
+      <hr class="featurette-divider">
+      
+      
+      <div class="row">
+                    
+                     <div class="featurette text-right">
+        <img src="images/maps_ipad.png" width="504" height="418" class="featurette-image pull-right">
+        <h3 class="featurette-heading">Maps</span></h3>
+        <p class="lead">The Izenda Maps add-on provides interactive geographical visualization to the report and dashboard experience. Go beyond tables and charts and show users what the world really looks like. </p>
+        <p><a href="#">Learn More</a></p>
+        </div>
+        
+          <hr class="featurette-divider">
+        
+        <h3 class="featurette-heading text-right">Language Pack</span></h3>
+        <p class="lead text-right">Izenda Language Pack provides add-on customization to localize the Izenda UI, Field Names, and the data itself into other languages...any language.</p>
+        <p><a href="#">Learn More</a></p>
+        
+      </div>
+      
+      <hr class="featurette-divider">
+      
+      <div class="row text-left">
+                    
+                     <div class="featurette">
+        <img src="images/forms_macair.png" width="504" height="418" class="featurette-image pull-left">
+        <h3 class="featurette-heading">Fusion</span></h3>
+        <p class="lead">Izenda Fusion delivers dynamic real-time analytics from multiple databases and applications without the need for periodic ETL into a data warehouse.</p>
+        <p><a href="#">Learn More</a></p>
+        
+          <hr class="featurette-divider">
+        
+        <h3 class="featurette-heading">Forms</span></h3>
+        <p class="lead">Izenda Forms is an HTML5-powered form designer which can recreate classic reports like government forms that require  complex layouts - customized right in your browser.</p>
+        <p><a href="#">Learn More</a></p>
+        
+      </div></div>   </div></div>
+     
+						</div>
+                        
+					</div>
+				</div>
+			</div>
+  </div></div>
+		
+		<!-- About -->
+	<section id="second" class="about text-center">
+			<a class="anchor" id="row2"></a>
+			
+			<div class="wrapper bg-colored ">	
+				<div class="container">
+					<div class="row">
+						<div class="span12">
+							<h2>About Izenda						</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">	
+				<div class="container story">			
+					<div class="row">
+						<div class="span12">
+						  <h3><span class="emphasis">Izenda </span>provides agile business intelligence tools that empower ordinary people to make better business decisions. We believe in utilizing the power of metadata to create technology that takes sometime just hours to deploy  rather than months or years.</h3>
+                            
+						</div>
+					</div>
+	
+					<div class="row waypoint-1">
+						<div class="span4 what-we-do text-center hidden-element-1">
+							<div class="full-rounded">
+								<i class="quivee-icon icon-rocket icon-2x"></i>
+							</div>
+							<h4 class="bold">Seemless Integration</h4>
+							<p>Your branding. Your look and feel. Your security. Izenda Reports seamlessly integrates into your ASP.NET application in as little as a few hours. The rich API lets you customize the platform to fit your needs.
+</p>
+						</div>
+						<div class="span4 what-we-do text-center hidden-element-1">
+							<div class="full-rounded">
+								<i class="quivee-icon icon-time  icon-2x"></i>
+							</div>
+							<h4 class="bold">Real-Time Analytics</h4>
+							<p>Izenda Fusion seamlessly pulls dynamic, real-time analytics from multiple databases and applications without having to do periodic ETL into a data warehouse. To the user, the data acts like it is in one place.</p>
+						</div>
+						<div class="span4 what-we-do text-center hidden-element-1">
+							<div class="full-rounded">
+								<i class="quivee-icon icon-cloud icon-2x"></i>
+							</div>
+							<h4 class="bold">Accessible Anywhere</h4>
+							<p>Today's executives expect anytime, anywhere access to real-time business data. Deliver both scheduled and real-time reports your customers can customize on any HTML capable mobile device.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+	  <div class="wrapper bg-white">	
+				<div class="container story">			
+					<div class="row">
+						
+					</div>
+					
+	<div class="wrapper bg-white">
+				<div class="container">			
+					<div class="row">
+						<div class="span6">
+							<div class="template-message">
+                            
+								<p><strong>Please register to try Izenda Reports on your data today. Or Call us at 1-800-xxx-xxxx </strong></p>
+                               
+							</div>
+						</div>
+						<a href="#" class="span3 btn btn-quivee btn-large" title="Free Trial Download">
+							Free Trial Download
+						</a>			 	
+					</div>
+	  </div>	
+	  </div>
+            
+            		
+		</section>
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+		<!-- Portfolio -->
+		<section id="eighth" class="portfolio text-center">
+			<a class="anchor" id="row5"></a>
+			
+			<div class="wrapper bg-colored">	
+				<div class="container">
+					<div class="row">
+						<div class="span12">
+							<h2>Gallery						</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">	
+				<div class="container">
+					<div class="row">
+						<div class="span12">
+							<h3>View Izenda in action and listen to our satified customers.						</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="span12">
+							<ul id="portfolio-filter" class="unstyled inline">
+								
+								<li class="active"><a data-filter=".web-design" class="web-design btn btn-quivee" href="#web-design" data-rel="web-design">Visualizations</a></li>
+								<li><a data-filter=".photography" class="photography btn btn-quivee" href="#photography" data-rel="photography">Integration Examples</a></li>
+								<li><a data-filter=".logo-design" class="logo-design btn btn-quivee" href="#logo-design" data-rel="logo-design">Maps</a></li>
+							</ul>
+						</div>
+					</div>
+					<ul id="portfolio-list" class="row isotope filterable-grid">
+						<li class="span3 block web-design" data-type="web-design" id="1">
+							<span id="portfolio-list"><a class="portfolio-thumb" href="images/linechart1-large.gif" title="portfolio">
+								<img class="portfolio-image" src="images/linechart1-large.gif" alt="Line Chart" />
+							</a>
+			          </span></li>
+						<li class="span3 block web-design" data-type="web-design" id="2">
+							<span id="portfolio-list"><a class="portfolio-thumb" href="images/combo1-large.gif" title="portfolio">
+								<img class="portfolio-image" src="images/combo1-large.gif" alt="Combo Chart" /></a></span>
+					  </li>
+						<li class="span3 block web-design" data-type="web-design" id="3">
+							<a class="portfolio-thumb" href="images/Pareto_large.gif" title="portfolio">
+								<img class="portfolio-image" src="images/grid1-large.gif" alt="portfolio image" />
+							</a>
+					  </li>
+						<li class="span3 block web-design" data-type="web-design" id="4">
+							<a class="portfolio-thumb" href="images/portfolio-4.png" title="portfolio">
+								<img class="portfolio-image" src="images/journals1-large.gif" alt="portfolio image" />
+							</a>
+					  </li>
+						<li class="span3 block web-design" data-type="web-design" id="5">
+							<a class="portfolio-thumb" href="images/Stacked_large.gif" title="portfolio">
+								<img class="portfolio-image" src="images/mindmap1-large.gif" alt="portfolio image" />
+							</a>
+					  </li>
+						<li class="span3 block web-design" data-type="web-design" id="6">
+							<a class="portfolio-thumb" href="images/formshare-full.png" title="portfolio">
+								<img class="portfolio-image" src="images/spider1-large.gif" alt="portfolio image" />
+							</a>
+				    </li>
+						<li class="span3 block web-design" data-type="web-design" id="7">
+							<a class="portfolio-thumb" href="images/HorizontalBar_large.gif" title="portfolio">
+								<img class="portfolio-image" src="images/timeline1-large.gif" alt="portfolio image" />
+							</a>
+					  </li>
+						<li class="span3 block web-design" data-type="web-design" id="8">
+							<a class="portfolio-thumb" href="images/portfolio-8.png" title="portfolio">
+								<img class="portfolio-image" src="images/timebubble1-large.gif" alt="portfolio image" />
+							</a>
+					  </li>
+						<li class="span3 block web-design" data-type="web-design" id="9">
+							<a class="portfolio-thumb" href="images/custom_report_manager-full.png" title="portfolio">
+								<img class="portfolio-image" src="images/timeline2-large.gif" alt="portfolio image" />
+							</a>
+			      </li>
+						<li class="span3 block photography" data-type="photography" id="10">
+							<a class="portfolio-thumb" href="images/portfolio-10.png" title="portfolio">
+								<img class="portfolio-image" src="images/integ1.jpg" alt="portfolio image" />
+							</a>
+					  </li>
+						<li class="span3 block photography" data-type="photography" id="11">
+							<a class="portfolio-thumb" href="images/BarSeparator_large.gif" title="portfolio">
+								<img class="portfolio-image" src="images/integ2.jpg" alt="portfolio image" />
+							</a>
+					  </li>
+						<li class="span3 block photography" data-type="photography" id="12">
+							<a class="portfolio-thumb" href="images/stilized-full.png" title="portfolio">
+								<img class="portfolio-image" src="images/integ3.jpg" alt="portfolio image" />
+							</a>
+				    </li>
+						<li class="span3 block photography" data-type="photography" id="13">
+							<a class="portfolio-thumb" href="images/budget_dash-full.png" title="portfolio">
+								<img class="portfolio-image" src="images/integ4.jpg" alt="portfolio image" />
+							</a>
+				    </li>
+						<li class="span3 block photography" data-type="photography" id="14">
+							<a class="portfolio-thumb" href="images/animated-dashboard-full.gif" title="portfolio">
+								<img class="portfolio-image" src="images/integ5.jpg" alt="portfolio image" />
+							</a>
+					  </li>
+						<li class="span3 block photography" data-type="photography" id="15">
+							<a class="portfolio-thumb" href="images/Line_large.gif" title="portfolio">
+								<img class="portfolio-image" src="images/integ6.jpg" alt="portfolio image" />
+							</a>
+				    </li>
+						<li class="span3 block photography" data-type="photography" id="16">
+							<a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
+								<img class="portfolio-image" src="images/integ7.jpg" alt="portfolio image" />
+							</a>
+                        </li>
+						<li class="span3 block photography" data-type="photography" id="17">
+							<a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
+								<img class="portfolio-image" src="images/integ8.jpg" alt="portfolio image" />
+							</a>
+                        </li>
+						<li class="span3 block photography" data-type="photography" id="18">
+							<a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
+								<img class="portfolio-image" src="images/integ9.jpg" alt="portfolio image" />
+							</a>
+                        </li>
+						<li class="span3 block photography" data-type="photography" id="19">
+							<a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
+								<img class="portfolio-image" src="images/integ10.jpg" alt="portfolio image" />
+							</a>
+                        </li>
+						<li class="span3 block photography" data-type="photography" id="20">
+							<a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
+								<img class="portfolio-image" src="images/integ11.jpg" alt="portfolio image" />
+							</a>
+                        </li>
+						<li class="span3 block photography" data-type="photography" id="21">
+							<a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
+								<img class="portfolio-image" src="images/integ12.jpg" alt="portfolio image" />
+                          </a>  
+                        </li>
+						<li class="span3 block photography" data-type="photography" id="22">
+							<a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
+								<img class="portfolio-image" src="images/integ13.jpg" alt="portfolio image" />
+							</a>
+                        </li>
+						<li class="span3 block photography" data-type="photography" id="23">
+							<a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
+								<img class="portfolio-image" src="images/integ15.jpg" alt="portfolio image" />
+							</a>
+                            
+                        </li>
+				  <li class="span3 block photography" data-type="photography" id="16">
+							<a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
+								<img class="portfolio-image" src="images/integ14.jpg" alt="portfolio image" />
+							</a>
+                            
+                      </li>
+						<li class="span3 block photography" data-type="photography" id="24">
+							<a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
+								<img class="portfolio-image" src="images/integ16.jpg" alt="portfolio image" />
+							</a>
+                            
+                        </li>
+						<li class="span3 block photography" data-type="photography" id="25">
+							<a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
+								<img class="portfolio-image" src="images/integ17.jpg" alt="portfolio image" />
+							</a>
+                            
+						</li>
+					</ul>	
+				</div>
+			</div>
+            
+            
+            
+			<div class="wrapper bg-white">
+				<div class="container">
+					
+					
+					<div class="client-wrapper mar-t30">
+						<div class="row text-center">
+							<img class="client-logo span2" src="images/clientlogo1.jpg" alt="logo" />
+							<img class="client-logo span2" src="images/clientlogo2.jpg" alt="logo" />
+							<img class="client-logo span2" src="images/clientlogo3.jpg" alt="logo" />
+							<img class="client-logo span2" src="images/clientlogo4.jpg" alt="logo" />
+							<img class="client-logo span2" src="images/clientlogo5.jpg" alt="logo" />
+							<img class="client-logo span2 last" src="images/clientlogo6.jpg" alt="logo" />
+						</div>
+					</div>
+				</div>		
+			</div>
+	
+		
+			  <div class="wrapper bg-white">
+				<div class="container">			
+					<div class="row">
+						<div class="span6">
+							<div class="template-message">
+                            
+								<p><strong>Please register to try Izenda Reports on your data today. Or Call us at 1-800-xxx-xxxx </strong></p>
+                               
+							</div>
+						</div>
+						<a href="#" class="span3 btn btn-quivee btn-large" title="Free Trial Download">
+							Free Trial Download
+						</a>			 	
+					</div>
+				</div>	
+			</div>
+           
+		
+	</section>			
+	
+    	
+<!-- Contact -->
+		<section id="tenth" class="contact text-center">
+			<a class="anchor" id="row6"></a>
+			
+			<div class="wrapper bg-colored">	
+				<div class="container">
+					<div class="row">
+						<div class="span12">
+							<h2>Contact Us for  a Demo</h2>
+							<h3>We'd love to hear from you.  And we'd love to show you how simply Izenda tools can power-charge your business.   Contact us now for a free demo.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="container">
+					<div class="row">
+						<form class="contact-form" method="get" action="contact-form">
+							<div class="span4 offset2">
+								<label class="hidden-phone text-left" for="inputName">Name</label>
+								<div class="text-left">
+									<input class="span4" type="text" id="inputName" name="inputName" placeholder="Please insert your full name" required>
+								</div>
+							</div>
+							<div class="span4">
+								<label class="hidden-phone text-left" for="inputEmail">Email</label>
+								<div class="text-left">
+									<input class="span4" type="text" id="inputEmail" name="inputEmail" placeholder="Please insert your email" required>
+								</div>
+							</div>
+							<div class="span10 offset2">
+								<label class="hidden-phone text-left" for="inputSubject">Subject</label>
+								<div class="text-left">
+									<input class="span8" type="text" id="inputSubject" name="inputSubject" placeholder="Please insert the subject" required>
+								</div>
+							</div>
+							<div class="span10 offset2">
+								<label class="hidden-phone text-left" for="inputMessage">Message</label>
+								<div class="text-left">
+									<textarea class="span8" rows="8" id="inputMessage" name="inputMessage" placeholder="Please insert the subject" required></textarea>
+								</div>
+							</div>
+							<button type="submit" class=" span8 offset2 btn btn-quivee btn-large">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
 
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-</head>
+			
+		</section>			
+					
+		<!-- Footer -->
+		<footer >
+			<div class="wrapper bg-colored">
+				<div class="container text-center">
+					<div class="row">
+						<div class="span12">
+							<a href="#" class="logo-footer">Izenda</a>
+                           <h4>Contact us: Sales - 678-500-9136, Support - 404-963-8710 · 1200 Lake Hearn Drive STE 475 Atlanta, GA 30319</h4>
+                           <br>
+                            <p><a href="#">Home</a> | <a href="#">
+                            Products </a> | <a href="#">Gallery</a> | <a href="#">Company</a> | <a href="#">KB</a> | <a href="#">Blog</a></p>
+                              
+<p>
 
-<body>
-  <script src="js/scripts.js"></script>
-</body>
+			<a href="/site/pages/Privacy.aspx">Privacy Policy</a> | 
+
+			<a href="/site/SiteMap.aspx">Sitemap</a> | 
+
+			<a href="/site/pages/Terms.aspx">Terms of Use</a> | 
+
+			<a href="/site/pages/ContactUs.aspx">Contact Us</a>
+
+		</p>
+
+                             <p>&copy; Izenda - Copyright 2013</p>
+                            
+							<ul class="unstyled inline footer-icons">
+                    
+								<li><a class="full-rounded" href="#" title="social"><i class="icon-twitter"></i></a></li>
+								<li><a class="full-rounded" href="#" title="social"><i class="icon-facebook"></i></a></li>
+								<li><a class="full-rounded" href="#" title="social"><i class="icon-linkedin"></i></a></li>
+								<li><a class="full-rounded" href="#" title="social"><i class="icon-github"></i></a></li>
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+			</div>		
+		</footer>		
+		         
+	    <!-- Javascript  -->
+        
+        
+        <script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
+	    <script type="text/javascript" src="js/jquery.js"></script>
+	    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+	    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+	    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	    <script type="text/javascript" src="js/waypoints.min.js"></script>
+	    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+	    <script type="text/javascript" src="js/ilightbox.packed.js"></script>
+	    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	    <script type="text/javascript" src="js/jquery.easy-pie-chart.js"></script> 
+	    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script> 
+	    <script type="text/javascript" src="js/jpreLoader.js"></script>
+	    <script type="text/javascript" src="js/custom.js"></script>
+        
+        
+	    
+    </body>
 </html>
