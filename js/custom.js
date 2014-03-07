@@ -178,9 +178,6 @@ jQuery(document).ready(function ($){
 //jPreloader settings
 //////////////////////////////////////////////////////////////////////////////////////////
 $(document).ready(function() {
-	jQuery("body").addClass("visible-body");
-	jQuery("body").removeClass("hidden-body");
-	return;
 	$('body').jpreLoader({
   		loaderVPos: "0%",
   		splashFunction: function() {
