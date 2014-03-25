@@ -50,6 +50,8 @@
         <li><a href="#support" tab-condition="#support">SUPPORT</a></li>
         <li><a href="#blog" tab-condition="#blog">BLOG</a></li>
         <li><a href="#contact" tab-condition="#contact">CONTACT&nbsp; <i class="icon-phone"></i></a></li>
+      </ul>
+      <ul class="iz-nav iz-navbar-nav iz-search">
         <li>
           <strong id="searchIcon" class="icon-search"></strong>
           <input id="searchInput" type="search" name="search" value="" placeholder="Search"/>
@@ -57,7 +59,7 @@
         <li><a id="searchBtn" href="#"><strong class="icon-search"></strong></a></li>
       </ul>
       <ul class="iz-nav iz-navbar-nav iz-free-trial">
-        <li><a href="#">FREE TRIAL</a></li>
+        <li><span>FREE TRIAL</span></li>
       </ul>
     </nav>
   </header>
@@ -82,10 +84,13 @@
       $('.iz-dropdown-toggle').click(function() {
         var $this = $(this);
         var $dd = $($this.closest('.iz-dropdown'));
-        $dd.find('.iz-dropdown-menu').toggleClass('open');
+        $dd.find('.iz-dropdown-menu').toggleClass('open', 500);
       });
 
-      // search button
+      // search button events
+      var searchHandler = function () {
+        alert('Search: ' + $('#searchInput').val());
+      };
       $('#searchBtn').click(function() {
         var $this = $(this);
         $this.hide();
@@ -96,6 +101,22 @@
         $input.animate({ width: '200px' }, 200, function() {
           $(this).focus();
         });
+      });
+      var closeSearchHandler = function() {
+        $('#searchBtn').show();
+        $('#searchIcon').hide();
+        $('#searchInput').hide();
+      };
+      $('#searchInput').keydown(function (e) {
+        if (e.keyCode == 27) {
+          closeSearchHandler();
+        }
+        if (e.keyCode == 13) {
+          searchHandler();
+        }
+      });
+      $('#searchInput').focusout(function () {
+        closeSearchHandler();
       });
 
       // active menu item
