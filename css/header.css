@@ -217,6 +217,12 @@
   background-color: #fff;
 }
 
+@media (min-width : 769px) {
+  .iz-dropdown-menu {
+    border: 1px solid #ccc;
+  }
+}
+
   .iz-dropdown-menu.open {
     display: block;
   }
