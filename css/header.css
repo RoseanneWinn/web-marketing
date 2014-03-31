@@ -8,6 +8,14 @@
   clear: both;
 }
 
+.iz-hide {
+  display: none;
+}
+
+.iz-show {
+  display: block;
+}
+
 /* navbar */
 
 .iz-navbar {
@@ -46,6 +54,12 @@
   }
 }
 
+@media (min-device-width : 769px) {
+  body {
+    margin-top: 60px;
+  }
+}
+
 /* header */
 
 .iz-navbar-header {
@@ -72,9 +86,10 @@
   text-indent: -10000px;
 }
 
-@media (max-width: 1024px) {
-  .iz-navbar-brand {
-    display: none;
+@media (max-width: 1280px) and (min-device-width: 769px) {
+  .iz-navbar-logo {
+    width: 40px;
+    background: url('../images/IzendaSmall.png') no-repeat 0 0;
   }
 }
 
@@ -84,6 +99,7 @@
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+  display: none;
 }
 
   .iz-nav > li {
@@ -97,6 +113,11 @@
       padding: 15px 10px;
     }
 
+@media only screen and (min-device-width : 769px) {
+  .iz-nav {
+    display: block;
+  }
+
   .iz-nav > li > a:hover,
   .iz-nav > li > a:focus {
     text-decoration: none;
@@ -104,6 +125,7 @@
     border-bottom: 4px solid #0d70cd;
     background-color: #0d70cd;
   }
+}
 /* navbar */
 .iz-navbar-nav {
   float: left;
@@ -125,9 +147,11 @@
         border-bottom: 4px solid #0d70cd;
       }
 
+@media only screen and (min-device-width : 769px) {
   .iz-navbar-nav.iznavbar-right:last-child {
     margin-right: -15px;
   }
+}
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
   .iz-navbar-nav {
@@ -208,11 +232,13 @@
     white-space: nowrap;
   }
 
-    .iz-dropdown-menu > li > a:hover {
-      text-decoration: none;
-      color: #fff;
-      background-color: #0d70cd;
-    }
+@media only screen and (min-device-width : 769px) {
+  .iz-dropdown-menu > li > a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #0d70cd;
+  }
+}
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
   .iz-dropdown-menu {
@@ -235,16 +261,12 @@
   margin: 0 20px;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
-  .iz-search {
-    display: none;
+@media only screen and (min-device-width : 769px) {
+  .iz-search > li > a:hover {
+    color: #0d70cd;
+    border-bottom: 4px solid #fff;
+    background-color: #fff;
   }
-}
-
-.iz-search > li > a:hover {
-  color: #0d70cd;
-  border-bottom: 4px solid #fff;
-  background-color: #fff;
 }
 
 .iz-free-trial, .iz-free-trial:hover, .iz-free-trial:active > li > a {
@@ -257,27 +279,58 @@
   padding: 5px 20px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .iz-free-trial {
     display: none;
   }
 }
 
-/* search */
-#searchInput {
-  display: block;
-  padding: 3px;
-  padding-left: 26px;
-  margin-left: 0px;
-  clear: both;
-  margin-top: 20px;
-  display: none;
+@media only screen and (min-device-width : 769px) {
+
+  .iz-navbar-menu-btn {
+    display: none;
+  }
+
+  /* search */
+  #searchInput {
+    display: block;
+    padding: 3px;
+    padding-left: 26px;
+    margin-left: 0px;
+    clear: both;
+    margin-top: 20px;
+    display: none;
+  }
+
+  #searchIcon {
+    position: absolute;
+    top: 26px;
+    color: #666;
+    left: 10px;
+    display: none;
+  }
 }
 
-#searchIcon {
-  position: absolute;
-  top: 26px;
-  color: #666;
-  left: 10px;
-  display: none;
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+  .iz-navbar-menu-btn {
+    display: block !important;
+    text-align: right;
+    margin-right: 20px;
+  }
+
+  .iz-nav {
+    border-top: 1px solid #dddddd;
+  }
+
+  #searchIcon {
+    display: none;
+  }
+
+  #searchBtn {
+    display: none;
+  }
+
+  #searchInput {
+    display: none;
+  }
 }

@@ -17,6 +17,19 @@
     $a.addClass('active');
   });
 
+  $('.iz-navbar-menu-btn').click(function () {
+    $('.iz-nav').each(function(iNav, nav) {
+      var $nav = $(nav);
+      if (!$nav.hasClass('iz-free-trial') && !$nav.hasClass('iz-navbar-menu-btn')) {
+        if ($nav.css('display') == 'none') {
+          $nav.css('display', 'block');
+        } else {
+          $nav.css('display', 'none');
+        }
+      }
+    });
+  });
+
   // search button events
   var searchHandler = function () {
     alert('Search: ' + $('#searchInput').val());
