@@ -36,12 +36,14 @@
   };
   $('#searchBtn').click(function () {
     var $this = $(this);
+    $('.iz-nav').hide();
+    $this.closest('.iz-nav').show();
     $this.hide();
     var $input = $('#searchInput');
     $input.width(0);
     $input.show();
     $('#searchIcon').show();
-    $input.animate({ width: '200px' }, 200, function () {
+    $input.animate({ width: '300px' }, 200, function () {
       $(this).focus();
     });
   });
@@ -49,6 +51,7 @@
     $('#searchBtn').show();
     $('#searchIcon').hide();
     $('#searchInput').hide();
+    $('.iz-nav').show();
   };
   $('#searchInput').keydown(function (e) {
     if (e.keyCode == 27) {

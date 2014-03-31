@@ -86,7 +86,7 @@
   text-indent: -10000px;
 }
 
-@media (max-width: 1280px) and (min-width: 769px) {
+@media (max-width: 1024px) and (min-width: 769px) {
   .iz-navbar-logo {
     width: 40px;
     background: url('../images/IzendaSmall.png') no-repeat 0 0;
@@ -289,7 +289,7 @@
   padding: 5px 20px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1024px) {
   .iz-free-trial {
     display: none;
   }
