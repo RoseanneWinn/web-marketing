@@ -8,12 +8,20 @@
   clear: both;
 }
 
-.iz-hide {
-  display: none;
+@media (min-width : 769px) {
+  .iz-hide {
+    display: none !important;
+  }
+}
+
+@media (max-width : 768px) {
+  .iz-navbar-menu-hide {
+    display: none;
+  }
 }
 
 .iz-show {
-  display: block;
+  display: block !important;
 }
 
 /* navbar */
@@ -99,7 +107,6 @@
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  display: none;
 }
 
   .iz-nav > li {
@@ -308,7 +315,6 @@
     margin-left: 0px;
     clear: both;
     margin-top: 20px;
-    display: none;
   }
 
   #searchIcon {
@@ -316,7 +322,6 @@
     top: 26px;
     color: #666;
     left: 10px;
-    display: none;
   }
 }
 
@@ -327,6 +332,10 @@
     margin-right: 20px;
   }
 
+  #searchBtn {
+    display: none;
+  }
+
   #searchInput {
     display: block;
     padding: 3px;
@@ -335,7 +344,7 @@
     margin-bottom: 8px;
     clear: both;
     margin-top: 20px;
-    display: none;
+    width: 300px;
   }
 
   #searchIcon {
