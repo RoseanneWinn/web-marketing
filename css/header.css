@@ -44,7 +44,7 @@
   background-color: #fff;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+@media (max-width : 768px) {
   body {
     margin: 0;
   }
@@ -54,7 +54,7 @@
   }
 }
 
-@media (min-device-width : 769px) {
+@media (min-width : 769px) {
   body {
     margin-top: 60px;
   }
@@ -86,7 +86,7 @@
   text-indent: -10000px;
 }
 
-@media (max-width: 1280px) and (min-device-width: 769px) {
+@media (max-width: 1280px) and (min-width: 769px) {
   .iz-navbar-logo {
     width: 40px;
     background: url('../images/IzendaSmall.png') no-repeat 0 0;
@@ -113,7 +113,7 @@
       padding: 15px 10px;
     }
 
-@media only screen and (min-device-width : 769px) {
+@media (min-width : 769px) {
   .iz-nav {
     display: block;
   }
@@ -147,13 +147,13 @@
         border-bottom: 4px solid #0d70cd;
       }
 
-@media only screen and (min-device-width : 769px) {
+@media (min-width : 769px) {
   .iz-navbar-nav.iznavbar-right:last-child {
     margin-right: -15px;
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+@media (max-width : 768px) {
   .iz-navbar-nav {
     float: none;
   }
@@ -232,7 +232,7 @@
     white-space: nowrap;
   }
 
-@media only screen and (min-device-width : 769px) {
+@media (min-width : 769px) {
   .iz-dropdown-menu > li > a:hover {
     text-decoration: none;
     color: #fff;
@@ -240,7 +240,7 @@
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+@media (max-width : 768px) {
   .iz-dropdown-menu {
     position: relative;
     float: none;
@@ -257,11 +257,15 @@
 }
 
 .iz-search {
-  float: right;
-  margin: 0 20px;
+  margin: 0;
 }
 
-@media only screen and (min-device-width : 769px) {
+@media (min-width : 769px) {
+  .iz-search {
+    float: right;
+    margin: 0 20px;
+  }
+
   .iz-search > li > a:hover {
     color: #0d70cd;
     border-bottom: 4px solid #fff;
@@ -285,13 +289,12 @@
   }
 }
 
-@media only screen and (min-device-width : 769px) {
+@media (min-width : 769px) {
 
   .iz-navbar-menu-btn {
     display: none;
   }
 
-  /* search */
   #searchInput {
     display: block;
     padding: 3px;
@@ -311,26 +314,29 @@
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+@media (max-width : 768px) {
   .iz-navbar-menu-btn {
     display: block !important;
     text-align: right;
     margin-right: 20px;
   }
 
-  .iz-nav {
-    border-top: 1px solid #dddddd;
+  #searchInput {
+    display: block;
+    padding: 3px;
+    padding-left: 26px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    clear: both;
+    margin-top: 20px;
+    display: none;
   }
 
   #searchIcon {
-    display: none;
-  }
-
-  #searchBtn {
-    display: none;
-  }
-
-  #searchInput {
+    position: absolute;
+    top: 26px;
+    color: #666;
+    left: 20px;
     display: none;
   }
 }
