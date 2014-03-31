@@ -1,9 +1,20 @@
 ﻿$(document).ready(function () {
   // dropdowns
-  $('.iz-dropdown-toggle').click(function () {
+  $('.iz-dropdown-toggle').click(function (e) {
+    e.preventDefault();
     var $this = $(this);
     var $dd = $($this.closest('.iz-dropdown'));
     $dd.find('.iz-dropdown-menu').toggleClass('open', 500);
+  });
+
+  $('.iz-menu-item').click(function (e) {
+    $('.iz-dropdown-menu').removeClass('open');
+    $('.iz-menu-item,.iz-dropdown-toggle').removeClass('active');
+    var $a = $(this);
+    if ($a.hasClass('iz-menu-item-inner')) {
+      $a = $a.closest('.iz-dropdown').find('.iz-dropdown-toggle');
+    }
+    $a.addClass('active');
   });
 
   // search button events
