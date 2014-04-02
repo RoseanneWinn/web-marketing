@@ -83,4 +83,11 @@
     }
   });
 
+  //
+  $('.navbar-nav > li > a').click(function () {
+    $('.navbar-nav > li').removeClass('active');
+    var $this = $(this);
+    var $li = $($this.parent());
+    $li.addClass('active');
+  });
 });
