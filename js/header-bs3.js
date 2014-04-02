@@ -42,7 +42,8 @@
   };
 
   // search button events
-  $('#searchBtn').click(function () {
+  $('#searchBtn').click(function (e) {
+    e.preventDefault();
     if ($(window).width() > 768) {
       showSearchPanel();
       var $input = $('#searchInput');
@@ -84,13 +85,12 @@
   });
 
   //
-  $('.navbar-nav > li > a').click(function () {
+  $('.navbar-nav > li > a, .dropdown-menu > li > a').click(function () {
     var $this = $(this);
-    var $li = $($this.parent());
-    var $navbar = $li.parent();
-    if ($navbar.hasClass('iz-search-btn'))
+    var $navbar = $($this.closest('.navbar-nav'));
+    if ($navbar.hasClass('iz-search-btn') || $navbar.hasClass('iz-search') || $navbar.hasClass('iz-free-trial'))
       return;
     $('.navbar-nav > li').removeClass('active');
-    $li.addClass('active');
+    $($this.closest('.iz-menu')).addClass('active');
   });
 });
