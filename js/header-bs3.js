@@ -85,9 +85,12 @@
 
   //
   $('.navbar-nav > li > a').click(function () {
-    $('.navbar-nav > li').removeClass('active');
     var $this = $(this);
     var $li = $($this.parent());
+    var $navbar = $li.parent();
+    if ($navbar.hasClass('iz-search-btn'))
+      return;
+    $('.navbar-nav > li').removeClass('active');
     $li.addClass('active');
   });
 });
