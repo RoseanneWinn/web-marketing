@@ -30,21 +30,21 @@
 
   var closeSearchHandler = function () {
     var $input = $('#searchInput');
-    if ($(window).width() > 768) {
+    if ($(window).width() > 1023) {
       $input.animate({ width: '1px' }, 200, function() {
         showMenuPanel();
         $input.width('300px');
       });
     } else {
       showMenuPanel();
-      $input.css('width', '95%');
+      $input.css('width', '100%');
     }
   };
 
   // search button events
   $('#searchBtn').click(function (e) {
     e.preventDefault();
-    if ($(window).width() > 768) {
+    if ($(window).width() > 1023) {
       showSearchPanel();
       var $input = $('#searchInput');
       $input.width(0);
@@ -55,8 +55,8 @@
   });
 
   $(window).resize(function() {
-    if ($(window).width() <= 768) {
-      $('#searchInput').css('width','95%');
+    if ($(window).width() <= 1023) {
+      $('#searchInput').css('width','100%');
     } else {
       $('#searchInput').width('300px');
     }
