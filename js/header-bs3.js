@@ -79,7 +79,7 @@
     var $li = $(li);
     var $a = $($li.children('a'));
     var tabCondition = $a.attr('tc');
-    if (tabCondition != null && location.href.indexOf(tabCondition) >= 0) {
+    if (tabCondition != null && tabCondition.trim() != '' && location.href.indexOf(tabCondition) >= 0) {
       $li.addClass('active');
     }
   });

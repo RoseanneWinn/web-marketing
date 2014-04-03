@@ -2,21 +2,26 @@
   border-bottom: 1px solid #ddd;
 }
 
+.icon-bar {
+  width: 16px !important;
+  background-color: #000;
+}
+
 /* Izenda logo styles */
 
 .iz-navbar-logo {
-  width: 200px;
+  width: 170px;
   height: 60px;
   display: block;
   background: url('../images/Izenda.png') no-repeat 0 5px;
 }
 
-@media (max-width: 1023px) and (min-width: 769px) {
+/*@media (max-width: 1023px) and (min-width: 769px) {
   .iz-navbar-logo {
     width: 40px;
     background: url('../images/IzendaSmall.png') no-repeat 0 5px;
   }
-}
+}*/
 
 /* Search button */
 
@@ -39,6 +44,10 @@
   border-top: 4px solid #fff;
 }
 
+#searchBtn {
+  font-size: 14px;
+}
+
 #searchInput {
   padding: 3px;
   padding-left: 26px;
@@ -49,12 +58,13 @@
 
 #searchIcon {
   position: absolute;
-  top: 20px;
+  top: 18px;
+  font-size: 14px;
   color: #666;
   left: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   #izendaNavBarSearchBtn {
     display: none !important;
     visibility: hidden !important;
@@ -62,18 +72,18 @@
   }
 
   #searchInput {
-    width: 95%;
-    margin: 0px 10px;
+    margin: 0 auto;
     padding: 3px;
     padding-left: 26px;
   }
 
   #searchIcon {
-    top: 10px;
-    left: 20px;
+    top: 8px;
+    left: 10px;
   }
 
   #izendaNavBarSearch {
+    margin: 0 5px;
     display: block !important;
     visibility: visible !important;
   }
@@ -82,7 +92,8 @@
 /* Free trial button */
 
 .izenda .iz-free-trial > li > a {
-  padding: 7px 15px;
+  margin-top: -2px;
+  padding: 6px 15px;
   color: #fff;
   background-color: orange;
   border: 1px solid rgb(238, 162, 54);
@@ -94,20 +105,17 @@
     border: 1px solid rgb(238, 162, 54);
   }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
+  .izenda .iz-free-trial {
+    margin: 10px 5px;
+  }
+
   .izenda .iz-free-trial > li > a {
-    width: 95%;
-    margin: 0px 10px;
+    margin: 0 auto;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .izenda .iz-free-trial > li > a {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .izenda .iz-free-trial > li > a {
     top: 15px;
     margin-right: 15px;
