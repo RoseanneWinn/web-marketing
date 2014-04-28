@@ -75,5 +75,4 @@
       $a.addClass('active');
     }
   });
-
 });
