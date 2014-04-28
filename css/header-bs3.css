@@ -16,6 +16,35 @@
   background: url('../images/Izenda.png') no-repeat 0 5px;
 }
 
+/* Contact imgaes */
+
+#contact-images {
+  min-height: 20px;
+  list-style: none;
+  display: inline;
+  margin-left: 292px;
+  position: relative;
+  top: 12px;
+}
+
+.image-list {
+  height: 30px;
+  width: 20px;
+  margin-left: 10px;
+  display: inline;
+  }
+
+
+#chat-box {
+  position: relative;
+  top: 5px;
+}
+
+#phone { 
+  position: relative;
+  top: 2px;
+}
+
 /*@media (max-width: 1023px) and (min-width: 769px) {
   .iz-navbar-logo {
     width: 40px;
@@ -45,7 +74,7 @@
 }
 
 #searchBtn {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 #searchInput {
