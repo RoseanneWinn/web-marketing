@@ -95,8 +95,8 @@
   });
   
     //Playing with new icons
-  black = ['../web-marketing/images/Phone4.png', '../web-marketing/images/
-  blue = ['../web-marketing/images/PhoneBlue.png', '../web-marketing/image
+  black = ['../web-marketing/images/Phone4.png', '../web-marketing/images/Email4.png', '../web-marketing/images/ChatBox4.png'];
+  blue = ['../web-marketing/images/PhoneBlue.png', '../web-marketing/images/EmailBlue.png', '../web-marketing/images/ChatBoxBlue2.png'];
   setSrc = function(source) {
     return function() {
       $(this).attr('src',source);};};
