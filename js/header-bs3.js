@@ -1,4 +1,4 @@
-﻿$(document).ready(function () {
+$(document).ready(function () {
   var showSearchPanel = function() {
     var $navBar = $('#izendaNavBar');
     $navBar.children().each(function(iNav, nav) {
@@ -106,3 +106,4 @@
   $('#chat-box').mouseenter(setSrc(blue[2])).mouseleave(setSrc(black[2]));
 
 });
+
