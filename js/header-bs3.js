@@ -99,6 +99,7 @@
   blue = ['../web-marketing/images/PhoneBlue.png', '../web-marketing/images/EmailBlue.png', '../web-marketing/images/ChatBoxBlue2.png'];
   setSrc = function(source) {
     return function() {
+
       $(this).attr('src',source);};};
   
   $('#phone').mouseenter(setSrc(blue[0])).mouseleave(setSrc(black[0]));
