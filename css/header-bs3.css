@@ -16,13 +16,17 @@
   background: url('../images/Izenda.png') no-repeat 0 5px;
 }
 
+.iz-navbar-logo:hover {
+  opacity: .7;
+}
+
 /* Contact imgaes */
 
 #contact-images {
   min-height: 20px;
   list-style: none;
   display: inline;
-  margin-left: 292px;
+  margin-left: 210px;
   position: relative;
   top: 12px;
 }
@@ -30,7 +34,7 @@
 .image-list {
   height: 30px;
   width: 20px;
-  margin-left: 10px;
+  margin-left: 3px;
   display: inline;
   }
 
