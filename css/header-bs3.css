@@ -20,7 +20,7 @@
   opacity: .7;
 }
 
-/* Contact imgaes */
+/* Contact images */
 
 #contact-images {
   min-height: 20px;
@@ -122,34 +122,6 @@
   }
 }
 
-/* Contact imgaes */
-
-#contact-images {
-  min-height: 20px;
-  list-style: none;
-  display: inline;
-  margin-left: 292px;
-  position: relative;
-  top: 12px;
-}
-
-.image-list {
-  height: 30px;
-  width: 20px;
-  margin-left: 10px;
-  display: inline;
-  }
-
-
-#chat-box {
-  position: relative;
-  top: 5px;
-}
-
-#phone { 
-  position: relative;
-  top: 2px;
-}
 
 /* Free trial button */
 
