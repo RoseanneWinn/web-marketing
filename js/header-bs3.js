@@ -5,8 +5,10 @@ $(document).ready(function () {
       var $nav = $(nav);
       if ($nav.attr('id') != 'izendaNavBarSearch') {
         $nav.addClass('hidden');
+        $('#contact-images').addClass('hidden');
       } else {
         $nav.removeClass('hidden');
+        $('#contact-images').removeClass('hidden');
       }
     });
   };
@@ -17,8 +19,10 @@ $(document).ready(function () {
       var $nav = $(nav);
       if ($nav.attr('id') != 'izendaNavBarSearch') {
         $nav.removeClass('hidden');
+        $('#contact-images').removeClass('hidden');
       } else {
         $nav.addClass('hidden');
+        $('#contact-images').addClass('hidden');
       }
     });
   };
