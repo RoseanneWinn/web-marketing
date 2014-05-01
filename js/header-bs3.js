@@ -5,8 +5,10 @@ $(document).ready(function () {
       var $nav = $(nav);
       if ($nav.attr('id') != 'izendaNavBarSearch') {
         $nav.addClass('hidden');
+        $('#contact-images').addClass('hidden');
       } else {
         $nav.removeClass('hidden');
+        $('#contact-images').removeClass('hidden');
       }
     });
   };
@@ -17,15 +19,17 @@ $(document).ready(function () {
       var $nav = $(nav);
       if ($nav.attr('id') != 'izendaNavBarSearch') {
         $nav.removeClass('hidden');
+        $('#contact-images').removeClass('hidden');
       } else {
         $nav.addClass('hidden');
+        $('#contact-images').addClass('hidden');
       }
     });
   };
 
   // search handler
   var searchHandler = function () {
-    alert('Search: ' + $('#searchInput').val());
+    window.location="http://wiki.izenda.us/search?q=" + $('#searchInput').val();
   };
 
   var closeSearchHandler = function () {
@@ -104,6 +108,51 @@ $(document).ready(function () {
   $('#phone').mouseenter(setSrc(blue[0])).mouseleave(setSrc(black[0]));
   $('#email').mouseenter(setSrc(blue[1])).mouseleave(setSrc(black[1]));
   $('#chat-box').mouseenter(setSrc(blue[2])).mouseleave(setSrc(black[2]));
+
+  //fancybox stuff
+  $(".modalbox").fancybox();
+	$("#contact").submit(function() { return false; });
+
+  $("#send").on("click", function(){
+	var emailval  = $("#email").val();
+	var msgval    = $("#msg").val();
+	var msglen    = msgval.length;
+	var mailvalid = validateEmail(emailval);
+
+	if(mailvalid == false) {
+		$("#email").addClass("error");
+	}
+	else if(mailvalid == true){
+		$("#email").removeClass("error");
+	}
+
+	if(msglen < 4) {
+		$("#msg").addClass("error");
+	}
+	else if(msglen >= 4){
+		$("#msg").removeClass("error");
+	}
+
+  if(mailvalid == true && msglen >= 4) {
+		// if both validate we attempt to send the e-mail
+		// first we hide the submit btn so the user doesnt click twice
+		$("#send").replaceWith("<em>sending...</em>");
+
+		$.ajax({
+			type: 'POST',
+			url: 'sendmessage.php',
+			data: $("#contact").serialize(),
+			success: function(data) {
+				if(data == "true") {
+					$("#contact").fadeOut("fast", function(){
+						$(this).before("<strong>Success! Your feedback has been sent, thanks :)</strong>");
+						setTimeout("$.fancybox.close()", 1000);
+					});
+				}
+			}
+        });
+	}
+});
 
 });
 

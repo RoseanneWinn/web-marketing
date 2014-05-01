@@ -7,6 +7,7 @@
   <link href="css/font-awesome.min.css" rel="stylesheet" />
   <link type="text/css" rel="stylesheet" href="css/bootstrap3.min.css" />
   <link type="text/css" rel="stylesheet" href="css/header-bs3.css" />
+  <link type="text/css" rel="stylesheet" href="css/jquery.fancybox.css" />
 </head>
 <body>
   <header class="izenda">
@@ -37,7 +38,7 @@
             </ul>
           </li>
           <!-- <li class="iz-menu"><a href="#livedemo" tc="#livedemo" onclick="alert('live demo dialog here');">LIVE DEMO</a></li>-->
-          <li class="iz-menu"><a href="#pricing" tc="#pricing" onclick="alert('pricing dialog here');">PRICING</a></li>
+          <li class="iz-menu"><a class="modalbox" href="#inline" tc="#pricing">PRICING</a></li>
           <li class="iz-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" tc="">COMPANY <b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -49,14 +50,10 @@
             </ul>
           </li>
           <li class="iz-menu"><a href="http://www.izenda.com/site/Pages/Gallery.aspx" tc="Gallery.aspx">GALLERY</a></li>
-          <li class="iz-menu"><a href="http://www.izenda.com/site/KB/Integration/94" tc="KB/Integration">KNOWLEDGE BASE</a></li>
+          <li class="iz-menu"><a href="http://wiki.izenda.us" tc="KB/Integration">KNOWLEDGE BASE</a></li>
           <!--<li class="iz-menu"><a href="#support" tc="#support" onclick="alert('support dialog here');">SUPPORT</a></li> I'd like to implement this with Amelia's stuff-->
           <li class="iz-menu"><a href="http://blog.izenda.com/" tc="blog.izenda.com">BLOG</a></li>
         </ul>
-        <ul id="contact-images">
-          <li class="image-list"><a href="http://www.izenda.com/site/Pages/contactus.aspx"><img src="../web-marketing/images/Phone4.png" id="phone" alt="phone" /></a></li>
-          <li class="image-list"><a href="#"><img src="../web-marketing/images/Email4.png" id="email" alt="email" /></a></li>
-          <li class="image-list"><a href="#"><img src="../web-marketing/images/ChatBox4.png" id="chat-box" alt="chat-box" /></a></li></ul>
         <ul id="izendaNavBarSearch" id="search-bar" class="nav navbar-nav navbar-right iz-search hidden">
           <li>
             <strong id="searchIcon" class="icon-search"></strong>
@@ -74,9 +71,47 @@
       </div>
       <!-- /.navbar-collapse -->
     </nav>
-  </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span3 offset2">
+            <ul id="contact-images">
+          <li class="image-list"><a href="http://www.izenda.com/site/Pages/contactus.aspx"><img src="../web-marketing/images/Phone4.png" id="phone" alt="phone" /></a></li>
+          <li class="image-list"><a href="mailto:services@izenda.com"><img src="../web-marketing/images/Email4.png" id="email" alt="email" /></a></li>
+          <li class="image-list"><a href="#"><img src="../web-marketing/images/ChatBox4.png" id="chat-box" alt="chat-box" onclick="alert('Working with SnapBug still...');" /></a></li></ul>
+      </div>
+    </div>
+  </div>
+  <div id="wrapper">
+  <a class="modalbox" href="#inline"></a></div>
+<!-- hidden inline form -->
+  <div id="inline" style="display:none">
+    <h2>Interested in Izenda Reporting?  Let us get in touch with you.</h2>
+  <form id="contact" action="some_lead_list.php" method="post" name="contact">
+        <input for="first_name" class="input_fields" type="text" placeholder="First Name"></input>
+        <input for="last_name" class="input_fields" type="text" placeholder="Last Name"></input>
+        <input for="company_url" class="input_fields" type="text" placeholder="Company Url"></input>
+        <input id="email" type="email" class="input_fields" placeholder="Email" name="email"></input>
+        <textarea id="msg" class="txtarea" name="msg" placeholder="Send us a message!"></textarea>
+        <button id="send">Send</button></form>
+      </div>
+      <!--<div id="SnapABug_W" style="position: fixed; display: block; top: 0%; left: 0px; width: 100%; height: 100%; z-index: 2147483644; margin: 0px; padding: 0px; border-collapse: collapse; border-spacing: 0px; border: none; list-style: none; text-align: left; font-size: 100%; font-weight: normal; outline: none; background-image: url(http://chtatic.appspot.com/wbg/blank.gif); background-repeat: repeat repeat;">
+        <div id="SnapABug_O" style="position: absolute; width: 1065px; height: 364px; top: 0px; left: 0px; text-align: left; z-index: auto; opacity: 0.5; background-color: white; display: block;"></div>
+      </div>-->
+    </header>
+  <script type="text/javascript">
+    document.write(unescape("%3Cscript src='" + ((document.location.protocol=="https:")?"https://snapabug.appspot.com":"http://www.snapengage.com") + "/snapabug.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    SnapABug.init("dc343b66-b4c1-4ca0-af75-37e2ba934693");
+    SnapABug.allowProactiveChat(false);
+    SnapABug.allowScreenshot(false);
+  </script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.0.6"></script>
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/bootstrap3.min.js"></script>
   <script type="text/javascript" src="js/header-bs3.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
 </body>
 </html>
