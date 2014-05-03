@@ -109,13 +109,13 @@ $(document).ready(function () {
   $('#email').mouseenter(setSrc(blue[1])).mouseleave(setSrc(black[1]));
   $('#chat-box').mouseenter(setSrc(blue[2])).mouseleave(setSrc(black[2]));
 
-  //fancybox stuff
+  //fancybox stuff for form submission
   $(".modalbox").fancybox();
 	$("#contact").submit(function() { return false; });
 
   $("#send").on("click", function(){
 	var emailval  = $("#email").val();
-	var msgval    = $("#msg").val();
+	var msgval    = $("#message").val();
 	var msglen    = msgval.length;
 	var mailvalid = validateEmail(emailval);
 
