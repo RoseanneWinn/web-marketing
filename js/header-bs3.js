@@ -88,7 +88,7 @@ $(document).ready(function () {
     }
   });
 
-  //
+  //dropdown actions
   $('.navbar-nav > li > a, .dropdown-menu > li > a').click(function () {
     var $this = $(this);
     var $navbar = $($this.closest('.navbar-nav'));
@@ -98,7 +98,7 @@ $(document).ready(function () {
     $($this.closest('.iz-menu')).addClass('active');
   });
   
-  //Playing with new icons
+  //Playing with contact icons
   black = ['../web-marketing/images/Phone4.png', '../web-marketing/images/Email4.png', '../web-marketing/images/ChatBox4.png'];
   blue = ['../web-marketing/images/PhoneBlue.png', '../web-marketing/images/EmailBlue.png', '../web-marketing/images/ChatBoxBlue2.png'];
   setSrc = function(source) {
@@ -109,16 +109,19 @@ $(document).ready(function () {
   $('#email').mouseenter(setSrc(blue[1])).mouseleave(setSrc(black[1]));
   $('#chat-box').mouseenter(setSrc(blue[2])).mouseleave(setSrc(black[2]));
 
-  //fancybox stuff
+  //fancybox stuff for form submission
   $(".modalbox").fancybox();
-	$("#contact").submit(function() { return false; });
 
   $("#send").on("click", function(){
 	var emailval  = $("#email").val();
-	var msgval    = $("#msg").val();
-	var msglen    = msgval.length;
+  var firstval   = $("#first_name").val();
+  var lastval   = $("#last_name").val();
+  var phval   =  $("#form1_phone").val();
+  var comurl   =  $("#company_url").val(); 
 	var mailvalid = validateEmail(emailval);
-
+  var len    = function(value) {
+    return value.length;};
+	
 	if(mailvalid == false) {
 		$("#email").addClass("error");
 	}
@@ -126,33 +129,17 @@ $(document).ready(function () {
 		$("#email").removeClass("error");
 	}
 
-	if(msglen < 4) {
-		$("#msg").addClass("error");
-	}
-	else if(msglen >= 4){
-		$("#msg").removeClass("error");
-	}
+  if(len(phval) < 9) {
+    $("#number").addClass("error");}
+  else if(len(phval) == 9) {
+    $("#number").removeClass("error");}
 
-  if(mailvalid == true && msglen >= 4) {
+  if(mailvalid == true) {
 		// if both validate we attempt to send the e-mail
 		// first we hide the submit btn so the user doesnt click twice
 		$("#send").replaceWith("<em>sending...</em>");
-
-		$.ajax({
-			type: 'POST',
-			url: 'sendmessage.php',
-			data: $("#contact").serialize(),
-			success: function(data) {
-				if(data == "true") {
-					$("#contact").fadeOut("fast", function(){
-						$(this).before("<strong>Success! Your feedback has been sent, thanks :)</strong>");
-						setTimeout("$.fancybox.close()", 1000);
-					});
-				}
-			}
-        });
-	}
+    $("#send").submit();}
+  });
 });
 
-});
 
