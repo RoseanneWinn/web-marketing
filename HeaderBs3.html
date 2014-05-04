@@ -88,13 +88,12 @@
   <div id="inline" style="display:none">
     <h2>Interested?  We will get back with you within 24 hours.</h2>
     <h3>Feel free to <a href="#" id="call-us" onclick="alert('Call: 888-493-6321');">call</a> or <a href="mailto:sales@izenda.com">email</a> us beforehand.</h3>
-  <form id="contact" action="sendMessage.php" method="post" name="lead">
-        <input for="first_name" id="first_name" class="input_fields" type="text" name="first_name" placeholder="First Name"></input>
-        <input for="last_name" id="last_name" class="input_fields" type="text" name="last_name" placeholder="Last Name"></input>
-        <input for="number" id="number" class="input_fields" type="text" name="number" placeholder="Number"></input>
-        <input for="company_url" id="company_url" class="input_fields" type="text" name="company_url" placeholder="Company Url"></input>
-        <input id="email" type="email" class="input_fields" placeholder="Email" name="email"></input>
-        <textarea id="msg" class="txtarea" name="message" placeholder="Send us a message!"></textarea>
+  <form id="pricing_contact" action="izenda/reg/ContentReg2.aspx?rt=Pricing&bypass=1" method="post">
+        <input id="first_name" class="input_fields" type="text" name="form1_first_name" placeholder="First Name"></input>
+        <input id="last_name" class="input_fields" type="text" name="form1_last_name" placeholder="Last Name"></input>
+        <input id="form1_phone" class="input_fields" type="text" name="form1_phone" placeholder="Number"></input>
+        <input id="company_url" class="input_fields" type="text" name="form1_company" placeholder="Company Url"></input>
+        <input id="email" type="email" class="input_fields" placeholder="Email" name="form1_email"></input>
         <button id="send">Send</button>
     </form>
   </div>
