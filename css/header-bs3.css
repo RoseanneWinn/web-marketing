@@ -1,5 +1,6 @@
 ﻿.izenda .navbar {
   border-bottom: 1px solid #ddd;
+  background-color: #fff;
 }
 
 .icon-bar {
@@ -39,8 +40,10 @@
   width: 20px;
   margin-left: 3px;
   display: inline;
-  }
-
+  background-color: #fff;
+}
+
+
 
 #chat-box {
   position: relative;
@@ -72,7 +75,8 @@
   margin-left: 2px;
   display: inline;
   }
-
+
+
 
 #chat-box {
   position: relative;
@@ -114,7 +118,7 @@
 }
 
 #searchBtn {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #searchInput {
@@ -156,6 +160,28 @@
     display: block !important;
     visibility: visible !important;
   }
+}
+
+/* contact buttons */
+
+.izenda .iz-header-button-list {
+  padding-right: 20px;
+}
+
+.izenda .iz-header-button-list > li > a > img {
+  height: 18px;
+}
+
+.izenda .iz-header-button-list > li > a {
+  padding: 16px 5px; 
+}
+
+.izenda .iz-header-button-list > li > a:hover,
+.izenda .iz-header-button-list > li > a:focus {
+  border-top: 4px solid #fff;
+  background-color: #fff;
+  border-bottom: 4px solid #fff;
+  color: #0d70cd;
 }
 
 
