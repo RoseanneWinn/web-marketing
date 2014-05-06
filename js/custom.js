@@ -88,22 +88,24 @@ jQuery(document).ready(function ($) {
 //////////////////////////////////////////////////////////////////////////////////////////
 //Isotope portfolio
 //////////////////////////////////////////////////////////////////////////////////////////
-var $container = $('#portfolio-list');
-$container.imagesLoaded(function () {
-  $container.isotope({
-    itemSelector: '.block',
-    layoutMode: 'fitRows'
+jQuery(document).ready(function($) {
+  $('#portfolio-list').imagesLoaded(function () {
+    $('#portfolio-list').isotope({
+      itemSelector: '.block',
+      layoutMode: 'fitRows',
+      gutter: 10
+    });
+  });
+
+  //filter items when filter link is clicked
+  $('#portfolio-filter a').click(function () {
+    var selector = $(this).attr('data-filter');
+    $('#portfolio-list').isotope({ filter: selector });
+    $(this).parents('ul').find('li').removeClass('active');
+    $(this).parent().addClass('active');
   });
 });
 
-//filter items when filter link is clicked
-jQuery('#portfolio-filter a').click(function () {
-  var selector = $(this).attr('data-filter');
-  $container.isotope({ filter: selector });
-  jQuery(this).parents('ul').find('li').removeClass('active');
-  jQuery(this).parent().addClass('active');
-  return false;
-});
 //////////////////////////////////////////////////////////////////////////////////////////
 //Detect iPhone, iPod, iPad and remove or ativate parallax
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -146,9 +148,9 @@ function parallaxInit() {
 //Hide menu after clic on mobile 
 //////////////////////////////////////////////////////////////////////////////////////////
 jQuery(document).ready(function ($) {
-  jQuery('.nav li a.scroll-link').on('click', function () {
-    jQuery('.nav-collapse').collapse('hide');
-  })
+  $('.nav li a.scroll-link').on('click', function() {
+    $('.nav-collapse').collapse('hide');
+  });
 });
 
 //////////////////////////////////////////////////////////////////////////////////////////

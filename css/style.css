@@ -768,7 +768,11 @@ footer {
 }
 
   #portfolio-list .block {
-    margin-bottom: 30px;
+    width: 250px;
+    height: 180px;
+    outline: 1px solid #ddd;
+    margin: 10px;
+    overflow: hidden;
   }
 
   #portfolio-filter a {

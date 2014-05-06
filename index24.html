@@ -8,14 +8,20 @@
   <meta content="Izenda" name="description">
   <meta content="playlab" name="author">
 
-  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
   <!-- Bootstrap  -->
-  <link type="text/css" rel="stylesheet" href="css/bootstrap3.min.css" />
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
   <!-- Font Awesome  -->
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <!-- iLightbox -->
   <link rel="stylesheet" type="text/css" href="css/ilightbox.css" />
   <link rel="stylesheet" type="text/css" href="dark-skin/skin.css" />
+  <link rel="stylesheet" type="text/css" href="light-skin/skin.css" />
+  <link rel="stylesheet" type="text/css" href="mac-skin/skin.css" />
+  <link rel="stylesheet" type="text/css" href="metro-black-skin/skin.css" />
+  <link rel="stylesheet" type="text/css" href="metro-white-skin/skin.css" />
+  <link rel="stylesheet" type="text/css" href="parade-skin/skin.css" />
+  <link rel="stylesheet" type="text/css" href="smooth-skin/skin.css" />
   <!-- Isotope Style -->
   <link rel="stylesheet" type="text/css" href="css/isotope.css" />
   <!-- Flex slider -->
@@ -25,10 +31,8 @@
   <!-- quivee Style -->
   <link href="css/colors.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="css/header-bs3.css" />
-  <link type="text/css" rel="stylesheet" href="css/jquery.fancybox.css" />
   <link href="css/responsive.css" rel="stylesheet">
-
+  
   <!-- Favicon and touch icons  -->
   <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
   <link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
@@ -43,108 +47,77 @@
 
 </head>
 <body class="page-aqua hidden-body">
+
   <!-- Navigation -->
-  <header class="izenda">
-    <nav class="navbar navbar-fixed-top" role="navigation">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <span class="iz-navbar-logo" title="Izenda Reports" onclick="location.href='http://www.izenda.com';" style="cursor: pointer;"></span>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div id="izendaNavBar" class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav navbar-default">
-          <li class="dropdown iz-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" tc="" onclick="location.href='#'">PRODUCTS <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="http://www.izenda.com/site/Pages/reports.aspx">IZENDA REPORTS</a></li>
-              <li><a href="http://www.izenda.com/site/Pages/ReportsForMvc.aspx">IZENDA REPORTS FOR MVC</a></li>
-              <li><a href="http://www.izenda.com/site/Pages/dashboards.aspx">IZENDA DASHBOARDS</a></li>
-              <li><a href="http://www.izenda.com/site/Pages/maps.aspx">IZENDA MAPS</a></li>
-              <li><a href="http://www.izenda.com/site/Pages/languagepack.aspx">IZENDA LANGUAGE PACK</a></li>
-              <li><a href="http://www.izenda.com/site/Pages/Fusion.aspx">IZENDA FUSION</a></li>
-              <li><a href="http://www.izenda.com/site/Pages/Forms.aspx">IZENDA FORMS</a></li>
-              <li><a href="http://www.izenda.com/site/Pages/Vision.aspx">IZENDA VISION</a></li>
+  <header>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <h1 class="logo"><a class="brand" href="#">Izenda</a></h1>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTS  <i class="icon-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="scroll-link" href="#" title="Izenda Reports">Izenda Reports</a></li>
+                  <li><a class="scroll-link" href="#" title="Izenda Reports for MVC">Izenda Reports for MVC</a></li>
+                  <li><a class="scroll-link" href="#" title="Dashboards">Dashboards</a></li>
+                  <li><a class="scroll-link" href="#" title="Maps">Maps</a></li>
+                  <li><a class="scroll-link" href="#" title="Language Packs">Language Packs</a></li>
+                  <li><a class="scroll-link" href="#" title="Forms">Forms</a></li>
+                  <li><a class="scroll-link" href="#" title="Fusion">Fusion</a></li>
+                </ul>
+              </li>
+
+              <li><a class="scroll-link" href="#row5">GALLERY</a></li>
+              <li><a class="scroll-link" href="#row2">COMPANY</a></li>
+              <li><a class="scroll-link" href="#">SUPPORT</a></li>
+              <li><a class="scroll-link" href="#">BLOG</a></li>
+
+              <li><a class="scroll-link" href="#">LIVE CHAT   <i class="icon-comment"></i></a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown"><strong class="icon-search"></strong></a>
+
+                <div class="dropdown-menu" style="padding: 10px; padding-top: 20px; padding-bottom: -20px; width: 210px;">
+                  <form action="search.php" method="post">
+
+                    <input type="search" name="search" value="" placeholder="Search" />
+
+                    <input type="submit" class="btn-small btn-primary-flat btn-xs pull-right" value="GO" />
+                  </form>
+                </div>
+              </li>
+
+
+
+
+
             </ul>
-          </li>
-          <!-- <li class="iz-menu"><a href="#livedemo" tc="#livedemo" onclick="alert('live demo dialog here');">LIVE DEMO</a></li>-->
-          <li class="iz-menu"><a class="modalbox" href="#inline" tc="#pricing">PRICING</a></li>
-          <li class="iz-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" tc="" onclick="location.href='#'">COMPANY <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="http://www.izenda.com/site/Pages/company.aspx">ABOUT</a></li>
-              <li><a href="http://www.izenda.com/site/Pages/managementteam.aspx">MANAGEMENT TEAM</a></li>
-              <li><a href="http://www.izenda.com/site/Pages/clients.aspx">OUR CUSTOMERS</a></li>
-              <li><a href="http://www.izenda.com/site/Pages/careers.aspx">CAREERS</a></li>
-              <li class="iz-menu"><a href="http://www.izenda.com/site/Pages/contactus.aspx" tc="contactus.aspx">CONTACT</a></li>
-            </ul>
-          </li>
-          <li class="iz-menu"><a href="http://www.izenda.com/site/Pages/Gallery.aspx" tc="Gallery.aspx">GALLERY</a></li>
-          <li class="iz-menu"><a href="http://wiki.izenda.us" tc="KB/Integration">KNOWLEDGE BASE</a></li>
-          <!--<li class="iz-menu"><a href="#support" tc="#support" onclick="alert('support dialog here');">SUPPORT</a></li> I'd like to implement this with Amelia's stuff-->
-          <li class="iz-menu"><a href="http://blog.izenda.com/" tc="blog.izenda.com">BLOG</a></li>
-        </ul>
-        <ul id="izendaNavBarSearch" id="search-bar" class="nav navbar-nav navbar-right iz-search hidden">
-          <li>
-            <strong id="searchIcon" class="icon-search"></strong>
-            <input id="searchInput" class="form-control" type="search" name="search" value="" placeholder="Search" />
-          </li>
-        </ul>
-        <ul id="izendaNavBarSearchBtn" class="nav navbar-nav navbar-right iz-search-btn">
-          <li>
-            <a id="searchBtn" href="#" title="Search"><strong class="icon-search"></strong></a>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right iz-free-trial">
-          <li><a id="izFreeTrialButton" class="btn btn-warning" href="http://www.izenda.com/Site/Pages/LandingPages/Ad-Hoc-Reporting.aspx">TRY IT FREE</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right iz-header-button-list">
-          <li><a href="http://www.izenda.com/site/Pages/contactus.aspx">
-              <img src="images/Phone4.png" id="Img1" alt="phone" /></a></li>
-            <li><a href="mailto:services@izenda.com">
-              <img src="images/Email4.png" id="Img2" alt="email" /></a></li>
-            <li><a href="#" onclick="return SnapEngage.startLink();">
-              <img src="images/ChatBox4.png" id="Img3" alt="chat" />
-          </a></li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </nav>
-    <!--<div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3 col-md-offset-2">
-          <ul id="contact-images">
-            <li class="image-list"><a href="http://www.izenda.com/site/Pages/contactus.aspx">
-              <img src="images/Phone4.png" id="phone" alt="phone" /></a></li>
-            <li class="image-list"><a href="mailto:services@izenda.com">
-              <img src="images/Email4.png" id="email" alt="email" /></a></li>
-            <li class="image-list"><a href="#" onclick="return SnapEngage.startLink();">
-              <img src="images/ChatBox4.png" id="chat-box" alt="chat" />
-            </a></li>
-          </ul>
+
+            <div style="padding-top: 20px;">
+              <ul class="nav pull-right">
+                <button type="button" class="btn-small btn-primary-flat btn-xs">FREE TRIAL</button>
+
+              </ul>
+            </div>
+
+          </div>
         </div>
+
+
+
       </div>
-    </div>-->
-    <div id="wrapper">
-      <a class="modalbox" href="#inline"></a>
+
+
+
     </div>
-    <!-- hidden inline form -->
-    <div id="inline" style="display: none">
-      <h2>Interested?  We will get back with you within 24 hours.</h2>
-      <h3>Feel free to <a href="#" id="call-us" onclick="alert('Call: 888-493-6321');">call</a> or <a href="mailto:sales@izenda.com">email</a> us beforehand.</h3>
-      <form id="pricing_contact" action="reg/ContentReg2.aspx?rt=Pricing&bypass=1" method="post">
-        <input id="first_name" class="input_fields" type="text" name="form1_first_name" placeholder="First Name"></input>
-        <input id="last_name" class="input_fields" type="text" name="form1_last_name" placeholder="Last Name"></input>
-        <input id="form1_phone" class="input_fields" type="text" name="form1_phone" placeholder="Number"></input>
-        <input id="company_url" class="input_fields" type="text" name="form1_company" placeholder="Company Url"></input>
-        <input id="email1" type="email" class="input_fields" placeholder="Email" name="form1_email"></input>
-        <button id="send">Send</button>
-      </form>
-    </div>
+    <!-- .navbar -->
+
   </header>
 
   <!-- Home -->
@@ -180,7 +153,7 @@
     <div class="wrapper2 bg-colored ">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 text-center">
+          <div class="span12 text-center">
             <h2>Why Izenda?</h2>
           </div>
         </div>
@@ -191,7 +164,7 @@
     <div class="wrapper bg-white">
       <div class="container">
         <div class="row text-center">
-          <div class="col-md-12">
+          <div class="span12">
             <h3><span class="emphasis">Izenda</span> is the leading embedded analytics and visualization platform. Imagine users creating and customizing reports without involving a developer. <span class="emphasis">Izenda</span> makes it fast and simple to integrate beautiful reports and dynamic dashboards into your application.</h3>
             <br />
             <hr class="featurette-divider">
@@ -264,7 +237,7 @@
     <div class="wrapper bg-colored ">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="span12">
             <h2>About Izenda						</h2>
           </div>
         </div>
@@ -273,14 +246,14 @@
     <div class="wrapper">
       <div class="container story">
         <div class="row">
-          <div class="col-md-12">
+          <div class="span12">
             <h3><span class="emphasis">Izenda </span>provides agile business intelligence tools that empower ordinary people to make better business decisions. We believe in utilizing the power of metadata to create technology that takes sometime just hours to deploy  rather than months or years.</h3>
 
           </div>
         </div>
 
         <div class="row waypoint-1">
-          <div class="col-md-4 what-we-do text-center hidden-element-1">
+          <div class="span4 what-we-do text-center hidden-element-1">
             <div class="full-rounded">
               <i class="quivee-icon icon-rocket icon-2x"></i>
             </div>
@@ -289,14 +262,14 @@
               Your branding. Your look and feel. Your security. Izenda Reports seamlessly integrates into your ASP.NET application in as little as a few hours. The rich API lets you customize the platform to fit your needs.
             </p>
           </div>
-          <div class="col-md-4 what-we-do text-center hidden-element-1">
+          <div class="span4 what-we-do text-center hidden-element-1">
             <div class="full-rounded">
               <i class="quivee-icon icon-time  icon-2x"></i>
             </div>
             <h4 class="bold">Real-Time Analytics</h4>
             <p>Izenda Fusion seamlessly pulls dynamic, real-time analytics from multiple databases and applications without having to do periodic ETL into a data warehouse. To the user, the data acts like it is in one place.</p>
           </div>
-          <div class="col-md-4 what-we-do text-center hidden-element-1">
+          <div class="span4 what-we-do text-center hidden-element-1">
             <div class="full-rounded">
               <i class="quivee-icon icon-cloud icon-2x"></i>
             </div>
@@ -315,14 +288,15 @@
         <div class="wrapper bg-white">
           <div class="container">
             <div class="row">
-              <div class="col-md-6">
+              <div class="span6">
                 <div class="template-message">
+
                   <p><strong>Please register to try Izenda Reports on your data today. Or call us at 678-500-9136 </strong></p>
+
                 </div>
               </div>
-              <div class="col-md-6 text-left">
-                <a href="#" class="left btn btn-quivee btn-large" title="Free Trial Download">Free Trial Download</a>
-              </div>
+              <a href="#" class="span3 btn btn-quivee btn-large" title="Free Trial Download">Free Trial Download
+              </a>
             </div>
           </div>
         </div>
@@ -337,8 +311,8 @@
     <div class="wrapper bg-colored">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <h2>Gallery</h2>
+          <div class="span12">
+            <h2>Gallery						</h2>
           </div>
         </div>
       </div>
@@ -346,13 +320,13 @@
     <div class="wrapper">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <h3>View Izenda in action and listen to our satified customers.</h3>
+          <div class="span12">
+            <h3>View Izenda in action and listen to our satified customers.						</h3>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12">
-            <ul id="portfolio-filter" class="list-inline">
+          <div class="span12">
+            <ul id="portfolio-filter" class="unstyled inline">
               <li class="active"><a data-filter=".logo-design" class="logo-design btn btn-quivee" href="#logo-design" data-rel="logo-design">Products</a></li>
               <li><a data-filter=".web-design" class="web-design btn btn-quivee" href="#web-design" data-rel="web-design">Visualizations</a></li>
               <li><a data-filter=".photography" class="photography btn btn-quivee" href="#photography" data-rel="photography">Integration Examples</a></li>
@@ -360,137 +334,141 @@
             </ul>
           </div>
         </div>
-        <div class="row isotope filterable-grid">
-          <div class="col-md-3 block web-design" data-type="web-design" id="1">
-            <a class="portfolio-thumb" href="images/linechart1-large.gif" title="portfolio">
+        <ul id="portfolio-list" class="row isotope filterable-grid">
+          <li class="span3 block web-design" data-type="web-design" id="1">
+            <span id="portfolio-list"><a class="portfolio-thumb" href="images/linechart1-large.gif" title="portfolio">
               <img class="portfolio-image" src="images/linechart1-large.gif" alt="Line Chart" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="2">
-            <a class="portfolio-thumb" href="images/combo1-large.gif" title="portfolio">
-              <img class="portfolio-image" src="images/combo1-large.gif" alt="Combo Chart" /></a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="3">
+            </span></li>
+          <li class="span3 block web-design" data-type="web-design" id="2">
+            <span id="portfolio-list"><a class="portfolio-thumb" href="images/combo1-large.gif" title="portfolio">
+              <img class="portfolio-image" src="images/combo1-large.gif" alt="Combo Chart" /></a></span>
+          </li>
+          <li class="span3 block web-design" data-type="web-design" id="3">
             <a class="portfolio-thumb" href="images/Pareto_large.gif" title="portfolio">
               <img class="portfolio-image" src="images/grid1-large.gif" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="4">
+          </li>
+          <li class="span3 block web-design" data-type="web-design" id="4">
             <a class="portfolio-thumb" href="images/portfolio-4.png" title="portfolio">
               <img class="portfolio-image" src="images/journals1-large.gif" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="5">
+          </li>
+          <li class="span3 block web-design" data-type="web-design" id="5">
             <a class="portfolio-thumb" href="images/Stacked_large.gif" title="portfolio">
               <img class="portfolio-image" src="images/mindmap1-large.gif" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="6">
+          </li>
+          <li class="span3 block web-design" data-type="web-design" id="6">
             <a class="portfolio-thumb" href="images/formshare-full.png" title="portfolio">
               <img class="portfolio-image" src="images/spider1-large.gif" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="7">
+          </li>
+          <li class="span3 block web-design" data-type="web-design" id="7">
             <a class="portfolio-thumb" href="images/HorizontalBar_large.gif" title="portfolio">
               <img class="portfolio-image" src="images/timeline1-large.gif" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="8">
+          </li>
+          <li class="span3 block web-design" data-type="web-design" id="8">
             <a class="portfolio-thumb" href="images/portfolio-8.png" title="portfolio">
               <img class="portfolio-image" src="images/timebubble1-large.gif" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="9">
+          </li>
+          <li class="span3 block web-design" data-type="web-design" id="9">
             <a class="portfolio-thumb" href="images/custom_report_manager-full.png" title="portfolio">
               <img class="portfolio-image" src="images/timeline2-large.gif" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="10">
+          </li>
+          <li class="span3 block photography" data-type="photography" id="10">
             <a class="portfolio-thumb" href="images/portfolio-10.png" title="portfolio">
               <img class="portfolio-image" src="images/integ1.jpg" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="11">
+          </li>
+          <li class="span3 block photography" data-type="photography" id="11">
             <a class="portfolio-thumb" href="images/BarSeparator_large.gif" title="portfolio">
               <img class="portfolio-image" src="images/integ2.jpg" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="12">
+          </li>
+          <li class="span3 block photography" data-type="photography" id="12">
             <a class="portfolio-thumb" href="images/stilized-full.png" title="portfolio">
               <img class="portfolio-image" src="images/integ3.jpg" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="13">
+          </li>
+          <li class="span3 block photography" data-type="photography" id="13">
             <a class="portfolio-thumb" href="images/budget_dash-full.png" title="portfolio">
               <img class="portfolio-image" src="images/integ4.jpg" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="14">
+          </li>
+          <li class="span3 block photography" data-type="photography" id="14">
             <a class="portfolio-thumb" href="images/animated-dashboard-full.gif" title="portfolio">
               <img class="portfolio-image" src="images/integ5.jpg" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="15">
+          </li>
+          <li class="span3 block photography" data-type="photography" id="15">
             <a class="portfolio-thumb" href="images/Line_large.gif" title="portfolio">
               <img class="portfolio-image" src="images/integ6.jpg" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="16">
+          </li>
+          <li class="span3 block photography" data-type="photography" id="16">
             <a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
               <img class="portfolio-image" src="images/integ7.jpg" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="17">
+          </li>
+          <li class="span3 block photography" data-type="photography" id="17">
             <a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
               <img class="portfolio-image" src="images/integ8.jpg" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="18">
+          </li>
+          <li class="span3 block photography" data-type="photography" id="18">
             <a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
               <img class="portfolio-image" src="images/integ9.jpg" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="19">
+          </li>
+          <li class="span3 block photography" data-type="photography" id="19">
             <a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
               <img class="portfolio-image" src="images/integ10.jpg" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="20">
+          </li>
+          <li class="span3 block photography" data-type="photography" id="20">
             <a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
               <img class="portfolio-image" src="images/integ11.jpg" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="21">
+          </li>
+          <li class="span3 block photography" data-type="photography" id="21">
             <a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
               <img class="portfolio-image" src="images/integ12.jpg" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="22">
+          </li>
+          <li class="span3 block photography" data-type="photography" id="22">
             <a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
               <img class="portfolio-image" src="images/integ13.jpg" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="23">
+          </li>
+          <li class="span3 block photography" data-type="photography" id="23">
             <a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
               <img class="portfolio-image" src="images/integ15.jpg" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="24">
+
+          </li>
+          <li class="span3 block photography" data-type="photography" id="16">
             <a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
               <img class="portfolio-image" src="images/integ14.jpg" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="25">
+
+          </li>
+          <li class="span3 block photography" data-type="photography" id="24">
             <a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
               <img class="portfolio-image" src="images/integ16.jpg" alt="portfolio image" />
             </a>
-          </div>
-          <div class="col-md-3 block web-design" data-type="web-design" id="26">
+
+          </li>
+          <li class="span3 block photography" data-type="photography" id="25">
             <a class="portfolio-thumb" href="images/custom_chart_style-full.png" title="portfolio">
               <img class="portfolio-image" src="images/integ17.jpg" alt="portfolio image" />
             </a>
-          </div>
-        </div>
+
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -502,12 +480,12 @@
 
         <div class="client-wrapper mar-t30">
           <div class="row text-center">
-            <img class="client-logo col-md-2" src="images/clientlogo1.jpg" alt="logo" />
-            <img class="client-logo col-md-2" src="images/clientlogo2.jpg" alt="logo" />
-            <img class="client-logo col-md-2" src="images/clientlogo3.jpg" alt="logo" />
-            <img class="client-logo col-md-2" src="images/clientlogo4.jpg" alt="logo" />
-            <img class="client-logo col-md-2" src="images/clientlogo5.jpg" alt="logo" />
-            <img class="client-logo col-md-2 last" src="images/clientlogo6.jpg" alt="logo" />
+            <img class="client-logo span2" src="images/clientlogo1.jpg" alt="logo" />
+            <img class="client-logo span2" src="images/clientlogo2.jpg" alt="logo" />
+            <img class="client-logo span2" src="images/clientlogo3.jpg" alt="logo" />
+            <img class="client-logo span2" src="images/clientlogo4.jpg" alt="logo" />
+            <img class="client-logo span2" src="images/clientlogo5.jpg" alt="logo" />
+            <img class="client-logo span2 last" src="images/clientlogo6.jpg" alt="logo" />
           </div>
         </div>
       </div>
@@ -517,14 +495,15 @@
     <div class="wrapper bg-white">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="span6">
             <div class="template-message">
+
               <p><strong>Please register to try Izenda Reports on your data today. Or call us at 678-500-9136 </strong></p>
+
             </div>
           </div>
-          <div class="col-md-6 text-left">
-            <a href="#" class="btn btn-quivee btn-large" title="Free Trial Download">Free Trial Download</a>
-          </div>
+          <a href="#" class="span3 btn btn-quivee btn-large" title="Free Trial Download">Free Trial Download
+          </a>
         </div>
       </div>
     </div>
@@ -540,7 +519,7 @@
     <div class="wrapper bg-colored">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="span12">
             <h2>Contact Us for  a Demo</h2>
             <h3>We'd love to hear from you.  And we'd love to show you how simply Izenda tools can power-charge your business.   Contact us now for a free demo.</h3>
           </div>
@@ -550,68 +529,38 @@
     <div class="wrapper">
       <div class="container">
         <div class="row">
-          <div class="col-md-offset-2 col-md-8">
-            <form class="contact-form" method="get" action="contact-form">
-              <div class="form-group text-left">
-                <div class="row">
-                  <div class="col-md-6">
-                    <label class="hidden-phone" for="inputName">Name</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Please insert your full name">
-                  </div>
-                  <div class="col-md-6">
-                    <label class="hidden-phone" for="inputEmail">Email</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Please insert your email">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <label class="hidden-phone" for="inputSubject">Subject</label>
-                    <input type="text" class="form-control" id="inputSubject" name="inputSubject" placeholder="Please insert the subject" required>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <label class="hidden-phone" for="inputMessage">Message</label>
-                    <textarea rows="8" class="form-control" id="inputMessage" name="inputMessage" placeholder="Please insert the subject" required></textarea>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <button type="submit" class="col-md-12 btn btn-quivee btn-large">Submit</button>
-                  </div>
-                </div>
+          <form class="contact-form" method="get" action="contact-form">
+            <div class="span4 offset2">
+              <label class="hidden-phone text-left" for="inputName">Name</label>
+              <div class="text-left">
+                <input class="span4" type="text" id="inputName" name="inputName" placeholder="Please insert your full name" required>
               </div>
-
-              <!--<div class="col-md-4 col-md-offset-2">
-                    <label class="hidden-phone text-left" for="inputName">Name</label>
-                    <div class="text-left">
-                      <input class="col-md-12" type="text" id="inputName" name="inputName" placeholder="Please insert your full name" required>
-                    </div>
-                  </div>
-                <div class="col-md-4">
-                  <label class="hidden-phone text-left" for="inputEmail">Email</label>
-                  <div class="text-left">
-                    <input class="col-md-12" type="text" id="inputEmail" name="inputEmail" placeholder="Please insert your email" required>
-                  </div>
-                </div>
-                <div class="col-md-10 col-md-offset-2">
-                  <label class="hidden-phone text-left" for="inputSubject">Subject</label>
-                  <div class="text-left">
-                    <input class="col-md-12" type="text" id="inputSubject" name="inputSubject" placeholder="Please insert the subject" required>
-                  </div>
-                </div>
-                <div class="col-md-10 col-md-offset-2">
-                  <label class="hidden-phone text-left" for="inputMessage">Message</label>
-                  <div class="text-left">
-                    <textarea class="col-md-12" rows="8" id="inputMessage" name="inputMessage" placeholder="Please insert the subject" required></textarea>
-                  </div>
-                </div>
-                <button type="submit" class="col-md-10 col-md-offset-2 btn btn-quivee btn-large">Submit</button>-->
-            </form>
-          </div>
+            </div>
+            <div class="span4">
+              <label class="hidden-phone text-left" for="inputEmail">Email</label>
+              <div class="text-left">
+                <input class="span4" type="text" id="inputEmail" name="inputEmail" placeholder="Please insert your email" required>
+              </div>
+            </div>
+            <div class="span10 offset2">
+              <label class="hidden-phone text-left" for="inputSubject">Subject</label>
+              <div class="text-left">
+                <input class="span8" type="text" id="inputSubject" name="inputSubject" placeholder="Please insert the subject" required>
+              </div>
+            </div>
+            <div class="span10 offset2">
+              <label class="hidden-phone text-left" for="inputMessage">Message</label>
+              <div class="text-left">
+                <textarea class="span8" rows="8" id="inputMessage" name="inputMessage" placeholder="Please insert the subject" required></textarea>
+              </div>
+            </div>
+            <button type="submit" class=" span8 offset2 btn btn-quivee btn-large">Submit</button>
+          </form>
         </div>
       </div>
     </div>
+
+
   </section>
 
   <!-- Footer -->
@@ -619,26 +568,36 @@
     <div class="wrapper bg-colored">
       <div class="container text-center">
         <div class="row">
-          <div class="col-md-12">
+          <div class="span12">
             <a href="#" class="logo-footer">Izenda</a>
             <h4>Contact us: Sales - 678-500-9136, Support - 404-963-8710 · 1200 Lake Hearn Drive STE 475 Atlanta, GA 30319</h4>
             <br>
             <p>
               <a href="#">Home</a> | <a href="#">Products </a>| <a href="#">Gallery</a> | <a href="#">Company</a> | <a href="#">KB</a> | <a href="#">Blog</a>
             </p>
+
             <p>
+
               <a href="/site/pages/Privacy.aspx">Privacy Policy</a> | 
-              <a href="/site/SiteMap.aspx">Sitemap</a> | 
-              <a href="/site/pages/Terms.aspx">Terms of Use</a> | 
-              <a href="/site/pages/ContactUs.aspx">Contact Us</a>
+
+			<a href="/site/SiteMap.aspx">Sitemap</a> | 
+
+			<a href="/site/pages/Terms.aspx">Terms of Use</a> | 
+
+			<a href="/site/pages/ContactUs.aspx">Contact Us</a>
+
             </p>
+
             <p>&copy; Izenda - Copyright 2013</p>
-            <ul class="list-inline footer-icons">
+
+            <ul class="unstyled inline footer-icons">
+
               <li><a class="full-rounded" href="#" title="social"><i class="icon-twitter"></i></a></li>
               <li><a class="full-rounded" href="#" title="social"><i class="icon-facebook"></i></a></li>
               <li><a class="full-rounded" href="#" title="social"><i class="icon-linkedin"></i></a></li>
               <li><a class="full-rounded" href="#" title="social"><i class="icon-github"></i></a></li>
             </ul>
+
           </div>
         </div>
       </div>
@@ -646,8 +605,11 @@
   </footer>
 
   <!-- Javascript  -->
+
+
+
   <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/bootstrap3.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
   <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
   <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
@@ -659,9 +621,6 @@
   <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
   <script type="text/javascript" src="js/jpreLoader.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
-  <script type="text/javascript" src="js/header-bs3.js"></script>
-  <script type="text/javascript" src="js/jquery.fancybox.js"></script>
-  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
   <script type="text/javascript" charset="utf-8">
     $(window).load(function () {
       $('.flexslider').flexslider();
