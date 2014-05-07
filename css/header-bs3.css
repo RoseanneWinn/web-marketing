@@ -1,9 +1,9 @@
-﻿.izenda .navbar {
+﻿.iz-header .navbar {
   border-bottom: 1px solid #ddd;
   background-color: #fff;
 }
 
-.icon-bar {
+.iz-header .icon-bar {
   width: 16px !important;
   background-color: #000;
 }
@@ -22,7 +22,7 @@
 }
 
 /* Contact images */
-@media (min-width: 200px) and (max-width: 1023px) {
+/*@media (min-width: 200px) and (max-width: 1023px) {
 #contact-images {
   min-height: 20px;
   max-width: 100%;
@@ -88,6 +88,7 @@
   top: 2px;
   }
 }
+  */
 
 @media (max-width: 399px) {
   .iz-navbar-logo {
@@ -98,12 +99,12 @@
 
 /* Search button */
 
-.izenda .iz-search-btn > li > a {
+.iz-header .iz-search-btn > li > a {
   background-color: #fff;
 }
 
-  .izenda .iz-search-btn > li > a:hover,
-  .izenda .iz-search-btn > li > a:focus {
+  .iz-header .iz-search-btn > li > a:hover,
+  .iz-header .iz-search-btn > li > a:focus {
     color: #0d70cd;
     border-top: 4px solid #fff;
     background-color: #fff;
@@ -112,16 +113,16 @@
 
 /* Search panel */
 
-.izenda .iz-search {
+.iz-header .iz-search {
   border-bottom: 4px solid #fff;
   border-top: 4px solid #fff;
 }
 
-#searchBtn {
+#izSearchBtn {
   font-size: 16px;
 }
 
-#searchInput {
+#izSearchInput {
   padding: 3px;
   padding-left: 26px;
   margin-left: 0px;
@@ -129,7 +130,7 @@
   margin-top: 10px;
 }
 
-#searchIcon {
+#izSearchIcon {
   position: absolute;
   top: 18px;
   font-size: 14px;
@@ -138,24 +139,24 @@
 }
 
 @media (max-width: 1023px) {
-  #izendaNavBarSearchBtn {
+  #izNavBarSearchBtn {
     display: none !important;
     visibility: hidden !important;
     text-align: center;
   }
 
-  #searchInput {
+  #izSearchInput {
     margin: 0 auto;
     padding: 3px;
     padding-left: 26px;
   }
 
-  #searchIcon {
+  #izSearchIcon {
     top: 8px;
     left: 10px;
   }
 
-  #izendaNavBarSearch {
+  #izNavBarSearch {
     margin: 0 5px;
     display: block !important;
     visibility: visible !important;
@@ -164,20 +165,20 @@
 
 /* contact buttons */
 
-.izenda .iz-header-button-list {
+.iz-header .iz-header-button-list {
   padding-right: 20px;
 }
 
-.izenda .iz-header-button-list > li > a > img {
+.iz-header .iz-header-button-list > li > a > img {
   height: 18px;
 }
 
-.izenda .iz-header-button-list > li > a {
+.iz-header .iz-header-button-list > li > a {
   padding: 16px 5px; 
 }
 
-.izenda .iz-header-button-list > li > a:hover,
-.izenda .iz-header-button-list > li > a:focus {
+.iz-header .iz-header-button-list > li > a:hover,
+.iz-header .iz-header-button-list > li > a:focus {
   border-top: 4px solid #fff;
   background-color: #fff;
   border-bottom: 4px solid #fff;
@@ -187,7 +188,7 @@
 
 /* Free trial button */
 
-.izenda .iz-free-trial > li > a {
+.iz-header .iz-free-trial > li > a {
   margin-top: -2px;
   padding: 6px 15px;
   color: #fff;
@@ -195,24 +196,24 @@
   border: 1px solid rgb(238, 162, 54);
 }
 
-  .izenda .iz-free-trial > li > a:hover,
-  .izenda .iz-free-trial > li > a:focus {
+  .iz-header .iz-free-trial > li > a:hover,
+  .iz-header .iz-free-trial > li > a:focus {
     background-color: orange;
     border: 1px solid rgb(238, 162, 54);
   }
 
 @media (max-width: 1023px) {
-  .izenda .iz-free-trial {
+  .iz-header .iz-free-trial {
     margin: 10px 5px;
   }
 
-  .izenda .iz-free-trial > li > a {
+  .iz-header .iz-free-trial > li > a {
     margin: 0 auto;
   }
 }
 
 @media (min-width: 1024px) {
-  .izenda .iz-free-trial > li > a {
+  .iz-header .iz-free-trial > li > a {
     top: 15px;
     margin-right: 15px;
   }

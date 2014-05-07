@@ -44,7 +44,7 @@
 </head>
 <body class="page-aqua hidden-body">
   <!-- Navigation -->
-  <header class="izenda">
+  <header class="iz-header">
     <nav class="navbar navbar-fixed-top" role="navigation">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -56,7 +56,7 @@
         <span class="iz-navbar-logo" title="Izenda Reports" onclick="location.href='http://www.izenda.com';" style="cursor: pointer;"></span>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div id="izendaNavBar" class="collapse navbar-collapse navbar-ex1-collapse">
+      <div id="izNavBar" class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav navbar-default">
           <li class="dropdown iz-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" tc="" onclick="location.href='#'">PRODUCTS <b class="caret"></b></a>
@@ -88,15 +88,15 @@
           <!--<li class="iz-menu"><a href="#support" tc="#support" onclick="alert('support dialog here');">SUPPORT</a></li> I'd like to implement this with Amelia's stuff-->
           <li class="iz-menu"><a href="http://blog.izenda.com/" tc="blog.izenda.com">BLOG</a></li>
         </ul>
-        <ul id="izendaNavBarSearch" id="search-bar" class="nav navbar-nav navbar-right iz-search hidden">
+        <ul id="izNavBarSearch" id="search-bar" class="nav navbar-nav navbar-right iz-search hidden">
           <li>
-            <strong id="searchIcon" class="icon-search"></strong>
-            <input id="searchInput" class="form-control" type="search" name="search" value="" placeholder="Search" />
+            <strong id="izSearchIcon" class="icon-search"></strong>
+            <input id="izSearchInput" class="form-control" type="search" name="search" value="" placeholder="Search" />
           </li>
         </ul>
-        <ul id="izendaNavBarSearchBtn" class="nav navbar-nav navbar-right iz-search-btn">
+        <ul id="izNavBarSearchBtn" class="nav navbar-nav navbar-right iz-search-btn">
           <li>
-            <a id="searchBtn" href="#" title="Search"><strong class="icon-search"></strong></a>
+            <a id="izSearchBtn" href="#" title="Search"><strong class="icon-search"></strong></a>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right iz-free-trial">
@@ -114,21 +114,6 @@
       </div>
       <!-- /.navbar-collapse -->
     </nav>
-    <!--<div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3 col-md-offset-2">
-          <ul id="contact-images">
-            <li class="image-list"><a href="http://www.izenda.com/site/Pages/contactus.aspx">
-              <img src="images/Phone4.png" id="phone" alt="phone" /></a></li>
-            <li class="image-list"><a href="mailto:services@izenda.com">
-              <img src="images/Email4.png" id="email" alt="email" /></a></li>
-            <li class="image-list"><a href="#" onclick="return SnapEngage.startLink();">
-              <img src="images/ChatBox4.png" id="chat-box" alt="chat" />
-            </a></li>
-          </ul>
-        </div>
-      </div>
-    </div>-->
     <div id="wrapper">
       <a class="modalbox" href="#inline"></a>
     </div>
@@ -581,32 +566,6 @@
                   </div>
                 </div>
               </div>
-
-              <!--<div class="col-md-4 col-md-offset-2">
-                    <label class="hidden-phone text-left" for="inputName">Name</label>
-                    <div class="text-left">
-                      <input class="col-md-12" type="text" id="inputName" name="inputName" placeholder="Please insert your full name" required>
-                    </div>
-                  </div>
-                <div class="col-md-4">
-                  <label class="hidden-phone text-left" for="inputEmail">Email</label>
-                  <div class="text-left">
-                    <input class="col-md-12" type="text" id="inputEmail" name="inputEmail" placeholder="Please insert your email" required>
-                  </div>
-                </div>
-                <div class="col-md-10 col-md-offset-2">
-                  <label class="hidden-phone text-left" for="inputSubject">Subject</label>
-                  <div class="text-left">
-                    <input class="col-md-12" type="text" id="inputSubject" name="inputSubject" placeholder="Please insert the subject" required>
-                  </div>
-                </div>
-                <div class="col-md-10 col-md-offset-2">
-                  <label class="hidden-phone text-left" for="inputMessage">Message</label>
-                  <div class="text-left">
-                    <textarea class="col-md-12" rows="8" id="inputMessage" name="inputMessage" placeholder="Please insert the subject" required></textarea>
-                  </div>
-                </div>
-                <button type="submit" class="col-md-10 col-md-offset-2 btn btn-quivee btn-large">Submit</button>-->
             </form>
           </div>
         </div>

@@ -1,9 +1,9 @@
 $(document).ready(function () {
   var showSearchPanel = function() {
-    var $navBar = $('#izendaNavBar');
+    var $navBar = $('#izNavBar');
     $navBar.children().each(function(iNav, nav) {
       var $nav = $(nav);
-      if ($nav.attr('id') != 'izendaNavBarSearch') {
+      if ($nav.attr('id') != 'izNavBarSearch') {
         $nav.addClass('hidden');
         $('#contact-images').addClass('hidden');
       } else {
@@ -14,10 +14,10 @@ $(document).ready(function () {
   };
 
   var showMenuPanel = function () {
-    var $navBar = $('#izendaNavBar');
+    var $navBar = $('#izNavBar');
     $navBar.children().each(function (iNav, nav) {
       var $nav = $(nav);
-      if ($nav.attr('id') != 'izendaNavBarSearch') {
+      if ($nav.attr('id') != 'izNavBarSearch') {
         $nav.removeClass('hidden');
         $('#contact-images').removeClass('hidden');
       } else {
@@ -29,11 +29,11 @@ $(document).ready(function () {
 
   // search handler
   var searchHandler = function () {
-    window.location="http://wiki.izenda.us/search?q=" + $('#searchInput').val();
+    window.location = "http://wiki.izenda.us/search?q=" + $('#izSearchInput').val();
   };
 
   var closeSearchHandler = function () {
-    var $input = $('#searchInput');
+    var $input = $('#izSearchInput');
     if ($(window).width() > 1023) {
       $input.animate({ width: '1px' }, 200, function() {
         showMenuPanel();
@@ -46,11 +46,11 @@ $(document).ready(function () {
   };
 
   // search button events
-  $('#searchBtn').click(function (e) {
+  $('#izSearchBtn').click(function (e) {
     e.preventDefault();
     if ($(window).width() > 1023) {
       showSearchPanel();
-      var $input = $('#searchInput');
+      var $input = $('#izSearchInput');
       $input.width(0);
       $input.animate({ width: '300px' }, 200, function() {
         $(this).focus();
@@ -60,13 +60,13 @@ $(document).ready(function () {
 
   $(window).resize(function() {
     if ($(window).width() <= 1023) {
-      $('#searchInput').css('width','100%');
+      $('#izSearchInput').css('width', '100%');
     } else {
-      $('#searchInput').width('300px');
+      $('#izSearchInput').width('300px');
     }
   });
 
-  $('#searchInput').keydown(function (e) {
+  $('#izSearchInput').keydown(function (e) {
     if (e.keyCode == 27) {
       closeSearchHandler();
     }
@@ -74,7 +74,7 @@ $(document).ready(function () {
       searchHandler();
     }
   });
-  $('#searchInput').focusout(function () {
+  $('#izSearchInput').focusout(function () {
     closeSearchHandler();
   });
   
