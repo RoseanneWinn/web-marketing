@@ -1,6 +1,7 @@
 ﻿.iz-header .navbar {
   border-bottom: 1px solid #ddd;
-  background-color: #fff;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .iz-header .icon-bar {
@@ -100,15 +101,15 @@
 /* Search button */
 
 .iz-header .iz-search-btn > li > a {
-  background-color: #fff;
+  background-color: transparent;
 }
 
   .iz-header .iz-search-btn > li > a:hover,
   .iz-header .iz-search-btn > li > a:focus {
     color: #0d70cd;
-    border-top: 4px solid #fff;
-    background-color: #fff;
-    border-bottom: 4px solid #fff;
+    border-top: 4px solid transparent;
+    background-color: transparent;
+    border-bottom: 4px solid transparent;
   }
 
 /* Search panel */
