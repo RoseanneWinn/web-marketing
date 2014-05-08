@@ -27,6 +27,49 @@ $(document).ready(function () {
     });
   };
 
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Contact buttons
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  var parseImageSrc = function(src) {
+    var idx = src.lastIndexOf('.');
+    var parts = [src.substr(0, idx), src.substr(idx)];
+    return parts;
+  };
+
+  // contact buttons hover effect
+  $('.iz-contact-button, .iz-header-button-list-main > a').hover(function () {
+    var $img = $(this).children('img');
+    var imgSrc = $img.attr('src');
+    var parts = parseImageSrc(imgSrc);
+    $img.attr('src', parts[0] + 'Blue' + parts[1]);
+  }, function() {
+    var $img = $(this).children('img');
+    var imgSrc = $img.attr('src');
+    var parts = parseImageSrc(imgSrc);
+    $img.attr('src', parts[0].substr(0, parts[0].length - 4) + parts[1]);
+  });
+
+  // tryit free button
+  $('#izTryItFreeButton').click(function() {
+    window.location.href = 'http://www.izenda.com/Site/Pages/LandingPages/Ad-Hoc-Reporting.aspx';
+  });
+
+  // contact phone button
+  $('#izContactsPhoneButton').click(function() {
+    window.location.href = 'http://www.izenda.com/site/Pages/contactus.aspx';
+  });
+
+  // contact email button
+  $('#izContactsEmailButton').click(function () {
+    window.location.href = 'mailto:services@izenda.com';
+  });
+
+  // contact chat button
+  $('#izContactsChatButton').click(function () {
+    SnapEngage.startLink();
+  });
+
   // search handler
   var searchHandler = function () {
     window.location = "http://wiki.izenda.us/search?q=" + $('#izSearchInput').val();
@@ -74,6 +117,7 @@ $(document).ready(function () {
       searchHandler();
     }
   });
+
   $('#izSearchInput').focusout(function () {
     closeSearchHandler();
   });
