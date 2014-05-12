@@ -231,7 +231,7 @@
   position: relative;
   color: #fff;
   font-weight: bold;
-  padding: 6px 15px;
+  padding: 6px 15px !important;
 }
 
 .iz-header .iz-free-trial > li > a {
@@ -257,6 +257,16 @@
   .iz-header .iz-free-trial {
     display: none;
   }
+}
+
+.iz-header .navbar-toggle {
+  height: 36px;
+  margin-top: 7px;
+  padding: 5px 4px;
+}
+
+.iz-header .navbar-toggle > img {
+  height: 100%;
 }
 
 /*FancyBox Design*/
