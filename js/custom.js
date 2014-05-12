@@ -91,6 +91,7 @@ jQuery(document).ready(function ($) {
 jQuery(document).ready(function($) {
   $('#portfolio-list').imagesLoaded(function () {
     $('#portfolio-list').isotope({
+      filter: '.products-filter',
       itemSelector: '.block',
       layoutMode: 'fitRows',
       gutter: 10
