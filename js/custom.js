@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
     name: 'header',
     selector: '#izendaHeaderTemplate',
     data: {},
-    loaded: function(renderResult) {
+    loaded: function (renderResult) {
       // append header html
       $('body').prepend(renderResult);
       // initialize header
@@ -29,6 +29,7 @@ jQuery(document).ready(function ($) {
     return false;
   });
 });
+
 //////////////////////////////////////////////////////////////////////////////////////////
 //Scrolling
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -61,6 +62,7 @@ jQuery(document).ready(function ($) {
     });
   }, { offset: '75%' });
 });
+
 //////////////////////////////////////////////////////////////////////////////////////////
 //iLightbox settings for team full profile
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -82,6 +84,7 @@ jQuery(document).ready(function ($) {
     path: 'vertical'
   });
 });
+
 //////////////////////////////////////////////////////////////////////////////////////////
 //iLightbox settings for the portfolio
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -104,25 +107,143 @@ jQuery(document).ready(function ($) {
     }
   });
 });
+
 //////////////////////////////////////////////////////////////////////////////////////////
 //Isotope portfolio
 //////////////////////////////////////////////////////////////////////////////////////////
-jQuery(document).ready(function($) {
-  $('#portfolio-list').imagesLoaded(function () {
-    $('#portfolio-list').isotope({
-      filter: '.products-filter',
-      itemSelector: '.block',
-      layoutMode: 'fitRows',
-      gutter: 10
-    });
+jQuery(document).ready(function ($) {
+  var izendaPortfolio = {
+    loadedFilters: [],
+    'products-filter':
+      [{
+        a: 'images/linechart1-large.gif',
+        img: 'images/linechart1-large.gif'
+      }, {
+        a: 'images/combo1-large.gif',
+        img: 'images/combo1-large.gif'
+      }],
+    'visualizations-filter':
+      [{
+        a: 'images/Pareto_large.gif',
+        img: 'images/grid1-large.gif'
+      }, {
+        a: 'images/portfolio-4.png',
+        img: 'images/journals1-large.gif'
+      }, {
+        a: 'images/Stacked_large.gif',
+        img: 'images/mindmap1-large.gif'
+      }, {
+        a: 'images/formshare-full.png',
+        img: 'images/spider1-large.gif'
+      }, {
+        a: 'images/HorizontalBar_large.gif',
+        img: 'images/timeline1-large.gif'
+      }, {
+        a: 'images/portfolio-8.png',
+        img: 'images/timebubble1-large.gif'
+      }, {
+        a: 'images/custom_report_manager-full.png',
+        img: 'images/timeline2-large.gif'
+      }, {
+        a: '',
+        img: ''
+      }],
+    'integration-filter':
+      [{
+        a: 'images/portfolio-10.png',
+        img: 'images/integ1.jpg'
+      }, {
+        a: 'images/BarSeparator_large.gif',
+        img: 'images/integ2.jpg'
+      }, {
+        a: 'images/stilized-full.png',
+        img: 'images/integ3.jpg'
+      }, {
+        a: 'images/budget_dash-full.png',
+        img: 'images/integ4.jpg'
+      }, {
+        a: 'images/animated-dashboard-full.gif',
+        img: 'images/integ5.jpg'
+      }, {
+        a: 'images/Line_large.gif',
+        img: 'images/integ6.jpg'
+      }, {
+        a: 'images/custom_chart_style-full.png',
+        img: 'images/integ7.jpg'
+      }, {
+        a: 'images/custom_chart_style-full.png',
+        img: 'images/integ8.jpg'
+      }, {
+        a: 'images/custom_chart_style-full.png',
+        img: 'images/integ9.jpg'
+      }, {
+        a: 'images/custom_chart_style-full.png',
+        img: 'images/integ10.jpg'
+      }, {
+        a: 'images/custom_chart_style-full.png',
+        img: 'images/integ11.jpg'
+      }, {
+        a: 'images/custom_chart_style-full.png',
+        img: 'images/integ12.jpg'
+      }, {
+        a: 'images/custom_chart_style-full.png',
+        img: 'images/integ13.jpg'
+      }, {
+        a: 'images/custom_chart_style-full.png',
+        img: 'images/integ15.jpg'
+      }, {
+        a: 'images/custom_chart_style-full.png',
+        img: 'images/integ14.jpg'
+      }, {
+        a: 'images/custom_chart_style-full.png',
+        img: 'images/integ16.jpg'
+      }, {
+        a: 'images/custom_chart_style-full.png',
+        img: 'images/integ17.jpg'
+      }]
+  };
+  var $portfolio = $('#portfolio-list');
+  var $portfolioFilter = $('#portfolio-filter');
+
+  // load images to portfolio if needed
+  var loadImagesForFilter = function (filter) {
+    var result = [];
+    if (filter in izendaPortfolio && izendaPortfolio.loadedFilters.indexOf(filter) < 0) {
+      var images = izendaPortfolio[filter];
+      izendaPortfolio.loadedFilters.push(filter);
+      for (var i = 0; i < images.length; i++) {
+        var image = images[i];
+        var $image = $(
+          '<div class="block ' + filter + '" data-type="' + filter + '">' +
+          '<a class="portfolio-thumb" href="' + image.a + '" title="portfolio">' +
+          '<img class="portfolio-image" src="' + image.img + '" alt="Line Chart" />' +
+          '</a>' +
+          '</div>');
+        result.push($image);
+        $portfolio.append($image);
+      }
+      $portfolio.isotope('reloadItems', result);
+    }
+    return result;
+  };
+
+  var currentFilter = $portfolioFilter.find('li.active > a').attr('data-filter').substr(1);
+  loadImagesForFilter(currentFilter);
+  $portfolio.isotope({
+    itemSelector: '.block',
+    layoutMode: 'fitRows',
+    gutter: 10
   });
+  $portfolio.isotope({ filter: '.' + currentFilter });
 
   //filter items when filter link is clicked
   $('#portfolio-filter a').click(function () {
     var selector = $(this).attr('data-filter');
-    $('#portfolio-list').isotope({ filter: selector });
     $(this).parents('ul').find('li').removeClass('active');
     $(this).parent().addClass('active');
+    currentFilter = selector.substr(1);
+    loadImagesForFilter(currentFilter);
+    $portfolio.isotope({ filter: selector });
   });
 });
 
@@ -153,7 +274,6 @@ var isMobile = {
 $(window).bind('load', function () {
   parallaxInit();
 });
-
 function parallaxInit() {
   detectMobile = isMobile.any();
   if (detectMobile == null) {
@@ -168,7 +288,7 @@ function parallaxInit() {
 //Hide menu after clic on mobile 
 //////////////////////////////////////////////////////////////////////////////////////////
 jQuery(document).ready(function ($) {
-  $('.nav li a.scroll-link').on('click', function() {
+  $('.nav li a.scroll-link').on('click', function () {
     $('.nav-collapse').collapse('hide');
   });
 });
