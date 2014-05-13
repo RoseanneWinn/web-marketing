@@ -88,8 +88,9 @@ jQuery(document).ready(function ($) {
 //////////////////////////////////////////////////////////////////////////////////////////
 //iLightbox settings for the portfolio
 //////////////////////////////////////////////////////////////////////////////////////////
-jQuery(document).ready(function ($) {
-  $('.portfolio-thumb').iLightBox({
+
+var initializeLightbox = function(items) {
+  $('.portfolio-thumb.new').iLightBox({
     skin: 'dark',
     path: 'horizontal',
     fullViewPort: 'fill',
@@ -106,7 +107,8 @@ jQuery(document).ready(function ($) {
       prevOffsetX: -45
     }
   });
-});
+  $('.portfolio-thumb.new').removeClass('new');
+};
 
 //////////////////////////////////////////////////////////////////////////////////////////
 //Isotope portfolio
@@ -144,9 +146,6 @@ jQuery(document).ready(function ($) {
       }, {
         a: 'images/custom_report_manager-full.png',
         img: 'images/timeline2-large.gif'
-      }, {
-        a: '',
-        img: ''
       }],
     'integration-filter':
       [{
@@ -215,7 +214,7 @@ jQuery(document).ready(function ($) {
         var image = images[i];
         var $image = $(
           '<div class="block ' + filter + '" data-type="' + filter + '">' +
-          '<a class="portfolio-thumb" href="' + image.a + '" title="portfolio">' +
+          '<a class="new portfolio-thumb" href="' + image.a + '" title="portfolio">' +
           '<img class="portfolio-image" src="' + image.img + '" alt="Line Chart" />' +
           '</a>' +
           '</div>');
@@ -223,17 +222,18 @@ jQuery(document).ready(function ($) {
         $portfolio.append($image);
       }
       $portfolio.isotope('reloadItems', result);
+      initializeLightbox();
     }
     return result;
   };
 
   var currentFilter = $portfolioFilter.find('li.active > a').attr('data-filter').substr(1);
-  loadImagesForFilter(currentFilter);
   $portfolio.isotope({
     itemSelector: '.block',
     layoutMode: 'fitRows',
     gutter: 10
   });
+  loadImagesForFilter(currentFilter);
   $portfolio.isotope({ filter: '.' + currentFilter });
 
   //filter items when filter link is clicked
