@@ -1,7 +1,7 @@
-$(document).ready(function () {
-  var showSearchPanel = function() {
+function initializeIzendaHeader() {
+  var showSearchPanel = function () {
     var $navBar = $('#izNavBar');
-    $navBar.children().each(function(iNav, nav) {
+    $navBar.children().each(function (iNav, nav) {
       var $nav = $(nav);
       if ($nav.attr('id') != 'izNavBarSearch') {
         $nav.addClass('hidden');
@@ -31,7 +31,7 @@ $(document).ready(function () {
   // Contact buttons
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-  var parseImageSrc = function(src) {
+  var parseImageSrc = function (src) {
     var idx = src.lastIndexOf('.');
     var parts = [src.substr(0, idx), src.substr(idx)];
     return parts;
@@ -43,7 +43,7 @@ $(document).ready(function () {
     var imgSrc = $img.attr('src');
     var parts = parseImageSrc(imgSrc);
     $img.attr('src', parts[0] + 'Blue' + parts[1]);
-  }, function() {
+  }, function () {
     var $img = $(this).children('img');
     var imgSrc = $img.attr('src');
     var parts = parseImageSrc(imgSrc);
@@ -51,12 +51,12 @@ $(document).ready(function () {
   });
 
   // tryit free button
-  $('#izTryItFreeButton').click(function() {
+  $('#izTryItFreeButton').click(function () {
     window.location.href = 'http://www.izenda.com/Site/Pages/LandingPages/Ad-Hoc-Reporting.aspx';
   });
 
   // contact phone button
-  $('#izContactsPhoneButton').click(function() {
+  $('#izContactsPhoneButton').click(function () {
     window.location.href = 'http://www.izenda.com/site/Pages/contactus.aspx';
   });
 
@@ -78,7 +78,7 @@ $(document).ready(function () {
   var closeSearchHandler = function () {
     var $input = $('#izSearchInput');
     if ($(window).width() > 1023) {
-      $input.animate({ width: '1px' }, 200, function() {
+      $input.animate({ width: '1px' }, 200, function () {
         showMenuPanel();
         $input.width('300px');
       });
@@ -95,13 +95,13 @@ $(document).ready(function () {
       showSearchPanel();
       var $input = $('#izSearchInput');
       $input.width(0);
-      $input.animate({ width: '300px' }, 200, function() {
+      $input.animate({ width: '300px' }, 200, function () {
         $(this).focus();
       });
     }
   });
 
-  $(window).resize(function() {
+  $(window).resize(function () {
     if ($(window).width() <= 1023) {
       $('#izSearchInput').css('width', '100%');
     } else {
@@ -121,7 +121,7 @@ $(document).ready(function () {
   $('#izSearchInput').focusout(function () {
     closeSearchHandler();
   });
-  
+
   // active menu item
   $('.navbar-nav li').each(function (iLi, li) {
     var $li = $(li);
@@ -141,49 +141,34 @@ $(document).ready(function () {
     $('.navbar-nav > li').removeClass('active');
     $($this.closest('.iz-menu')).addClass('active');
   });
-  
-  //Playing with contact icons
-  black = ['../web-marketing/images/Phone4.png', '../web-marketing/images/Email4.png', '../web-marketing/images/ChatBox4.png'];
-  blue = ['../web-marketing/images/PhoneBlue.png', '../web-marketing/images/EmailBlue.png', '../web-marketing/images/ChatBoxBlue2.png'];
-  setSrc = function(source) {
-    return function() {
-      $(this).attr('src',source);};};
-  
-  $('#phone').mouseenter(setSrc(blue[0])).mouseleave(setSrc(black[0]));
-  $('#email').mouseenter(setSrc(blue[1])).mouseleave(setSrc(black[1]));
-  $('#chat-box').mouseenter(setSrc(blue[2])).mouseleave(setSrc(black[2]));
 
   //fancybox stuff for form submission
   $(".modalbox").fancybox();
 
-  $("#send").on("click", function(){
-	var emailval  = $("#email").val();
-  var firstval   = $("#first_name").val();
-  var lastval   = $("#last_name").val();
-  var phval   =  $("#form1_phone").val();
-  var comurl   =  $("#company_url").val(); 
-	var mailvalid = validateEmail(emailval);
-  var len    = function(value) {
-    return value.length;};
-	
-	if(mailvalid == false) {
-		$("#email").addClass("error");
-	}
-	else if(mailvalid == true){
-		$("#email").removeClass("error");
-	}
+  $("#send").on("click", function () {
+    var emailval = $("#email").val();
+    var firstval = $("#first_name").val();
+    var lastval = $("#last_name").val();
+    var phval = $("#form1_phone").val();
+    var comurl = $("#company_url").val();
 
-  if(len(phval) < 9) {
-    $("#number").addClass("error");}
-  else if(len(phval) == 9) {
-    $("#number").removeClass("error");}
+    // TODO: I didn't find validateEmail function implementation
+    if (validateEmail(emailval)) {
+      $("#email").removeClass("error");
+      // if both validate we attempt to send the e-mail
+      // first we hide the submit btn so the user doesnt click twice
+      $("#send").replaceWith("<em>sending...</em>");
+      $("#send").submit();
+    } else
+      $("#email").addClass("error");
 
-  if(mailvalid == true) {
-		// if both validate we attempt to send the e-mail
-		// first we hide the submit btn so the user doesnt click twice
-		$("#send").replaceWith("<em>sending...</em>");
-    $("#send").submit();}
+    // TODO: what to do if phval.length > 9 ???
+    if (phval.length < 9) {
+      $("#number").addClass("error");
+    } else if (phval.length == 9) {
+      $("#number").removeClass("error");
+    }
   });
-});
+};
 
 
