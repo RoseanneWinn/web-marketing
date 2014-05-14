@@ -36,8 +36,7 @@
               <li><a href="http://www.izenda.com/site/Pages/Vision.aspx">IZENDA VISION</a></li>
             </ul>
           </li>
-          <!-- <li class="iz-menu"><a href="#livedemo" tc="#livedemo" onclick="alert('live demo dialog here');">LIVE DEMO</a></li>-->
-          <li class="iz-menu"><a class="modalbox" href="#inline" tc="#pricing">PRICING</a></li>
+          <li class="iz-menu"><a class="modalbox" href="#inline" tc="#pricing" data-toggle="modal" data-target="#izendaPricingDialog">PRICING</a></li>
           <li class="iz-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" tc="" onclick="location.href='#'">COMPANY <b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -79,11 +78,51 @@
       </div>
       <!-- /.navbar-collapse -->
     </nav>
-    <div id="wrapper">
+    <!--<div id="wrapper">
       <a class="modalbox" href="#inline"></a>
+    </div>-->
+
+    <!-- Pricing dialog -->
+    <div class="modal fade" id="izendaPricingDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="modal-title" id="myModalLabel"><b>Interested?  We will get back with you within 24 hours.</b></h3>
+            <h4>Feel free to call by number 888-493-6321 or <a href="mailto:sales@izenda.com">email</a> us beforehand.</h4>
+          </div>
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <label for="first_name">First Name</label>
+                <input id="first_name" type="text" class="form-control" placeholder="First Name"/>
+              </div>
+              <div class="form-group">
+                <label for="last_name">Last Name</label>
+                <input id="last_name" type="text" class="form-control" placeholder="Last Name"/>
+              </div>
+              <div class="form-group">
+                <label for="form1_phone">Phone Number</label>
+                <input id="form1_phone" type="text" class="form-control" placeholder="Phone Number"/>
+              </div>
+              <div class="form-group">
+                <label for="company_url">Company Url</label>
+                <input id="company_url" type="text" class="form-control" placeholder="Company Url" />
+              </div>
+              <div class="form-group">
+                <label for="email1">Email</label>
+                <input id="email1" type="email" class="form-control" placeholder="Email"/>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer-center">
+            <button id="send" type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Send</button>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- hidden inline form -->
-    <div id="inline" style="display: none">
+    <!--<div id="inline" style="display: none">
       <h2>Interested?  We will get back with you within 24 hours.</h2>
       <h3>Feel free to <a href="#" id="call-us" onclick="alert('Call: 888-493-6321');">call</a> or <a href="mailto:sales@izenda.com">email</a> us beforehand.</h3>
       <form id="pricing_contact" action="reg/ContentReg2.aspx?rt=Pricing&bypass=1" method="post">
@@ -94,6 +133,6 @@
         <input id="email1" type="email" class="input_fields" placeholder="Email" name="form1_email"></input>
         <button id="send">Send</button>
       </form>
-    </div>
+    </div>-->
   </header>
 </script>

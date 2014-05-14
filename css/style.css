@@ -2,7 +2,7 @@
 /* ======================================================================== */
 /* ! Buttons
 /* ======================================================================== */
-.btn {
+/*.btn {
   border: none;
   font-size: 16px;
   display: inline-block;
@@ -53,7 +53,7 @@
 
   .btn-transparent:hover {
     background: rgba(255,255,255,.5) none;
-  }
+  }*/
 /* ======================================================================== */
 /* ! Margins
 /* ======================================================================== */
@@ -122,16 +122,17 @@ body {
     visibility: visible;
   }
 
-a:hover {
+/*a:hover {
   text-decoration: none;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -ms-transition: 0.25s;
   transition: 0.25s;
-}
+}*/
 
 .light {
-  font: 300 'Lato';
+  font-family: 'Lato';
+  font-weight: 300;
 }
 
 .uppercase {
@@ -920,51 +921,19 @@ ul.media-list li.media div.comment-holder {
   margin: 0 0 20px !important;
   padding: 10px 0 20px;
 }
-/* ======================================================================== */
-/* ! Bootstrap resetting elements for flat design
-/* ======================================================================== */
-.btn,
-.progress .bar {
-  background-image: none;
-}
-
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input,
-.dropdown-menu,
-.navbar .nav > .active > a,
-.navbar .nav > .active > a:hover,
-.navbar .nav > .active > a:focus,
-.progress .bar {
-  text-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -ms-box-shadow: none;
-  box-shadow: none;
-}
-
-.navbar-search {
-  position: relative;
-  float: right;
-  margin-top: 9px;
-  margin-bottom: 0px;
-  height: 20px;
-}
 
 .pull-right {
   float: right;
+}
+
+/* Analog of twitter .modal-footer but with center horizontal alignment */
+.modal-footer-center {
+  padding: 15px;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+.first {
+  padding-top: 30px;
 }
 
