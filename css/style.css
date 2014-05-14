@@ -114,9 +114,9 @@ body {
   padding-top: 30px;
 }
 
-  body.hidden-body {
+  /*body.hidden-body {
     visibility: hidden;
-  }
+  }*/
 
   body.visible-body {
     visibility: visible;
