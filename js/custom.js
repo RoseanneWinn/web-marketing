@@ -1,23 +1,4 @@
 //////////////////////////////////////////////////////////////////////////////////////////
-// Header template
-//////////////////////////////////////////////////////////////////////////////////////////
-jQuery(document).ready(function ($) {
-  // render header template
-  var temlateRenderer = new SiteTemplateRenderer();
-  temlateRenderer.renderExternalTemplate({
-    name: 'header',
-    selector: '#izendaHeaderTemplate',
-    data: {},
-    loaded: function (renderResult) {
-      // append header html
-      $('body').prepend(renderResult);
-      // initialize header
-      initializeIzendaHeader($);
-    }
-  });
-});
-
-//////////////////////////////////////////////////////////////////////////////////////////
 //Nav
 //////////////////////////////////////////////////////////////////////////////////////////
 jQuery(document).ready(function ($) {
@@ -272,18 +253,15 @@ var isMobile = {
 };
 
 $(window).bind('load', function () {
-  parallaxInit();
-});
-function parallaxInit() {
-  detectMobile = isMobile.any();
-  if (detectMobile == null) {
+  if (!isMobile.any()) {
     $('.bg1').parallax("50%", 0.5);
     $('.bg2').parallax("50%", 0.5);
     $('.bg3').parallax("50%", 0.5);
     $('.bg4').parallax("50%", 0.5);
     $('.bg5').parallax("50%", 0.5);
   }
-}
+});
+
 //////////////////////////////////////////////////////////////////////////////////////////
 //Hide menu after clic on mobile 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -308,24 +286,13 @@ jQuery(document).ready(function ($) {
     useCSS: true
   });
 });
+
 //////////////////////////////////////////////////////////////////////////////////////////
 //Trick for validate the rel attribute
 //////////////////////////////////////////////////////////////////////////////////////////
 jQuery(document).ready(function ($) {
   $('a[data-rel]').each(function () {
     $(this).attr('rel', $(this).data('rel'));
-  });
-});
-//////////////////////////////////////////////////////////////////////////////////////////
-//jPreloader settings
-//////////////////////////////////////////////////////////////////////////////////////////
-$(document).ready(function () {
-  $('body').jpreLoader({
-    loaderVPos: "0%",
-    splashFunction: function () {
-      jQuery("body").addClass("visible-body");
-      jQuery("body").removeClass("hidden-body");
-    }
   });
 });
 

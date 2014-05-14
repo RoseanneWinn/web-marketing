@@ -143,7 +143,7 @@ function initializeIzendaHeader() {
   });
 
   //fancybox stuff for form submission
-  $(".modalbox").fancybox();
+  /*$(".modalbox").fancybox();*/
 
   $("#send").on("click", function () {
     var emailval = $("#email").val();
