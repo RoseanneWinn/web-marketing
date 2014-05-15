@@ -114,9 +114,9 @@ body {
   padding-top: 30px;
 }
 
-  body.hidden-body {
+  /*body.hidden-body {
     visibility: hidden;
-  }
+  }*/
 
   body.visible-body {
     visibility: visible;
@@ -488,6 +488,11 @@ h6 {
 
 .focus .pricing-action a.bg-quivee {
   border-top: 1px solid #ebebeb;
+}
+
+/* Bootstrap addition to pricing form */
+.modal-header {
+  text-align: center;!important
 }
 /* ======================================================================== */
 /* ! Tabs & Toggle
