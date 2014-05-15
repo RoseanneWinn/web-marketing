@@ -29,7 +29,7 @@ jQuery(document).ready(function ($) {
 
   jQuery('.waypoint-4').waypoint(function () {
     jQuery(".hidden-element-4").addClass("visible-element");
-    jQuery('.percentage').easyPieChart({
+    /*jQuery('.percentage').easyPieChart({
       barColor: '#52bad5',
       trackColor: '#f3f6f8',
       scaleColor: false,
@@ -40,7 +40,7 @@ jQuery(document).ready(function ($) {
       onStep: function (value) {
         this.$el.find('span').text(~~value);
       }
-    });
+    });*/
   }, { offset: '75%' });
 });
 
