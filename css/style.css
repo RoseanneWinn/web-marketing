@@ -109,7 +109,7 @@
 /* ======================================================================== */
 body {
   font: 16px/24px "Lato", Arial, Helvetica, Geneva, sans-serif;
-  background: #f3f6f8;
+  /*background: #f3f6f8;*/
   color: #2e3137;
   padding-top: 30px;
 }
@@ -261,9 +261,10 @@ table {
 
 .slides {
   overflow: hidden;
+  margin-right: 100px;
 }
 
-#jpreOverlay {
+/*#jpreOverlay {
   background-color: #fff;
 }
 
@@ -291,7 +292,7 @@ table {
   text-align: center;
   top: -100%;
   margin: 20px 0 0;
-}
+}*/
 /* ======================================================================== */
 /* ! Typography
 /* ======================================================================== */
@@ -937,3 +938,41 @@ ul.media-list li.media div.comment-holder {
   padding-top: 30px;
 }
 
+/* Flex slider */
+
+#first {
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #dbdbdb 75%, #ffffff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(75%,#dbdbdb), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 0%,#dbdbdb 75%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ffffff 0%,#dbdbdb 75%,#ffffff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ffffff 0%,#dbdbdb 75%,#ffffff 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 0%,#dbdbdb 75%,#ffffff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-9 */
+}
+
+.iz-flex-item {
+  height: 400px;
+  width: 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: left;
+  color: #656870;
+  padding-top: 100px;
+  padding-left: 150px;
+}
+
+.m1a {
+  background-image: url('../images/m1a-new.png');
+}
+
+.m2a {
+  background-image: url('../images/m2a-new.png');
+  background-size: 50%;
+}
+
+.m3a {
+  background-image: url('../images/m3a-new.png');
+  background-size: 50%;
+}
