@@ -72,6 +72,8 @@ html[xmlns] .slides {display: block;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
 
 @media screen and (max-width: 860px) {
-  .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
-  .flex-direction-nav .flex-next {opacity: 1; right: 0;}
+  .flex-direction-nav .flex-prev {opacity: 0.3; left: 0;}
+  .flex-direction-nav .flex-next {opacity: 0.3; right: 0;}
+  .flexslider:hover .flex-next {opacity: 0.3; right: 0;}
+  .flexslider:hover .flex-prev {opacity: 0.3; left: 0;}
 }

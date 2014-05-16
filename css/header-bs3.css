@@ -91,10 +91,18 @@
 }
   */
 
+.iz-toggle-nav {
+  margin-left: 190px;
+}
+
 @media (max-width: 520px) {
   .iz-navbar-logo {
     width: 40px;
     background: url('../images/IzendaSmall.png') no-repeat 0 5px;
+  }
+
+  .iz-toggle-nav {
+    margin-left: 50px;
   }
 }
 

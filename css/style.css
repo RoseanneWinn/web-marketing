@@ -1006,8 +1006,12 @@ ul.media-list li.media div.comment-holder {
 }
 
 @media (max-width: 1024px) {
+  .slides {
+    margin: 0;
+  }
+
   .iz-flex-item {
-    height: 250px;
+    height: 300px;
     width: 100%;
     background-position: right;
     background-repeat: no-repeat;
@@ -1015,8 +1019,8 @@ ul.media-list li.media div.comment-holder {
     text-align: left;
     color: #656870;
     padding-top: 30px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .iz-flex-logo {

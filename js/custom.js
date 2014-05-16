@@ -283,6 +283,7 @@ jQuery(document).ready(function ($) {
     animationDuration: 1000,
     directionNav: true,
     controlNav: true,
+    touch: true,
     useCSS: true
   });
 });
