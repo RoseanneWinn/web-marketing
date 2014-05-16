@@ -13,6 +13,7 @@ function wheel(event) {
 }
 
 function handle() {
+  distance = $(window).height() / 3;
   var $anchors = $('.anchor');
   var scrollCount = $(window).scrollTop() - (distance * delta);
   $anchors.each(function(iAnchor, anchor) {
@@ -33,6 +34,7 @@ $(document).keydown(function (e) {
   switch (e.which) {
     //up
     case 38:
+      distance = $(window).height() / 3;
       $('html, body').stop().animate({
         scrollTop: $(window).scrollTop() - distance
       }, time);
@@ -40,6 +42,7 @@ $(document).keydown(function (e) {
 
       //down
     case 40:
+      distance = $(window).height() / 3;
       $('html, body').stop().animate({
         scrollTop: $(window).scrollTop() + distance
       }, time);
