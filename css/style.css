@@ -956,28 +956,98 @@ ul.media-list li.media div.comment-holder {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-9 */
 }
 
-.iz-flex-item {
-  height: 400px;
-  width: 100%;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-align: left;
-  color: #656870;
-  padding-top: 100px;
-  padding-left: 150px;
+@media (min-width: 1024px) {
+  .iz-flex-item {
+    height: 400px;
+    width: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: left;
+    color: #656870;
+    padding-top: 50px;
+    padding-left: 75px;
+  }
+
+  .iz-flex-logo {
+    width: 170px;
+    height: 60px;
+    background: url('../images/Izenda.png') no-repeat 0 0px;
+  }
+
+  .iz-flex-h3 {
+    line-height: 20px;
+  }
+
+  .iz-flex-text {
+    margin-top: 20px;
+    width: 45%;
+    font-size: 12px;
+  }
+
+  .iz-flex-link {
+    color: #0d70cd;
+  }
+
+  .m1a {
+    background-image: url('../images/m1a-new.png');
+    background-size: 40%;
+  }
+
+  .m2a {
+    background-image: url('../images/m2a-new.png');
+    background-size: 50%;
+  }
+
+  .m3a {
+    background-image: url('../images/m3a-new.png');
+    background-size: 50%;
+  }
 }
 
-.m1a {
-  background-image: url('../images/m1a-new.png');
+@media (max-width: 1024px) {
+  .iz-flex-item {
+    height: 250px;
+    width: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: left;
+    color: #656870;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .iz-flex-logo {
+    background: none;
+  }
+
+  .iz-flex-h3 {
+    line-height: 20px;
+  }
+
+  .iz-flex-text {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .iz-flex-link {
+    color: #0d70cd;
+  }
+
+  .m1a {
+    background-image: none;
+  }
+
+  .m2a {
+    background-image: none;
+  }
+
+  .m3a {
+    background-image: none;
+  }
 }
 
-.m2a {
-  background-image: url('../images/m2a-new.png');
-  background-size: 50%;
-}
 
-.m3a {
-  background-image: url('../images/m3a-new.png');
-  background-size: 50%;
-}
