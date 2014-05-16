@@ -1,4 +1,4 @@
-﻿if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
+﻿/*if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
 window.onmousewheel = document.onmousewheel = wheel;
 
 var time = 400;
@@ -45,4 +45,4 @@ $(document).keydown(function (e) {
       }, time);
       break;
   }
-});
+});*/
