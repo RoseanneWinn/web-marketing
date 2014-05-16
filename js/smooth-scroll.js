@@ -1,8 +1,8 @@
-﻿/*if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
+﻿if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
 window.onmousewheel = document.onmousewheel = wheel;
 
-var time = 400;
-var distance = 600;
+var time = 300;
+var distance = $(window).height() / 3;
 
 function wheel(event) {
   if (event.wheelDelta) delta = event.wheelDelta / 120;
@@ -18,7 +18,7 @@ function handle() {
   $anchors.each(function(iAnchor, anchor) {
     var $anchor = $(anchor);
     var anchorShift = $anchor.offset().top - ($(window).scrollTop() - (distance * delta));
-    if (Math.abs(anchorShift) < 200 && Math.abs(anchorShift) > 0) {
+    if (Math.abs(anchorShift) < distance / 3 && Math.abs(anchorShift) > 0) {
       scrollCount = $anchor.offset().top;
     }
   });
@@ -45,4 +45,4 @@ $(document).keydown(function (e) {
       }, time);
       break;
   }
-});*/
+});
