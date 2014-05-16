@@ -2,7 +2,7 @@
 window.onmousewheel = document.onmousewheel = wheel;
 
 var time = 400;
-var distance = 200;
+var distance = 600;
 
 function wheel(event) {
   if (event.wheelDelta) delta = event.wheelDelta / 120;
@@ -18,7 +18,7 @@ function handle() {
   $anchors.each(function(iAnchor, anchor) {
     var $anchor = $(anchor);
     var anchorShift = $anchor.offset().top - ($(window).scrollTop() - (distance * delta));
-    if (Math.abs(anchorShift) < 100 && Math.abs(anchorShift) > 0) {
+    if (Math.abs(anchorShift) < 200 && Math.abs(anchorShift) > 0) {
       scrollCount = $anchor.offset().top;
     }
   });
