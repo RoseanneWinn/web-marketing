@@ -26,7 +26,7 @@ function handle() {
 
   $('html, body').stop().animate({
     scrollTop: scrollCount
-  }, time);
+  }, time, 'easeOutCubic');
 }
 
 
