@@ -1,7 +1,7 @@
 ﻿if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
 window.onmousewheel = document.onmousewheel = wheel;
 
-var time = 300;
+var time = 200;
 var distance = $(window).height() / 3;
 
 function wheel(event) {
