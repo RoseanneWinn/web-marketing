@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Izenda - Ad Hoc Reporting, Embedded BI & Data Virtualization for SQL Data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta content="Izenda" name="description">
+  <meta content="playlab" name="author">
+  <!-- font lato -->
+  <!--<link rel="stylesheet" type="text/css" href="css/font.css"/>-->
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
+  <!-- Font Awesome  -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap3.min.css" />
+  <!-- quivee Style -->
+  <link href="css/colors.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/header-bs3.css" />
+
+  <!-- Favicon and touch icons  -->
+  <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+  <link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+  <link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+  <link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
+  <link href="ico/favicon.png" rel="shortcut icon">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+</head>
+<body class="page-aqua">
+  <section class="services first">
+    <div class="wrapper2 bg-colored ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Izenda Forms</h2>
+            <h3>Pixel perfect Paper Forms</h3>
+            <div class="iz-feature-embed-container">
+              <b>Forms Video Placeholder</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper bg-white">
+      <div class="container">
+        <h3 class="subheader">FEATURES & CAPABILITIES</h3>
+        <ul>
+          <li>WYSIWYG browser-based form designer</li>
+          <li>Self-service content customization</li>
+          <li>Pixel perfect and printer friendly reporting</li>
+          <li>Smart tags</li>
+          <li>High performance repeaters</li>
+          <li>Full PDF generation</li>
+          <li>Master-detail reports</li>
+          <li>Embedded subreports</li>
+          <li>Flexible filters</li>
+          <li>Rich API</li>
+        </ul>
+
+        <h3 class="subheader">SETUP INSTRUCTIONS</h3>
+        For existing customers:
+        <ol>
+          <li>Purchase an Izenda Forms license</li>
+          <li>Add +FORMS key</li>
+          <li>Copy forms folder into the reporting folder</li>
+          <li>Ensure that the master page or ReportDesigner.aspx is in standards mode by adding proper 
+            <span class="code">&lt;!DOCTYPE html&gt;</span> to the top of the page.  
+            (<span class="code">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</span>)
+          </li>
+        </ol>
+
+        <h3 class="subheader">EXAMPLES</h3>
+        <table>
+          <tr>
+            <td><a style="display: block; float: left; margin-right: 24px; margin-bottom: 10px;" href="http://www.izenda.com/demo/ReportViewer.aspx?rn=Forms\\EMA">
+              <img src="images/form-EMA.jpg" alt="" style="border: 1px solid #ccc;"><br>
+              EMA
+            </a></td>
+            <td><a style="display: block; float: left; margin-right: 24px; margin-bottom: 10px;" href="http://www.izenda.com/demo/ReportViewer.aspx?rn=Forms\\I9Form">
+              <img src="images/form-I9.jpg" alt="" style="border: 1px solid #ccc;"><br>
+              I9 Form
+            </a></td>
+            <td><a style="display: block; float: left; margin-right: 24px; margin-bottom: 10px;" href="http://www.izenda.com/demo/ReportViewer.aspx?rn=Forms\\Invoice">
+              <img src="images/form-invoice.jpg" alt="" style="border: 1px solid #ccc;"><br>
+              Invoice
+            </a></td>
+          </tr>
+        </table>
+
+        <h3 class="subheader">FAQ</h3>
+        <h4><b>How do I create a form that includes data fields from my database?</b></h4>
+        <p>
+          After selecting Data Sources and Fields as you would in a standard report, click the Design Form button in 
+          the Fields tab. Next, design your form using the WYSIWYG interface while adding fields using smart tags. 
+          For example, you would type in <span class="code">[FieldName]</span> where you wanted the data from the 
+          FieldName column to go.
+        </p>
+        <div class="code">
+          <b>Input:</b><br />
+          Country: [ShipCountry]<br />
+          Number of orders: [OrderID]<br />
+          <br />
+          <b>Output</b><br />
+          Country: Finland<br />
+          Number of orders: 22<br />
+          <br />
+          Country: Brasil<br />
+          Number of orders: 83<br />
+          <br />
+          Country: USA<br />
+          Number of orders: 122<br />
+        </div>
+        <br />
+        <h4><b>How do I import existing reports into Izenda Forms?</b></h4>
+        <p>
+          Depending on the format they are originally in, existing reports may be imported by saving them to 
+          HTML by using Microsoft word or a <a href="www.pdfonline.com">PDF to HTML converter</a>.  
+          Additionally you can cut and paste directly into Izenda Forms with some 
+          HTML-enabled applications.
+        </p>
+        <br />
+
+        <h4><b>How do I create Master-Detail Reports?</b></h4>
+        <ol>
+          <li>Select Data Sources and Fields<br>
+            <a href="#" data-toggle="modal" data-target="#step1modal">
+              <img alt="step1" src="images/step-1-s.png" style="border: 1px solid #ccc;">
+            </a>
+            <div id="step1modal" class="modal fade">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img style="width: 100%;" src="images/step-1.png" />
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>Click Design Form and Add Fields and Subreports in brackets<br>
+            <a href="#" data-toggle="modal" data-target="#step2modal">
+              <img alt="step2" src="images/step-2-s.png" style="border: 1px solid #ccc;">
+            </a>
+            <div id="step2modal" class="modal fade">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img style="width: 100%;" src="images/step-2.png" />
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>Add Filters and Preview the Report.<br>
+            <a href="#" data-toggle="modal" data-target="#step3modal">
+              <img alt="step3" src="images/step-3-s.png" style="border: 1px solid #ccc;">
+            </a>
+            <div id="step3modal" class="modal fade">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img style="width: 100%;" src="images/step-3.png" />
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ol>
+        <br />
+        <p>
+          Reports that have header sections need to be shown for each data group that is followed by 
+          repeating data elements.  These are called repeaters.  The content section that repeats for 
+          every record needs to have a <span class="code">[repeater]</span> tag before and a 
+          <span class="code">[/repeater]</span> tag after it. 
+        </p>
+
+        <div class="code">
+          <pre><b>Input</b>
+Number_[ShipCountry]  Reported: [ShipCity]   Type: [ShipperName]   Status: [Region]
+Employee: [ShipCountry], [PostalCode]                              Days: [PostalCode]
+
+Itinerant schedule:
+Site                  Position               Times
+[repeater]
+[OrderID]             [OrderDate]            [Freight] [ShipAddress] - [Discount]
+[/repeater]
+_____________________________________________________________________________________
+
+<b>Output</b>
+Number_Spain          Reported: Madrid       Type: Federal         Status: 
+Employee: Spain, 28001                                             Days: 28001
+
+Itinerant schedule:
+Site                  Position               Times
+10,136                09/16/2010             $22.68 Gran Via, 1 - .000
+29,056                09/17/2010             $13.91 Gran Via, 1 - .000
+7,239                 09/18/2010             $1.63 Gran Via, 1 - .000
+_____________________________________________________________________________________
+
+Number_Switzerland    Reported: Bern         Type: Federal         Status: 
+Employee: Switzerland, 3012                                        Days: 3012
+
+Itinerant schedule:
+Site                  Position               Times
+10,519                04/28/2011             $275.28 Hauptstr., 36 - .100
+189,490               04/29/2010             $11.21 Hauptstr., 36 - .000
+_____________________________________________________________________________________
+</pre>
+        </div>
+        <br />
+        <h4><b>How do I place content on every page?</b></h4>
+        <p>
+          Per-page content may be placed in the header section of the Misc. tab.
+        </p>
+        <p>
+          <a href="http://www.izenda.com/demo/ReportViewer.aspx?rn=Forms\\Invoice">Link to invoice in demo</a>
+        </p>
+        <br />
+        <h4><b>How does PDF rendering work?</b></h4>
+        <p>
+          The Izenda Forms PDF engine leverages next-generation web standards to deliver pixel perfect 
+          document generation based on HTML and CSS.  This facilitates a consistent look and feel 
+          between the screen and printed versions because both are powered by the same underlying 
+          technology. Additionally, CSS formats and styles are fully supported independent of the 
+          user's browser.  You can add HTML in any part of the design experience or via the backend 
+          API. The HTML-powered forms engine eliminates having to create separate styles for PDF and 
+          the screen.  Users accustomed to working with PDF documents can store, save and email them 
+          to suit their needs.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Javascript  -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap3.min.js"></script>
+  <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+  <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/waypoints.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+  <script type="text/javascript" src="js/smooth-scroll.js"></script>
+  <script type="text/javascript" src="js/header-bs3.js"></script>
+  <script type="text/javascript" src="js/jsrender.min.js"></script>
+  <script type="text/javascript" src="js/template.js"></script>
+  <script type="text/javascript" src="js/base.js"></script>
+  <!-- begin SnapEngage code -->
+  <script type="text/javascript">
+    (function () {
+      var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+      se.src = 'http://commondatastorage.googleapis.com/code.snapengage.com/js/24c3b9f3-b9bb-4c8b-8a15-30c20ee6c4e8.js';
+      var done = false;
+      se.onload = se.onreadystatechange = function () {
+        if (!done && (!this.readyState || this.readyState === 'loaded' || this.readyState === 'complete')) {
+          done = true;
+          // Place your SnapEngage JS API code below
+          SnapEngage.allowChatSound(true);
+          SnapEngage.allowProactiveChat(true);
+        }
+      };
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+    })();
+  </script>
+</body>
+</html>

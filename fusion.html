@@ -51,14 +51,109 @@
   <section>
     <div class="wrapper bg-white">
       <div class="container">
-        <h3>IZENDA FUSION</h3>
+        <h3 class="subheader">IZENDA FUSION</h3>
         Izenda Fusion delivers dynamic real-time analytics from multiple databases and applications without 
         having to do periodic ETL into a data warehouse. It gives you instant insight into what's happening 
         across the entire organization right now, and eliminates the need for costly and complex data warehousing 
         projects. In today's dynamic environment, waiting until next week or even the next day for a batch process 
         gives your competitors an advantage.
         
-        <br/><b>TODO: complete article</b>
+        <h3 class="subheader">HOW IT WORKS</h3>
+        Traditional data warehouse and ETL tools make a periodic copy of application data. Izenda fusion virtualizes 
+        data in real time and pulls just what it needs when reports are viewed.
+        
+        <h3 class="subheader">FEATURES</h3>
+        <div class="row">
+          <div class="col-md-12">
+            <img src="images/gauge1.jpg" style="float: left; margin-right: 20px;" />
+            <h4><b>In-Memory Analytics and Data Caching</b></h4>
+            Get lightning-fast response times even on the largest databases. Fusion intelligently caches data based on when your data changes. Even rich dashboards containing dozens of queries, taking minutes to run on multiple databases across the globe can come back in a flash.
+            <br />
+            <br />
+            <br />
+          </div>
+          <div class="col-md-12" style="text-align: left;">
+            <img src="images/databaes.jpg" style="float: left; margin-right: 20px;" />
+            <h4><b>Real Time Analytics On Multiple Simultaneous DBs</b></h4>
+            In today's competitive landscape, yesterday's data is like yesterday's newspaper. Giving your entire organization real-time business insight may give you an edge over your competitors that makes a difference to your bottom line.
+            <br />
+            <br />
+            <br />
+          </div>
+          <div class="col-md-12">
+            <img src="images/MS_SQL.jpg" style="float: left; margin-right: 20px;" />
+            <h4><b>Your Entire Data Universe</b></h4>
+            Modern enterprises need access to a diverse set of data sources, contained behind a multitude of different systems. Izenda Fusion lets you connect to common data sources instantly and custom web services through an extensible API. Please contact sales@izenda.com or your account manager to schedule a consultation on how we can connect to all your data.
+            <br />
+          </div>
+        </div>
+
+        <h3 class="subheader">Supported Data Sources:</h3>
+        <ul>
+          <li>Microsoft SQL Server</li>
+          <li>Oracle</li>
+          <li>MySQL</li>
+          <li>PostgreSQL</li>
+          <li>DB2</li>
+          <li>OData</li>
+          <li>Sql Server Analysis Services (SSAS)</li>
+          <li>Sharepoint (Forms &amp; Lists)</li>
+          <li>Xml Data Sources</li>
+          <li>Custom Web Services</li>
+          <li>Windows Communication Foundation (WCF)</li>
+          <li>Excel CSV Files</li>
+          <li>Entity Attribute Value (EAV) Databases</li>
+          <li>NoSQL Databases</li>
+        </ul>
+        
+        <h3 class="subheader">HOW DOES IT WORK?</h3>
+        <p>Izenda Fusion dynamically routes queries to the appropriate data source in real-time. For example, a dashboard may have information that comes from several different databases scattered across the globe. Izenda fusion pulls this information together instantly and seamlessly. To the user, the data acts like it is in one place.</p>
+        <br />
+        <p>Izenda Fusion offers all the benefits of a traditional data warehouse without the massive IT investment. The average BI project takes 18 months to complete. By the time it is ready, the business requirements have changed. Izenda fusion can be implemented in a matter of hours.</p>
+        <br />
+        <h3>SETUP</h3>
+        <p>To experience the power of Izenda fusion, add the following code to your initialization method of the AdHocConfig class which is normally in Global.asax:</p>
+        <br />
+        <p>Configure your primary connection normally via the API. Note that this can not be done from the Settings page and must be SQL Server:</p>
+        <p class="code">
+          AdHocSettings.SqlServerConnectionString = "INSERT_CONNECTION_STRING_HERE";
+        </p>
+        <br />
+        <p>Next, add secondary connections via the FusionDriver.Add() methods. These will require an alias to be specified:</p>
+        <p class="code">
+          Izenda.Fusion.FusionDriver.AddSqlConnection("SQLDB", "server=server;database=db");
+          <br />
+          Izenda.Fusion.FusionDriver.AddOracleConnection("OracleDB", "server=oracle");
+          <br />
+          Izenda.Fusion.FusionDriver.AddODataConnection("WebService"," http://odata.server.com");<br />
+        </p>
+
+        <h3 class="subheader">FAQ'S</h3>
+        <h4><b>Where Is The data cached?</b></h4>
+        The report data is cached in memory and backed up to disk on the web server's temp folder. Only the final results are cached, not the source data.
+        <br />
+        <br />
+        <h4><b>How Does Data Get Into The Cache?</b></h4>
+        Data enters the cache when a report or dashboard is executed, saved, previewed or scheduled, pre-cached using the API.
+        <br />
+        <br />
+        <h4><b>How Does The Cache Get Updated?</b></h4>
+        The cache gets updated when a user clicks "Update Results" in the report viewer, saves a report or executes a report after the cache element expires based on the value of DataCacheExpiration. Optionally, you may also run IzendaFusionCache.exe to refresh the cache manually.
+        <br />
+        <br />
+        <h4><b>How Does The Cache Expire?</b></h4>
+        The cache expires after 30 days by default. This can be configured for a set number of days or for a specific time such as Saturday at midnight.
+        <br />
+        <br />
+        <h4><b>How Much Space Does The Cache Require?</b></h4>
+        Izenda recommends about to 10k per report part for average sized reports. In an environment where there are 100 reports and each one has two parts (e.g. a chart and summary), we recommend 20MB of free disk space and memory.
+        <br />
+        <br />
+        <h4><b>How Does Smart Refresh Work?</b></h4>
+        The cache stores information on how frequently reports and parameter combinations are used. A scheduled task runs when the system is idle and refreshes the cache for recently used reports with expired data.
+        <br />
+        <br />
+        <p style="color: #666; font-size: smaller;">SQL Server, SharePoint and Excel are registered trademarks of Microsoft Corporation. Oracle is a registered trademark of Oracle Corporation. DB2 is a registered trademark of IBM Corporation. Izenda Fusion is a trademark of Izenda, LLC.</p>
       </div>
     </div>
   </section>

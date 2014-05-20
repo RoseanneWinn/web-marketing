@@ -1073,3 +1073,53 @@ ul.media-list li.media div.comment-holder {
   text-align: center;
 }
 
+.iz-feature-embed-container > embed {
+  width: 100%;
+  height: 100%;
+}
+
+div.code {
+  font-family: Courier;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 10px;
+  background-color: #e0e1e2;
+  border: 1px solid #ddd;
+}
+
+span.code {
+  font-family: Courier;
+  font-weight: lighter;
+  background-color: #e0e1e2;
+  border: 1px solid #ddd;
+}
+
+h3.subheader {
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.article-container {
+  padding-left: 200px;
+}
+
+.article-column {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.quote {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  padding: 10px;
+  background-color: #e0e1e2;
+  border: 1px solid #ddd;
+}
+
+.quote-author {
+  font-size: 14px;
+  padding-left: 40px;
+  background-color: #e0e1e2;
+}

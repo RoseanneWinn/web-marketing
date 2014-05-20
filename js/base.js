@@ -1,15 +1,15 @@
-﻿//////////////////////////////////////////////////////////////////////////////////////////
-// jPreloader settings
-//////////////////////////////////////////////////////////////////////////////////////////
-//$(document).ready(function () {
-//  $('body').jpreLoader({
-//    loaderVPos: "0%",
-//    splashFunction: function () {
-//      $("body").addClass("visible-body");
-//      $("body").removeClass("hidden-body");
-//    }
-//  });
-//});
+﻿// set embed size
+jQuery(document).ready(function ($) {
+  var $container = $('.iz-feature-embed-container');
+  if ($container.find('embed').length > 0)
+    $container.height($container.width() * 9 / 16);
+});
+
+jQuery(window).resize(function($) {
+  var $container = jQuery('.iz-feature-embed-container');
+  if ($container.find('embed').length > 0)
+    $container.height($container.width() * 9 / 16);
+});
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // Header template
