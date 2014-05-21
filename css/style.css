@@ -1123,3 +1123,35 @@ h3.subheader {
   padding-left: 40px;
   background-color: #e0e1e2;
 }
+
+.company {
+  margin: 5px;
+  width: 150px;
+  height: 120px;
+}
+
+.company.bordered {
+  outline: 1px solid #ddd;
+}
+
+p.text {
+  text-indent: 20px;
+}
+
+.management-team-body {
+  padding-left: 200px;
+}
+
+.management-team-body > p, .izenda-article > p {
+  margin-top: 15px;
+}
+
+.client-row {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.client-logo-left {
+  text-align: right;
+  padding-right: 20px;
+}

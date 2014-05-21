@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Izenda - Ad Hoc Reporting, Embedded BI & Data Virtualization for SQL Data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta content="Izenda" name="description">
+  <meta content="playlab" name="author">
+  <!-- font lato -->
+  <!--<link rel="stylesheet" type="text/css" href="css/font.css"/>-->
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
+  <!-- Font Awesome  -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap3.min.css" />
+  <!-- quivee Style -->
+  <link href="css/colors.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/header-bs3.css" />
+
+  <!-- Favicon and touch icons  -->
+  <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+  <link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+  <link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+  <link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
+  <link href="ico/favicon.png" rel="shortcut icon">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+</head>
+<body class="page-aqua">
+
+  <section class="services first">
+    <div class="wrapper bg-white">
+      <div class="container izenda-article">
+        <h3 class="subheader">Our Customers</h3>
+
+        <h4><b>A sampling of our customers.</b></h4>
+        <p>Using Izenda's rich API, developers build virtually any user interface one can imagine. Your user's experience is limited only by your own creativity and the requirements of your application. Browse the screen shots below to see how Izenda Reports integrates seamlessly into any ASP.NET application.</p>
+        <p>
+          Click on screen shot images to see larger views and <b>TODO: Create CLIENT SHOTS PAGE </b>
+          <a href="/Site/Pages/ClientShots.aspx#generic" style="color: #00E;">preview our generic report designer interface</a>
+          which is completely re-brandable and customizable.
+        </p>
+
+        <p>
+          Clients Type
+          <select id="izendaClientTypes" style="margin-left: 20px; width: 400px;" ></select>
+        </p>
+        <br/>
+        <div id="izendaClients" style="display: none;">
+          <div id="izendaClientsDescr" class="code"></div>
+        </div>
+        <!-- client list -->
+        <div class="row client-row" clientTypes="clientType2,clientType3">
+          <div class="col-md-3 client-logo-left">
+            <img src="images/zeewise_logo.png"/>
+          </div>
+          <div class="col-md-9">
+            <h4><b>ZeeWise</b></h4>
+            <p>The ZeeWise Zee360 software delivers ad hoc Business Intelligence and Performance Management solutions for 
+              franchisors and franchisees. Zee360 provides automated QuickBooks data collection, centralized data analysis, 
+              and real time Dashboards with metrics, KPI's and general reporting to help franchisees understand their 
+              business better. As the leading provider of Franchise Business Intelligence solutions, this implementation 
+              of Izenda Reports enhanced ZeeWise products capabilities by expanding the speed and flexibility by which 
+              their users could produce reports -- all without having to invest months or years to develop the same 
+              capability in-house. Build or buy? It was clear Izenda had a solution that could be integrated and deployed 
+              quickly, leaving the development team to focus on their core product.</p>
+          </div>
+        </div>
+        
+        <div class="row client-row" clientTypes="clientType2">
+          <div class="col-md-3 client-logo-left">
+            <img src="images/econsultingnetwork_logo.png"/>
+          </div>
+          <div class="col-md-9">
+            <h4><b>eConsulting Network</b></h4>
+            <p>eConsulting Network produces JobBlox, a web-based job management system for creating and maintaining an 
+              organization's job documentation. JobBlox makes developing and maintaining accurate, up-to-date job 
+              documentation easier and more efficient. JobBlox is a self-service application that allows managers to 
+              submit newly created jobs and to submit changes to existing jobs. With the integration of Izenda Reports, 
+              self-service reporting is extended to every user, according to the security and permissions Izenda inherits 
+              from the application.</p>
+          </div>
+        </div>
+        
+        <div class="row client-row" clientTypes="clientType5">
+          <div class="col-md-3 client-logo-left">
+            <img src="images/edu_dyn_logo.png"/>
+          </div>
+          <div class="col-md-9">
+          <h4><b>Education Dynamics</b></h4>
+            <p>Education Dynamics provides marketing and student affairs professionals the tools they need to meet their 
+              critical objectives in recruitment, enrollment, yield and retention. The company has pulled together the 
+              best in content resources and proprietary technology, all managed by a team of professionals with unparalleled 
+              experience in the higher education field. Collectively, it is the only organization that delivers products 
+              and services with a proven track record for helping schools find, enroll and retain students. This unique 
+              implementation of Izenda Reports lets users create and customize reports from a tree structure - intuitively 
+              and quickly.</p>
+          </div>
+        </div>
+        
+        <!-- hidden data items -->
+        <div id="izendaClientsData" class="hidden">
+          <div id="clientType1">
+            <div class="description"></div>
+          </div>
+          <div id="clientType2">
+            <div class="description">
+              <b>Independent Software Vendors / OEM's</b>
+              <p>Companies that build and sell their own branded software products choose Izenda Reports for four principal reasons.</p>
+              <ul>
+                <li>Faster time to market with new releases - no long, tedious report writing with traditional programming tools.</li>
+                <li>Cost savings - more "junior" developers can be employed to build any required "standard reports"; they don't need to know Crystal, SQL Reporting Services or other tools.</li>
+                <li>True private labeling - Izenda Reports inherits the look/feel, navigation and security of the core application.</li>
+                <li>Buy vs. Build - The combination of Izenda Reports' powerful feature set and its aggressive pricing model makes the "build in-house" option a far more costly and labor intensive path for the vast majority of software ISV's.</li>
+              </ul>
+            </div>
+          </div>
+          <div id="clientType3">
+            <div class="description">
+              <b>Corporate IT &amp; End Users</b>
+              <p>Corporate IT departments, most often staffed with highly skilled developers and database experts, find Izenda Reports a quick and effective solution to reporting services at both departmental and enterprise levels. Izenda Reports is being used to increase productivity and provide on-demand BI to users throughout North America, in Europe, Australia and where ever self-service reporting can make an organization more efficient.</p>
+            </div>
+          </div>
+          <div id="clientType4">
+            <div class="description">
+              <b>Solution Providers &amp; Custom Software Developers</b>
+              <p>Solution Providers deliver the software equivalent of the Swiss Army knife for business -- they're able to solve virtually any problem. Custom developers have incorporated Izenda Reports into their projects and enjoyed strong positive reaction from their clients.  Ad hoc, self-service reporting is here to stay, and users are coming to expect nothing less from their development partners.</p>
+            </div>
+          </div>
+          <div id="clientType5">
+            <div class="description">
+              <b>Healthcare</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Javascript  -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap3.min.js"></script>
+  <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+  <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/waypoints.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+  <script type="text/javascript" src="js/smooth-scroll.js"></script>
+  <script type="text/javascript" src="js/header-bs3.js"></script>
+  <script type="text/javascript" src="js/jsrender.min.js"></script>
+  <script type="text/javascript" src="js/template.js"></script>
+  <script type="text/javascript" src="js/base.js"></script>
+  <!-- begin SnapEngage code -->
+  <script type="text/javascript">
+    (function () {
+      var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+      se.src = 'http://commondatastorage.googleapis.com/code.snapengage.com/js/24c3b9f3-b9bb-4c8b-8a15-30c20ee6c4e8.js';
+      var done = false;
+      se.onload = se.onreadystatechange = function () {
+        if (!done && (!this.readyState || this.readyState === 'loaded' || this.readyState === 'complete')) {
+          done = true;
+          // Place your SnapEngage JS API code below
+          SnapEngage.allowChatSound(true);
+          SnapEngage.allowProactiveChat(true);
+        }
+      };
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+    })();
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var $types = $('#izendaClientTypes');
+      var $clients = $('#izendaClients');
+      var $clientsDescr = $('#izendaClientsDescr');
+      var data = {
+        'All clients': {
+          id: 'clientType1'
+        },
+        'Independent Software Vendors / OEM\'s': {
+          id: 'clientType2'
+        },
+        'Corporate IT & End Users': {
+          id: 'clientType3'
+        },
+        'Solution Providers & Custom Software Developers': {
+          id: 'clientType4'
+        },
+        'Healthcare': {
+          id: 'clientType5'
+        }
+      };
+
+      for (var clientType in data) {
+        $types.append('<option value="' + clientType + '">' + clientType + '</option>');
+      }
+      $types.change(function() {
+        var newType = $types.val();
+        var dataTypeItem = data[newType];
+        var html = $('#' + dataTypeItem.id).find('.description').html();
+        if (typeof (html) == 'string' && html != '') {
+          $clients.fadeIn(200);
+        } else {
+          $clients.fadeOut(200);
+        }
+        $('#izendaClientsDescr').html(html);
+
+        if (newType == 'All clients') {
+          $('.client-row').show();
+          return;
+        }
+
+        $('.client-row').each(function(iRow, row) {
+          var $row = $(row);
+          var types = $row.attr('clientTypes');
+          console.log(types);
+          if (types != null && types.split(',').indexOf(dataTypeItem.id) >= 0) {
+            $row.show();
+          } else {
+            $row.hide();
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
