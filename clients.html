@@ -64,53 +64,7 @@
           <div id="izendaClientsDescr" class="code"></div>
         </div>
         <!-- client list -->
-        <div class="row client-row" clientTypes="clientType2,clientType3">
-          <div class="col-md-3 client-logo-left">
-            <img src="images/zeewise_logo.png"/>
-          </div>
-          <div class="col-md-9">
-            <h4><b>ZeeWise</b></h4>
-            <p>The ZeeWise Zee360 software delivers ad hoc Business Intelligence and Performance Management solutions for 
-              franchisors and franchisees. Zee360 provides automated QuickBooks data collection, centralized data analysis, 
-              and real time Dashboards with metrics, KPI's and general reporting to help franchisees understand their 
-              business better. As the leading provider of Franchise Business Intelligence solutions, this implementation 
-              of Izenda Reports enhanced ZeeWise products capabilities by expanding the speed and flexibility by which 
-              their users could produce reports -- all without having to invest months or years to develop the same 
-              capability in-house. Build or buy? It was clear Izenda had a solution that could be integrated and deployed 
-              quickly, leaving the development team to focus on their core product.</p>
-          </div>
-        </div>
-        
-        <div class="row client-row" clientTypes="clientType2">
-          <div class="col-md-3 client-logo-left">
-            <img src="images/econsultingnetwork_logo.png"/>
-          </div>
-          <div class="col-md-9">
-            <h4><b>eConsulting Network</b></h4>
-            <p>eConsulting Network produces JobBlox, a web-based job management system for creating and maintaining an 
-              organization's job documentation. JobBlox makes developing and maintaining accurate, up-to-date job 
-              documentation easier and more efficient. JobBlox is a self-service application that allows managers to 
-              submit newly created jobs and to submit changes to existing jobs. With the integration of Izenda Reports, 
-              self-service reporting is extended to every user, according to the security and permissions Izenda inherits 
-              from the application.</p>
-          </div>
-        </div>
-        
-        <div class="row client-row" clientTypes="clientType5">
-          <div class="col-md-3 client-logo-left">
-            <img src="images/edu_dyn_logo.png"/>
-          </div>
-          <div class="col-md-9">
-            <h4><b>Education Dynamics</b></h4>
-            <p>Education Dynamics provides marketing and student affairs professionals the tools they need to meet their 
-              critical objectives in recruitment, enrollment, yield and retention. The company has pulled together the 
-              best in content resources and proprietary technology, all managed by a team of professionals with unparalleled 
-              experience in the higher education field. Collectively, it is the only organization that delivers products 
-              and services with a proven track record for helping schools find, enroll and retain students. This unique 
-              implementation of Izenda Reports lets users create and customize reports from a tree structure - intuitively 
-              and quickly.</p>
-          </div>
-        </div>
+        <div id="izendaClientItems"></div>
         
         <!-- hidden data items -->
         <div id="izendaClientsData" class="hidden">
@@ -186,21 +140,47 @@
       var $types = $('#izendaClientTypes');
       var $clients = $('#izendaClients');
       var $clientsDescr = $('#izendaClientsDescr');
+
+      $.ajax({
+        url: 'js/clients.json',
+        dataType: 'json'
+      }).done(function(data) {
+        for (var i = 0; i < data.length; i++) {
+          var item = data[i];
+          var logoUrl = item.Logo;
+          if (logoUrl.toLowerCase().indexOf('/site') == 0) {
+            logoUrl = 'http://www.izenda.com' + logoUrl;
+          }
+          var html = 
+'<div class="row client-row" clientTypes="' + item.Type + '">' +
+'  <div class="col-md-3 client-logo-left">' +
+'    <img style="max-width: 200px;" src="' + logoUrl + '"/>' +
+'  </div>' +
+'  <div class="col-md-9">' +
+'    <h4><b>' + item.Name + '</b></h4>' +
+'    <p>' + item.Description + '</p>' +
+'  </div>' +
+'</div>';
+          var $item = $(html);
+          $('#izendaClientItems').append($item);
+        }
+      });
+
       var data = {
         'All clients': {
           id: 'clientType1'
         },
         'Independent Software Vendors / OEM\'s': {
-          id: 'clientType2'
+          id: 'ISV'
         },
         'Corporate IT & End Users': {
-          id: 'clientType3'
+          id: 'EU'
         },
         'Solution Providers & Custom Software Developers': {
-          id: 'clientType4'
+          id: 'SP'
         },
         'Healthcare': {
-          id: 'clientType5'
+          id: 'Healthcare'
         }
       };
 
@@ -226,7 +206,6 @@
         $('.client-row').each(function(iRow, row) {
           var $row = $(row);
           var types = $row.attr('clientTypes');
-          console.log(types);
           if (types != null && types.split(',').indexOf(dataTypeItem.id) >= 0) {
             $row.show();
           } else {
