@@ -1155,3 +1155,7 @@ p.text {
   text-align: right;
   padding-right: 20px;
 }
+
+.contact-item {
+  padding-left: 30px;
+}
