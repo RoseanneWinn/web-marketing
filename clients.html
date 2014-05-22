@@ -142,7 +142,7 @@
       var $clientsDescr = $('#izendaClientsDescr');
 
       $.ajax({
-        url: 'js/clients.json',
+        url: 'js/config-new.json',
         dataType: 'json'
       }).done(function(data) {
         for (var i = 0; i < data.length; i++) {
@@ -164,6 +164,9 @@
           var $item = $(html);
           $('#izendaClientItems').append($item);
         }
+      }).error(function() {
+        console.log('fail to load config json');
+        console.log(arguments);
       });
 
       var data = {
