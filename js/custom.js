@@ -263,6 +263,69 @@ $(window).bind('load', function () {
 });
 
 //////////////////////////////////////////////////////////////////////////////////////////
+// Customers slider
+//////////////////////////////////////////////////////////////////////////////////////////
+$(document).ready(function ($) {
+  var w = $('#clientsListContainer').width();
+  var sw = 200;
+  $('#clientsList').width(Math.floor(w / sw) * sw);
+  $('#clientsListSlides').width(Math.floor(w / sw) * sw);
+  $.ajax({
+    url: 'js/config-new.json',
+    dataType: 'json'
+  }).done(function (data) {
+    // load images for slider
+    var gotIndexes = [];
+    for (var i = 0; i < 20; i++) {
+      var randI = Math.floor(Math.random() * data.length);
+      while (gotIndexes.indexOf(randI) >= 0) {
+        randI = Math.floor(Math.random() * data.length);
+      }
+      var item = data[randI];
+      var logoUrl = item.Logo;
+      $('#clientsListSlides').append($('<div style="padding: 10px; background-color: #fff;"><div class="clientListLogo" style="background: url(\'' + logoUrl + '\') no-repeat center center;"></div></div>'));
+    }
+
+    // create slider
+    var options = {
+      $AutoPlay: true,
+      $AutoPlaySteps: 1,
+      $AutoPlayInterval: 5000,
+      $PauseOnHover: 1,
+      $ArrowKeyNavigation: true,
+      $SlideDuration: 300,
+      $MinDragOffsetToSlide: 20,
+      $SlideWidth: 200,
+      $SlideHeight: 150,
+      $SlideSpacing: 0,
+      $DisplayPieces: 6,
+      $ParkingPosition: 0,
+      $UISearchMode: 1,
+      $PlayOrientation: 1,
+      $DragOrientation: 1,
+      $ArrowNavigatorOptions: {
+        $Class: $JssorArrowNavigator$,
+        $ChanceToShow: 1,
+        $AutoCenter: 2,
+        $Steps: 1
+      }
+    };
+    var jssorSlider = new $JssorSlider$("clientsList", options);
+    function scaleSlider() {
+      var bodyWidth = document.body.clientWidth;
+      if (bodyWidth)
+        jssorSlider.$SetScaleWidth($('#clientsListContainer').width());
+      else
+        window.setTimeout(scaleSlider, 30);
+    }
+    scaleSlider();
+    if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+      $(window).bind('resize', scaleSlider);
+    }
+  });
+});
+
+//////////////////////////////////////////////////////////////////////////////////////////
 //Hide menu after clic on mobile 
 //////////////////////////////////////////////////////////////////////////////////////////
 jQuery(document).ready(function ($) {
