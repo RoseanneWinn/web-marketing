@@ -94,6 +94,33 @@ textarea {
   background: url(/web-marketing/NewWebsite/img/main/izenda-ad-hoc-reporting.jpg) center no-repeat;
 }
 
+#main-vid {
+  margin-top: 75px;
+
+}
+
+.pic-list {
+  margin-top: 75px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.pic-list img {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+#intro-content {
+  position: relative;
+  bottom: 100px;
+}
+
+#logo {
+  min-width: 300px;
+}
+
 #try-it-free {
   background-color: #fea500;
   color: black;
