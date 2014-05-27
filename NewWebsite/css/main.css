@@ -118,7 +118,7 @@ textarea {
 }
 
 #logo {
-  min-width: 300px;
+  min-width: 250px;
 }
 
 #try-it-free {
@@ -141,6 +141,8 @@ textarea {
   color: white;
 }
 
+/* Alignment fixes for pics */
+
 #pic-fix-me {
   margin-left: 30px;
 }
@@ -157,7 +159,11 @@ textarea {
   margin-left: 12px;
 }
 
-/* button colors */
+/* button colors & other stuff*/
+
+.btn {
+  min-width: 60px;
+}
 
 #btn-traditional {
   background-color: #fe0000;
@@ -197,6 +203,30 @@ textarea {
 #btn-global {
   background-color: #b030ff;
   color: white;
+}
+
+/* positioning of data elements */
+
+.text-push-down {
+  position: relative;
+  top: 50px;
+}
+
+.pic-pull-up {
+  position: relative;
+  bottom: 75px;
+}
+
+/* Specific photo adjustments */
+
+#operational-pull-up, #analytical-pull-up {
+  position: relative;
+  bottom: 90px;
+}
+
+#flexible-pull-up {
+  position: relative;
+  bottom: 140px;
 }
 
 #partners-list {
