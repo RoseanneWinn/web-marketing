@@ -46,7 +46,7 @@
     <div class="container">
       <div class="flexslider">
         <ul class="slides">
-          <li >
+          <li>
             <div class="iz-flex-item m1a">
               <div class="iz-flex-logo"></div>
               <h3 class="iz-flex-h3">Real Time Analitycs</h3>
@@ -292,48 +292,26 @@
     <div class="wrapper bg-white">
       <div class="container">
         <h3>Our customers.</h3>
-        <div id="clientsListContainer">
-          <div id="clientsList" style="position: relative; top: 0px; left: 0px; width: 100%; height: 150px; overflow: hidden;">
-            <!-- Loading Screen -->
-            <div id="clientsListSlides" u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 809px; height: 150px; overflow: hidden;">
-              
-            </div>
-            <!-- Arrow Left -->
-            <span u="arrowleft" class="jssora03l" style="width: 30px; height: 30px; top: 40px; left: 0px;">
-            </span>
-            <!-- Arrow Right -->
-            <span u="arrowright" class="jssora03r" style="width: 30px; height: 30px; top: 40px; right: 0px">
-            </span>
+
+
+        <div id="izenda-carousel" class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
           </div>
-          <style>
-            .jssora03l, .jssora03r, .jssora03ldn, .jssora03rdn
-            {
-              position: absolute;
-              cursor: pointer;
-              display: block;
-              background: url(images/bg_direction_nav.png) no-repeat;
-              width: 30px !important;
-              overflow:hidden;
-            }
-            .jssora03l { background-position: 0 0; }
-            .jssora03r { background-position: 100% 0; right: -36px; }
-            .jssora03l:hover { background-position: 0 0; }
-            .jssora03r:hover { background-position: 100% 0; right: -36px; }
-            .jssora03ldn { background-position: 0 0; }
-            .jssora03rdn { background-position: 100% 0; right: -36px; }
-          </style>
+          <a class="left carousel-control" href="#izenda-carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#izenda-carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
         </div>
+
+        <br />
         <a href="clients.html?tc=company">See All Customers</a>
-        <!--<div class="client-wrapper mar-t30">
-              <div class="row text-center">
-                <img class="client-logo col-md-2" src="images/clientlogo1.jpg" alt="logo" />
-                <img class="client-logo col-md-2" src="images/clientlogo2.jpg" alt="logo" />
-                <img class="client-logo col-md-2" src="images/clientlogo3.jpg" alt="logo" />
-                <img class="client-logo col-md-2" src="images/clientlogo4.jpg" alt="logo" />
-                <img class="client-logo col-md-2" src="images/clientlogo5.jpg" alt="logo" />
-                <img class="client-logo col-md-2 last" src="images/clientlogo6.jpg" alt="logo" />
-              </div>
-            </div>-->
       </div>
     </div>
 
@@ -422,10 +400,6 @@
   <script type="text/javascript" src="js/ilightbox.packed.js"></script>
   <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
   <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-  <script type="text/javascript" src="js/jssor.core.js"></script>
-  <script type="text/javascript" src="js/jssor.utils.js"></script>
-  <script type="text/javascript" src="js/jssor.slider.js"></script>
-
   <script type="text/javascript" src="js/smooth-scroll.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
   <script type="text/javascript" src="js/header-bs3.js"></script>

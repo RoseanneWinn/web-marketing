@@ -266,26 +266,42 @@ $(window).bind('load', function () {
 // Customers slider
 //////////////////////////////////////////////////////////////////////////////////////////
 $(document).ready(function ($) {
-  var w = $('#clientsListContainer').width();
+  /*var w = $('#clientsListContainer').width();
   var sw = 200;
   $('#clientsList').width(Math.floor(w / sw) * sw);
-  $('#clientsListSlides').width(Math.floor(w / sw) * sw);
+  $('#clientsListSlides').width(Math.floor(w / sw) * sw);*/
   $.ajax({
     url: 'js/config-new.json',
     dataType: 'json'
   }).done(function (data) {
+    var $carousel = $('#izenda-carousel');
+    var $carouselInner = $carousel.find('.carousel-inner');
     // load images for slider
     var gotIndexes = [];
-    for (var i = 0; i < 20; i++) {
+    var currentSlideIdx = 0;
+    var currentSlideCount = 0;
+    var $currentSlide = $($carouselInner.children()[0]);
+    var itemsPerSlide = Math.floor($carouselInner.width() / 200);
+    for (var i = 0; i < itemsPerSlide * 4; i++) {
       var randI = Math.floor(Math.random() * data.length);
       while (gotIndexes.indexOf(randI) >= 0) {
         randI = Math.floor(Math.random() * data.length);
       }
-      var item = data[randI];
-      var logoUrl = item.Logo;
-      $('#clientsListSlides').append($('<div style="padding: 10px; background-color: #fff;"><div class="clientListLogo" style="background: url(\'' + logoUrl + '\') no-repeat center center;"></div></div>'));
-    }
+      var logoUrl = data[randI].Logo;
+      var name = data[randI].Name;
 
+      if (currentSlideCount >= itemsPerSlide) {
+        currentSlideIdx++;
+        $currentSlide = $($carouselInner.children()[currentSlideIdx]);
+        currentSlideCount = 0;
+      }
+      currentSlideCount++;
+      $currentSlide.append($('<span class="clientListLogoContainer"><div class="clientListLogo" title="' + name + '" style="background: url(\'' + logoUrl + '\') no-repeat center center;"></div></span>'));
+    }
+    $carousel.find('.clientListLogo').click(function() {
+      window.location.href = 'clients.html?tc=company';
+    });
+    /*
     // create slider
     var options = {
       $AutoPlay: true,
@@ -305,8 +321,8 @@ $(document).ready(function ($) {
       $DragOrientation: 1,
       $ArrowNavigatorOptions: {
         $Class: $JssorArrowNavigator$,
-        $ChanceToShow: 1,
-        $AutoCenter: 2,
+        $ChanceToShow: 2,
+        $AutoCenter: 0,
         $Steps: 1
       }
     };
@@ -321,7 +337,7 @@ $(document).ready(function ($) {
     scaleSlider();
     if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
       $(window).bind('resize', scaleSlider);
-    }
+    }*/
   });
 });
 
