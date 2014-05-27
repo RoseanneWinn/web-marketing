@@ -1004,15 +1004,21 @@ p.text {
 
 .carousel-control.left, .carousel-control.right {
   background: none;
+  width: 40px;
 }
 
 .carousel-control:hover, .carousel-control:focus {
   color: #1A72BA;
 }
 
+.carousel {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .clientListLogoContainer {
   display: table-cell;
-  padding: 15px;
+  padding: 5px;
 }
 
 .clientListLogo {

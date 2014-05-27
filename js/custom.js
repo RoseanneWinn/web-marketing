@@ -281,8 +281,8 @@ $(document).ready(function ($) {
     var currentSlideIdx = 0;
     var currentSlideCount = 0;
     var $currentSlide = $($carouselInner.children()[0]);
-    var itemsPerSlide = 5;
-    for (var i = 0; i < 20; i++) {
+    var itemsPerSlide = Math.floor($carouselInner.width() / 200);
+    for (var i = 0; i < itemsPerSlide * 4; i++) {
       var randI = Math.floor(Math.random() * data.length);
       while (gotIndexes.indexOf(randI) >= 0) {
         randI = Math.floor(Math.random() * data.length);
