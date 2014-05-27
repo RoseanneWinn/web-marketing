@@ -88,13 +88,120 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Izenda Custom Styles
    ========================================================================== */
+#primary-background {
+  background: url(/web-marketing/NewWebsite/img/main/izenda-ad-hoc-reporting.jpg) center no-repeat;
+}
 
+#main-vid {
+  margin-top: 75px;
 
+}
 
+.pic-list {
+  margin-top: 75px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
 
+.pic-list img {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
 
+#intro-content {
+  position: relative;
+  bottom: 100px;
+}
+
+#logo {
+  min-width: 300px;
+}
+
+#try-it-free {
+  background-color: #fea500;
+  color: black;
+  font-weight: bold;
+  border: ridge black small;
+}
+
+#try-it-free:hover {
+  opacity: .7;
+}
+
+.bottom-background {
+  background-color: #74b3de;
+}
+
+.top-background {
+  background-color: #0061a0;
+  color: white;
+}
+
+#pic-fix-me {
+  margin-left: 30px;
+}
+
+#pic-fix-me-2 {
+  margin-left: 10px;
+}
+
+#pic-fix-me-3 {
+  margin-left: 10px;
+}
+
+#pic-fix-me-4 {
+  margin-left: 12px;
+}
+
+/* button colors */
+
+#btn-traditional {
+  background-color: #fe0000;
+  color: white;
+}
+
+#btn-operational {
+  background-color: #f54e00;
+  color: white;
+}
+
+#btn-analytical {
+  background-color: #fece00;
+  color: white;
+}
+
+#btn-flexible {
+  background-color: #53c400;
+  color: white;
+}
+
+#btn-experimental {
+  background-color: #00a0b8;
+  color: white;
+}
+
+#btn-interactive {
+  background-color: #005dff;
+  color: white;
+}
+
+#btn-visual {
+  background-color: #7b1aff;
+  color: white;
+}
+
+#btn-global {
+  background-color: #b030ff;
+  color: white;
+}
+
+#partners-list {
+  background-color: #EBEBEB;
+}
 
 
 
