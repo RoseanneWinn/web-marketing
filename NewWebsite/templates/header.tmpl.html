@@ -1,0 +1,133 @@
+﻿<script id="izendaHeaderTemplate" type="text/x-jsrender">
+  <header class="iz-header">
+    <nav class="navbar navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle pull-left iz-toggle-nav" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <button id="izTryItFreeButton" type="button" class="navbar-toggle iz-try-it-free">TRY IT FREE</button>
+        <button id="izContactsChatButton" type="button" class="navbar-toggle iz-contact-button">
+          <img src="img/header/ChatBox30.png" id="Img9" alt="chat" />
+        </button>
+        <button id="izContactsEmailButton" type="button" class="navbar-toggle iz-contact-button">
+          <img src="img/header/Email30.png" id="Img8" alt="email" />
+        </button>
+        <button id="izContactsPhoneButton" type="button" class="navbar-toggle iz-contact-button">
+          <img src="img/header/Phone30.png" id="Img7" alt="phone" />
+        </button>
+        <span class="iz-navbar-logo" title="Izenda Reports" onclick="location.href='http://www.izenda.com';" style="cursor: pointer;"></span>
+
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div id="izNavBar" class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-default">
+          <li class="dropdown iz-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" tc="reports" onclick="location.href='#'">PRODUCTS <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="reports.html?tc=reports">IZENDA REPORTS</a></li>
+              <li><a href="reports-mvc.html?tc=reports">IZENDA REPORTS FOR MVC</a></li>
+              <li><a href="dashboards.html?tc=reports">IZENDA DASHBOARDS</a></li>
+              <li><a href="maps.html?tc=reports">IZENDA MAPS</a></li>
+              <li><a href="language-pack.html?tc=reports">IZENDA LANGUAGE PACK</a></li>
+              <li><a href="fusion.html?tc=reports">IZENDA FUSION</a></li>
+              <li><a href="forms.html?tc=reports">IZENDA FORMS</a></li>
+              <li><a href="vision.html?tc=reports">IZENDA VISION</a></li>
+            </ul>
+          </li>
+          <li class="iz-menu"><a class="modalbox" href="#inline" tc="#pricing" data-toggle="modal" data-target="#izendaPricingDialog">PRICING</a></li>
+          <li class="iz-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" tc="company" onclick="location.href='#'">COMPANY <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html?tc=company">ABOUT</a></li>
+              <li><a href="management-team.html?tc=company">MANAGEMENT TEAM</a></li>
+              <li><a href="clients.html?tc=company">OUR CUSTOMERS</a></li>
+              <li><a href="careers.html?tc=company">CAREERS</a></li>
+              <li><a href="contacts.html?tc=company">CONTACT</a></li>
+            </ul>
+          </li>
+          <li class="iz-menu"><a href="http://www.izenda.com/site/Pages/Gallery.aspx" tc="Gallery.aspx">GALLERY</a></li>
+          <li class="iz-menu"><a href="http://wiki.izenda.us" tc="KB/Integration">KNOWLEDGE BASE</a></li>
+          <!--<li class="iz-menu"><a href="#support" tc="#support" onclick="alert('support dialog here');">SUPPORT</a></li> I'd like to implement this with Amelia's stuff-->
+          <li class="iz-menu"><a href="http://blog.izenda.com/" tc="blog.izenda.com">BLOG</a></li>
+        </ul>
+        <ul id="izNavBarSearch" id="search-bar" class="nav navbar-nav navbar-right iz-search hidden">
+          <li>
+            <strong id="izSearchIcon" class="icon-search"></strong>
+            <input id="izSearchInput" class="form-control" type="search" name="search" value="" placeholder="Search" />
+          </li>
+        </ul>
+        <ul id="izNavBarSearchBtn" class="nav navbar-nav navbar-right iz-search-btn">
+          <li>
+            <a id="izSearchBtn" href="#" title="Search"><strong class="glyphicon glyphicon-search"></strong></a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right iz-free-trial">
+          <li><a id="izFreeTrialButton" class="btn btn-warning" href="http://www.izenda.com/Site/Pages/LandingPages/Ad-Hoc-Reporting.aspx">TRY IT FREE</a></li>
+        </ul>
+        <div class="iz-header-button-list-main">
+          <a href="http://www.izenda.com/site/Pages/contactus.aspx">
+            <img src="img/header/Phone30.png" id="Img4" alt="phone" /></a>
+          <a href="mailto:services@izenda.com"><img src="img/header/Email30.png" id="Img5" alt="email" /></a>
+          <a href="#" onclick="return SnapEngage.startLink();"><img src="img/header/ChatBox30.png" id="Img6" alt="chat" /></a>
+        </div>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+
+    <!-- Pricing dialog -->
+    <div class="modal fade" id="izendaPricingDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="modal-title" id="myModalLabel"><b>Interested?  We will get back with you within 24 hours.</b></h3>
+            <h4>Feel free to call by number 888-493-6321 or <a href="mailto:sales@izenda.com">email</a> us beforehand.</h4>
+          </div>
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <label for="first_name">First Name</label>
+                <input id="first_name" type="text" class="form-control" placeholder="First Name" />
+              </div>
+              <div class="form-group">
+                <label for="last_name">Last Name</label>
+                <input id="last_name" type="text" class="form-control" placeholder="Last Name" />
+              </div>
+              <div class="form-group">
+                <label for="form1_phone">Phone Number</label>
+                <input id="form1_phone" type="text" class="form-control" placeholder="Phone Number" />
+              </div>
+              <div class="form-group">
+                <label for="company_url">Company Url</label>
+                <input id="company_url" type="text" class="form-control" placeholder="Company Url" />
+              </div>
+              <div class="form-group">
+                <label for="email1">Email</label>
+                <input id="email1" type="email" class="form-control" placeholder="Email" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer-center">
+            <button id="send" type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hidden inline form -->
+    <!--<div id="inline" style="display: none">
+      <h2>Interested?  We will get back with you within 24 hours.</h2>
+      <h3>Feel free to <a href="#" id="call-us" onclick="alert('Call: 888-493-6321');">call</a> or <a href="mailto:sales@izenda.com">email</a> us beforehand.</h3>
+      <form id="pricing_contact" action="reg/ContentReg2.aspx?rt=Pricing&bypass=1" method="post">
+        <input id="first_name" class="input_fields" type="text" name="form1_first_name" placeholder="First Name"></input>
+        <input id="last_name" class="input_fields" type="text" name="form1_last_name" placeholder="Last Name"></input>
+        <input id="form1_phone" class="input_fields" type="text" name="form1_phone" placeholder="Number"></input>
+        <input id="company_url" class="input_fields" type="text" name="form1_company" placeholder="Company Url"></input>
+        <input id="email1" type="email" class="input_fields" placeholder="Email" name="form1_email"></input>
+        <button id="send">Send</button>
+      </form>
+    </div>-->
+  </header>
+</script>

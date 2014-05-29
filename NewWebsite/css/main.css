@@ -91,6 +91,7 @@ textarea {
    Izenda Custom Styles
    ========================================================================== */
 #primary-background {
+  padding-top: 42px;
   background: url(/web-marketing/NewWebsite/img/main/izenda-ad-hoc-reporting.jpg) center no-repeat;
 }
 

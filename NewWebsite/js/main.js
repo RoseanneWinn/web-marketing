@@ -1,21 +1,18 @@
 //Ready the page before firing any js
-$(document).ready(function() {
-  
+$(document).ready(function () {
 
-  //Form submission to Heroku
-  $('#form').submit(function (e) {
-    e.preventDefault();
-    var data = {
-        'first-name': $('#first-name').val(),
-        'last-name': $('#last-name').val(),
-        'email': $('#email').val(),
-        'phone-number': $('#phone-number').val(),
-        'company-url': $('#company-url').val()
-    };
-    console.log(data);
-    $.post('http://izenda-free-trial.herokuapp.com/free-trial', data, function (data) {
-        console.log(data);
-    }, 'json');
+  //////////////////////////////////////////////////////////////////////////////////////////
+  // Header template render
+  //////////////////////////////////////////////////////////////////////////////////////////
+  var temlateRenderer = new SiteTemplateRenderer();
+  temlateRenderer.renderExternalTemplate({
+    name: 'header',
+    selector: '#izendaHeaderTemplate',
+    data: {},
+    loaded: function (renderResult) {
+      $('body').prepend(renderResult);
+      initializeIzendaHeader();
+    }
   });
 
   //////////////////////////////////////////////////////////////////////////////////////////
@@ -107,7 +104,6 @@ $(document).ready(function() {
   };
   var $portfolio = $('#portfolio-list');
   var $portfolioFilter = $('#portfolio-filter');
-
   // load images to portfolio if needed
   var loadImagesForFilter = function (filter) {
     var result = [];
@@ -135,7 +131,6 @@ $(document).ready(function() {
     }
     return result;
   };
-
   var currentFilter = $portfolioFilter.find('li.active > a').attr('data-filter').substr(1);
   $portfolio.isotope({
     itemSelector: '.block',
@@ -144,7 +139,6 @@ $(document).ready(function() {
   });
   loadImagesForFilter(currentFilter);
   $portfolio.isotope({ filter: '.' + currentFilter });
-
   //filter items when filter link is clicked
   $('#portfolio-filter a').click(function () {
     var selector = $(this).attr('data-filter');
@@ -153,5 +147,23 @@ $(document).ready(function() {
     currentFilter = selector.substr(1);
     loadImagesForFilter(currentFilter);
     $portfolio.isotope({ filter: selector });
+  });
+
+  //////////////////////////////////////////////////////////////////////////////////////////
+  // Form submit on heroku
+  //////////////////////////////////////////////////////////////////////////////////////////
+  $('#form').submit(function (e) {
+    e.preventDefault();
+    var data = {
+      'first-name': $('#first-name').val(),
+      'last-name': $('#last-name').val(),
+      'email': $('#email').val(),
+      'phone-number': $('#phone-number').val(),
+      'company-url': $('#company-url').val()
+    };
+    console.log(data);
+    $.post('http://izenda-free-trial.herokuapp.com/free-trial', data, function (data) {
+      console.log(data);
+    }, 'json');
   });
 });
