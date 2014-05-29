@@ -131,14 +131,16 @@ $(document).ready(function () {
     }
     return result;
   };
-  var currentFilter = $portfolioFilter.find('li.active > a').attr('data-filter').substr(1);
-  $portfolio.isotope({
-    itemSelector: '.block',
-    layoutMode: 'fitRows',
-    gutter: 10
-  });
-  loadImagesForFilter(currentFilter);
-  $portfolio.isotope({ filter: '.' + currentFilter });
+  if ($portfolioFilter.find('li.active > a').length > 0) {
+    var currentFilter = $portfolioFilter.find('li.active > a').attr('data-filter').substr(1);
+    $portfolio.isotope({
+      itemSelector: '.block',
+      layoutMode: 'fitRows',
+      gutter: 10
+    });
+    loadImagesForFilter(currentFilter);
+    $portfolio.isotope({ filter: '.' + currentFilter });
+  }
   //filter items when filter link is clicked
   $('#portfolio-filter a').click(function () {
     var selector = $(this).attr('data-filter');

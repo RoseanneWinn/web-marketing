@@ -8,13 +8,13 @@
   padding: 0;
   font-size: 12px;
   background-color: #fff;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .iz-header .dropdown-menu > li > a {
   padding: 0px 20px;
   font-weight: bold;
   line-height: 2.85714286;
-  color: #fff;
+  color: #333;
 } 
 .iz-header .dropdown-menu > li > a:hover,
 .iz-header .dropdown-menu > li > a:focus {
@@ -26,7 +26,7 @@
 .iz-header .navbar {
   margin-bottom: 0;
   background-color: #fff;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid #ddd;
 }
 
@@ -41,7 +41,7 @@
 }
 .iz-header .navbar-nav > li > a {
   font-weight: bold;
-  color: #fff;
+  color: #333;
   padding-top: 17px;
   padding-bottom: 17px;
   border-top: 4px solid transparent;
@@ -99,7 +99,7 @@
   width: 170px;
   height: 60px;
   display: block;
-  background: url('../img/header/IzendaDark.png') no-repeat 0 5px;
+  background: url('../img/header/Izenda.png') no-repeat 0 5px;
   background-size: 100%;
 }
 
@@ -107,7 +107,7 @@
   .iz-navbar-logo {
     height: 60px;
     width: 46px;
-    background: url('../img/header/IzendaDarkSmall.png') no-repeat 0 5px;
+    background: url('../img/header/IzendaSmall.png') no-repeat 0 5px;
     background-size: 100%;
   }
 
