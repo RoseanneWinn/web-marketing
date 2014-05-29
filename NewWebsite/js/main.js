@@ -16,6 +16,45 @@ $(document).ready(function () {
   });
 
   //////////////////////////////////////////////////////////////////////////////////////////
+  // Resize photos for new design
+  //////////////////////////////////////////////////////////////////////////////////////////
+  var rtime = new Date(1, 1, 2000, 12, 00, 00);
+  var timeout = false;
+  var delta = 200;
+  var resizeBlockPhoto = function () {
+    $('.block-photo').each(function (iBf, bf) {
+      var $bf = $(bf);
+      $bf.animate({
+        height: $bf.width()
+      }, 250);
+    });
+  };
+  var resizeEnd = function () {
+    var $this = this;
+    if (new Date() - rtime < delta) {
+      setTimeout(function () {
+        resizeEnd.apply($this);
+      }, delta);
+    } else {
+      timeout = false;
+      // execute on resize
+      resizeBlockPhoto();
+    }
+  };
+  $(window).on('resize', null, this, function () {
+    var $this = this;
+    rtime = new Date();
+    if (timeout === false) {
+      timeout = true;
+      setTimeout(function () {
+        resizeEnd.apply($this);
+      }, delta);
+    }
+  });
+  resizeBlockPhoto();
+
+
+  //////////////////////////////////////////////////////////////////////////////////////////
   //Isotope portfolio
   //////////////////////////////////////////////////////////////////////////////////////////
   var izendaPortfolio = {
