@@ -453,10 +453,22 @@ textarea {
 
 .section-who-iz-izenda {
   margin-top: 62px;
-  background-color: #000000;
-  background-color: rgba(0,0,0,0.8);
+  background: url('../img/company/Building.jpeg') no-repeat 0 0;
+  background-size: 100%;
   color: #fff;
-  height: 300px;
+  height: 500px;
+  position: relative;
+}
+
+.section-who-iz-izenda > .v-center {
+  width: 100%;
+  height: 500px;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.section-who-iz-izenda h1 {
+  font-size: 72px;
 }
 
 .section-izenda-description {
