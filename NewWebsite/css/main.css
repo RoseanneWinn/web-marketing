@@ -90,6 +90,36 @@ textarea {
 /* ==========================================================================
    Izenda Custom Styles
    ========================================================================== */
+#img-display {
+  display: none;
+  width: 565px;
+  height: 550px;
+}
+
+.alt-back-color {
+  background-color: #f8f8f8;
+}
+.move-me-up {
+  position: relative;
+  bottom: 75px;
+}
+
+.big-font {
+  font-size: 32px;
+}
+
+#slight-pull-up {
+  position: relative;
+  bottom: 22px;
+}
+
+.styled {
+   background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+   background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+   background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+   background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
 #primary-background {
   padding-top: 42px;
   background: url(/web-marketing/NewWebsite/img/main/izenda-ad-hoc-reporting.jpg) center no-repeat;
@@ -102,20 +132,17 @@ textarea {
 
 .pic-list {
   margin-top: 75px;
-  -webkit-box-shadow: 0 8px 6px -6px black;
-  -moz-box-shadow: 0 8px 6px -6px black;
-  box-shadow: 0 8px 6px -6px black;
 }
 
 .pic-list img {
-  -webkit-box-shadow: 0 8px 6px -6px black;
-  -moz-box-shadow: 0 8px 6px -6px black;
-  box-shadow: 0 8px 6px -6px black;
+  -webkit-box-shadow: 0 0 10px 2px gray;
+  -moz-box-shadow: 0 0 10px 2px gray;
+  box-shadow: 0 0 10px 2px gray;
 }
 
 #intro-content {
   position: relative;
-  bottom: 100px;
+  bottom: 15px;
 }
 
 #logo {
@@ -124,9 +151,15 @@ textarea {
 
 #try-it-free {
   background-color: #fea500;
+  height: 60px;
+  width: 240px;
   color: black;
-  font-weight: bold;
+  position: relative;
+  bottom: 22px;
+  font: 28px bold;
+  font-style: Arial;
   border: ridge black thin;
+  z-index: 2;
 }
 
 #try-it-free:hover {
@@ -138,8 +171,17 @@ textarea {
 }
 
 .top-background {
+  margin-top: 20px;
   background-color: #0061a0;
   color: white;
+}
+
+.light-font {
+  color: #74b3de;
+}
+
+.dark-font {
+  color: #0061a0;
 }
 
 /* Alignment fixes for pics */
@@ -269,6 +311,31 @@ textarea {
   width: 100%;
   min-height: 200px;
   margin-bottom: 30px;
+}
+
+#form {
+  min-width: 800px;
+  border: solid gray 1px;
+  padding: 20px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.text-adjust {
+  min-width: 350px;
+}
+
+#send {
+  min-width: 760px;
+  background-color: #ed8c01;
+  color: white;
+  font-weight: bold;
+}
+
+#send:hover {
+  opacity: .7;
+  background-color: #fcbd02;
 }
 
 
