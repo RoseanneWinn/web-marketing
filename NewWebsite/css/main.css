@@ -570,8 +570,14 @@ textarea {
   background-color: #f3f3f3;
 }
 
+.section-advantage-icon {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  width: 100%;
+}
+
 .section-advantage > h4 {
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -684,6 +690,11 @@ textarea {
   width: 100%;
 }
 
+.review-icon {
+  width: 100%;
+  text-align: center;
+}
+
 .review-quote {
   font-size: 24px;
   padding-top: 20px;
@@ -778,4 +789,61 @@ footer a.glyphicon:hover {
 
 .footer-item {
   padding: 20px;
+}
+
+.izenda-footer-logo {
+  padding-top: 40px;
+}
+
+.glyphicon-social {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: url('../img/footer/icon-social.png') no-repeat;
+}
+
+.glyphicon-social:hover {
+  -webkit-filter: brightness(200%);
+  -moz-filter: brightness(200%);
+  filter: brightness(200%);
+  
+}
+
+.glyphicon-up {
+  top: 0;
+  margin-left: 30px;
+}
+
+.glyphicon-social-1 {
+   background-position: -10px;
+}
+.glyphicon-social-2 {
+  background-position: -50px;
+}
+.glyphicon-social-3 {
+  background-position: -90px;
+}
+.glyphicon-social-4 {
+  background-position: -130px;
+}
+.glyphicon-social-5 {
+  background-position: -170px;
+}
+.glyphicon-social-6 {
+  background-position: -210px;
+}
+.glyphicon-social-7 {
+  background-position: -250px;
+}
+.glyphicon-social-8 {
+  background-position: -290px;
+}
+.glyphicon-social-9 {
+  background-position: -333px -6px;
+}
+.glyphicon-social-10 {
+  background-position: -370px;
+}
+.glyphicon-social-11 {
+  background-position: -410px;
 }
