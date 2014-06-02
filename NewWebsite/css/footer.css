@@ -1,0 +1,142 @@
+﻿.izenda-bottom-form {
+  background-color: #005ea6;
+  color: #ccc;
+}
+
+.izenda-bottom-form-block {
+  padding: 50px;
+}
+
+.izenda-bottom-form-block > h4 {
+  padding-bottom: 10px;
+}
+
+.blog-entry-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.blog-entry-title > a {
+  text-decoration: underline;
+  color: #ccc;
+}
+
+.blog-entry-title > a:hover {
+  color: #fff;
+}
+
+.blog-entry-date {
+  font-size: 10px;
+}
+
+.izenda-bottom-form-menu {
+  width: 100%;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+  .izenda-bottom-form-menu > li {
+    padding-bottom: 10px;
+  }
+
+
+.izenda-bottom-form-menu > li > a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #ccc;
+}
+  .izenda-bottom-form-menu > li > a:hover {
+    color: #fff;
+  }
+
+.izenda-map {
+  background: url('../img/company/Map.png') no-repeat 0 0;
+  width: 350px;
+  height: 125px;
+}
+
+.izenda-address {
+  padding: 10px;
+}
+
+footer {
+  background-color: #000;
+  color: #aaa;
+}
+
+.footer-icons {
+  margin: 0;
+}
+
+footer a.glyphicon {
+  color: #aaa;
+  text-decoration: none;
+}
+
+footer a.glyphicon:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-item {
+  padding: 20px;
+}
+
+.izenda-footer-logo {
+  padding-top: 40px;
+}
+
+.glyphicon-social {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: url('../img/footer/icon-social.png') no-repeat;
+}
+
+.glyphicon-social:hover {
+  -webkit-filter: brightness(200%);
+  -moz-filter: brightness(200%);
+  filter: brightness(200%);
+  
+}
+
+.glyphicon-up {
+  top: 0;
+  margin-left: 30px;
+}
+
+.glyphicon-social-1 {
+   background-position: -10px;
+}
+.glyphicon-social-2 {
+  background-position: -50px;
+}
+.glyphicon-social-3 {
+  background-position: -90px;
+}
+.glyphicon-social-4 {
+  background-position: -130px;
+}
+.glyphicon-social-5 {
+  background-position: -170px;
+}
+.glyphicon-social-6 {
+  background-position: -210px;
+}
+.glyphicon-social-7 {
+  background-position: -250px;
+}
+.glyphicon-social-8 {
+  background-position: -290px;
+}
+.glyphicon-social-9 {
+  background-position: -333px -6px;
+}
+.glyphicon-social-10 {
+  background-position: -370px;
+}
+.glyphicon-social-11 {
+  background-position: -410px;
+}
