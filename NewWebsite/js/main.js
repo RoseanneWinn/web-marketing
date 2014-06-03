@@ -1,16 +1,17 @@
 //Ready the page before firing any js
 $(document).ready(function () {
 
-//Query String Capture//
-  var vars = [], hash;
+//Query String Capture --> Below function to use down the road
+  /*var getQueryString = function() {
+    var valuePairs = [];*/
     var q = document.URL.split('?')[1];
-   /** if (q != undefined) {
+   /* To use when string is to be parsed for salesforce later down the line 
+    if (q != "") {
       q = q.split('&');
       for (var i; i < q.length; i++) {
-        hash = q[i].split('=');
-        vars.push(hash[1]);
-        vars[hash[0]] = hash[1];
-      }**/
+         analytic = q[i].split('=')[0];
+         keyValue = q[i].split('=')[1];
+        }*/
       console.log(q);
 
 
