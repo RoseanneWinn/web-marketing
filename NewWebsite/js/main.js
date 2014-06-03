@@ -1,6 +1,21 @@
 //Ready the page before firing any js
 $(document).ready(function () {
 
+//Query String Capture//
+  var param = document.URL.split('#')[1];
+  var vars = [], hash;
+    var q = document.URL.split('?')[1];
+    if (q != undefined) {
+      q = q.split('&');
+      for (var i; i < q.length; i++) {
+        hash = q[i].split('=');
+        vars.push(hash[1]);
+        vars[hash[0]] = hash[1];
+      }
+      alert(vars['a']);
+    }
+
+
   //////////////////////////////////////////////////////////////////////////////////////////
   // Header template render
   //////////////////////////////////////////////////////////////////////////////////////////
