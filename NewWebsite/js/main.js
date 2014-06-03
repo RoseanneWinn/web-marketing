@@ -1,18 +1,8 @@
 //Ready the page before firing any js
 $(document).ready(function () {
 
-//Query String Capture --> Below function to use down the road
-  /*var getQueryString = function() {
-    var valuePairs = [];*/
-    var q = document.URL.split('?')[1];
-   /* To use when string is to be parsed for salesforce later down the line 
-    if (q != "") {
-      q = q.split('&');
-      for (var i; i < q.length; i++) {
-         analytic = q[i].split('=')[0];
-         keyValue = q[i].split('=')[1];
-        }*/
-      console.log(q);
+  var pageUrl = document.URL;
+   console.log(pageUrl);
 
 
   //////////////////////////////////////////////////////////////////////////////////////////
@@ -213,6 +203,23 @@ $(document).ready(function () {
     $portfolio.isotope({ filter: selector });
   });
 
+  ///////////////////////////////////////////////////////////////////////////////////////////
+  //SnapEngage
+  ///////////////////////////////////////////////////////////////////////////////////////////
+   (function () {
+      var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true; se.src = 'http://commondatastorage.googleapis.com/code.snapengage.com/js/24c3b9f3-b9bb-4c8b-8a15-30c20ee6c4e8.js';
+      var done = false;
+      se.onload = se.onreadystatechange = function () {
+        if (!done && (!this.readyState || this.readyState === 'loaded' || this.readyState === 'complete')) {
+          done = true;
+          // Place your SnapEngage JS API code below
+          SnapEngage.allowChatSound(true);
+          SnapEngage.allowProactiveChat(true);
+        }
+      };
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+    })();
+
   //////////////////////////////////////////////////////////////////////////////////////////
   // Form submit on heroku
   //////////////////////////////////////////////////////////////////////////////////////////
@@ -223,11 +230,15 @@ $(document).ready(function () {
       'last-name': $('#last-name').val(),
       'email': $('#email').val(),
       'phone-number': $('#phone-number').val(),
-      'company-url': $('#company-url').val()
+      'company-url': $('#company-url').val(),
     };
+    var sfData = _.extend({'page-url': pageUrl}, data);
+    console.log(data, sfData);
+    $.post('http://izenda-services.herokuapp.com/create-salesforce-lead', sfData, function (data) {
     console.log(data);
-    $.post('http://izenda-free-trial.herokuapp.com/free-trial', data, function (data) {
-      console.log(data);
+    }, 'json');
+    $.post('http://izenda-services.herokuapp.com/free-trial', data, function (data) {
+    console.log(data);
     }, 'json');
   });
 });
