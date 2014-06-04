@@ -18,8 +18,10 @@ $(document).ready(function () {
       initializeIzendaHeader();
     }
   });
-
+  
+  ///////////////////////////////////////////////////////////////////////////////////////////
   // render footer template
+  //////////////////////////////////////////////////////////////////////////////////////////
   temlateRenderer.renderExternalTemplate({
     name: 'footer',
     selector: '#izendaFooterTemplate',
@@ -220,6 +222,9 @@ $(document).ready(function () {
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
     })();
 
+  //Validate Form
+  $('#form').validate();
+
   //////////////////////////////////////////////////////////////////////////////////////////
   // Form submit on heroku
   //////////////////////////////////////////////////////////////////////////////////////////
@@ -236,9 +241,13 @@ $(document).ready(function () {
     console.log(data, sfData);
     $.post('http://izenda-services.herokuapp.com/create-salesforce-lead', sfData, function (data) {
     console.log(data);
-    }, 'json');
+    if (data["success"] == "false") {
+      console.log("something terrible happened");
+    }}, 'json');
     $.post('http://izenda-services.herokuapp.com/free-trial', data, function (data) {
     console.log(data);
-    }, 'json');
+    if (data["success"] == "true") {
+      window.location = "http://www.izenda.com/Site/DownloadComplete.aspx";
+    }}, 'json');
   });
 });
