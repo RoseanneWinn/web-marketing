@@ -90,6 +90,24 @@ textarea {
 /* ==========================================================================
    Izenda Custom Styles
    ========================================================================== */
+html, body{
+  height: 100%;
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -300px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.site-footer, .page-wrap:after {
+  height: 300px;
+}
+
 #img-display {
   display: none;
   width: 565px;
@@ -178,6 +196,10 @@ textarea {
   margin-top: 20px;
   background-color: #0061a0;
   color: white;
+}
+
+.change-top-background-margin {
+  margin: 0px;!important
 }
 
 .light-font {

@@ -1,6 +1,8 @@
 //Ready the page before firing any js
 $(document).ready(function () {
 
+  $('.site-footer').load('templates/sticky-footer.html');
+
   var pageUrl = document.URL;
    console.log(pageUrl);
 
