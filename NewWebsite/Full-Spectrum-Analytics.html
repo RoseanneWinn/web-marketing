@@ -95,7 +95,30 @@ capabilities.
           <div class="text-center">
             <span class="fsa-form-corner"></span>
           </div>
-          <form role="form">
+         <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" role="form">
+          <input type=hidden name="oid" value="00D70000000Ic28">
+          <input type=hidden name="retURL" value="http://www.izenda.com/bi/ReportListIntro.aspx">
+          <input  id="00N70000001oGf6" name="00N70000001oGf6" type="hidden" value="1" />
+            <div class="form-group">
+              <label for="fsaFirstName">First Name</label>
+              <input type="text" class="form-control" id="first_name" name="first_name" placeholder="" required />
+              <label for="fsaLastName">Last Name</label>
+              <input type="text" class="form-control" id="last_name" name="last_name" placeholder="" required />
+              <label for="fsaEmail">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="" required />
+              <label for="fsaPhone">Phone</label>
+              <input type="text" class="form-control" id="phone" name="phone" placeholder="" required />
+              <label for="fsaUrl">Company URL</label>
+              <input type="url" class="form-control" id="company" name="company" placeholder="" required />
+              <input  id="00N700000034Qxz" maxlength="255" name="00N700000034Qxz" size="20" type="hidden" value="NewLanding"/>
+              <input  id="00N40000001IMeh" maxlength="255" name="00N40000001IMeh" size="20" type="hidden" value="LiveDemo" />
+            </div>
+            <div class="checkbox">
+              <label>
+                <!--<input  id="00N70000002cOkX" name="00N70000002cOkX" type="checkbox"/>We are a software company-->
+              </label>
+            </div>
+            <!--<form role="form">
             <div class="form-group">
               <label for="fsaFirstName">First Name</label>
               <input type="text" class="form-control" id="fsaFirstName" placeholder="" required />
@@ -112,7 +135,7 @@ capabilities.
               <label>
                 <input id="fsaIsSoftWare" type="checkbox" />We are a software company
               </label>
-            </div>
+            </div>-->
             <div class="text-center">
               <button class="btn btn-lg fsa-btn-form-submit">ONWARD!</button>
               <br/>
