@@ -1,3 +1,7 @@
+html {
+font-family: 'Open Sans', Verdana, Tahoma, Droid, sans-serif;
+}
+
 h1.fsa {
   color: #0c64a2;
 }
@@ -106,13 +110,18 @@ h1.fsa {
   }
 .move-me-down-less {
   position: relative;
-  top: 10px;
+  top: 12px;
 }
 
 .color-change {
-  color: #4388cc;
+  color: #298cd0;
 }
 
-.color-change em {
-  color: black;
+.ray-mock {
+  font-size: 100%;
+  line-height: 175%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
+
