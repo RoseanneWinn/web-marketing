@@ -479,13 +479,13 @@
         <li>
           <div class="form-group">
             <label for="First Name">First Name</label>
-            <input type="txt" class="form-control text-adjust" id="first-name" placeholder="Enter First Name" required />
+            <input type="text" class="form-control text-adjust" min-length="2" id="first-name" placeholder="Enter First Name" required />
           </div>
         </li>
         <li class="pull-right">
           <div class="form-group">
             <label for="Last Name">Last Name</label>
-            <input type="txt" class="form-control text-adjust" id="last-name" placeholder="Enter Last Name" required />
+            <input type="text" class="form-control text-adjust" min-length="2" id="last-name" placeholder="Enter Last Name" required />
           </div>
         </li>
       </ul>
@@ -493,21 +493,21 @@
         <li>
           <div class="form-group">
             <label for="Phone Number">Phone Number</label>
-            <input type="txt" class="form-control text-adjust" id="phone-number" placeholder="Just Numbers, No Dashes and Such" required />
+            <input type="text" class="form-control text-adjust" min-length="10" id="phone-number" placeholder="Just Numbers, No Dashes and Such" required/>
           </div>
         </li>
         <li class="text-adjust pull-right">
           <div class="form-group">
             <label for="Email">Email</label>
-            <input type="email" class="form-control text-adjust" id="email" placeholder="Email goes here" />
+            <input type="email" class="form-control text-adjust" name="email" id="email" placeholder="Email goes here" required />
           </div>
         </li>
       </ul>
       <div class="form-group">
         <label for="Company URL">Company URL</label>
-        <input type="txt" class="form-control text-adjust" id="company-url" placeholder="URL goes here" required />
+        <input type="url" class="form-control text-adjust" name="company-url" id="company-url" placeholder="http://www.example.com" required />
       </div>
-      <button type="submit" class="btn btn-lg center-block" id="send">Submit</button>
+      <button type="submit" value="Submit" class="btn btn-lg center-block" id="send">Submit</button>
       <br />
       <p class="center-block">We respect your <span>privacy!</span></p>
     </form>
