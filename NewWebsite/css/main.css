@@ -283,7 +283,13 @@ html, body{
 
 .pic-pull-up {
   position: relative;
-  bottom: 75px;
+  bottom: 50px;
+}
+
+#interactive-adjustments {
+  position: relative;
+  bottom: 102px;
+  margin-bottom: -50px;
 }
 
 /* Specific photo adjustments */
@@ -362,6 +368,14 @@ html, body{
 #send:hover {
   opacity: .7;
   background-color: #fcbd02;
+}
+
+.img-circle {
+  border-radius: 0%;!important
+}
+
+.btn-padding {
+  margin-top: 60px;
 }
 
 
