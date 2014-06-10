@@ -24,13 +24,13 @@ $(document).ready(function () {
   ///////////////////////////////////////////////////////////////////////////////////////////
   // render footer template
   //////////////////////////////////////////////////////////////////////////////////////////
-  temlateRenderer.renderExternalTemplate({
-    name: 'footer',
-    selector: '#izendaFooterTemplate',
-    loaded: function (renderResult) {
-      $('body').append(renderResult);
-    }
-  });
+  //temlateRenderer.renderExternalTemplate({
+    //name: 'footer',
+    //selector: '#izendaFooterTemplate',
+    //loaded: function (renderResult) {
+      //$('body').append(renderResult);
+    //}
+  //});
 
   //////////////////////////////////////////////////////////////////////////////////////////
   // Resize photos for new design

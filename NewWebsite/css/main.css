@@ -96,7 +96,7 @@ html, body{
 
 .page-wrap {
   min-height: 100%;
-  margin-bottom: -300px;
+  margin-bottom: -20px;
 }
 
 .page-wrap:after {
@@ -105,7 +105,7 @@ html, body{
 }
 
 .site-footer, .page-wrap:after {
-  height: 300px;
+  height: 0px;
 }
 
 #img-display {
@@ -165,6 +165,12 @@ html, body{
   -webkit-box-shadow: 0 0 10px 2px gray;
   -moz-box-shadow: 0 0 10px 2px gray;
   box-shadow: 0 0 10px 2px gray;
+}
+
+.pic-list img:hover {
+  -webkit-box-shadow: 0 0 10px 6px gray;
+  -moz-box-shadow: 0 0 10px 6px gray;
+  box-shadow: 0 0 10px 6px gray;
 }
 
 #intro-content {
@@ -354,9 +360,7 @@ html, body{
   min-width: 800px;
   border: solid gray 1px;
   padding: 20px;
-  -webkit-box-shadow: 0 8px 6px -6px black;
-  -moz-box-shadow: 0 8px 6px -6px black;
-  box-shadow: 0 8px 6px -6px black;
+  z-index: 3;
 }
 
 .text-adjust {
@@ -383,9 +387,54 @@ html, body{
   margin-top: 60px;
 }
 
+#form-shadow {
+  position: relative;
+  left: 255px;
+  bottom: .4px;
+  z-index: -1;
+}
 
+#footer-nav-list > li > a {
+  color: #ed8c01;
+}
 
+#footer-nav-list > li > a:hover {
+  color: #fdd14e;
+}
 
+#linkedIn {
+  color: #25dbc6;
+}
+
+#linkedIn:hover {
+  color: #dbdcdd;
+}
+
+#facebook {
+  color: #8fc5f7;
+}
+
+#facebook:hover {
+  color: #dbdcdd;
+}
+
+#twitter {
+  color: #41ddfc;
+}
+
+#twitter:hover {
+  color: #dbdcdd;
+}
+
+#back-to-top {
+  position: relative;
+  bottom: 20px;
+  color: #ed8c01;
+}
+
+#back-to-top:hover {
+  color: #fdd14e;
+}
 
 
 
@@ -780,3 +829,5 @@ html, body{
 .btn-free-start-trial:hover {
   border: 1px solid #fff;
 }
+
+

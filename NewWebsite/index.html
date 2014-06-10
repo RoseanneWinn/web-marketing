@@ -39,22 +39,22 @@
     <div class="col-md-2">
       <ul class="list-unstyled text-center pic-list">
         <li>
-          <a href="#">
+          <a href="#traditional-content">
             <img src="img/main/traditional.png" class="img-responsive" alt="Vid1" /></a>
         </li>
         <br />
         <li>
-          <a href="#">
+          <a href="#operational-content">
             <img src="img/main/operational.png" class="img-responsive" alt="Vid2" /></a>
         </li>
         <br />
         <li>
-          <a href="#">
+          <a href="#analytical-content">
             <img src="img/main/analytical.png" class="img-responsive" alt="Vid3" /></a>
         </li>
         <br />
         <li>
-          <a href="#">
+          <a href="#flexible-content">
             <img src="img/main/flexible.png" class="img-responsive" alt="Vid4" /></a>
         </li>
        </ul>
@@ -67,22 +67,22 @@
       <div class="col-md-2">
         <ul class="list-unstyled text-center pic-list">
           <li>
-            <a href="#">
+            <a href="#experimental-content">
               <img src="img/main/experimental.png" class="img-responsive" alt="Vid5" /></a>
           </li>
           <br />
           <li>
-            <a href="#">
+            <a href="#interactive-content">
               <img src="img/main/interactive.png" class="img-responsive" alt="Vid6" /></a>
           </li>
           <br />
           <li>
-            <a href="#">
+            <a href="#visual-content">
               <img src="img/main/visual.png" class="img-responsive" alt="Vid7" /></a>
           </li>
           <br />
           <li>
-            <a href="#">
+            <a href="#global-content">
               <img src="img/main/global.png" class="img-responsive" alt="Vid8" /></a>
           </li>
         </ul>
@@ -180,7 +180,7 @@
       <button type="button" class="btn btn-lg display-position" id="btn-traditional">Traditional</button>
     </div>
   </div>
-  <div class="row alt-back-color">
+  <a id="traditional-content" href="#top"><div class="row alt-back-color"></a>
     <div class="col-md-4 col-md-offset-1">
       <h3 class="display-position">Export Government Forms, Invoice, Financial Statements</h3>
     </div>
@@ -193,7 +193,7 @@
  <div class="container-fluid">
   <img src="img/full-spectrum-analitycs/divider-long.jpg" class="img-responsive" />
  </div> 
- <div class="row">
+ <a id="operational-content"><div class="row"></a>
   <div class="col-md-3 col-md-offset-7">
     <button type="button" class="btn btn-lg display-position" id="btn-operational">Operational</button>
   </div>
@@ -211,7 +211,7 @@
  <div class="container-fluid">
     <img src="img/full-spectrum-analitycs/divider-long.jpg" class="img-responsive" />
  </div>
- <div class="row alt-back-color">
+ <a id="analytical-content"><div class="row alt-back-color"></a>
   <div class="col-md-3 col-md-offset-1">
     <button type="button" class="btn btn-lg display-position" id="btn-analytical">Analytical</button>
   </div>
@@ -229,7 +229,7 @@
  <div class="container-fluid">
   <img src="img/full-spectrum-analitycs/divider-long.jpg" class="img-responsive" />
  </div>
- <div class="row">
+ <a id="flexible-content"><div class="row"></a>
    <div class="col-md-3 col-md-offset-7">
     <button type="button" class="btn btn-lg display-position" id="btn-flexible">Flexible</button>
    </div>
@@ -247,7 +247,7 @@
   <div class="container-fluid">
     <img src="img/full-spectrum-analitycs/divider-long.jpg" class="img-responsive" />
   </div>
-  <div class="row alt-back-color">
+  <a id="experimental-content"><div class="row alt-back-color"></a>
     <div class="col-md-3 col-md-offset-1">
       <button type="button" class="btn btn-lg display-position" id="btn-experimental">Experimental</button>
     </div>
@@ -265,7 +265,7 @@
  <div class="container-fluid">
   <img src="img/full-spectrum-analitycs/divider-long.jpg" class="img-responsive" />
  </div>
- <div class="row">
+ <a id="interactive-content"><div class="row"></a>
   <div class="col-md-3 col-md-offset-7">
     <button type="button" class="btn btn-lg btn-padding display-position" id="btn-interactive">Interactive</button>
   </div>
@@ -283,7 +283,7 @@
  <div class="container-fluid">
   <img src="img/full-spectrum-analitycs/divider-long.jpg" class="img-responsive" />
  </div>
- <div class="row alt-back-color">
+ <a id="visual-content"><div class="row alt-back-color"></a>
   <div class="col-md-3 col-md-offset-1">
     <button type="button" class="btn btn-lg display-position" id="btn-visual">Visual</button>
   </div>
@@ -301,7 +301,7 @@
  <div class="container-fluid">
   <img src="img/full-spectrum-analitycs/divider-long.jpg" class="img-responsive" />
  </div>
- <div class="row">
+ <a id="global-content"><div class="row"></a>
   <div class="col-md-2 col-md-offset-7 block-center">
     <button type="button" class="btn btn-lg display-position" id="btn-global">Global</button>
   </div>
@@ -449,13 +449,13 @@
         <li>
           <div class="form-group">
             <label for="First Name">First Name</label>
-            <input type="text" class="form-control text-adjust required" minlength="2" id="first-name" placeholder="Enter First Name" required />
+            <input type="text" class="form-control text-adjust" minlength="2" id="first-name" placeholder="Enter First Name" required />
           </div>
         </li>
         <li class="pull-right">
           <div class="form-group">
             <label for="Last Name">Last Name</label>
-            <input type="text" class="form-control text-adjust required" minlength="2" id="last-name" placeholder="Enter Last Name" required />
+            <input type="text" class="form-control text-adjust" minlength="2" id="last-name" placeholder="Enter Last Name" required />
           </div>
         </li>
       </ul>
@@ -463,88 +463,34 @@
         <li>
           <div class="form-group">
             <label for="Phone Number">Phone Number</label>
-            <input type="number" class="form-control text-adjust required" required minlength="10" id="phone-number" placeholder="Just Numbers, No Dashes and Such" required />
+            <input type="number" class="form-control text-adjust" required minlength="10" id="phone-number" placeholder="xxx-xxx-xxxx or xxxxxxxxxxx" required />
           </div>
         </li>
         <li class="text-adjust pull-right">
           <div class="form-group">
             <label for="Email">Email</label>
-            <input type="email" class="form-control text-adjust required" name="email" id="email" placeholder="Email goes here" required />
+            <input type="email" class="form-control text-adjust" name="email" id="email" placeholder="Email goes here" required />
           </div>
         </li>
       </ul>
       <div class="form-group">
         <label for="Company URL">Company URL</label>
-        <input type="url" class="form-control text-adjust required" name="company-url" id="company-url" placeholder="http://www.example.com" required />
+        <input type="url" class="form-control text-adjust" name="company-url" id="company-url" placeholder="http://www.example.com" required />
       </div>
       <button type="submit" value="Submit" class="btn btn-lg center-block" id="send">Submit</button>
       <br />
-      <p class="center-block">We respect your <span>privacy!</span></p>
+      <p class="block-center text-center">We respect your <a href="http://www.izenda.com/Site/Pages/Privacy.aspx"><span>privacy!</span></a></p>
     </form>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4 block-center">
+        <img src="img/full-spectrum-analitycs/form-shadow.jpg" class="img-responsive" id="form-shadow" />
     </div>
   </div>
   <br />
   <div class="row site-footer">
-<!--    <div class="col-md-12" id="partners-list">
-      <ul class="list-unstyled list-inline text-center">
-        <li>
-          <a href="#">
-            <img src="img/footer/microsoft-gold-certified-partner.png" class="img-responsive" alt="partnerPic1" /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/footer/microsoft-bizspark-network-partner.png" class="img-responsive" alt="partnerPic2" /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/footer/tag-top-10-innovative-company.png" class="img-responsive" alt="partnerPic3" /></a>
-        </li>
-      </ul>
-    </div>
-    <div class="col-md-12 top-background text-center">
-    <br />
-    <ul class="list-unstyled list-inline">
-      <li>
-        <a href="#">Home |</a>
-      </li>
-      <li>
-        <a href="#">Products |</a>
-      </li>
-      <li>
-        <a href="#">Gallery |</a>
-      </li>
-      <li>
-        <a href="#">Company |</a>
-      </li>
-      <li>
-        <a href="#">Wiki |</a>
-      </li>
-      <li>
-        <a href="#">Blog |</a>
-      </li>
-      <li>
-        <a href="#">Contact Us</a>
-      </li>
-    </ul>
-    <br />
-    <h3>Sales: 678-500-9136, Support: 404-906-8710 - 1200 Lake Hearn Dr. STE 475 Atlanta, GA 30319</h3>
-    <br />
-    <h2>IZENDA - Copyright 2014</h2>
-    <br />
-      <ul class="list-unstyled list-inline fa-ul">
-        <li>
-          <a href="#"><i class="fa fa-linkedin fa-3x"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fa-facebook fa-3x"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fa-twitter fa-3x"></i></a>
-        </li>
-      </ul>
-    </div>
-  </div> -->
   </div>
+ </div>
 </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
