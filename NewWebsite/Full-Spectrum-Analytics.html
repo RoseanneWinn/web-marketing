@@ -134,7 +134,7 @@ capabilities.
               <label for="fsaPhone">Phone</label>
               <input type="number" class="form-control required" id="phone" name="phone" placeholder="" required minlength="10" maxlength="10" />
               <label for="fsaUrl">Company URL</label>
-              <input type="url" class="form-control required" id="company" name="company" placeholder="" required />
+              <input type="url" class="form-control required" id="company_url" name="company" placeholder="" required />
               <input  id="00N700000034Qxz" maxlength="255" name="00N700000034Qxz" size="20" type="hidden" value="NewLanding"/>
               <input  id="00N40000001IMeh" maxlength="255" name="00N40000001IMeh" size="20" type="hidden" value="LiveDemo" />
             </div>
@@ -211,5 +211,15 @@ capabilities.
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
   <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.js"</script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('#form').validate( {
+      rules:{
+        company_url:{
+        required:true,
+        url:true
+        }
+        }
+        });});
   </body>
 </html>
