@@ -122,6 +122,11 @@ html, body{
   bottom: 75px;
 }
 
+.display-position {
+  position: relative;
+  top: 75px;
+}
+
 .not-so-big-font {
   font-size: 24px;
 }
