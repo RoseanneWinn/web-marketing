@@ -120,7 +120,7 @@ capabilities.
           <div class="text-center">
             <span class="fsa-form-corner"></span>
           </div>
-         <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" role="form">
+         <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" role="form" id="form">
           <input type=hidden name="oid" value="00D70000000Ic28">
           <input type=hidden name="retURL" value="http://www.izenda.com/bi/ReportListIntro.aspx">
           <input  id="00N70000001oGf6" name="00N70000001oGf6" type="hidden" value="1" />
@@ -162,7 +162,7 @@ capabilities.
               </label>
             </div>-->
             <div class="text-center">
-              <button class="btn btn-lg fsa-btn-form-submit">Try Free!</button>
+              <button type="submit" class="btn btn-lg fsa-btn-form-submit" onclick="$('#form').validate();">Try Free!</button>
               <br/>
               <br/>
               We respect your <a href="http://www.izenda.com/Site/Pages/Privacy.aspx">privacy</a>.
@@ -212,8 +212,5 @@ capabilities.
   <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.js"</script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <script ="text/javascript">
-  $(document).ready(function() {
-    $('#form').validate();});
-  </script>
 </body>
 </html>
