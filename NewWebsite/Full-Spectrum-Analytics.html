@@ -120,7 +120,7 @@ capabilities.
           <div class="text-center">
             <span class="fsa-form-corner"></span>
           </div>
-         <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" role="form" id="form">
+         <form action="#" method="POST" role="form" id="form">
           <input type=hidden name="oid" value="00D70000000Ic28">
           <input type=hidden name="retURL" value="http://www.izenda.com/bi/ReportListIntro.aspx">
           <input  id="00N70000001oGf6" name="00N70000001oGf6" type="hidden" value="1" />
@@ -212,5 +212,26 @@ capabilities.
   <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.js"</script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <script ="text/javascript">
-</body>
+  $(document).ready(function() {
+   $('#form').validate({
+      submitHandler : function(form) {
+    var data = $('#form').serialize();
+    var sfData = _.extend({'page-url': pageUrl}, data);
+    $.post('https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8'
+, sfData, function (sfLeadResponse) {
+      console.log(sfLeadResponse);
+      if (sfLeadResponse["success"] == true) {
+        console.log("About to post to free-trial");
+        $.post('http://izenda-services.herokuapp.com/free-trial', data, function (freeTrialResponse) {
+          console.log(freeTrialResponse);
+          if (freeTrialResponse["success"] == true) {
+            window.location = "http://www.izenda.com/bi/ReportListIntro.aspx";
+          }
+        }, 'json');
+      }
+      console.log("something terrible happened");
+    }, 'json');
+    }});});
+  </script>
+  </body>
 </html>
