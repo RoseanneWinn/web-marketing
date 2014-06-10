@@ -222,8 +222,10 @@ $(document).ready(function () {
   //////////////////////////////////////////////////////////////////////////////////////////
   // Form submit on heroku
   //////////////////////////////////////////////////////////////////////////////////////////
-  $('#form').validate();
-  $('#form').submit(function (e) {
+   $('#form').validate({
+    submitHandler : function(form) {
+      if($(form).valid()) {
+    $('#form').submit(function (e) {
     e.preventDefault();
     var data = {
       'first-name': $('#first-name').val(),
@@ -247,8 +249,8 @@ $(document).ready(function () {
       }
       console.log("something terrible happened");
     }, 'json');
-  });
-
+   });
+    }}});
     ///////////////////////////////////////////////////////////////////////////////////////////
   //SnapEngage
   ///////////////////////////////////////////////////////////////////////////////////////////
