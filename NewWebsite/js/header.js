@@ -165,7 +165,7 @@
               }
           else {
             console.log('the form did not submit');
-            $('#pricing-loading-text').html('<h2>Oops, something fucked up!</h2>');
+            $('#pricing-loading-text').html('<h2>Oops, something went wrong!</h2>');
           }
          }, 'json');
         }
