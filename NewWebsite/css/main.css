@@ -367,14 +367,14 @@ html, body{
   min-width: 350px;
 }
 
-.submit {
+#submit {
   min-width: 760px;
   background-color: #ed8c01;
   color: white;
   font-weight: bold;
 }
 
-.submit:hover {
+#submit:hover {
   opacity: .7;
   background-color: #fcbd02;
 }
