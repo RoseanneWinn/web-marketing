@@ -358,9 +358,16 @@ html, body{
 
 #form {
   min-width: 800px;
-  border: solid gray 1px;
+  border: 1px solid #d3d3d3;
   padding: 20px;
   z-index: 3;
+}
+
+#form-shadow {
+  position: relative;
+  left: 327px;
+  bottom: .4px;
+  z-index: -1;
 }
 
 .text-adjust {
@@ -385,13 +392,6 @@ html, body{
 
 .btn-padding {
   margin-top: 60px;
-}
-
-#form-shadow {
-  position: relative;
-  left: 255px;
-  bottom: .4px;
-  z-index: -1;
 }
 
 #footer-nav-list > li > a {
