@@ -93,7 +93,7 @@
 /* header other styles */
 .iz-header .icon-bar {
   width: 16px !important;
-  background-color: #fff;
+  background-color: black;
 }
 
 /* Izenda logo styles */
@@ -177,6 +177,7 @@
   }
 
   #izSearchInput {
+    display: none; !important
     margin: 0 auto;
     padding: 3px;
   }

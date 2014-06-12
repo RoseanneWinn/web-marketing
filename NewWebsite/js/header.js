@@ -91,7 +91,7 @@
   // search button events
   $('#izSearchBtn').click(function (e) {
     e.preventDefault();
-    if ($(window).width() > 1000) {
+    if ($(window).width() > 1023) {
       showSearchPanel();
       var $input = $('#izSearchInput');
       $input.width(0);

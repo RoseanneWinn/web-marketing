@@ -1,6 +1,6 @@
 ﻿<script id="izendaHeaderTemplate" type="text/x-jsrender">
   <header class="iz-header">
-    <nav class="navbar navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-fixed-top" role="navigation">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle pull-left iz-toggle-nav" data-toggle="collapse" data-target=".navbar-ex1-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -70,11 +70,10 @@
           <a href="http://www.izenda.com/site/Pages/contactus.aspx">
             <img src="img/header/Phone30.png" id="Img4" alt="phone" /></a>
           <a href="mailto:services@izenda.com"><img src="img/header/Email30.png" id="Img5" alt="email" /></a>
-          <a href="#" onclick="return SnapEngage.startLink();"><img src="img/header/ChatBox30.png" id="Img6" alt="chat" /></a>
+          <a href="#" onclick="SnapEngage.startLink();"><img src="img/header/ChatBox30.png" id="Img6" alt="chat" /></a>
         </div>
-      </div>
       <!-- /.navbar-collapse -->
-    </nav>
+    </div>
 
     <!-- Pricing dialog -->
     <div class="modal fade" id="izendaPricingDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
