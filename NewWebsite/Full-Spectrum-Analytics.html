@@ -26,12 +26,12 @@
   <!--<div class="container-fluid">
     <div class="row" style="background-color: #00ff90; height: 50px;">Menu placeholder</div>
   </div>-->
- 
+ <div class="page-w">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-3 col-md-offset-1 pull-left">
         <a href="http://izenda.com" class="move-me-down">
-          <img src="img/logos/izenda-logo-new.png" class="img-responsive" alt="Izenda Reports" />
+          <img src="img/logos/izenda-logo-new.png" class="img-responsive logo-positioning" alt="Izenda Reports" />
         </a>
       </div>
       <div class="col-md-3 col-md-offset-4">
@@ -161,8 +161,9 @@ capabilities.
                 <input id="fsaIsSoftWare" type="checkbox" />We are a software company
               </label>
             </div>-->
+            <h6 class="hidden center-block text-center" id="loading-text">...Please wait while we process this request...</h6>
             <div class="text-center">
-                    <button type="submit" class="btn btn-lg fsa-btn-form-submit" onclick="$('#form').valid();">Try Free!</button>
+                    <button type="submit" id="submit" class="btn btn-lg fsa-btn-form-submit">Try Free!</button>
               <br/>
               <br/>
               We respect your <a href="http://www.izenda.com/Site/Pages/Privacy.aspx">privacy</a>.
@@ -194,8 +195,8 @@ capabilities.
       </div>
     </div>
   </div>
-  <div class="container-fluid">
-    <div class="row fsa-footer-top"></div>
+  <br />
+  <div class="row fsa-footer-top"></div>
     <div class="row fsa-footer">
       <div class="col-md-12 text-center">
         Home | Privacy Policy | Terms of Use | Contact Us
@@ -205,6 +206,7 @@ capabilities.
         Copyright 2014 Izenda, LLC
       </div>
     </div>
+   </div>
   </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -214,13 +216,13 @@ capabilities.
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <script type="text/javascript">
   $(document).ready(function() {
-    $('#form').validate( {
-      rules:{
-        company_url:{
-        required:true,
-        url:true
-        }
-        }
-        });});
+    $('#submit').click(function() {
+      if ($('#form').valid()== true) {
+      $('#submit').addClass("hidden");
+      $('#loading-text').removeClass("hidden");
+      }
+     });
+    });
+   </script>
   </body>
 </html>

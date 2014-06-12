@@ -6,6 +6,16 @@ h1.fsa {
   color: #0c64a2;
 }
 
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -20px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
 .fsa-feature-image {
   margin: 10px;
 }
@@ -117,8 +127,15 @@ h1.fsa {
   color: #298cd0;
 }
 
+.logo-positioning {
+  position: relative;
+  right: 25px;
+}
+
 .ray-mock {
-  font-size: 100%;
+  position: relative;
+  left: 55px;
+  font-size: 115%;
   line-height: 175%;
   text-align: center;
   text-transform: uppercase;
