@@ -142,8 +142,45 @@
     $($this.closest('.iz-menu')).addClass('active');
   });
 
+///////////////////////////////////////////////////////////////////////////////////////////
+//Pricing submit
+///////////////////////////////////////////////////////////////////////////////////////////
+   /*$('#pricing-form').validate({
+      submitHandler : function(form) {
+        $('#send').addClass("hidden");
+        $('#pricing-loading-text').removeClass("hidden");
+        var data = {
+          'first-name': $('#first_name').val(),
+          'last-name': $('#last_name').val(),
+          'email': $('#email').val(),
+          'phone-number': $('#phone').val(),
+          'company-url': $('#company_url').val(),
+          'web-source': 'FreeTrial & LiveDemo'
+        };
+        $.post('https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8', data, function (sfLeadResponse) {
+          console.log(sfLeadResponse);
+          if (sfLeadResponse["success"] == true) {
+            $('#pricing-loading-text').html('<h2>Thanks</h2>');
+            $('#pricing-form').attr('data-dismiss', 'modal');
+              }
+          else {
+            console.log('the form did not submit');
+            $('#pricing-loading-text').html('<h2>Oops, something fucked up!</h2>');
+          }
+         }, 'json');
+        }
+       });*/
+
+  $('#send').click(function() {
+    if ($('#pricing-form').valid()== true) {
+      $('#send').addClass("hidden");
+      $('#pricing-loading-text').removeClass("hidden");
+      }
+     });
+
+
   //fancybox stuff for form submission
-  /*$(".modalbox").fancybox();*/
+  /*$(".modalbox").fancybox();/
 
   $("#send").on("click", function () {
     var emailval = $("#email").val();
@@ -168,7 +205,7 @@
     } else if (phval.length == 9) {
       $("#number").removeClass("error");
     }
-  });
+  });*/
 };
 
 

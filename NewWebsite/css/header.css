@@ -79,7 +79,14 @@
 
 /**/
 
-
+/* send button on pricing form */
+#send {
+  min-width: 760px;
+  background-color: #ed8c01;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
 
 /**/
 

@@ -183,20 +183,20 @@ html, body{
 }
 
 #try-it-free {
-  background-color: #fea500;
+  background-color: #eea236;
   height: 60px;
   width: 240px;
-  color: black;
+  color: white;
   position: relative;
   bottom: 10px;
   font: 28px bold;
-  font-style: Arial;
-  border: ridge black thin;
+  border: 1px solid #332d25;
   z-index: 2;
 }
 
 #try-it-free:hover {
-  opacity: .7;
+  background-color: #fcbd02;
+
 }
 
 .bottom-background {
