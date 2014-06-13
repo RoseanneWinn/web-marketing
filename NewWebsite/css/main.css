@@ -94,6 +94,8 @@ html, body{
   height: 100%;
 }
 
+/* For sticky footer, wrap page in manipulative*/
+
 .page-wrap {
   min-height: 100%;
   margin-bottom: -20px;
@@ -108,18 +110,30 @@ html, body{
   height: 0px;
 }
 
+/* Primary image display for itertive function--not in iteration 1 */
 #img-display {
   display: none;
   width: 565px;
   height: 550px;
 }
 
+/* Content elements Visual, Operational, etc */
+
+/* Gray color around content elements--rows*/
+
 .alt-back-color {
   background-color: #f8f8f8;
 }
+
 .move-me-up {
   position: relative;
   bottom: 75px;
+}
+
+@media (max-width: 990px) {
+  .move-me-up {
+    display: none;
+  }
 }
 
 .display-position {
@@ -140,10 +154,14 @@ html, body{
   bottom: 22px;
 }
 
+/* image behind main display */
+
 #primary-background {
   padding-top: 42px;
   background: url(../img/main/izenda-ad-hoc-reporting.jpg) center no-repeat;
 }
+
+/* Responsive video embed set-up */
 
 .video-container {
   position: relative;
@@ -166,6 +184,8 @@ html, body{
 
 }
 
+/* Picture columns*/
+
 .pic-list {
   margin-top: 75px;
 }
@@ -182,6 +202,14 @@ html, body{
   box-shadow: 0 0 10px 6px gray;
 }
 
+@media (max-width: 991px) {
+  .pic-list {
+    display: none;
+  }
+}
+
+/* Welcome content beneath spotlight video */
+
 #intro-content {
   position: relative;
   bottom: 15px;
@@ -195,7 +223,7 @@ html, body{
   background-color: #eea236;
   height: 60px;
   width: 240px;
-  color: white;
+  color: black;
   position: relative;
   bottom: 10px;
   font: 28px bold;
@@ -208,9 +236,13 @@ html, body{
 
 }
 
+/* Dark blue stripe */
+
 .bottom-background {
   background-color: #74b3de;
 }
+
+/* Light blue stripe */
 
 .top-background {
   margin-top: 20px;
@@ -328,6 +360,15 @@ html, body{
   background-color: #EBEBEB;
 }
 
+@media (max-width: 993px) {
+  #partners-list {
+    display: none;
+  }
+  .gray-partners {
+    display: none;
+  }
+}
+
 /* Gallery styles */
 #portfolio-list,
 #portfolio-filter {
@@ -365,8 +406,16 @@ html, body{
   margin-bottom: 30px;
 }
 
+/* Clients speak section for responsive */
+
+@media (max-width: 1200px) {
+  .clients-speak {
+    display: none;
+  }
+}
+
 #form {
-  min-width: 800px;
+  max-width: 100%;
   border: 1px solid #d3d3d3;
   padding: 20px;
   z-index: 3;
@@ -376,7 +425,20 @@ html, body{
   position: relative;
   left: 327px;
   bottom: .4px;
+  overflow: hidden;
   z-index: -1;
+}
+
+@media (max-width: 1267px)  {
+  #form-shadow {
+    display: none;
+  }
+}
+
+@media (min-width: 1269px) {
+  #form-shadow {
+    display: none;
+  }
 }
 
 .text-adjust {
@@ -384,7 +446,7 @@ html, body{
 }
 
 #submit {
-  min-width: 760px;
+  max-width: 100%;
   background-color: #ed8c01;
   color: white;
   font-weight: bold;
@@ -404,15 +466,15 @@ html, body{
 }
 
 #footer-nav-list > li > a {
-  color: #ed8c01;
+  color: white;
 }
 
 #footer-nav-list > li > a:hover {
-  color: #fdd14e;
+  color: gray;
 }
 
 #linkedIn {
-  color: #25dbc6;
+  color: white;
 }
 
 #linkedIn:hover {
@@ -420,7 +482,7 @@ html, body{
 }
 
 #facebook {
-  color: #8fc5f7;
+  color: white;
 }
 
 #facebook:hover {
@@ -428,7 +490,7 @@ html, body{
 }
 
 #twitter {
-  color: #41ddfc;
+  color: white;
 }
 
 #twitter:hover {

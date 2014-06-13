@@ -10,12 +10,14 @@
   background-color: #fff;
   background-color: rgba(255, 255, 255, 0.8);
 }
+
 .iz-header .dropdown-menu > li > a {
   padding: 0px 20px;
   font-weight: bold;
   line-height: 2.85714286;
   color: #333;
-} 
+}
+
 .iz-header .dropdown-menu > li > a:hover,
 .iz-header .dropdown-menu > li > a:focus {
   text-decoration: none;
@@ -47,11 +49,13 @@
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
 }
+
 @media (max-width: 1023px) {
   .iz-header .navbar-nav > li > a {
     padding-top: 17px;
   }
 }
+
 .iz-header .navbar-nav > li > a:hover,
 .iz-header .navbar-nav > li > a:focus {
   text-decoration: none;
@@ -60,9 +64,11 @@
   border-bottom: 4px solid #74b3de;
   color: #fff;
 }
+
 .iz-header .navbar-nav > li.active > a {
   border-bottom: 4px solid #74b3de;
 }
+
 @media (max-width: 1023px) {
   .iz-header .navbar-nav > li.active > a {
     padding-top: 17px;
@@ -171,13 +177,13 @@
 
 @media (max-width: 1023px) {
   #izNavBarSearchBtn {
-    display: none !important;
-    visibility: hidden !important;
+    display: none;
+    visibility: hidden;
     text-align: center;
   }
 
   #izSearchInput {
-    display: none; !important
+    /*display: none;*/
     margin: 0 auto;
     padding: 3px;
   }
@@ -189,8 +195,8 @@
 
   #izNavBarSearch {
     margin: 0 5px;
-    display: block !important;
-    visibility: visible !important;
+    display: block;
+    visibility: visible;
   }
 }
 
@@ -242,11 +248,11 @@
   }
 }
 
-@media (min-width: 1024px) {
+/*@media (min-width: 1024px) {
   .iz-header .iz-header-button-list-top {
     display: none;
   }
-}
+}*/
 
 /* Contact buttons */
 .iz-header .iz-contact-button {
@@ -283,11 +289,11 @@
     border: 1px solid rgb(238, 162, 54);
   }
 
-@media (max-width: 1023px) {
+/*@media (max-width: 1023px) {
   .iz-header .iz-free-trial {
     display: none;
   }
-}
+}*/
 
 .iz-header .navbar-toggle {
   height: 36px;
