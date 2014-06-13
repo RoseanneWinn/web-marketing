@@ -1,6 +1,4 @@
-﻿/* override bootstrap styles */
-
-.iz-header .navbar-collapse {
+﻿.iz-header .navbar-collapse {
   max-height: 1000px;
 }
 
@@ -56,12 +54,6 @@
   }
 }
 
-/*@media (max-width: 1023px) {
-  .navbar-default {
-    display: none;
-  }*/
-}
-
 .iz-header .navbar-nav > li > a:hover,
 .iz-header .navbar-nav > li > a:focus {
   text-decoration: none;
@@ -102,17 +94,18 @@
 
 /**/
 
-/* header other styles */
+.iz-header .navbar {
+  border-bottom: 1px solid #ddd;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
 .iz-header .icon-bar {
   width: 16px !important;
-  background-color: black;
+  background-color: #000;
 }
 
 /* Izenda logo styles */
-
-.iz-toggle-nav {
-  margin-left: 190px;
-}
 
 .iz-navbar-logo {
   width: 170px;
@@ -122,10 +115,18 @@
   background-size: 100%;
 }
 
+.iz-navbar-logo:hover {
+  opacity: .7;
+}
+
+.iz-toggle-nav {
+  margin-left: 190px;
+}
+
 @media (max-width: 520px) {
   .iz-navbar-logo {
     height: 60px;
-    width: 46px;
+    width: 40px;
     background: url('../img/header/IzendaSmall.png') no-repeat 0 5px;
     background-size: 100%;
   }
@@ -139,24 +140,21 @@
 
 .iz-header .iz-search-btn > li > a {
   background-color: transparent;
-  border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
 }
 
   .iz-header .iz-search-btn > li > a:hover,
   .iz-header .iz-search-btn > li > a:focus {
     color: #0d70cd;
-    background-color: transparent;
     border-top: 4px solid transparent;
+    background-color: transparent;
     border-bottom: 4px solid transparent;
   }
 
 /* Search panel */
 
 .iz-header .iz-search {
-  height: 62px;
-  border-bottom: 4px solid transparent;
-  border-top: 4px solid transparent;
+  border-bottom: 4px solid #fff;
+  border-top: 4px solid #fff;
 }
 
 #izSearchBtn {
@@ -165,10 +163,8 @@
 
 #izSearchInput {
   padding: 3px;
-  height: 24px;
   padding-left: 26px;
   margin-left: 0px;
-  margin-right: 10px;
   clear: both;
   margin-top: 10px;
 }
@@ -179,19 +175,19 @@
   font-size: 14px;
   color: #666;
   left: 10px;
-}
+  }
 
 @media (max-width: 1023px) {
   #izNavBarSearchBtn {
-    display: none;
-    visibility: hidden;
+    display: none !important;
+    visibility: hidden !important;
     text-align: center;
   }
 
   #izSearchInput {
-    /*display: none;*/
     margin: 0 auto;
     padding: 3px;
+    padding-left: 26px;
   }
 
   #izSearchIcon {
@@ -201,8 +197,8 @@
 
   #izNavBarSearch {
     margin: 0 5px;
-    display: block;
-    visibility: visible;
+    display: block !important;
+    visibility: visible !important;
   }
 }
 
@@ -249,16 +245,16 @@
     float: left;
   }
 
- /* .iz-header .iz-header-button-list-main {
+  .iz-header .iz-header-button-list-main {
     display: none;
-  }*/
+  }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1024px) {
   .iz-header .iz-header-button-list-top {
     display: none;
   }
-}*/
+}
 
 /* Contact buttons */
 .iz-header .iz-contact-button {
@@ -295,11 +291,11 @@
     border: 1px solid rgb(238, 162, 54);
   }
 
-/*@media (max-width: 1023px) {
+@media (max-width: 1023px) {
   .iz-header .iz-free-trial {
     display: none;
   }
-}*/
+}
 
 .iz-header .navbar-toggle {
   height: 36px;
@@ -311,8 +307,12 @@
   height: 100%;
 }
 
-@media (min-width: 770) and (max-width: 1022px){
-  #izFreeTrialButton {
-    visibility: hidden;
-}
+@media (max-width: 1000px) {
+  .media-the-footer {
+    font-size: 16px;
+    }
+
+  .media-the-footer-2 {
+    font-size: 12px;
+    }
 }
