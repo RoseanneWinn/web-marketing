@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-  <!--<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">-->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
@@ -100,7 +100,7 @@
   </div>
   <div class="row">
     <div class="col-md-4 col-md-offset-4">
-      <a href="https://izenda.github.io/web-marketing/NewWebsite/Full-Spectrum-Analytics.html" class="btn btn-lg center-block" id="try-it-free" role="button">Try It Free</a>
+      <a href="#from-try-it-free" class="btn btn-lg center-block" id="try-it-free" role="button">Try It Free</a>
     </div>
   </div>
   <br />
@@ -439,7 +439,7 @@
   <div class="row text-center bottom-background">
     <div class="col-md-12">
       <h1>See For Yourself</h1>
-      <h3>Access Izenda Online or Download Free for 14 Days</h3>
+      <h3 id="from-try-it-free">Access Izenda Online or Download Free for 14 Days</h3>
       <br />
     </div>
   </div>
@@ -518,6 +518,21 @@
     }
     return "";
 }
+ </script>
+ <script type="text/javascript">
+     (function () {
+      var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true; se.src = 'http://commondatastorage.googleapis.com/code.snapengage.com/js/24c3b9f3-b9bb-4c8b-8a15-30c20ee6c4e8.js';
+      var done = false;
+      se.onload = se.onreadystatechange = function () {
+        if (!done && (!this.readyState || this.readyState === 'loaded' || this.readyState === 'complete')) {
+          done = true;
+          // Place your SnapEngage JS API code below
+          SnapEngage.allowChatSound(true);
+          SnapEngage.allowProactiveChat(true);
+        }
+      };
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+    })();
  </script>
 </body>
 </html>
