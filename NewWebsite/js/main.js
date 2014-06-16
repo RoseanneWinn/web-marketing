@@ -4,7 +4,7 @@ $(document).ready(function () {
   $('.site-footer').load('templates/sticky-footer.html');
 
   var pageUrl = document.URL;
-   console.log(pageUrl);
+  console.log(pageUrl);
 
 
   //////////////////////////////////////////////////////////////////////////////////////////
@@ -197,50 +197,58 @@ $(document).ready(function () {
   });
 
   //Modal Video Change OnClick
-
-  $('a.videoModal').on('click', function(e) {
+  $('a.videoModal').on('click', function (e) {
     var src = $(this).attr('data-src');
     var height = $(this).attr('data-height') || 300;
     var width = $(this).attr('data-width') || 400;
 
-  $("#myModal iframe").attr({'src':src,
-                        'height': height,
-                        'width': width});
+    $("#myModal iframe").attr({
+      'src': src,
+      'height': height,
+      'width': width
+    });
   });
-///////////////////////////////////////////////////////////////////////////////////////////
-//Pricing submit on heroku
-///////////////////////////////////////////////////////////////////////////////////////////
+
+  $('#myModal').on('hide.bs.modal', function (e) {
+    $("#myModal iframe").attr({
+      'src': null
+    });
+  });
+  ///////////////////////////////////////////////////////////////////////////////////////////
+  //Pricing submit on heroku
+  ///////////////////////////////////////////////////////////////////////////////////////////
 
 
-//////////////////////////////////////////////////////////////////////////////////////////
-// Form submit on heroku
-//////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////////////
+  // Form submit on heroku
+  //////////////////////////////////////////////////////////////////////////////////////////
 
-   $('#form').validate({
-      submitHandler : function(form) {
-        $('#submit').addClass("hidden");
-        $('#loading-text').removeClass("hidden");
-        var data = {
-          'first-name': $('#first-name').val(),
-          'last-name': $('#last-name').val(),
-          'email': $('#email').val(),
-          'phone-number': $('#phone-number').val(),
-          'company-url': $('#company-url').val(),
-          'web-source': 'FreeTrial & LiveDemo'
-        };
-        var sfData = _.extend({'page-url': pageUrl}, data);
-        $.post('http://izenda-services.herokuapp.com/create-salesforce-lead', sfData, function (sfLeadResponse) {
-          console.log(sfLeadResponse);
-          if (sfLeadResponse["success"] == true) {
-            console.log("About to post to free-trial");
-            $.post('http://izenda-services.herokuapp.com/free-trial', data, function (freeTrialResponse) {
-              console.log(freeTrialResponse);
-              if (freeTrialResponse["success"] == true) {
-                window.location = "http://www.izenda.com/bi/ReportListIntro.aspx";
-              }
-            }, 'json');
-          }
-          console.log("something terrible happened");
+  $('#form').validate({
+    submitHandler: function (form) {
+      $('#submit').addClass("hidden");
+      $('#loading-text').removeClass("hidden");
+      var data = {
+        'first-name': $('#first-name').val(),
+        'last-name': $('#last-name').val(),
+        'email': $('#email').val(),
+        'phone-number': $('#phone-number').val(),
+        'company-url': $('#company-url').val(),
+        'web-source': 'FreeTrial & LiveDemo'
+      };
+      var sfData = _.extend({ 'page-url': pageUrl }, data);
+      $.post('http://izenda-services.herokuapp.com/create-salesforce-lead', sfData, function (sfLeadResponse) {
+        console.log(sfLeadResponse);
+        if (sfLeadResponse["success"] == true) {
+          console.log("About to post to free-trial");
+          $.post('http://izenda-services.herokuapp.com/free-trial', data, function (freeTrialResponse) {
+            console.log(freeTrialResponse);
+            if (freeTrialResponse["success"] == true) {
+              window.location = "http://www.izenda.com/bi/ReportListIntro.aspx";
+            }
           }, 'json');
-         }});
+        }
+        console.log("something terrible happened");
+      }, 'json');
+    }
+  });
 });
