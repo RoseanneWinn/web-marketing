@@ -197,21 +197,8 @@ h6 {
   position: relative;
   padding-bottom: 68%;
   padding-top: 35px;
-  height: 0;
   overflow: hidden;
-}
-
-.video-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#main-vid {
-  margin-top: 75px;
-
+  background-color: transparent;
 }
 
 /* Picture columns*/
@@ -453,22 +440,10 @@ h6 {
 
 #form-shadow {
   position: relative;
-  left: 327px;
-  bottom: .4px;
+  left: 320px;
+  bottom: .5px;
   overflow: hidden;
   z-index: -1;
-}
-
-@media (max-width: 1267px)  {
-  #form-shadow {
-    display: none;
-  }
-}
-
-@media (min-width: 1269px) {
-  #form-shadow {
-    display: none;
-  }
 }
 
 .text-adjust {
