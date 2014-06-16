@@ -90,39 +90,11 @@ textarea {
 /* ==========================================================================
    Izenda Custom Styles
    ========================================================================== */
-html, body{
+html, body {
   height: 100%;
+  width: 100%;
+  font-family: "Lato", sans-serif;
 }
-
-
-/* Font
-
-h1 {
-  font: 300 56px/64px "Lato", sans-serif;
-}
-
-h2 {
-  font: 300 40px/56px "Lato", sans-serif;
-}
-
-h3 {
-  font: 300 30px/36px "Lato", sans-serif;
-}
-
-h3 {
-  font: 300 24px/30px "Lato", sans-serif;
-}
-
-h4 {
-  font: 300 18px/24px "Lato", sans-serif;
-}
-
-h5 {
-  font: 300 16px/22px "Lato", sans-serif;
-}
-
-h6 {
-  font: 300 14px/20px "Lato", sans-serif;*/
 
 /* For sticky footer, wrap page in manipulative*/
 
@@ -138,6 +110,21 @@ h6 {
 
 .site-footer, .page-wrap:after {
   height: 0px;
+}
+
+.why-izenda-text {
+  position: relative;
+  left: 10px;
+}
+
+.slight-move-left {
+  position: relative;
+  right: 5px;
+}
+
+.slight-move-right {
+  position: relative;
+  left: 2px;
 }
 
 /* Primary image display for itertive function--not in iteration 1 */
@@ -158,12 +145,6 @@ h6 {
 .move-me-up {
   position: relative;
   bottom: 75px;
-}
-
-@media (max-width: 990px) {
-  .move-me-up {
-    display: none;
-  }
 }
 
 .display-position {
@@ -217,12 +198,6 @@ h6 {
   -webkit-box-shadow: 0 0 10px 6px gray;
   -moz-box-shadow: 0 0 10px 6px gray;
   box-shadow: 0 0 10px 6px gray;
-}
-
-@media (max-width: 991px) {
-  .pic-list {
-    display: none;
-  }
 }
 
 /* Welcome content beneath spotlight video */
@@ -377,15 +352,6 @@ h6 {
   background-color: #EBEBEB;
 }
 
-@media (max-width: 993px) {
-  #partners-list {
-    display: none;
-  }
-  .gray-partners {
-    display: none;
-  }
-}
-
 /* Gallery styles */
 #portfolio-list,
 #portfolio-filter {
@@ -424,12 +390,6 @@ h6 {
 }
 
 /* Clients speak section for responsive */
-
-@media (max-width: 1200px) {
-  .clients-speak {
-    display: none;
-  }
-}
 
 #form {
   max-width: 100%;
