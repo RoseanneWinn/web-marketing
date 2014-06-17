@@ -77,7 +77,7 @@ function initializeIzendaHeader() {
 
   var closeSearchHandler = function () {
     var $input = $('#izSearchInput');
-    if ($(window).width() > 1023) {
+    if ($(window).width() > 767) {
       $input.animate({ width: '1px' }, 200, function () {
         showMenuPanel();
         $input.width('300px');
@@ -91,21 +91,33 @@ function initializeIzendaHeader() {
   // search button events
   $('#izSearchBtn').click(function (e) {
     e.preventDefault();
-    if ($(window).width() > 1023) {
+    if ($(window).width() > 767) {
       showSearchPanel();
       var $input = $('#izSearchInput');
       $input.width(0);
-      $input.animate({ width: '300px' }, 200, function () {
+      $input.animate({ width: '300px' }, 200, function() {
         $(this).focus();
       });
     }
   });
 
+  console.log($('.iz-menu > a[tc="KB/Integration"]'));
+  if ($(window).width() <= 1023) {
+    $('.iz-menu > a[tc="KB/Integration"]').text('KB');
+  } else {
+    $('.iz-menu > a[tc="KB/Integration"]').text('KNOWLEDGE BASE');
+  }
+
   $(window).resize(function () {
-    if ($(window).width() <= 1023) {
+    if ($(window).width() <= 767) {
       $('#izSearchInput').css('width', '100%');
     } else {
       $('#izSearchInput').width('300px');
+    }
+    if ($(window).width() <= 1023) {
+      $('.iz-menu > a[tc="KB/Integration"]').text('KB');
+    } else {
+      $('.iz-menu > a[tc="KB/Integration"]').text('KNOWLEDGE BASE');
     }
   });
 
