@@ -218,7 +218,9 @@ html, body {
   color: black;
   position: relative;
   bottom: 10px;
-  font: 28px bold;
+  font-style: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
   border: 1px solid #332d25;
   z-index: 2;
 }
@@ -274,8 +276,15 @@ html, body {
 
 /* button colors & other stuff*/
 
+.description-text {
+  position: relative;
+  top: 80px;
+}
+
 .btn {
-  min-width: 60px;
+  min-width: 80px;
+  font-style: "Lato", sans-serif;
+  border-radius: 0px 0px;
 }
 
 #btn-traditional {
