@@ -90,9 +90,13 @@ textarea {
 /* ==========================================================================
    Izenda Custom Styles
    ========================================================================== */
+
+* {
+  margin: 0;!important
+}
+
 html, body {
   height: 100%;
-  width: 100%;
   font-family: "Lato", sans-serif;
 }
 
@@ -100,7 +104,7 @@ html, body {
 
 .page-wrap {
   min-height: 100%;
-  margin-bottom: -20px;
+  margin-bottom: -10px;
 }
 
 .page-wrap:after {
@@ -479,6 +483,11 @@ html, body {
 
 #back-to-top:hover {
   color: #fdd14e;
+}
+
+#Rick, #Jess, #Scott {
+  width: 240px;!important
+  height: 240px;!important
 }
 
 
