@@ -1058,6 +1058,7 @@ p.text {
   }
 
 .main-pic-container {
+  position: relative;
 }
 
 .main-pic-overlay {
