@@ -218,7 +218,7 @@ html, body {
   color: black;
   position: relative;
   bottom: 10px;
-  font-style: "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 28px;
   border: 1px solid #332d25;
@@ -245,7 +245,7 @@ html, body {
 }
 
 .change-top-background-margin {
-  margin: 0px;!important
+  margin: 0px !important;
 }
 
 .light-font {
@@ -283,7 +283,7 @@ html, body {
 
 .btn {
   min-width: 80px;
-  font-style: "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
   border-radius: 0px 0px;
 }
 
@@ -432,7 +432,7 @@ html, body {
 }
 
 .img-circle {
-  border-radius: 0%;!important
+  border-radius: 0% !important;
 }
 
 .btn-padding {
@@ -876,4 +876,183 @@ html, body {
   border: 1px solid #fff;
 }
 
+/* style for pages */
 
+.bg-colored {
+  background: #0071bc;
+  color: #fff;
+  text-shadow: none;
+  border: none;
+}
+
+.bg-white {
+	background: #fff;
+}
+
+.first {
+  padding-top: 62px;
+}
+
+.wrapper {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  padding: 20px 0;
+}
+
+.wrapper2 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  padding: 10px 0;
+}
+
+/* header */
+.iz-article-title {
+  font-size: 36px;
+  height: 50px;
+  font-weight: 300;
+}
+
+.iz-article-sub-title {
+  font-size: 24px;
+  height: 40px;
+  font-weight: 300;
+}
+
+/* Youtube videos */
+.iz-feature-embed-container {
+  width: 100%;
+  text-align: center;
+}
+
+.iz-feature-embed-container > embed {
+  width: 100%;
+  height: 100%;
+}
+
+div.code {
+  font-family: Courier;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 10px;
+  background-color: #e0e1e2;
+  border: 1px solid #ddd;
+}
+
+span.code {
+  font-family: Courier;
+  font-weight: lighter;
+  background-color: #e0e1e2;
+  border: 1px solid #ddd;
+}
+
+h3.subheader {
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.article-container {
+  padding-left: 200px;
+}
+
+.article-column {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.quote {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  padding: 10px;
+  background-color: #e0e1e2;
+  border: 1px solid #ddd;
+}
+
+.quote-author {
+  font-size: 14px;
+  padding-left: 40px;
+  background-color: #e0e1e2;
+}
+
+.company {
+  margin: 5px;
+  width: 150px;
+  height: 120px;
+}
+
+.company.bordered {
+  outline: 1px solid #ddd;
+}
+
+p.text {
+  text-indent: 20px;
+}
+
+.management-team-body {
+  padding-left: 200px;
+}
+
+.management-team-body > p, .izenda-article > p {
+  margin-top: 15px;
+}
+
+.client-row {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.client-logo-left {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.contact-item {
+  padding-left: 30px;
+}
+
+#clientsListContainer {
+  width: 100%;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background: none;
+  width: 40px;
+}
+
+.carousel-control:hover, .carousel-control:focus {
+  color: #1A72BA;
+}
+
+.carousel {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.clientListLogoContainer {
+  display: table-cell;
+  padding: 5px;
+}
+
+.clientListLogo {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #ddd;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  cursor: pointer;
+  -webkit-background-size: 95% !important;
+  -moz-background-size: 95% !important;
+  -o-background-size: 95% !important;
+  background-size: 95% !important;
+}
+  .clientListLogo:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
