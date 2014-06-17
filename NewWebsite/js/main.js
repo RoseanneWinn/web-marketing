@@ -1,25 +1,7 @@
 //Ready the page before firing any js
 $(document).ready(function () {
-
-  $('.site-footer').load('templates/sticky-footer.html');
-
   var pageUrl = document.URL;
   console.log(pageUrl);
-
-
-  //////////////////////////////////////////////////////////////////////////////////////////
-  // Header template render
-  //////////////////////////////////////////////////////////////////////////////////////////
-  var temlateRenderer = new SiteTemplateRenderer();
-  temlateRenderer.renderExternalTemplate({
-    name: 'header',
-    selector: '#izendaHeaderTemplate',
-    data: {},
-    loaded: function (renderResult) {
-      $('body').prepend(renderResult);
-      initializeIzendaHeader();
-    }
-  });
 
   //////////////////////////////////////////////////////////////////////////////////////////
   // Resize photos for new design
@@ -222,7 +204,6 @@ $(document).ready(function () {
   //////////////////////////////////////////////////////////////////////////////////////////
   // Form submit on heroku
   //////////////////////////////////////////////////////////////////////////////////////////
-
   $('#form').validate({
     submitHandler: function (form) {
       $('#submit').addClass("hidden");
