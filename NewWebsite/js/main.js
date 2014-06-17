@@ -1,19 +1,41 @@
 //Ready the page before firing any js
-$(document).ready(function () {
+$(document).ready(function() {
   var pageUrl = document.URL;
   console.log(pageUrl);
 
   //////////////////////////////////////////////////////////////////////////////////////////
-  // Set embed video size
+  // Main picture overlay
   //////////////////////////////////////////////////////////////////////////////////////////
-  jQuery(document).ready(function ($) {
-    var $container = $('.iz-feature-embed-container');
-    if ($container.find('embed').length > 0)
-      $container.height($container.width() * 9 / 16);
+  var populateMainPictureOverlay = function() {
+    var $mainPic = $('.main-pic-container > img');
+    var $mainPicOverlay = $('.main-pic-overlay');
+    $mainPicOverlay.width($mainPic.width() + 40);
+    $mainPicOverlay.height($mainPic.height() + 40);
+    $mainPicOverlay.css('left', $mainPic.offset().left - 20);
+    $mainPicOverlay.removeClass('hidden');
+  };
+  populateMainPictureOverlay();
+  $(window).resize(function() {
+    populateMainPictureOverlay();
+  });
+  $('.main-pic-overlay').click(function() {
+    var $embed = $('<embed src="http://www.youtube.com/v/1LlHesMCmYs" type="application/x-shockwave-flash" />');
+    var $o = $(this);
+    $o.empty();
+    $o.css('background-color', 'transparent');
+    $embed.width($o.width());
+    $embed.height($o.height());
+    $o.append($embed);
   });
 
+  //////////////////////////////////////////////////////////////////////////////////////////
+  // Set embed video size
+  //////////////////////////////////////////////////////////////////////////////////////////
+  var $container = $('.iz-feature-embed-container');
+  if ($container.find('embed').length > 0)
+    $container.height($container.width() * 9 / 16);
+
   jQuery(window).resize(function ($) {
-    var $container = jQuery('.iz-feature-embed-container');
     if ($container.find('embed').length > 0)
       $container.height($container.width() * 9 / 16);
   });
