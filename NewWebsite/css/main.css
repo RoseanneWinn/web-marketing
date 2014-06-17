@@ -112,6 +112,11 @@ html, body {
   display: block;
 }
 
+.intro-content h3 {
+  position: relative;
+  top: -30px;
+}
+
 .site-footer, .page-wrap:after {
   height: 0px;
 }
@@ -222,7 +227,7 @@ html, body {
 }
 
 #try-it-free {
-  background-color: #eea236;
+  background-color: #ffa500;
   height: 60px;
   width: 240px;
   color: black;
@@ -297,6 +302,10 @@ html, body {
   min-width: 80px;
   font-family: "Lato", sans-serif;
   border-radius: 0px 0px;
+}
+
+.btn-info-size {
+  font-size: 32px;
 }
 
 #btn-traditional {
@@ -464,7 +473,7 @@ html, body {
 }
 
 #linkedIn:hover {
-  color: #dbdcdd;
+  opacity: .7;
 }
 
 #facebook {
@@ -472,7 +481,7 @@ html, body {
 }
 
 #facebook:hover {
-  color: #dbdcdd;
+  opacity: .7;
 }
 
 #twitter {
@@ -480,7 +489,11 @@ html, body {
 }
 
 #twitter:hover {
-  color: #dbdcdd;
+  opacity: .7;
+}
+
+#googleplus:hover {
+  opacity: .7;
 }
 
 #back-to-top {
@@ -496,6 +509,16 @@ html, body {
 #Rick, #Jess, #Scott {
   width: 240px;!important
   height: 240px;!important
+}
+
+#Rick {
+  position: relative;
+  left: 30px;
+}
+
+#Scott {
+  position: relative;
+  right: 30px;
 }
 
 
