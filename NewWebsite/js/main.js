@@ -4,6 +4,21 @@ $(document).ready(function () {
   console.log(pageUrl);
 
   //////////////////////////////////////////////////////////////////////////////////////////
+  // Set embed video size
+  //////////////////////////////////////////////////////////////////////////////////////////
+  jQuery(document).ready(function ($) {
+    var $container = $('.iz-feature-embed-container');
+    if ($container.find('embed').length > 0)
+      $container.height($container.width() * 9 / 16);
+  });
+
+  jQuery(window).resize(function ($) {
+    var $container = jQuery('.iz-feature-embed-container');
+    if ($container.find('embed').length > 0)
+      $container.height($container.width() * 9 / 16);
+  });
+
+  //////////////////////////////////////////////////////////////////////////////////////////
   // Resize photos for new design
   //////////////////////////////////////////////////////////////////////////////////////////
   var rtime = new Date(1, 1, 2000, 12, 00, 00);
