@@ -128,7 +128,7 @@ html, body {
 
 .slight-move-right {
   position: relative;
-  left: 2px;
+  left: 5px;
 }
 
 /* Primary image display for itertive function--not in iteration 1 */
@@ -144,6 +144,12 @@ html, body {
 
 .alt-back-color {
   background-color: #f8f8f8;
+}
+
+.break-push-down {
+  position: relative;
+  top: 10px;
+  z-index: 5;
 }
 
 .move-me-up {
@@ -263,7 +269,9 @@ html, body {
 /* Alignment fixes for pics */
 
 #pic-fix-me {
-  margin-left: 30px;
+  margin-left: 10px;
+  position: relative;
+  left: 15px;
 }
 
 #pic-fix-me-2 {
