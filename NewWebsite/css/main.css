@@ -500,19 +500,27 @@ h1, h2, h3, h4, h5, h6, p {
   opacity: .7;
 }
 
-#back-to-top {
-  position: relative;
-  bottom: 20px;
-  color: #ed8c01;
+.back-to-top {
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+  z-index: 1002;
+  font-size: 48px;
 }
 
-#back-to-top:hover {
-  color: #fdd14e;
+.back-to-top > a {
+  text-decoration: none;
+}
+
+.back-to-top > a:hover,
+.back-to-top > a:focus {
+  color: #fff;
+  text-decoration: none;
 }
 
 #Rick, #Jess, #Scott {
-  width: 240px;!important
-  height: 240px;!important
+  width: 240px !important;
+  height: 240px !important;
 }
 
 #Rick {

@@ -4,7 +4,17 @@ $(document).ready(function() {
   console.log(pageUrl);
 
   $('#insert-header').load('templates/header.tmpl.html');
-  $('.site-footer').load('templates/sticky-footer.tmpl.html');
+  $('.site-footer').load('templates/sticky-footer.tmpl.html', function () {
+    //////////////////////////////////////////////////////////////////////////////////////////
+    // Back to top animation
+    //////////////////////////////////////////////////////////////////////////////////////////
+    $('.back-to-top > a').click(function (e) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: 0
+      }, 250);
+    });
+  });
 
   //////////////////////////////////////////////////////////////////////////////////////////
   // Main picture overlay
