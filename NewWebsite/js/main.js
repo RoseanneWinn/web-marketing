@@ -12,6 +12,8 @@ $(document).ready(function() {
   var populateMainPictureOverlay = function() {
     var $mainPic = $('.main-pic-container > img');
     var $mainPicOverlay = $('.main-pic-overlay');
+    if ($mainPic.length == 0 || $mainPicOverlay.length == 0)
+      return;
     $mainPicOverlay.width($mainPic.width() + 40);
     $mainPicOverlay.height($mainPic.height() + 40);
     $mainPicOverlay.css('left', $mainPic.offset().left - 20);
@@ -34,11 +36,14 @@ $(document).ready(function() {
   //////////////////////////////////////////////////////////////////////////////////////////
   // Set embed video size
   //////////////////////////////////////////////////////////////////////////////////////////
-  var $container = $('.iz-feature-embed-container');
-  if ($container.find('embed').length > 0)
-    $container.height($container.width() * 9 / 16);
+  jQuery(document).ready(function ($) {
+    var $container = $('.iz-feature-embed-container');
+    if ($container.find('embed').length > 0)
+      $container.height($container.width() * 9 / 16);
+  });
 
   jQuery(window).resize(function ($) {
+    var $container = jQuery('.iz-feature-embed-container');
     if ($container.find('embed').length > 0)
       $container.height($container.width() * 9 / 16);
   });
