@@ -175,8 +175,10 @@
 
 #izSearchInput {
   padding: 3px;
+  height: 24px;
   padding-left: 26px;
   margin-left: 0px;
+  margin-right: 10px;
   clear: both;
   margin-top: 10px;
 }
@@ -190,27 +192,28 @@
   }
 
 @media (max-width: 767px) {
+  #izNavBarSearchMobile {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
   #izNavBarSearchBtn {
-    display: none !important;
-    visibility: hidden !important;
-    text-align: center;
+    display: none;
   }
 
   #izSearchInput {
-    margin: 0 auto;
-    padding: 3px;
-    padding-left: 26px;
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #izNavBarSearchMobile {
+    display: none;
   }
 
-  #izSearchIcon {
-    top: 8px;
-    left: 10px;
-  }
-
-  #izNavBarSearch {
-    margin: 0 5px;
-    display: block !important;
-    visibility: visible !important;
+  #izSearchBtnMobile {
+    display: none;
   }
 }
 

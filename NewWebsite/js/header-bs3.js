@@ -1,32 +1,4 @@
 function initializeIzendaHeader() {
-  var showSearchPanel = function () {
-    var $navBar = $('#izNavBar');
-    $navBar.children().each(function (iNav, nav) {
-      var $nav = $(nav);
-      if ($nav.attr('id') != 'izNavBarSearch') {
-        $nav.addClass('hidden');
-        $('#contact-images').addClass('hidden');
-      } else {
-        $nav.removeClass('hidden');
-        $('#contact-images').removeClass('hidden');
-      }
-    });
-  };
-
-  var showMenuPanel = function () {
-    var $navBar = $('#izNavBar');
-    $navBar.children().each(function (iNav, nav) {
-      var $nav = $(nav);
-      if ($nav.attr('id') != 'izNavBarSearch') {
-        $nav.removeClass('hidden');
-        $('#contact-images').removeClass('hidden');
-      } else {
-        $nav.addClass('hidden');
-        $('#contact-images').addClass('hidden');
-      }
-    });
-  };
-
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // Contact buttons
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -71,57 +43,89 @@ function initializeIzendaHeader() {
   });
 
   // search handler
+  var showSearchPanel = function () {
+    // show normal panel
+    var $navBar = $('#izNavBar');
+    $navBar.children().each(function (iNav, nav) {
+      var $nav = $(nav);
+      if ($nav.attr('id') != 'izNavBarSearch') {
+        $nav.addClass('hidden');
+        $('#contact-images').addClass('hidden');
+      } else {
+        $nav.removeClass('hidden');
+        $('#contact-images').removeClass('hidden');
+      }
+    });
+
+    // show mobile panel
+    var $navHeader = $('#izSearchBtnMobile').closest('.navbar-header');
+    $navHeader.children().each(function (iChild, child) {
+      var $child = $(child);
+      if ($child.get(0).tagName.toLowerCase() == 'button') {
+        $child.addClass('hidden');
+      }
+    });
+  };
+
+  var showMenuPanel = function () {
+    // hide search panel
+    var $navBar = $('#izNavBar');
+    $navBar.children().each(function (iNav, nav) {
+      var $nav = $(nav);
+      if ($nav.attr('id') != 'izNavBarSearch') {
+        $nav.removeClass('hidden');
+        $('#contact-images').removeClass('hidden');
+      } else {
+        $nav.addClass('hidden');
+        $('#contact-images').addClass('hidden');
+      }
+    });
+
+    // hide mobile panel
+    var $navHeader = $('#izSearchBtnMobile').closest('.navbar-header');
+    $navHeader.children().each(function (iChild, child) {
+      var $child = $(child);
+      if ($child.get(0).tagName.toLowerCase() == 'button') {
+        $child.removeClass('hidden');
+      }
+    });
+    $('#izNavBarSearchMobile').addClass('hidden');
+  };
+
   var searchHandler = function () {
     window.location = "http://wiki.izenda.us/search?q=" + $('#izSearchInput').val();
   };
 
   var closeSearchHandler = function () {
-    var $input = $('#izSearchInput');
-    if ($(window).width() > 767) {
-      $input.animate({ width: '1px' }, 200, function () {
-        showMenuPanel();
-        $input.width('300px');
-      });
-    } else {
+    var $input = $('#izSearchInput, #izNavBarSearchMobile');
+    $input.animate({ width: '1px' }, 200, function () {
       showMenuPanel();
-      $input.css('width', '100%');
-    }
+      $input.width('300px');
+    });
   };
 
   // search button events
   $('#izSearchBtn').click(function (e) {
     e.preventDefault();
-    if ($(window).width() > 767) {
-      showSearchPanel();
-      var $input = $('#izSearchInput');
-      $input.width(0);
-      $input.animate({ width: '300px' }, 200, function() {
-        $(this).focus();
-      });
-    }
+    showSearchPanel();
+    var $input = $('#izSearchInput');
+    $input.width(0);
+    $input.animate({ width: '300px' }, 200, function () {
+      $(this).focus();
+    });
+  });
+  $('#izSearchBtnMobile').click(function (e) {
+    e.preventDefault();
+    showSearchPanel();
+    var $input = $('#izNavBarSearchMobile');
+    $input.removeClass('hidden');
+    $input.width(0);
+    $input.animate({ width: '300px' }, 200, function () {
+      $(this).focus();
+    });
   });
 
-  console.log($('.iz-menu > a[tc="KB/Integration"]'));
-  if ($(window).width() <= 1023) {
-    $('.iz-menu > a[tc="KB/Integration"]').text('KB');
-  } else {
-    $('.iz-menu > a[tc="KB/Integration"]').text('KNOWLEDGE BASE');
-  }
-
-  $(window).resize(function () {
-    if ($(window).width() <= 767) {
-      $('#izSearchInput').css('width', '100%');
-    } else {
-      $('#izSearchInput').width('300px');
-    }
-    if ($(window).width() <= 1023) {
-      $('.iz-menu > a[tc="KB/Integration"]').text('KB');
-    } else {
-      $('.iz-menu > a[tc="KB/Integration"]').text('KNOWLEDGE BASE');
-    }
-  });
-
-  $('#izSearchInput').keydown(function (e) {
+  $('#izSearchInput, #izNavBarSearchMobile').keydown(function (e) {
     if (e.keyCode == 27) {
       closeSearchHandler();
     }
@@ -130,8 +134,24 @@ function initializeIzendaHeader() {
     }
   });
 
-  $('#izSearchInput').focusout(function () {
+  $('#izSearchInput, #izNavBarSearchMobile').focusout(function () {
     closeSearchHandler();
+  });
+
+  //
+
+  if ($(window).width() <= 1023) {
+    $('.iz-menu > a[tc="KB/Integration"]').text('KB');
+  } else {
+    $('.iz-menu > a[tc="KB/Integration"]').text('KNOWLEDGE BASE');
+  }
+
+  $(window).resize(function () {
+    if ($(window).width() <= 1023) {
+      $('.iz-menu > a[tc="KB/Integration"]').text('KB');
+    } else {
+      $('.iz-menu > a[tc="KB/Integration"]').text('KNOWLEDGE BASE');
+    }
   });
 
   // active menu item
