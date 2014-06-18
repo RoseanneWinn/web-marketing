@@ -169,6 +169,7 @@ h1, h2, h3, h4, h5, h6, p {
 .display-position {
   position: relative;
   top: 75px;
+  z-index: 10;
 }
 
 .not-so-big-font {
@@ -236,7 +237,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 240px;
   color: black;
   position: relative;
-  bottom: 10px;
+  bottom: 30px;
   font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 28px;
@@ -300,6 +301,7 @@ h1, h2, h3, h4, h5, h6, p {
 .description-text {
   position: relative;
   top: 80px;
+  z-index: 10;
 }
 
 .btn {
@@ -361,7 +363,19 @@ h1, h2, h3, h4, h5, h6, p {
 
 .pic-pull-up {
   position: relative;
-  bottom: 50px;
+  bottom: 165px;
+}
+
+.divide-content {
+  position: relative;
+  bottom: 165px;
+}
+
+/* Specific divisions */
+
+#operational-divider {
+  position: relative;
+  bottom: 340px;
 }
 
 #interactive-adjustments {
@@ -370,11 +384,29 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: -50px;
 }
 
+/* Description text properties */
+
+.description-list {
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+.description-list:before {
+  content: '\f046';
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 22px;
+  }
+
 /* Specific photo adjustments */
 
 #operational-pull-up, #analytical-pull-up {
   position: relative;
-  bottom: 90px;
+  bottom: 200px;
 }
 
 #flexible-pull-up {
