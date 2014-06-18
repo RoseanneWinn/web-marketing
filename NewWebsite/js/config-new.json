@@ -1,0 +1,2021 @@
+[
+	{
+		"ID" : "zeewise",
+		"Name" : "ZeeWise",
+		"Logo" : "img/customers/zeewise_logo.png",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Screenshot" : "/Site/img/customers/zeewise_200.png",
+		"CaseStudy" : "ZeeWise (<a href=\"http://www.zeewise.com\">www.zeewise.com</a>) has chosen a tabbed user interface to lead its users through the &quot;create or customize\" process. Notice the \"Sort\" checkboxes that allow sorting on any field.  The checkboxes marked \"VG\" are for Visual Grouping. In this example, the user might set Visual Grouping ON for the \"Customer State\" field, causing each employee to be grouped by state.",
+		"Description" : "The ZeeWise Zee360 software delivers ad hoc Business Intelligence and Performance Management solutions for franchisors and franchisees. Zee360 provides automated QuickBooks data collection, centralized data analysis, and real time Dashboards with metrics, KPI’s and general reporting to help franchisees understand their business better. As the leading provider of Franchise Business Intelligence solutions, this implementation of Izenda Reports enhanced ZeeWise products capabilities by expanding the speed and flexibility by which their users could produce reports -- all without having to invest months or years to develop the same capability in-house. Build or buy? It was clear Izenda had a solution that could be integrated and deployed quickly, leaving the development team to focus on their core product."
+	},
+		{
+		"ID" : "econsultingnetwork",
+		"Name" : "eConsulting Network",
+		"Logo" : "img/customers/econsultingnetwork_logo.png",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Screenshot" : "/Site/img/customers/econsulting_reportdesigner_200.png",
+		"CaseStudy" : "eConsulting Network (<a href=\"http://www.econsultingnewtork.com\">www.econsultingnewtork.com</a>) has built a set of standard reports available to users according to their individual rights and security settings.&nbsp; Choosing a report runs it, or allows the user to customize it. This UI combines the list of reports with the Report Designer on a single screen.",
+		"Description" : "eConsulting Network produces JobBlox, a web-based job management system for creating and maintaining an organization's job documentation. JobBlox makes developing and maintaining accurate, up-to-date job documentation easier and more efficient. JobBlox is a self-service application that allows managers to submit newly created jobs and to submit changes to existing jobs. With the integration of Izenda Reports, self-service reporting is extended to every user, according to the security and permissions Izenda inherits from the application."
+	},
+		{
+		"ID" : "educationdynamics",
+		"Name" : "Education Dynamics",
+		"Logo" : "img/customers/edu_dyn_logo.png",
+		"Type" : "ISV",
+		"Industry" : "Education",
+		"Screenshot" : "/Site/img/customers/educationdynamics_200.png",
+		"CaseStudy" : "Education Dynamics(<a href=\"http://www.educational-dynamics.com\">www.education-dynamics.com</a>) has chosen a tree structure from which to build reports. The user simply chooses the option of interest from the tree, causing the &quot;data sources&quot; dropdown to populate with the relevant selections.",
+		"Description" : "Education Dynamics provides marketing and student affairs professionals the tools they need to meet their critical objectives in recruitment, enrollment, yield and retention. The company has pulled together the best in content resources and proprietary technology, all managed by a team of professionals with unparalleled experience in the higher education field. Collectively, it is the only organization that delivers products and services with a proven track record for helping schools find, enroll and retain students. This unique implementation of Izenda Reports lets users create and customize reports from a tree structure -- intuitively and quickly"
+	},
+		{
+		"ID" : "",
+		"Name" : "Light Speed Networks",
+		"Logo" : "img/customers/lsn_logo.png",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Screenshot" : "",
+		"CaseStudy" : "",
+		"Description" : "Light Speed Networks assesses, designs, manages and supports enterprise-wide PC networks and applications. We offer a wide-variety of products and services and specialize in Microsoft®, Cisco®, Citrix®, Dell® and more! Adding Izenda Reports to their offering, Light Speed Networks is able to deliver a powerful reporting platform to clients running Microsoft .NET."
+	},
+		{
+		"ID" : "",
+		"Name" : "Auric Technology",
+		"Logo" : "img/customers/auric.png",
+		"Type" : "ISV",
+		"Industry" : "CRM",
+		"Screenshot" : "",
+		"CaseStudy" : "",
+		"Description" : "Auric Technology, LLC was founded in 2004. The Company develops, manages and offers its proprietary, innovative, and highly versatile on-demand (web-based) Customer Relationship Management Software (“CRM”) to companies across a wide range of industries.  The company´s flagship product, Auric Prospector, is a highly customizable, on-demand solution boasting a unique combination of features, most notably including but not limited to a powerful custom field function that makes the application extremely flexible; a module that allows for multiple translations of any word or phrase in the system; and a full featured downloadable application with complete Outlook synchronization. These features, along with its ease of use and simplistic adoption, favorably position Auric as the industry´s cutting edge CRM solution of choice over legacy providers."
+	},
+		{
+		"ID" : "",
+		"Name" : "Service Central Technologies",
+		"Logo" : "img/customers/ServiceCentral.png",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Screenshot" : "",
+		"CaseStudy" : "",
+		"Description" : "ServiceCentral Technologies, Inc. provides hosted reverse logistics, service and repair management software solutions that enable companies to transform their aftermarket product service chain into a profit stream. Our software solutions enable businesses to configure unlimited customizable workflows that will track products and capture key performance indicators through every phase of aftermarket services from returns, exchanges and warranty entitlement to repairs, inventory and asset management."
+	},
+		{
+		"ID" : "",
+		"Name" : "Visibility Software, LLC",
+		"Logo" : "img/customers/visibilitysoftware2.png",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Screenshot" : "",
+		"CaseStudy" : "",
+		"Description" : "Visibility Software is a leading provider of employee-based software, offering proven, cost-effective software solutions and services that address the core recruiting and training management needs of small to mid-sized organizations in a variety of industries. Izenda Reports has given their application robust new reporting capacity so their end users can get up to date business intelligence quickly and on demand."
+	},
+		{
+		"ID" : "",
+		"Name" : "Aries Systems",
+		"Logo" : "img/customers/Aries.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Screenshot" : "",
+		"CaseStudy" : "",
+		"Description" : "<a href=\"www.ariessys.com/ariessys/index.html\">www.ariessys.com/ariessys/index.html</a><br>Knowledge Finder is the brand name of the search engine developed by Aries Systems Corporation used to search the biomedical literature licensed from the National Library of Medicine (MEDLINE). It has been successfully used by hundreds of thousands of knowledge workers since its initial release in 1986. See what users say about Knowledge Finder."
+	},
+		{
+		"ID" : "",
+		"Name" : "ARC Logics",
+		"Logo" : "img/customers/arclogics.png",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Screenshot" : "",
+		"CaseStudy" : "",
+		"Description" : "ARC Logics help audit, risk and compliance professionals maximize efficiency and effectiveness with industry-leading solutions that leverage rich content, workflow processes and vertical expertise. Our tools function independently or work together to build holistic, enterprise-wide GRC programs."
+	},
+		{
+		"ID" : "",
+		"Name" : "Certpoint Systems",
+		"Logo" : "img/customers/certpointsystems.png",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Screenshot" : "",
+		"CaseStudy" : "",
+		"Description" : "CERTPOINT is a privately held global corporation with worldwide offices in North America, Europe, Asia and Africa. CERTPOINT was founded over 12 years ago by Constantin and Ara Ohanian, father and son, to help large corporations transform business critical knowledge into measurable results."
+	},
+		{
+		"ID" : "",
+		"Name" : "Strategic Business Consulting",
+		"Logo" : "img/customers/sbc.png",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Screenshot" : "",
+		"CaseStudy" : "",
+		"Description" : "Jeff LaRavia founded Solutions Business Consulting in 2000 to provide small businesses with the tools and service they need to thrive. In 2008 he was joined by Richard Akatcherian and Mark Hardy. Together they will continue SBCIT's trends in providing quality, reliable service with a personal touch."
+	},
+		{
+		"ID" : "",
+		"Name" : "ServiceCentral Technologies",
+		"Logo" : "img/customers/servicecentral928639040.png",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Screenshot" : "",
+		"CaseStudy" : "",
+		"Description" : "ServiceCentral Technologies, Inc. provides hosted reverse logistics, service and repair management software solutions that enable companies to transform their aftermarket product service chain into a profit stream.  Our software solutions enable businesses to configure unlimited customizable workflows that will track products and capture key performance indicators through every phase of aftermarket services from returns, exchanges and warranty entitlement to repairs, inventory and asset management."
+	},
+		{
+		"ID" : "",
+		"Name" : "Fetter Logic",
+		"Logo" : "img/customers/fetterlogic.jpg",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Screenshot" : "",
+		"CaseStudy" : "",
+		"Description" : "Fetter Logic provides the solutions and experience needed to efficiently and effectively meet the growing demands on Advisors, Operations and Compliance personnel, and the \"C\" suite of financial services firms. Serving primarily independent, bank, and insurance company affiliated broker-dealers, Fetter Logic provides solutions for the front, middle and back office."
+	},
+		{
+		"ID" : "",
+		"Name" : "Transaction Payment Systems (EVO)",
+		"Logo" : "img/customers/evo.png",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Screenshot" : "",
+		"CaseStudy" : "",
+		"Description" : "EVO is in the largest privately held credit card processor and among the top ten largest non-bank acquirers in the US and Canada. By the end of 2010, EVO will actively service 285,000 merchant customers businesses of all sizes, in various industries, focusing on the small to midsized merchants. EVO will process nearly $26 billion in annual processing volume and close to 385 million transactions. Headquartered in Long Island, N.Y., EVO is a \"single source\" for the full range of electronic payment services. EVO offers several processing options, thus approving 98% of the merchant applications it receives."
+	},
+		{
+		"ID" : "",
+		"Name" : "Open Office Australia",
+		"Logo" : "img/customers/open-office-logo.png",
+		"Type" : "ISV",
+		"Industry" : "Software Development",
+		"Screenshot" : "",
+		"CaseStudy" : "",
+		"Description" : "Open Office is Australia's leading provider of high-function, integrated, statutory and compliance management systems with over 400 clients across Australia and around the World. Founded in 1990, Open Office has extensive understanding of the needs and unique operating environments of our clients, and is able to add extensive value to their process design and quality management issues."
+	},
+		{
+		"ID" : "",
+		"Name" : "Milliman",
+		"Logo" : "img/customers/milliman.jpg",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Screenshot" : "",
+		"CaseStudy" : "",
+		"Description" : "Milliman is among the world's largest independent actuarial and consulting firms, with revenues of $676 million in 2010. Founded in Seattle in 1947, we currently have 56 offices in key locations worldwide. Our staff of 2,500 people includes more than 1,300 qualified consultants and actuaries. We are owned and managed by approximately 350 principals—senior consultants whose selection is based on their technical, professional and business achievements."
+	},
+		{
+		"ID" : "",
+		"Name" : "HealthStream",
+		"Logo" : "img/customers/healthstream.gif",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Screenshot" : "",
+		"CaseStudy" : "",
+		"Description" : "<a href=\"www.healthstream.com/index.aspx\">www.healthstream.com/index.aspx</a><br>A safer organization for patient care through required regulatory training. Mandatory OSHA and The Joint Commission training is designed to enhance safety in healthcare organizations, promoting the highest standards of patient care. Our customers tell us that compliance improves, on average, 20-30 percent after selecting HealthStream and our regulatory curriculum."
+	},
+		{
+		"ID" : "",
+		"Name" : "Axentis",
+		"Logo" : "img/customers/axentis.jpg",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Screenshot" : "",
+		"CaseStudy" : "",
+		"Description" : "Leveraging the insight and expertise of former auditors and compliance professionals, ARC Logics helps organizations in all industries address complex audit, risk and compliance challenges and build holistic, enterprise-wide risk management programs."
+	},
+		{
+		"ID" : "",
+		"Name" : "Towers Watson",
+		"Logo" : "img/customers/towerswatson.png",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Screenshot" : "",
+		"CaseStudy" : "",
+		"Description" : "Towers Watson is a leading global professional services company that helps organizations improve performance through effective people, risk and financial management. With 14,000 associates around the world, we offer solutions in the areas of employee benefits, talent management, rewards, and risk and capital management."
+	},
+		{
+		"ID" : "",
+		"Name" : "Oracle",
+		"Logo" : "img/customers/oracle.jpg",
+		"Type" : "ISV",
+		"Industry" : "Database solutions",
+		"Screenshot" : "",
+		"CaseStudy" : "",
+		"Description" : "With more than 380,000 customers—including 100 of the Fortune 100—and with deployments across a wide variety of industries in more than 145 countries around the globe, Oracle offers an optimized and fully integrated stack of business hardware and software systems that helps organizations overcome complexity and unleash innovation."
+	},
+		{
+		"ID" : "",
+		"Name" : "Accela",
+		"Logo" : "img/customers/accela.gif",
+		"Type" : "ISV",
+		"Industry" : "Software Development",
+		"Screenshot" : "",
+		"CaseStudy" : "",
+		"Description" : "Accela is the largest software company that makes government services available 24/7. Our solutions open up new and better ways for government to serve its citizens."
+	},
+		{
+		"Name" : "MBSi Capital Corp, Inc",
+		"Logo" : "img/customers/mbsi.jpg",
+		"Type" : "ISV",
+		"Industry" : "Database solutions",
+		"Description" : "MBSi was formed in 2003 in response to the absence of a reliable, stable and properly engineered hosted database solution for the repossession industry. Recognizing that void and seeing an opportunity, MBSi set out to establish a new precedent in the development and delivery of repossession management software; the result was the Re-Pros Repossession Software Suite. MBSi continues to make strides in the repossession industry by providing companies with affordable integrated services for every facet of the repossession process. Today, Re-Pros is recognized as the industry's premier assignment management application."
+	},
+		{
+		"Name" : "Netwise",
+		"Logo" : "img/customers/netwise.jpg",
+		"Type" : "ISV",
+		"Industry" : "Software Development",
+		"Description" : "NetWise Technology has achieved phenomenal results for our clients by providing software solutions that work like they do. Our clients expect and deserve a significant return on their strategic technology investment."
+	},
+		{
+		"Name" : "eLogic Learning, LLC",
+		"Logo" : "img/customers/elogic.png",
+		"Type" : "ISV",
+		"Industry" : "Education",
+		"Description" : "2012 is projected to be a great year for the eLearning industry! eLogic Learning agrees, however 2011 was a great year also thanks to the continued efforts of our employees and our terrific customers! In 2011 we saw the launch eLogic Learning’s new eSSential Version 9 Learning Management System. Having received great reviews from both clients and experts alike, 2012 will see new components added to Version 9 Learning Management System based on our client’s feedback. 2012 will prove to be a watershed year for our industry! eLearning and Custom Content Development has never been more relevant as companies continue to onboard and train both new and existing employees to keep that strategic advantage. We look forward to providing outstanding products/service to our new and existing clients in 2012."
+	},
+		{
+		"Name" : "Fellowship Technologies",
+		"Logo" : "img/customers/fellowshiptechnologies.png",
+		"Type" : "ISV",
+		"Industry" : "",
+		"Description" : "Fellowship One is a web-based church management software system that allows a church of any size, from new church plants to multi-site mega churches, to be more effective in ministry, more efficient in administration, and more engaged with their communities. Fellowship One provides a unique 360-degree, single view of the families in your church, their involvement, and their needs so that you can personalize their care."
+	},
+		{
+		"Name" : "Sunguard",
+		"Logo" : "img/customers/sungard.jpg",
+		"Type" : "ISV",
+		"Industry" : "Software Development",
+		"Description" : "SunGard is one of the world’s leading software and technology services companies. SunGard has more than 17,000 employees and serves approximately 25,000 customers in more than 70 countries. SunGard provides software and processing solutions for financial services, education and the public sector. SunGard also provides disaster recovery services, managed IT services, information availability consulting services and business continuity management software. With annual revenue of about $4.5 billion, SunGard is the largest privately held software and services company and was ranked 434 on the Fortune 500 list in 2011."
+	},
+		{
+		"Name" : "AssetWorks",
+		"Logo" : "img/customers/assetworks.png",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Description" : "AssetWorks delivers industry-leading business solutions that help asset- and infrastructure-intensive organizations control capital and operating expenditures, reduce operational complexity, and manage regulatory and policy-driven risk. Leveraging a comprehensive portfolio of software and consulting solutions, we help organizations like yours work more efficiently by improving access to shared asset data, promoting greater transparency across the organization, speeding response times and mean time to repair (MTTR), maximizing asset availability and uptime, and reducing total cost of ownership (TCO)."
+	},
+		{
+		"Name" : "Millhouse 1889",
+		"Logo" : "img/customers/millhouse.jpg",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Description" : "Millhouse 1889, LLC was formed in 2010 in Northport, New York. Millhouse specializes in the development of best of breed, web-based tools designed for the Construction Trades. Founders Ali Murdoch and Keith Tobias have created a full service company that provides a suite of leading-edge tools to the Construction industry, and combine it with world class implementation and support services delivered by professionals who know technology and the trades. What seperates Millhouse from its competitors is its bottom up approach to technology. Rather than strictly focusing on the needs of Management, Millhouse focuses on the necessary tools for the end user. This allows for full participation of all staff members, leading to an increase in efficiency feeds a 360 degree view to Management for required business analytics. Millhouse produces tools for all roles within the organization whether it is in sales, production, marketing, service, finance or management."
+	},
+		{
+		"Name" : "SoftWrench",
+		"Logo" : "img/customers/sws.png",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Description" : "SoftWrench Solutions is a leading software solutions provider focused on enabling clients to get the most return on their technology, resources and investments. Our proprietary product, softWrench™, enhances and simplifies the robust capabilities of Maximo and other IBM Tivoli solutions."
+	},
+		{
+		"Name" : "Asure Software",
+		"Logo" : "img/customers/asure.gif",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Description" : "Our comprehensive suite enables organizations to dramatically simplify administrative tasks and thereby enhance workforce productivity. Asure's suite includes products to optimize workforce time and attendance tracking, pay stubs and W2 documentation, meeting and event management, and asset tracking."
+	},
+		{
+		"Name" : "JBM Logic",
+		"Logo" : "img/customers/jbm.jpg",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Description" : "Providing you stability, JBM Logic was founded in 1987 and headquartered in Montreal, Canada. We have been serving North American customers such as you by developing and commercializing INTEGRA e-business™.  INTEGRA e-business™ is a modular parametric and customizable Web solution aimed at the manufacturing and distribution industry.  INTEGRA e-business™ in Constant Evolution Our award winning INTEGRA e-business™ solution is constantly evolving according to your needs. Customization requests and R&D result in regular updates which include new features."
+	},
+		{
+		"Name" : "Throttlenet",
+		"Logo" : "img/customers/throttlenet.png",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Description" : "ThrottleNet's mission is to consistently provide superior business technology solutions that are reserved for big corporations to small- and medium-sized companies. We help these companies identify technology barriers that keep them from meeting their business goals and partner with them to develop solutions for increased productivity. For more than 10 years this has been our mission. Over the next 10 years, we will continue to help businesses Accelerate IT."
+	},
+		{
+		"Name" : "ADAM Inc/EBIX",
+		"Logo" : "img/customers/ebix.jpg",
+		"Type" : "ISV",
+		"Industry" : "Healthcare/Insurance",
+		"Description" : "Ebix Health is a leading provider of consumer health information and benefits management solutions for some of the world’s largest insurance carriers, third party administrators (TPAs) and self-administered organizations, benefits brokers, employers, healthcare organizations, and educational institutions."
+	},
+		{
+		"Name" : "Alliance Global Services",
+		"Logo" : "img/customers/alianceglobal.jpg",
+		"Type" : "ISV",
+		"Industry" : "Healthcare/Insurance",
+		"Description" : "To be the premier provider of targeted specialized insurance products and related services in North America and selected other markets."
+	},
+		{
+		"Name" : "Allwood Consulting",
+		"Logo" : "img/customers/allwood.jpg",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Description" : "Allwood Consulting delivers business solutions through the development of custom information systems. For over a decade, our professionals have consistently engineered high quality database software systems to clients ranging from Fortune 500 businesses and government entities to small and mid-sized offices. Our commitment to excellence spans numerous technologies and has been solicited across a variety of industries."
+	},
+		{
+		"Name" : "Applied Tactics, Inc",
+		"Logo" : "img/customers/appliedtactics.jpg",
+		"Type" : "ISV",
+		"Industry" : "Software Development",
+		"Description" : "Welcome to Applied Tactics, a leading provider of web and software development, website hosting, and information technologies consulting services. Our services provide solutions for large and small businesses, communities and community organizations, and government agencies."
+	},
+		{
+		"Name" : "Arke Systems",
+		"Logo" : "img/customers/arke.jpg",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Description" : "Arke Systems is a technology-consulting firm assisting businesses in the Atlanta area who realize information technology is a catalyst to their long-term success. Recognized as a Microsoft Gold Certified Partner, Arke Systems is one of the leading technology-consulting firms in the Atlanta area working with businesses to provide innovative and flexible solutions. We are proud to have some of the most satisfied customers in the industry and we look forward to working with you."
+	},
+		{
+		"Name" : "ATSER",
+		"Logo" : "img/customers/atser.jpg",
+		"Type" : "ISV",
+		"Industry" : "",
+		"Description" : "ATSER is an engineering services firm that integrates our knowledge of infrastructure, roadway and rail design, construction and materials with our expertise in web-based technology. This unique combination strengthens all aspects of the measurement and assessment of program/project quality for major infrastructure construction programs, and provides Owners and Developers with the highest confidence level that project life cycle targets will be met."
+	},
+		{
+		"Name" : "Attain",
+		"Logo" : "img/customers/attain.png",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"www.attain.com/\">www.attain.com/</a><br>We are problem solvers at both strategic and operational levels. Every day, we roll up our sleeves to work alongside our clients – agencies, universities, hospitals, and nonprofits wrestling with society's toughest challenges like homeland security, healthcare, and education."
+	},
+		{
+		"Name" : "Auersoft",
+		"Logo" : "img/customers/auersoft.jpg",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Description" : "Capture, workflow, manage, comply. Auersoft provides customers with complete, high performance document management and compliance products and services. We are a Phoenix, AZ based company dedicated to enriching client productivity and enhancing business intelligence."
+	},
+		{
+		"Name" : "Avastone Technologies",
+		"Logo" : "img/customers/avastone.jpg",
+		"Type" : "ISV",
+		"Industry" : "Software Development",
+		"Description" : "Avastone Technologies is a Wisconsin-based application development company with locations in Little Chute WI, Appleton WI, Pewaukee WI and Lisle IL. We specialize in web design and development, e-commerce, custom software development, MS Dynamics and SharePoint implementation, scanner and label/barcode solutions for a variety of industries including retail, financial, manufacturing, healthcare, education and travel."
+	},
+		{
+		"Name" : "B2B Technologies",
+		"Logo" : "img/customers/b2b.jpg",
+		"Type" : "ISV",
+		"Industry" : "Consulting Services",
+		"Description" : "B2B Technologies provides consulting services around Microsoft applications and is recognized for its significant expertise in SharePoint portals, Exchange email, Business Intelligence systems, and .NET application development. For over a decade, it has continued to grow profitability through its dedicated goal of making every customer a satisfied reference, staying certified in the newest Microsoft technologies, and creating a group of consultants that are some of the industries' best and brightest. Among its many achievements was the recent inclusion in the prestigious Inc Magazine list of the 500 fastest growing companies in North America."
+	},
+		{
+		"Name" : "Blue Span Networks",
+		"Logo" : "img/customers/bluespan.jpg",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Description" : "Our vision is to deliver customer focused, cost effective, and rapid solutions to complex business problems. To make sure that our solution continually supports our clients' business strategy, capitalizing on innovative solutions, thereby allowing them to outpace the competition."
+	},
+		{
+		"Name" : "Brightree",
+		"Logo" : "img/customers/brightree.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"www.brightree.com/\">www.brightree.com/</a><br/>Brightree is an integrated, SaaS-based billing and business management software solution for home medical equipment providers, orthotic and prosthetic providers, and sleep labs (HME/DMEPOS). Through process automation, business insight, and ease-of-use, Brightree software enables providers to maximize cash flow and increase profitability."
+	},
+		{
+		"Name" : "Cambio Technologies",
+		"Logo" : "img/customers/cambio.gif",
+		"Type" : "ISV",
+		"Industry" : "Consulting Services",
+		"Description" : "Cambio Technologies is a leading provider of data analytics consulting services and software to companies both in the U.S. and abroad. With a legacy of experience in applying the highest levels of analytics prowess to a wide range of industries, Cambio Technologies is prepared to take your company's analytics to the next level and give you the edge to take advantage of your competitors and respond quickly and decisively to changes in the market place."
+	},
+		{
+		"Name" : "Chronologic Inc",
+		"Logo" : "img/customers/dcg.jpg",
+		"Type" : "ISV",
+		"Industry" : "Consulting Services",
+		"Description" : "The CHRONOLOGIC™ System was designed and is used by DAVIS Consulting Group, Inc. consultants to assist them in expediting the development of project strategies and schedules by project teams. The result is a system which allows persons with or without prior scheduling experience to quickly and easily convert project discussions into preliminary schedules, then refine those schedules through as many iterations as desired. The ease with which modifications can be made encourages team members to suggest improvements and test alternatives. The resulting project schedules have a degree of participant understanding and commitment not easily attained through any other system."
+	},
+		{
+		"Name" : "Corecon Technologies, Inc",
+		"Logo" : "img/customers/corecon.jpg",
+		"Type" : "ISV",
+		"Industry" : "Software Development",
+		"Description" : "Corecon Technologies, Inc., based in Huntington Beach, Calif., is a leading software developer for the architect, engineer and construction (AEC) industry. Corecon was founded nearly a decade ago by long-time construction professionals who have applied their industry knowledge to develop cost effective, user-friendly software for growing AEC firms. Serving customers primarily throughout North America, Corecon's clients include general contractors, construction managers, subcontractors, homebuilders, architects and engineers."
+	},
+		{
+		"Name" : "WellPoint",
+		"Logo" : "img/customers/wellpoint.png",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"www.wellpoint.com/\">www.wellpoint.com/</a><br>WellPoint, Inc. is the largest health benefits company in terms of commercial membership in the United States. Through its networks nationwide, the company delivers a number of leading health benefit solutions through a broad portfolio of integrated health care plans and related services, along with a wide range of specialty products such as life and disability insurance benefits, dental, vision, behavioral health benefit services, as well as long term care insurance and flexible spending accounts."
+	},
+		{
+		"Name" : "Gateway",
+		"Logo" : "img/customers/Gateway.png",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Description" : "Founded in 1985 in an Iowa farmhouse, Gateway has grown into one of America's best-known brands with millions of satisfied customers. In early 2004, the company acquired eMachines, one of the world's fastest-growing and most efficient PC makers. The company moved its headquarters to Irvine, California, in September 2004. In October 2007, Gateway was acquired by Taiwan-based Acer Inc., and the combined entities now comprise the third-largest PC company in the world."
+	},
+		{
+		"Name" : "Dept. of Defense US Navy",
+		"Logo" : "img/customers/usnavy2.png",
+		"Type" : "EU",
+		"Industry" : "Army",
+		"Description" : "The US Navy purchased Izenda Reports in 2007, but only after vetting it against stringent security standards.  The product passed all tests with flying colors. The Navy ordered server licenses, implemented the .NET project and is using Izenda Reports to provide superior reporting capabilities in support of their national defense mission."
+	},
+		{
+		"Name" : "Volvo",
+		"Logo" : "img/customers/volvo2.png",
+		"Type" : "EU",
+		"Industry" : "Manufacturers",
+		"Description" : "Volvo provides transportation related products and services with focus on quality, safety and environmental care. Founded more than 80 years ago, a solid position and reputation worldwide has been built up over the decades. Volvo's Information Technology headquarters team in Goteborg, Sweden -- about 470kM southwest of Stockholm -- downloaded Izenda Reports, conducted an evaluation and implemented the product. Today Volvo employees are getting the information they need ad hoc, on a self-service basis, rather than tasking IT for each new report that's needed as business conditions change."
+	},
+		{
+		"Name" : "Georgia-Pacific",
+		"Logo" : "img/customers/gp.gif",
+		"Type" : "ISV",
+		"Industry" : "Manufacturers",
+		"Description" : "Headquartered at Atlanta, Georgia-Pacific is one of the world's leading manufacturers and marketers of tissue, packaging, paper, pulp, and building products and related chemicals. The company employs more than 40,000 people at approximately 300 locations in North America, South America and Europe."
+	},
+		{
+		"Name" : "Thomson Reuters",
+		"Logo" : "img/customers/thomsonreuters.jpg",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Description" : "We combine industry expertise with innovative technology to deliver critical information to leading decision makers in the financial, legal, tax and accounting, healthcare, science and media markets, powered by the world’s most trusted news organization."
+	},
+		{
+		"Name" : "Verizon",
+		"Logo" : "img/customers/verizon.jpg",
+		"Type" : "EU",
+		"Industry" : "Communications/Providers",
+		"Description" : "Verizon is a global leader in delivering innovative communications, information and entertainment. We offer voice, data and video products and services over intelligent wireless, broadband and global IP networks that meet customers' growing demand for speed, mobility, security and control. As a committed corporate citizen, we use our advanced communications services to address important issues confronting our society."
+	},
+		{
+		"Name" : "Delaware Dept. of State",
+		"Logo" : "img/customers/gic.gif",
+		"Type" : "EU",
+		"Industry" : "Government",
+		"Description" : ""
+	},
+		{
+		"Name" : "Allianz (formerly Access America Group)",
+		"Logo" : "img/customers/allianz.jpg",
+		"Type" : "EU",
+		"Industry" : "Healthcare/Insurance",
+		"Description" : "Allianz Travel Insurance, formerly Access America, is the travel insurance brand of Allianz Global Assistance. Allianz Global Assistance is a global provider of travel insurance and assistance with offices in 28 countries and is owned by Allianz, the world's largest insurance company (Fortune). Almost 10,000 people are employed by Allianz Global Assistance globally, over 800 of which are in our Richmond, Virginia office."
+	},
+		{
+		"Name" : "Accord Human Resources",
+		"Logo" : "img/customers/accord.gif",
+		"Type" : "ISV",
+		"Industry" : "Human Resources",
+		"Description" : "Accord Human Resources is an employer services company, also known as a Professional Employer Organization, or PEO. We help small to medium-sized businesses improve productivity and profitability by providing comprehensive, “outsourced” human resource management solutions."
+	},
+		{
+		"Name" : "ADL Smartcare",
+		"Logo" : "img/customers/smartcare.png",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"http://www.adlsmartcare.com/\">http://www.adlsmartcare.com/</a><br>ADL Smartcare is dedicated to providing state-of-the-art tools to help match people to technological solutions. Based in Sheffield, England we have introduced the most advanced tools into the field of health & social care assessments - including SmartAssist, our latest supported self-assessment expert system which is based on several years of research and thousands of assessments."
+	},
+		{
+		"Name" : "AdvantEdge Technology",
+		"Logo" : "img/customers/advantedge.gif",
+		"Type" : "ISV",
+		"Industry" : "Army",
+		"Description" : "AdvantEdge Technology provides technology services and solutions throughout the DoD with emphasis placed on the U.S. Navy. A fully qualified company that can deliver solutions in hardware and software support, engineering services, acquisition, installation, deployment, operation, maintenance and management. Our team is committed to providing innovative solutions."
+	},
+		{
+		"Name" : "Advantage Surveillance",
+		"Logo" : "img/customers/advantages.jpg",
+		"Type" : "ISV",
+		"Industry" : "Healthcare/Insurance",
+		"Description" : "Advantage Surveillance is a full-service investigation agency focusing solely on the Insurance Industry. We provide customized solutions on a nationwide basis, tailored to the specific needs of each individual client. Our unmatched commitment to quality provides our clients with superior results."
+	},
+		{
+		"Name" : "Altos Solutions",
+		"Logo" : "img/customers/altos.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"altossolutions.com/\">altossolutions.com/</a><br>Altos Solutions is dedicated to oncology. Oncology applications, OncoEMR and OncoBilling, are our business—our only business. We focus exclusively on providing the most intuitive, flexible, feature-rich oncology-specific EMR available. Getting it right and getting it first are Altos Solutions goals, so that your oncology practice has an EMR that meets and exceeds industry and government requirements."
+	},
+		{
+		"Name" : "American Technical Services",
+		"Logo" : "img/customers/ats.jpg",
+		"Type" : "EU",
+		"Industry" : "",
+		"Description" : "American Technical Services provides many options for water treatment. We utilize, not only, the latest in water treatment innovations, but we also provide standard water treatment with some of the best water treatment chemical formulations in the industry today. Products that are so advanced, they will clean up some of the hardest scale on-line. Using these products formulated by our chemists, you are assured of optimal protection from corrosion, sub-deposits, microbiological fouling and system failures from excessive scale growth. ATS is committed to providing quality water treatment chemicals that will protect your system for years of service."
+	},
+		{
+		"Name" : "Arkansas State Police",
+		"Logo" : "img/customers/arkansassp.jpg",
+		"Type" : "EU",
+		"Industry" : "Goverment",
+		"Description" : ""
+	},
+		{
+		"Name" : "Assiniboine",
+		"Logo" : "img/customers/assiniboine.gif",
+		"Type" : "EU",
+		"Industry" : "Finance",
+		"Description" : "At Assiniboine Credit Union, being a responsible financial co-operative is at the heart of everything we do. It’s who we are. And it’s making a difference in the lives of thousands of Manitobans."
+	},
+		{
+		"Name" : "Banque Laurentienne du Canada",
+		"Logo" : "img/customers/blc.jpg",
+		"Type" : "EU",
+		"Industry" : "Finance",
+		"Description" : "Laurentian Bank of Canada, a financial institution with a solid position in the province of Quebec, pursues its growth with particular focus on excellence of service. It operates the third largest branch network in Quebec, built over more than 165 years. The Bank also evolves as a performing player in specific market segments across Canada."
+	},
+		{
+		"Name" : "Bill Perfect",
+		"Logo" : "img/customers/billperfect.png",
+		"Type" : "ISV",
+		"Industry" : "",
+		"Description" : "TimelyBill® was designed from the ground up with these principals in mind. Whether you are looking at VoIP, Triple Play, Quad Play or the products of the future, TimelyBill® was built from the ground up ready to meet all of your back office needs. For the enterprise customers and smaller service providers, we offer the complete TimelyBill® OSS on a cost effective, hosted model, allowing you to have the same back office functionality typically reserved for larger service providers without overwhelming your budget."
+	},
+		{
+		"Name" : "BillMyParents",
+		"Logo" : "img/customers/bmp.jpg",
+		"Type" : "SP",
+		"Industry" : "",
+		"Description" : "Billmyparents, The Responsible Teen Spending Company™, delivers an innovative, prepaid card service to parents and their teens that improves the way modern families talk about and manage money. BillMyParents helps develop responsible teen spending habits that last… one transaction at a time."
+	},
+		{
+		"Name" : "Binary Connections, Inc (Firetracker)",
+		"Logo" : "img/customers/firetracker.jpg",
+		"Type" : "ISV",
+		"Industry" : "",
+		"Description" : "Our software is designed to assist your entire department to respond to the call, make decisions and help officers evaluate information at the scene, and even assist paperwork and information recording back at the firehouse with NFIRS 5.0 Support."
+	},
+		{
+		"Name" : "Blue Turn",
+		"Logo" : "img/customers/blueturn.jpg",
+		"Type" : "EU",
+		"Industry" : "",
+		"Description" : "Blue Turns is peerless in providing the Pacific Northwest with professional coaching in wakeboarding, inland surfing, waterskiing and wake skating."
+	},
+		{
+		"Name" : "Brenau University",
+		"Logo" : "img/customers/brenau.jpg",
+		"Type" : "EU",
+		"Industry" : "Education",
+		"Description" : "Brenau University is a private university in Gainesville, Georgia, USA, that was founded in 1878 as Georgia Baptist Female Seminary."
+	},
+		{
+		"Name" : "Capture It Limited",
+		"Logo" : "img/customers/captureit.jpg",
+		"Type" : "ISV",
+		"Industry" : "",
+		"Description" : "Unlike other capture programs which do not permit you to move the \"grabber\" once you start the capture, Capture Express allows you to toggle between a stretch mode and a move mode by right clicking on the mouse. So if you didn't quite get your alignment correct when you started your capture, simply click on the right mouse button and move the grabber to the correct alignment. Other programs will require you to abort the whole capture process and start again in the hope that you get the correct alignment."
+	},
+		{
+		"Name" : "Center to Promote Healthcare Access",
+		"Logo" : "img/customers/idealist.png",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"https://www.socialinterest.org/\">https://www.socialinterest.org/</a><br>The Center to Promote HealthCare Access, Inc (The Center) is a mission-driven organization, combining software development with process reform, advocacy and deep commitment to helping underserved people. One-e-App, The Center’s signature product, is a state-of-the-art, web-based system for enrolling individuals in publicly-funded health and social service programs."
+	},
+		{
+		"Name" : "Chemical Safety Software",
+		"Logo" : "img/customers/chemical-safety-logo.jpg",
+		"Type" : "ISV",
+		"Industry" : "Software",
+		"Description" : "Chemical Safety’s mission is to be the industry’s leading environmental consulting, renewable energy, sustainability and compliance technology management provider. We provide our customers and partners with leading technologies and superior services to help them streamline environmental management operations on-site, increase productivity, reduce costs, increase efficiency and ultimately increase their profitability and that of the markets and customers they serve."
+	},
+		{
+		"Name" : "ClearSaleing",
+		"Logo" : "img/customers/clearsaleing.jpg",
+		"Type" : "ISV",
+		"Industry" : "",
+		"Description" : "ClearSaleing is the industry’s leading advertising analytics and attribution platform. We enable innovative marketers and agencies to achieve competitive dominance, increased sales volume and improved return on investment through a leading edge solution offering data insights across the entire digital marketing spectrum. ClearSaleing was recognized as the “leader” in The Forrester Wave™: Interactive Attribution, Q4 2009, which stated \"ClearSaleing’s attribution offering is easy to use, sophisticated, and relevant for a wide variety of interactive marketers.\""
+	},
+		{
+		"Name" : "Coffee Memorial Blood Center",
+		"Logo" : "img/customers/coffeememorial.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"www.thegiftoflife.org/\">www.thegiftoflife.org/</a><br>Coffee Memorial Blood Center is dedicated to providing life-saving blood products and transfusion services to patients throughout the High Plains Region. Since 1949, CMBC has helped more than half a million patients."
+	},
+		{
+		"Name" : "Computer Nuts, Inc",
+		"Logo" : "img/customers/computernuts.jpg",
+		"Type" : "EU",
+		"Industry" : "",
+		"Description" : "By utilizing tools such as Microsoft Expression Web Studio, Visual Studio, Active Server Pages and SQL Server Databases, along with scripting languages including VBscript and Javascript, we offer a diverse and comprehensive approach to web site design. Your site will be uniquely designed to stand apart from the ordinary."
+	},
+		{
+		"Name" : "Continuity Logic LLC",
+		"Logo" : "img/customers/continuitylogic.png",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Description" : "Continuity Logic provides software and services for Governance, Risk, & Compliance and Business Continuity. Our flagship product FrontLine Live® delivers a 360 degree view of enterprise risk, compliance, and continuity. FrontLine Live® enables effective and reliable governance through powerful and flexible tools. Award winning features include centralized project management, risk and business impact analysis, technology, vendor, client, and employee management, and powerful reporting and dashboard capabilities. With FrontLine Live, customers can gain control and streamline process while saving time, reducing costs, and ensuring their organization has a solid foundation on which to build and manage their Program."
+	},
+		{
+		"Name" : "CoreTech Systems, Inc",
+		"Logo" : "img/customers/coretech.jpg",
+		"Type" : "EU",
+		"Industry" : "",
+		"Description" : "From inception, Coretech has invested in acquiring tested methodologies through licenses and certifications alongside highly qualified expert faculty to ensure the best learning experience to our clients. Coretech's faculty comprises a select team of highly qualified and experienced coaching professionals with a combined experience of over 200 person years in industry, research, practice and academics. Coretech's faculty is an intellectually rejuvenating team, a polar balance between individual brilliance and structured cloning on delivery benchmarks."
+	},
+		{
+		"Name" : "Coretechs, LLC",
+		"Logo" : "img/customers/coretechs.jpg",
+		"Type" : "EU",
+		"Industry" : "Human Resources",
+		"Description" : "CoreTechs recruiters specialize in either contract or direct hire. Our recruiters have worked within the technical space prior to becoming recruiters and understand how the parts fit together. We are not a \"keyword\" search shop. Our recruiters understand technology are are capable of finding people that can do the job and do it well!"
+	},
+		{
+		"Name" : "Arke Systems",
+		"Logo" : "img/customers/ArkeSystems.png",
+		"Type" : "ISV",
+		"Industry" : "Software Integration",
+		"Description" : "Arke Systems provides custom software and integration solutions for a wide range of verticals. The company has experience developing solutions for real estate, advertising, communications and community building just to name a few. Izenda Reports is being used to deliver instant, on-demand reporting on internal traffic management at community banks, which are constantly working to improve the quality of service they provide to their customers."
+	},
+		{
+		"Name" : "Bana Logic",
+		"Logo" : "img/customers/bana_logo.png",
+		"Type" : "SP",
+		"Industry" : "Goverment",
+		"Description" : "Our corporate headquarters are in Richmond Hill, Ontario with satellite offices in the United States and Africa. Founded in 2004, BanaLogic has grown to be a full service provider offering innovative high-quality products and services specifically for vehicle safety, emission inspections and maintenance programs to various levels of government agencies (federal, state/provincial, municipal) and to individual vehicle inspection stations."
+	},
+		{
+		"Name" : "Image Integration Systems",
+		"Logo" : "img/customers/docusphere.png",
+		"Type" : "SP",
+		"Industry" : "",
+		"Description" : "Founded in 1993 and headquartered in Perrysburg, Ohio, Image Integration Systems’ entire focus is on the development, enhancement, maintenance, implementation, and support of its own DocuSphere solution for accounts payable automation. Image Integration Systems delivers \"The DocuSphere Difference: The preeminent connected, business-driven AP automation solution – delivered by experienced people for a fixed fee.\"",
+		"CaseDoc" : "/Site/Documents/CaseStudies/Docusphere.pdf"
+	},
+		{
+		"Name" : "Knowlagent, Inc.",
+		"Logo" : "img/customers/knowlagent.gif",
+		"Type" : "ISV",
+		"Industry" : "",
+		"Description" : "Over 300,000 agents and managers around the world use Knowlagent’s call center solutions every day. By automating traditional contact center management processes, our on-demand solutions reduce spending attributed to off-phone activities while improving agents’ ability to serve customers and impacting the call center metrics that matter most. Because our solutions are easy to use and require no capital expenditures, upfront costs and total cost of ownership are nominal. With Knowlagent, optimizing call center agent frontline performance is faster and more affordable than ever before."
+	},
+		{
+		"Name" : "Octagon Research Solutions, Inc",
+		"Logo" : "img/customers/octagon.gif",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"www.octagonresearch.com/\">www.octagonresearch.com/</a><br>Octagon was founded in 1999 as a development partnering organization, providing regulatory services to the life sciences industry. As the company grew, the Octagon team expanded the service offerings upstream to include outsourcing services in the Clinical area and process consulting services across the submission process. Training has been a component of every engagement and continues to be key to our leadership position in the industry. In support of the growing service offerings, Octagon developed a proprietary technology to manage all of the moving parts of the complex submission process. We realized that many life sciences professionals were struggling with similar process management challenges."
+	},
+		{
+		"Name" : "AccessPlanIT Ltd",
+		"Logo" : "img/customers/aplant.jpg",
+		"Type" : "ISV",
+		"Industry" : "",
+		"Description" : "AccessPlanit, established in 2001, is an award winning software house dedicated to the development and support of learning and training management solutions. With 9 years experience in the software market, our service and products are designed to ensure clients enjoy the maximum ROI, supported by a hassle-free front end customer experience."
+	},
+		{
+		"Name" : "Allsector Technology Group",
+		"Logo" : "img/customers/allsector.png",
+		"Type" : "ISV",
+		"Industry" : "",
+		"Description" : "AllSector Technology Group, Inc.® is an all-together different IT company, providing advanced technology solutions to the not-for-profit industry since 1998. Our products and services help health and human services, education, and government agencies run their operations most effectively. The company provides cloud-based application solutions, network infrastructure and application management, hosting, help desk, and professional consulting services."
+	},
+		{
+		"Name" : "BHP Billiton",
+		"Logo" : "img/customers/billiton.jpg",
+		"Type" : "SP",
+		"Industry" : "",
+		"Description" : "We are the world’s largest diversified natural resources company. Our objective is to create long-term shareholder value through the discovery, acquisition, development and marketing of natural resources."
+	},
+		{
+		"Name" : "Blue Crossing",
+		"Logo" : "img/customers/bluecrossing.gif",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Description" : "Blue Crossing delivers process, operations and marketing tools via web-based portals that let your organization centralize, maximize and control access to information."
+	},
+		{
+		"Name" : "BrandRAVE",
+		"Logo" : "img/customers/brandrave.jpeg",
+		"Type" : "SP",
+		"Industry" : "",
+		"Description" : "At BrandRAVE, we think and behave like the brands we work with: designing on-brand solutions in differentiating ways and aligning everything within our client’s growth playbook -- from service to distribution and from customer service to the experience design. We first identify the brand as a noun (brand strategy) and create the proper predicates (the brand campaigns or marketing communications) that delivers positive revenue generating results for our clients."
+	},
+		{
+		"Name" : "Cambria Consulting",
+		"Logo" : "img/customers/cambria.jpg",
+		"Type" : "ISV",
+		"Industry" : "Finance",
+		"Description" : "Cambria was founded in 1985 by a small group of senior consultants with advanced degrees in economics, business administration and behavioral science. The origin of our consulting practice began under the inspiration of Harvard professor David C. McClelland, the acknowledged founder of job competency assessment technology. Our initial engagements consisted of developing and implementing competency-based human resource management processes, including selection systems, training, organizational assessment and career development for Fortune 500, financial services, and federal government clients."
+	},
+		{
+		"Name" : "Cardiovascular Research Foundation",
+		"Logo" : "img/customers/crf.gif",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"www.crf.org/\">www.crf.org/</a><br>The Cardiovascular Research Foundation is an organization that was founded to combine the elements of research, education and patient care in the treatment of cardiovascular disease. The primary affiliation of CRF is with the Center for Interventional Vascular Therapy (CIVT) at Columbia University Medical Center, which provides necessary state-of-the-art technology to support CRFs cutting-edge research and whose faculty members serve as research-physicians that drive CRFs ground-breaking achievements."
+	},
+		{
+		"Name" : "CetoLogic",
+		"Logo" : "img/customers/cetologic.png",
+		"Type" : "ISV",
+		"Industry" : "Business solutions",
+		"Description" : "CetoLogic provides cash management software solutions. CetoLogic is the designer of Ceto Cash Calculator (C³), a web-based currency and coin management software. In 2004 C³ began as a part of a solution portfolio for a national consulting firm, Ceto and Associates. As C³ matured and popularity increased, C³ developed into its own firm called CetoLogic."
+	},
+		{
+		"Name" : "Convergence Health",
+		"Logo" : "img/customers/convergent.png",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"www.convergencehealth.com/\">www.convergencehealth.com/</a><br>Convergent is an editorially-driven, content-focused, full-service, medical education and communications company. We have expertise in how to teach and motivate healthcare providers with educational programs that help lead to long-lasting retention of information."
+	},
+		{
+        	"Name" : "Council of State & Territorial Epidemiologists",
+		"Logo" : "img/customers/cste-logo.png",
+        	"Type" : "EU",
+        	"Industry" : "Health",
+        	"Description" : "CSTE is an organization of member states and territories representing public health epidemiologists. CSTE works to establish more effective relationships among state and other health agencies. It also provides technical advice and assistance to partner organizations and to federal public health agencies such as the Centers for Disease Control and Prevention (CDC). CSTE members have surveillance and epidemiology expertise in a broad range of areas including occupational health, infectious diseases, immunization, environmental health, chronic diseases, injury control, and maternal and child health. CSTE promotes the effective use of epidemiologic data to guide public health practice and improve health. CSTE accomplishes this by supporting the use of effective public health surveillance and good epidemiologic practice through training, capacity development, and peer consultation, developing standards for practice, and advocating for resources and scientifically based policy."
+	},
+		{
+        	"Name" : "CrestPoint Solutions, Inc",
+		"Logo" : "img/customers/cpslogo_trans.png",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "CrestPoint Solutions is a global infrastructure solutions provider that offers software, energy consulting, data management and facilities auditing services to data centers, telecommunication facilities, and commercial and industrial buildings with the goal of improving efficiency through the optimization of systems. Our software and solutions have been employed by some of the world’s leading companies."
+	},
+		{
+        	"Name" : "Cruise Holidays",
+		"Logo" : "img/customers/CH-Logo-land-sea.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "Cruises",
+        	"Description" : "You can count on superb dining choices, spacious and comfortable accommodations, non-stop onboard activities, all sorts of fun and adventurous programs at each individual port of call, Broadway caliber nightly entertainment, and the list goes on. And the best part is that a cruise experience is virtually all-inclusive! With cruising steadily receiving the highest customer satisfaction ratings throughout the travel industry, you can count on an experience that will delight you and your group in every aspect of your cruise. In fact, today's ships leave nothing to chance which is why cruises are the fastest growing vacation and meetings segment in the entire travel industry."
+	},
+		{
+        	"Name" : "CSS Impact",
+		"Logo" : "img/customers/logo-css-impact.gif",
+        	"Type" : "Healthcare",
+        	"Industry" : "Healthcare",
+        	"Description" : "<a href=\"www.cssimpact.com/\">www.cssimpact.com/</a><br>Offering state-of-the-art third party management tools with a full suite of complimentary products designed to improve efficiencies and increase recoveries."
+	},
+	{
+        	"Name" : "Data Leverage Group, LLC",
+		"Logo" : "img/customers/dlg-logo.png",
+        	"Type" : "Healthcare",
+        	"Industry" : "Healthcare",
+        	"Description" : "<a href=\"www.dataleveragegroup.com/\">www.dataleveragegroup.com/</a><br>Data Leverage Group's mission is to continually enable healthcare clients to optimize and control their supply chain performance. Gained experience and cumulative knowledge are the foundation of our approach throughout the supply chain."
+	},
+		{
+        	"Name" : "Data Profits",
+		"Logo" : "img/customers/Data Profits.jpg",
+        	"Type" : "SP",
+        	"Industry" : "",
+        	"Description" : "Data Profits’ single purpose is to link data, people, and business goals by providing retailers with a software platform based on proprietary algorithms to make sure that the right data is being used at the right time to make the right decisions which drive the right actions. Collaboration and real-time, intelligent forecasting are differentiators of Data Profits’ flagship product iKIS 5.2"
+	},
+		{
+        	"Name" : "Datis",
+		"Logo" : "img/customers/datis.png",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "DATIS is a privately owned company operated by a partnership of leading experts from a variety of backgrounds including HR, payroll processing, software development, finance and accounting. The company was established in 1996 and continues to build strong customer focused relationships with its clients. The company operates around a service oriented model and applies leading technology, process and methodology that bring its clients unparalleled value for both HR data management and payroll processing needs."
+	},
+		{
+        	"Name" : "De Beers UK Limited",
+		"Logo" : "img/customers/de-beers-logo.gif",
+        	"Type" : "EU",
+        	"Industry" : "Retail",
+        	"Description" : "De Beers Diamond Jewellers is the quintessential diamond jeweller, giving substance to style, bringing together the diamond’s dualities of science and poetry, melding its rich history and long traditions with contemporary creativity and cutting-edge craftsmanship. The diamond is a sparkling, celebratory symbol of continuity and eternity, of reassurance and hope for the future, and De Beers brings this beautiful symmetry into the light with its classically elegant jewelery."
+	},
+		{
+        	"Name" : "Denver Center for the Performing Arts",
+		"Logo" : "img/customers/DCPA logo.jpg",
+        	"Type" : "EU",
+        	"Industry" : "Entertainment",
+        	"Description" : "As the flagship theatre of the Rocky Mountain region, The Denver Center for the Performing Arts creates and presents exceptional theatre that engages, excites, provokes and inspires both artists and audiences. We embrace the classics while also striving to create new plays and musicals that advance the American theatre. We are committed to making The Denver Center a center for lifelong learning and civic engagement."
+    	},
+		{
+        	"Name" : "Department of Defense",
+		"Logo" : "img/customers/dod.gif",
+        	"Type" : "EU",
+        	"Industry" : "Government",
+        	"Description" : "The mission of the Department of Defense is to provide the military forces needed to deter war and to protect the security of our country. The department's headquarters is at the Pentagon."
+	},
+		{
+        	"Name" : "Derm Surgery",
+		"Logo" : "img/customers/Derm Surgery.png",
+        	"Type" : "Healthcare",
+        	"Industry" : "Healthcare",
+        	"Description" : "<a href=\"www.dermsurgery.org/\">www.dermsurgery.org/</a><br>At DermSurgery Associates (DSA), we strive to bring outstanding care to all our patients - care delivered in a spirit of warmth, responsiveness and pride. Our patients’ health, comfort and peace of mind are our foremost concern. DermSurgery Associates is a private practice in Houston, Texas that specializes in state-of-the-art laser surgery procedures, dermatologic surgical procedures and Mohs surgeries, as well as an array of skincare and cosmetic services. We have several on-site laser systems, and pride ourselves on maintaining the highest standards in quality care. Our skilled dermatologists utilize the most advanced treatments and procedures, offering our patients the safest, most effective solutions to reach their skin care goals."
+	},
+		{
+        	"Name" : "Digital Mediums",
+		"Logo" : "img/customers/digital-medium.png",
+        	"Type" : "SP",
+        	"Industry" : "Information Systems",
+        	"Description" : "Digital Mediums (DM) is a new-media software company specializing in custom software development, internet solutions, and online marketing applications. Since its inception in June of 2000, DM’s innovation in design and technology has helped its clients increase productivity, efficiency and revenue. DM focuses on developing software to facilitate intelligent workflow for maximum efficiency."
+	},
+		{		
+        	"Name" : "Distributor Data Solutions",
+		"Logo" : "img/customers/dds-logo.png",
+        	"Type" : "Healthcare",
+        	"Industry" : "Healthcare",
+        	"Description" : "<a href=\"www.distributordata.com/\">www.distributordata.com/</a><br>Distributor Data Solutions, Inc. (DDS) was established in 2005 to address many of the challenges life sciences product manufacturers face in the area of sales data processing. Manufacturers lose hundreds of thousands of dollars each year paying incorrect commissions, calculating incorrect group administrative fees, and inaccurately monitoring sales campaigns and promotions. Many manufacturers lack the tools to properly validate and monitor rebate and chargeback claims, resulting in reporting errors and lost revenue. Others struggle with properly identifying facilities due to the complex relationship many healthcare providers have with group purchasing organizations, distributors, wholesalers, and healthcare systems. Sales and marketing opportunities are lost due to not being able to collect, mine and analyze sales tracings and rebate claims data."
+	},
+		{		
+        	"Name" : "Docufree Corporation",
+		"Logo" : "img/customers/9e2c527b730ce280d1a7c8daea192eb7.png",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "Ten years ago we set out to build a company that helped businesses work faster with their paper documents. We started by improving the way our clients managed their inbound mail. As we earned their trust, our clients began asking us for more solutions to their downstream document challenges. We responded and today our clients enjoy a comprehensive suite of services that help them transform the way they work with documents so they could put the focus back on their business."
+
+	},
+		{
+        	"Name" : "Doubleknot",
+		"Logo" : "img/customers/Doubleknot.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "Doubleknot, based in the San Francisco Bay Area, provides hosted applications, business consulting and integration services to both non-profit and commercial organizations. Founded in 1998 by two information technology professional services executives, Doubleknot currently serves over 1,200 organizations. Our continued success is an affirmation of our ability to deliver value to our clients. We listen closely to the needs of our clients and provide innovative, measurable results."
+	},
+		{		
+        	"Name" : "Dovetail Software",
+		"Logo" : "img/customers/dovetail-logo.png",
+        	"Type" : "SP",
+        	"Industry" : "IS",
+        	"Description" : "Dovetail Software is a worldwide leader in web-based customer support software and help desk products that enable organizations to provide effective support for both customers and employees. Dovetail is a privately held company, based in Austin, Texas."
+	},
+		{		
+        	"Name" : "Dream Studio",
+		"Logo" : "img/customers/dream_studios_official_logo_by_kamrannaqvi-d3k8m53.jpg",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Mobility made dreamy - Upgrade your website for mobile viewing on Android, iPhone/iPad, Blackberry and Windows Phone 7. Send eNews with mobile-friendly maps. We've got you covered, from inception to launch, and beyond."
+	},
+		{
+        	"Name" : "Duke Manufacturing",
+		"Logo" : "img/customers/PMS5405_Duke_logo-tag.jpg",
+        	"Type" : "SP",
+        	"Industry" : "",
+        	"Description" : "To become the preferred provider of profitable food service solutions to a select group of prestigious companies and institutions around the world."
+	},
+		{		
+        	"Name" : "Dura Medic",
+		"Logo" : "img/customers/DuraLogo.jpg",
+        	"Type" : "Healthcare",
+        	"Industry" : "Healthcare",
+        	"Description" : "<a href=\"www.duramedic.com/\">www.duramedic.com/</a><br>Dura Medic, LLC provides service to many facilities across the US. We eliminate the hospitals cost for DME & Orthopedic soft goods prescribed in an outpatient setting primarily the emergency room."
+	},
+		{		
+        	"Name" : "E-Integrity",
+		"Logo" : "img/customers/e-integrity.png",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "E-Integrity’s senior management team sets the standard for delivering value and exceeding client expectations. The team’s extensive business consulting and solution development and implementation experience is reflected in the delivery of hundreds of successful projects over the last decade in the finance, high-technology, manufacturing, printing and software industries among others. When you hire e-Integrity, you get industry experience along with the dedication and commitment of our professional staff to ensure a successful project and longstanding relationship."
+
+	},
+		{
+        	"Name" : "e-LYNXX Corporation",
+		"Logo" : "img/customers/elynxx_01.gif",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "e-LYNXX offers a competitive procurement procedure – that is patented* to allow clients to save 25% to 50% by obtaining margin prices from their own quality suppliers."
+	},
+		{		
+        	"Name" : "eConsultingNetwork",
+		"Logo" : "img/customers/econsultingnetwork_logo-1816987904.png",
+        	"Type" : "ISV",
+        	"Industry" : "Information Systems",
+        	"Description" : "Deb Grigson and Chad Pearce founded eConsultingNetwork in 2005 as a strategic compensation management firm dedicated to helping clients design, analyze, deliver, and manage their compensation programs to meet corporate objectives."
+	},
+		{		
+        	"Name" : "EDIMS LLC",
+		"Logo" : "img/customers/edims-logo.png",
+        	"Type" : "Healthcare",
+        	"Industry" : "Healthcare",
+        	"Description" : "<a href=\"edims.net/\">edims.net/</a><br>Deb Grigson and Chad Pearce founded eConsultingNetwork in 2005 as a strategic compensation management firm dedicated to helping clients design, analyze, deliver, and manage their compensation programs to meet corporate objectives."
+	},
+		{
+        	"Name" : "EDM International",
+		"Logo" : "img/customers/EDM-logo.png",
+        	"Type" : "SP",
+        	"Industry" : "",
+        	"Description" : "At EDM, we have become recognized for our ability to provide reliable solutions to complex energy, communications and other civil infrastructure problems by merging a passion for client satisfaction with excellence in engineering and science."
+	},
+		{		
+        	"Name" : "Education Dynamics Inc.",
+		"Logo" : "img/customers/logo_education_dynamics.gif",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "We help each institution reach potential students, to let them know what the institution offers - and we provide information that helps the institution tailor its programs and services to meet the needs of these potential students. We currently help more than 1200 colleges and universities - not-for-profit, for-profit, traditional, online, private, public, large and small - find, enroll and retain students. In size and scope, we are the number one provider of marketing support services to post-secondary education."
+	},
+		{		
+        	"Name" : "EmergingSoft",
+		"Logo" : "img/customers/Emerging Soft.png",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "MeetingPlanner is the industry's leading Microsoft Outlook integrated, Microsoft Exchange, mobile and web based scheduling and reporting tool. Corporate, health care, government, educational and professional organizations are realizing the benefits and exceptional customer support offered from EmergingSoft."
+
+	},
+		{		
+        	"Name" : "Enaptive",
+		"Logo" : "img/customers/logo-med-006.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "Founded in 1987 and from our roots as technology consultants, Enaptive has grown both organically and through acquisitions to help organizations improve their overall business agility and efficiency through the application of technology. Our process starts by analyzing and validating business processes and then use our information technology experience and know-how to automate and optimize those processes."
+	},
+		{
+        	"Name" : "Envala",
+		"Logo" : "img/customers/envala-logo.png",
+        	"Type" : "SP",
+        	"Industry" : "",
+        	"Description" : "The OSYS™ System refines and automates your business processes so that you can start getting the results you need. Perhaps you're not getting enough sales leads, or your customers aren't loyal enough? Maybe you're tired of being buried in administrative duties or you're just sick of trying to force your sales team to use your current CRM solution? These are problems that Envala can help you solve."
+	},
+		{		
+        	"Name" : "Equative, Inc.",
+		"Logo" : "img/customers/equative.png",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "Equative, Inc. (formerly AttilaWeb.com, Inc.) began as a company in 1995. TimeLedger then was single-site client-server based software application. In 1997, the company began development of TimeLedger as an online web-based application. The first version of TimeLedger as a web-based product was released in October 1998. The product is now updated and enhanced on a continuous basis."
+	},
+		{		
+        	"Name" : "ESX, Inc.",
+		"Logo" : "img/customers/logo-esx.gif",
+        	"Type" : "EU",
+        	"Industry" : "Information Systems",
+        	"Description" : "We are a San Jose, CA-based internet marketing firm specialized in helping our clients start or accelerate their businesses. It is our mission to provide you with highly effective solutions for building your business on the internet"
+
+	},
+		{
+        	"Name" : "EUROWATCH CENTRAL",
+		"Logo" : "img/customers/Eurowatch.gif",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "The EUROWATCH service works through a network of National Service Providers that have accreditation to police in each country. They use the technology of the service and its standard procedures for incidents. A key feature of EUROWATCH is that it enables all types of GPS system to transmit positioning data into the network, which is then relayed to the police in the country of incident. This allows police to view the vehicle position in real-time during the emergency."
+	},
+		{		
+        	"Name" : "Eutactics, Inc.",
+		"Logo" : "img/customers/EutacticsLogo.jpg",
+        	"Type" : "Healthcare",
+        	"Industry" : "Healthcare",
+        	"Description" : "<a href=\"www.eutactics.com/\">www.eutactics.com/</a><br>Eutactics has a proven record of implementing customized IEP development systems that can be used on an individual basis by teachers at home or in school, in small school districts, regional school districts, urban districts, metropolitan districts, and on a state-wide level."
+	},
+		{		
+        	"Name" : "Evoluti",
+		"Logo" : "img/customers/evoluti-logo.png",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "A Engenharia de Serviços é uma unidade de negócios concebida para atender demandas complexas, em segmentos diversos e altamente especializados. Cada projeto é elaborado exclusivamente para o cliente, atendendo as suas exigências e os rigorosos padrões de qualidade e segurança Evoluti."
+	},
+		{
+        	"Name" : "Exact Target",
+		"Logo" : "img/customers/Exact-target-logo.PNG",
+        	"Type" : "SP",
+        	"Industry" : "IS-Software",
+        	"Description" : "ExactTarget is a global Software as a Service (SaaS) leader that powers all types of interactive marketing messages through a single, integrated platform. Our messaging platform provides organizations a single platform to connect with customers via Email Marketing, Mobile Marketing, Social Media Marketing, dynamic Sites & Landing Pages."
+	},
+		{		
+        	"Name" : "Excellence in Motivation",
+		"Logo" : "img/customers/EIM-logo.png",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "At Excellence In Motivation, Inc., we specialize in creating performance-improvement programs and marketing solutions that deliver results for you, our clients. We understand how to motivate and encourage the behavior changes you want in your employees, your channel partners and your customers. This is what we do every day for every client who comes to us for help."
+	},
+		{		
+        	"Name" : "ExhibitForce",
+		"Logo" : "img/customers/ExhibitForce_logo.png",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "ExhibitForce delivers on-demand, 24/7 web-based event and project management technology for event and marketing managers and trade show professionals. User-friendly and easy to deploy, ExhibitForce streamlines workflow processes on a Cloud platform, with no tradeshow software required."
+
+	},
+		{
+        	"Name" : "ExpenseWire",
+		"Logo" : "img/customers/expensewire_logo.png",
+        	"Type" : "SP",
+        	"Industry" : "",
+        	"Description" : "We offer a suite of integrated e-commerce apps that allow consumers and businesses to purchase virtually any product or service. These smart apps correlate the preferences, location and circumstances of a user with the unique availability and capabilities of merchants to deliver the most relevant, engaging and valuable experiences to users and merchants alike, driving repeat business and unparalleled customer loyalty."
+	},
+		{		
+        	"Name" : "Express HR",
+		"Logo" : "img/customers/ehrlogo_lg.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "ExpressHR is wholly owned by our management team. To effectively deliver our solutions we offer extensive professional services, software development and support in a highly effective manner using all the benefits derived from modern technology. Our professional services team drive the pre and post sales activities to ensure that Partners are fully engaged in a holistic delivery strategy. We use our own dedicated technical team in Mumbai India for production, support and new functionality development with our UK technical team being used for specialist tasks on current and new products."
+	},
+		{		
+        	"Name" : "FileONE, Inc.",
+		"Logo" : "img/customers/fileone.png",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "Since 1998, FileONE has served as the market leader for providing comprehensive back-office and online Business Service systems. Developing technology solutions and consulting services for filing offices is all we do. And, with over 25 percent of the SOS offices in the United States actively running FileONE technologies, we continue to set the pace for the advancement of online filing solutions."
+	},
+		{
+        	"Name" : "Find Accounting Software",
+			"Logo" : "",
+        	"Type" : "",
+        	"Industry" : "",
+        	"Description" : ""
+	},
+		{		
+        	"Name" : "FireStream WorldWide, Inc.",
+		"Logo" : "img/customers/firestream-logo.png",
+        	"Type" : "SP",
+        	"Industry" : "",
+        	"Description" : "Most barriers to growth are imaginary. Breaking through them takes the resolve to make things happen. It also takes a responsive business partner with the experience and resources to help you achieve your business goals. FireStream’s powerful, integrated solutions give successful wholesale and retail petroleum marketers a competitive advantage, helping them become more profitable."
+	},
+		{		
+        	"Name" : "First Priority Financial, Inc",
+		"Logo" : "img/customers/ar126100275162482.jpg",
+        	"Type" : "EU",
+        	"Industry" : "Banking",
+        	"Description" : "First Priority Financial opened its doors to the lending world in 1977 and in 1998 became the pacesetter in the Retail Origination industry. In 2006 First Priority became and remains the largest mortgage brokerage in the United States. Today, First Priority leads the mortgage industry in staying power with leading edge support systems, MyLenny.com™, ThinkBigWorkSmall.com™, Rate Alert™, and intellectual capital. First Priority is in the forefront of technical innovation for Originators and Branch Operators and is committed to providing the best financing at the lowest possible price to consumers."
+
+	},
+		{
+        	"Name" : "Flairsoft",
+		"Logo" : "img/customers/flair_soft_logo.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "Information Tech",
+        	"Description" : "Flairsoft was founded in 2001 by local Information Technology and business leaders, who continue to successfully manage and consistently grow the company from our headquarters in Columbus, OH. Flairsoft is a minority owned global information technology firm using, government and commercial best practices to enable its customers to acquire innovative business capabilities that optimize operational performance while reducing overall life cycle costs within schedule requirements."
+	},
+		{		
+        	"Name" : "Fleury S.A.",
+		"Logo" : "img/customers/FleuryLogo.jpg",
+        	"Type" : "Healthcare",
+        	"Industry" : "Healthcare",
+        	"Description" : "<a href=\"www.fleury.com.br/Pages/default.aspx\">www.fleury.com.br/Pages/default.aspx</a><br>Referência em medicina e saúde no Brasil, o Fleury é uma instituição que construiu uma história de excelência e confiabilidade. Uma trajetória de sucesso. Fundado em 1926, por Gastão Fleury Silveira, formado pela Faculdade de Medicina da Universidade de São Paulo (USP), iniciou suas atividades como laboratório de análises clínicas, com o diferencial de excelência nos serviços e na atenção ao cliente e à classe médica."
+	},
+		{		
+        	"Name" : "Flint Hills Capital",
+		"Logo" : "img/customers/flint_interact_logo_3c.jpg",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Groundbreaking concepts, beautiful design and engaging interactive are just part of what we provide. Your goals are what really matter. If you reach them, then we’ve done our job. It doesn’t happen without good planning, sound strategy and great input from you."
+	},
+		{
+        	"Name" : "Flint Interactive",
+		"Logo" : "img/customers/flint_interact_logo_3c-370990528.jpg",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Groundbreaking concepts, beautiful design and engaging interactive are just part of what we provide. Your goals are what really matter. If you reach them, then we’ve done our job. It doesn’t happen without good planning, sound strategy and great input from you."
+	},
+		{		
+        	"Name" : "Fluous Solutions",
+		"Logo" : "img/customers/company_185_fluous_logo_final.gif",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Fluous is young, vibrant, very focused and extremely committed to meeting the goals set by our clients and stakeholders. Fluous was setup to provide innovative technology solutions for the human resource management challenges."
+	},
+		{		
+        	"Name" : "FNC, INC.",
+		"Logo" : "img/customers/FNCLogo.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "Software technology company FNC Inc.® builds systems that give mortgage lenders and servicers access to the most current residential real estate information available. For more than 10 years, FNC has turned paper into data and data into knowledge, producing superior workflow and analytic tools to enable our clients to tap into a property's details and value at every stage of the loan cycle. Armed with the power of data, FNC clients can make the most accurate valuation decisions. Our systems become your solutions."
+
+	},
+		{
+        	"Name" : "Food Bank For New York City",
+		"Logo" : "img/customers/FBNYC_logo.gif",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Food Bank For New York City recognizes 29 years as the city's major hunger-relief organization working to end food poverty throughout the five boroughs. As one of the country's largest food banks, our mission is to end hunger in New York City by organizing food, information and support for community survival and dignity. As the city's hub for integrated food poverty assistance, the Food Bank tackles the hunger issue on three fronts — food distribution, income support and nutrition education — all strategically guided by its research."
+	},
+		{		
+        	"Name" : "Fort Valley State University",
+		"Logo" : "img/customers/fort-valley-state-university.gif",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Welcome to Fort Valley State University! Here, amid the gently rolling hills of Middle Georgia’s beautiful Peach County, our school is committed to embracing our students’ dreams for a successful future. Acting with the combined strength of our outstanding faculty, a determined staff and a supportive community, FVSU is determined to help make their dreams come true. We may not be the largest or most expensive school in Georgia and the South, but it is a university that builds upon more than a century’s heritage of success. We reach out to every individual student to offer opportunities that spur initiative and inspire real and lasting achievement. This website furnishes you with the ability to visit Fort Valley State from a distance, but do not stop at that. Come see our campus and witness firsthand the excitement that we feel for teaching and lifelong learning."
+	},
+		{		
+        	"Name" : "FTRANS",
+		"Logo" : "img/customers/Ftrans-logo.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "Financial",
+        	"Description" : "Ftrans's products are a break through in commercial loan collateral monitoring. Our asset-based lending solution is built on a simple, yet powerful idea—provide a collateral monitoring system that makes lending to small businesses profitable for banks, and powerful for borrowers by enabling increased levels of funding."
+	},
+		{
+        	"Name" : "Fundriver, Inc",
+		"Logo" : "img/customers/FundriverLogo.jpg",
+        	"Type" : "Healthcare",
+        	"Industry" : "Healthcare",
+        	"Description" : "<a href=\"fundriver.com/\">fundriver.com/</a><br>The first commercial release of FUNDRIVER was in 2002 as a client server application. Based on customer demand, web-based FUNDRIVER Online was developed and released in March 2006. Fundriver Online was created so that customers could implement the software in the most cost effective, quick and efficient way possible and so the system could be easily maintained."
+	},
+		{		
+        	"Name" : "FundTrack Software",
+		"Logo" : "img/customers/fts_logo_no_brush.gif",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "Since 1994 FundTrack Software has been focused on bringing simple to use, feature rich, and affordable donor management software solutions to the nonprofit community. Our software is used by hundreds of nonprofit organizations throughout the United States. We design our fundraising software to include all the necessary tools needed to perform daily and analytical requirements."
+	},
+		{		
+        	"Name" : "Gateway Inc.",
+		"Logo" : "img/customers/logo-gateway.gif",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "The company—previously called Gateway 2000—received national acclaim in 1991 when it introduced its distinctive cow-spotted boxes, a tribute to its agrarian heritage. In 1993, it entered the Fortune 500 and went public, trading on the NASDAQ before moving its stock to the New York Stock Exchange in 1997. The following year, Gateway shifted its head office from North Sioux City, S.D., to Southern California."
+
+	},
+		{
+        	"Name" : "Georgia Community Support and Solutions",
+		"Logo" : "img/customers/GeorgiaLogo.jpg",
+        	"Type" : "Healthcare",
+        	"Industry" : "Healthcare",
+        	"Description" : "<a href=\"www.gacommunity.org/\">www.gacommunity.org/</a><br>Georgia Community Support and Solutions (GCSS) consistently delivers innovative, well managed and high quality services to people and their families with needs related to disabilities, substance abuse, mental health and/or aging."
+	},
+		{		
+        	"Name" : "Georgia Poultry Laboratory Network",
+		"Logo" : "img/customers/gpln-logo.png",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "We support the poultry industry and other bird owners by providing health monitoring and veterinary diagnostic services specific to poultry. We are in partnership with the poultry industry, government agencies and other laboratories for the prevention, management and control of poultry disease outbreaks state wide. We participate in emergency preparedness programs for Avian Influenza and Exotic Newcastle Disease."
+	},
+		{		
+        	"Name" : "Georgia State Parks DNR",
+		"Logo" : "img/customers/gadnrLogo.gif",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Welcome to the web site for the Georgia Department of Natural Resources. From the majestic ridges and valleys of northwest Georgia to the marshes of Glynn County on our coast, we are fortunate to have a diversity of natural and cultural resources for you to enjoy. We are charged with the conservation and protection of these resources for current and future generations. Our web site will provide you with information on how we manage our natural and cultural resources and how you can enjoy the great outdoors and our state's rich history."
+	},
+		{
+        	"Name" : "Gibson Guitar Corp.",
+		"Logo" : "img/customers/Gibson_Script_BLACK.gif",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "The home of Gibson electric guitars today is &qout;Gibson USA&qout;, built in 1974 in Nashville specifically for the production of Gibson's Les Paul guitars. Although the entire guitar industry went through a slump in the late '70s, the spirit of innovation remained strong at Gibson. In response to a growing demand for vintage stylings, Gibson tapped its rich history and reissued the dot-neck version of the ES-335 in 1981 and the flametop sunburst Les Paul in 1982. At the same time, two legendary guitarists joined Gibson- B.B. King in 1980 with the Lucille model and Chet Atkins in 1982 with his new concept of a solidbody acoustic guitar."
+	},
+		{		
+        	"Name" : "GKV Group",
+		"Logo" : "",
+        	"Type" : "",
+        	"Industry" : "",
+        	"Description" : "Leadership with commitment and trust We have belived in leadership that is committed and and honours the trust."
+	},
+		{		
+        	"Name" : "Global Windows",
+		"Logo" : "img/customers/gw-logo.png",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Global Windows & Doors, located in Richibucto, New Brunswick, is a trusted manufacturer of high Quality PVC windows designed to protect homeowners from the extreme, challenging weather of the North Atlantic Coast."
+
+	},
+		{
+        	"Name" : "Grasp Technologies",
+		"Logo" : "img/customers/grasp-logo.png",
+        	"Type" : "ISV",
+        	"Industry" : "Technology",
+        	"Description" : "GRASP Technologies was founded in 1996 to address the need for custom reporting solutions for the Travel Industry. We specialize in custom software solutions and report design. We are also a leader in providing technology consulting services and solutions!"
+	},
+		{		
+        	"Name" : "Gulf of Maine Research Institute",
+		"Logo" : "img/customers/logo_gmri.png",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "The Gulf of Maine Research Institute (GMRI) catalyzes solutions to the complex challenges of ocean stewardship and economic growth in the Gulf of Maine bioregion. Our dynamic fusion of science, education, and community gives us range to effect change from multiple directions, while our objectivity and commitment to collaboration make us the go-to organization for marine communities grappling with contentious issues, management transitions, and new business systems."
+	},
+		{		
+        	"Name" : "Hannaworld Enterprises",
+		"Logo" : "",
+        	"Type" : "SP",
+        	"Industry" : "",
+        	"Description" : "Whether you need website development and hosting, a data base, programming or business solutions, Hannaworld Enterprises can help."
+	},
+		{
+        	"Name" : "Heartland Business Systems",
+		"Logo" : "img/customers/HBS_Logo_web.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "Heartland Label Printers, Inc. was founded in 1991 in Neenah, WI and is a leading manufacturer and distributor of labels and other packaging-related items. In 1992, Heartland Label merged with Alferi Communications to form a new division, Heartland Business Systems. Heartland Business Systems provides technology solutions to corporate, healthcare, education, government and not-for-profit organizations. These solutions include computer networking; technology planning; internet, data center, hosting, monitoring, security and managed services; cabling and audio/video solutions; and software consulting. The merger also allowed Heartland to provide thermal and thermal transfer printer technology and label media to its customers."
+	},
+		{		
+        	"Name" : "HireVelocity",
+		"Logo" : "img/customers/HireVelocity.gif",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Hire Velocity’s mission is to be your trusted partner for all of your hiring needs, by managing the talent acquisition for a single task, project or your entire recruiting function. We are a national recruiting company specializing in volume hiring of 15 or more employees annually. Whether you are looking for permanent placement or temporary employees, we uniquely harness the power of the Internet and technology to deliver speed and quality at a reduced cost. We use a unique employee hiring solution that takes the pain and chaos out of the hiring process. Our process leverages and enhances your internal HR recruiting talent and does NOT overlap or compete. Our Hiring Solution Suite (HSS) brings your experienced recruiting support, best-in-class technology and streamlined processes. Let us show you how we can SPEED up your hiring process, SAVE you money and deliver QUALITY talent."
+	},
+		{		
+        	"Name" : "Proximo",
+		"Logo" : "img/customers/Proximo.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "Proximo is an information technology services firm that specializes in helping our clients do more with less. Our products and services are used by companies in many verticals to maintain information that is necessary to run their organizations. Be it gathering, accessing, communicating, or supporting your information and the systems it runs on, we can help."
+
+	},
+		{
+        	"Name" : "iContracts, Inc.",
+		"Logo" : "img/customers/logo-large.png",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "iContracts comprehensive suite of fully integrated solutions manages all aspects of a Life Science company’s chargeback, rebate and Medicaid processes as well as other incentive agreements and Government Pricing at all levels. You will find that iContracts focus on providing the best solutions across multiple industries is reflected in everything….the people, products, service and attitude."
+	},
+		{		
+        	"Name" : "ICSA Software North America, Inc.",
+		"Logo" : "img/customers/icsa-software-logo-compact-cmyk.png",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "ICSA Software is the world’s leading supplier of global entity management, corporate governance and company secretarial software. As the wholly owned software company of the Institute of Chartered Secretaries and Administrators (ICSA), we believe no one understands the needs of companies better than we do."
+	},
+		{		
+        	"Name" : "iDataWorx",
+		"Logo" : "img/customers/idataworx_logo.gif",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "iDataWorx was founded in February 2001 by Brian Jones in Houston, Texas. Mr. Jones started the company with the vision of providing quality web and software development services to clients wishing to extend their business value. Mr. Jones began his career in 1995 as a software developer for a Houston based mutual fund company. In 1997, Mr. Jones was presented with an opportunity to direct the development team for a newly formed Internet start up. After 2 1/2 years under Mr. Jones' direction, the company was purchased by Prodigy Internet™. Mr. Jones joined Prodigy as a Director in July, 2000. Mr Jones left the company to create iDataWorx in February 2001."
+	},
+		{
+        	"Name" : "IMagicLab",
+		"Logo" : "img/customers/IMLNewLogo.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "The thing is, a software product without the right support is kinda like a car without a driver: It just sits there. The only way dealership systems make sense is when your team and ours work together to ensure that it gets used correctly and regularly. As we've said before, we view our role as your partner, to stand with you day in and day out to make sure our CRM gets the buy-in it needs to actually help. It's not magic. It's just solid, experienced people, combined with cutting-edge proven technology, which makes iMagicLab your next CRM vendor."
+	},
+		{		
+        	"Name" : "inContact, Inc.",
+		"Logo" : "img/customers/inContact.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "inContact specializes in serving organizations with inbound call (contact) centers with 10-300+ seats. We assist in researching, designing, testing and implementing procedures, technologies and strategies that reduce costs and improve profitability and customer management."
+	},
+		{		
+        	"Name" : "Indyme",
+		"Logo" : "img/customers/Indyme.jpg",
+        	"Type" : "SP",
+        	"Industry" : "",
+        	"Description" : "Indyme Solutions, Inc. designs, builds, and supports Smart Response systems used in some 20,000 retail stores and other businesses."
+
+	},
+		{
+        	"Name" : "InforMedix, Inc.",
+		"Logo" : "img/customers/InforMedixLogo.jpg",
+        	"Type" : "Healthcare",
+        	"Industry" : "Healthcare",
+        	"Description" : "<a href=\"www.informedixmr.com/\">www.informedixmr.com/</a><br>InforMedix Marketing Research provides customized market research to manufacturers and marketers of medical products."
+	},
+		{		
+        	"Name" : "InMotion Global",
+		"Logo" : "img/customers/inMotion.png",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "InMotion Global, Inc. is the leader in Transportation Management Systems. We combine the latest technologies with our expertise in the transportation and logistics fields to bring you the only TMS in its class � InMotion Global TMS™. Move Your World."
+	},
+		{		
+        	"Name" : "Insight",
+		"Logo" : "img/customers/insight-logo.png",
+        	"Type" : "SP",
+        	"Industry" : "",
+        	"Description" : "Insight's unique model combines an array of advanced services and expert technical resources with a far-reaching supply chain to provide you the level of solution support you need – whenever you need it. Our technology practices bring deep technical skills in vital solution areas to help you implement strategic technologies. Our Lifecycle and Management Services give you new ways to balance changing IT priorities and limited resources."
+	},
+		{
+        	"Name" : "Inspired e-Learning",
+		"Logo" : "img/customers/inspired elearning.gif",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "Inspired eLearning creates custom eLearning courses that work, meaning ones that deliver tangible business benefits, such as reducing the cost of training programs, ensuring legal compliance or increasing sales, productivity or customer satisfaction."
+	},
+		{		
+        	"Name" : "Integrated Data Works (Griner Engineering)",
+		"Logo" : "img/customers/grinerLogomedium.png",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Griner Engineering, Inc. has been in business since 1978 supplying precision-machined components and services to transportation and other markets requiring ultra high levels of quality, service, and competitive cost"
+	},
+		{		
+        	"Name" : "Integrity Graphics",
+		"Logo" : "img/customers/Integrity Graphics.gif",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Our team consists of knowledgeable professionals, with vast years of experience, working together toward a common goal. We strive to exceed our customers' requirements and focus on excellence and integrity."
+
+	},
+		{
+        	"Name" : "Intellection Group",
+		"Logo" : "img/customers/intellectiongroup.png",
+        	"Type" : "SP",
+        	"Industry" : "",
+        	"Description" : "We are consultants who give businesses a competitive advantage by providing them consulting and technology solutions needed to manage their operations more effectively and efficiently. Our decades of business and technical experience can help solve business problems through a thoughtful process of consulting and technology deployment."
+	},
+		{		
+        	"Name" : "InteractiveBlue",
+		"Logo" : "img/customers/blue-interactive-agency-logo-hdr.jpg",
+        	"Type" : "SP",
+        	"Industry" : "",
+        	"Description" : "InteractiveBlue is a leading enable of digital economy businesses, providing strategy consulting and sophisticated end-to-end solutions.  Our rapid specifiction and development process leads to cost effective deployment of solutions."
+	},
+		{		
+        	"Name" : "Intersect Healthcare",
+		"Logo" : "img/customers/IntersectLogo.png",
+        	"Type" : "Healthcare",
+        	"Industry" : "Healthcare",
+        	"Description" : "<a href=\"www.intersecthealthcare.com/\">www.intersecthealthcare.com/</a><br>Intersect Healthcare delivers improved financial performance to healthcare service providers through its revenue protection solution, the most comprehensive combination of denial and audit software, appeal services and education available."
+	},
+		{
+        	"Name" : "Inventiv Health",
+		"Logo" : "img/customers/gal_inventivhealth.jpg",
+        	"Type" : "SP",
+        	"Industry" : "Healthcare",
+        	"Description" : "We are clinicians, researchers, educators, sales professionals, scientists, Web developers, marketers, and more. We’re dedicated, flexible, and ready for the challenges of a rapidly evolving healthcare environment."
+	},
+		{		
+        	"Name" : "IOD Incorporated",
+		"Logo" : "img/customers/IODLogo.jpg",
+        	"Type" : "Healthcare",
+        	"Industry" : "Healthcare",
+        	"Description" : "<a href=\"www.iodincorporated.com/\">www.iodincorporated.com/</a><br>IOD was created with the vision to provide cost-effective, flexible strategies to help healthcare organizations streamline and accelerate HIM workflow. With more than 30 years of experience and 1,800 customers nationwide, IOD is the leader in providing full suite HIM solutions that deliver an HIM edge to hospitals, integrated delivery networks (IDNs) and clinics."
+	},
+		{		
+        	"Name" : "Ionic Media",
+		"Logo" : "img/customers/logo.gif",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Ionic Media is a thought-leading, multi-channel media optimization agency. We focus on influencing consumer behavior - from awareness through to conversion and retention."
+
+	},
+		{
+        	"Name" : "John Day",
+		"Logo" : "img/customers/logo_fojd.jpg",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "John Day Company invests heavily in training for its employees and product end-users. Product training and factory support are provided, either at the customer's plant or at the Omaha headquarters training facility. Safety seminars and on-site chain and synthetic sling inspection are also available. Cutting tool and other product trials further illustrate John Day Company's commitment to increasing its customers' productivity."
+	},
+		{		
+        	"Name" : "KAL",
+		"Logo" : "img/customers/kal-logo.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "Technology",
+        	"Description" : "KAL is a global software company dedicated solely to multi-vendor ATM software. KAL's product suite enables ATM hardware, software and services sourced from multiple vendors to work together perfectly. This allows banks to adopt a best-of-breed strategy, reduce costs, increase functionality and provide an enhanced customer experience."
+	},
+		{		
+        	"Name" : "Knowledge Platform",
+		"Logo" : "img/customers/knowledgeplatform.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "Knowledge Platform provides learning solutions for governance, compliance, quality, and business process change management. Our goal is to impact business performance through improving ability of organizations to acquire, share and retain information and knowledge."
+	},
+		{
+        	"Name" : "LEAP SYSTEMS Inc.",
+		"Logo" : "img/customers/leapsystems.jpg",
+        	"Type" : "SP",
+        	"Industry" : "Banking",
+        	"Description" : "LEAP SYSTEM, Inc. has built a model called the PS&G Model®. The PS&G Model® is a financial model that contains all aspects of your financial life. It provides you with a full view of your financial situation categorized into three components of Protection, Savings and Growth, which makes it easier to follow and understand. You can even participate in the evaluation process after you learn how easy this unique tool works. Most people wonder how they ever made their money decisions without it and see why they are not progressing as they should."
+	},
+		{		
+        	"Name" : "LogMeIn",
+		"Logo" : "img/customers/LogMeInLogo.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "Users worldwide rely on LogMeIn solutions for remote control, file sharing, systems management, data backup, business collaboration and on-demand customer support of PCs, servers, Macintosh computers, smartphones and other connected devices. Our award-winning solutions are easy to try, buy and deploy from any web browser with an Internet connection. Over 125 million devices worldwide have connected to a LogMeIn service."
+	},
+		{		
+        	"Name" : "Logos Technologies",
+		"Logo" : "img/customers/logos-technologies-77130770.jpg",
+        	"Type" : "SP",
+        	"Industry" : "Technology",
+        	"Description" : "Logos Technologies delivers innovative technology and program solutions enabling critical mission operations for our government (Defense, Intelligence Community (IC), and civilian agencies) and commercial clients. We also enable secure customer operations in all environments and against all threats."
+	},
+		{
+        	"Name" : "Lumenx LLC",
+		"Logo" : "img/customers/75155468.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "Technology",
+        	"Description" : "LUMENX, LLC provides companies with a best in class solution for Performance Management, Talent Differentiation and Business Intelligence with its CLICK360® software. Our company’s vision is to provide automated performance solutions that help organizations deliver increased value to their customers, employees and investors. Our company’s mission is to align employee actions with organizational goals and objectives. We want each and every employee to understand what they need to produce and how they need to behave to maximize their contribution to the company’s goals and objectives."
+	},
+		{		
+        	"Name" : "Management Games, LLC",
+		"Logo" : "",
+        	"Type" : "",
+        	"Industry" : "",
+        	"Description" : "Management Games LLC in Roswell, GA is a private company categorized under Management Services. Our records show it was established in 2007 and incorporated in Georgia."
+	},
+		{		
+        	"Name" : "ManagetoWin, Inc.",
+		"Logo" : "img/customers/Manage to Win.png",
+        	"Type" : "ISV",
+        	"Industry" : "Technology",
+        	"Description" : "Talent management: We sell software to automate many of the key activities involved with managing people effectively in your organization."
+	},
+		{
+        	"Name" : "Mansell Group",
+		"Logo" : "img/customers/mansell-logo.png",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Mansell Group is pleased to announce that we have acquired the email marketing business of Premiere Global Services (PGI). We are focused exclusively on helping organizations use technology (Email, SMS, Voice, SocialMedia) to communicate and market to existing and prospective customers. Mansell Group will assign you a “dedicated” Technical Account Manager and Client Services Manager within 30-days. Please use this site to find answers, contacts, and learn more about how we can partner together to ensure your success."
+	},
+		{		
+        	"Name" : "Marix Servicing LLC",
+		"Logo" : "img/customers/Matrix_Servicing_Logo_0.jpg",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Marix Servicing LLC was founded in February, 2007 in response to the distress in the sub-prime mortgage market. The market need for exceptional servicing has continued to grow, with rising delinquencies and $700 billion of ARM loans due to reprice in 2008."
+	},
+		{		
+        	"Name" : "MBAFocus, LLC",
+		"Logo" : "img/customers/logo.png",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "In partnership with the world’s top-ranked graduate business schools, MBA Focus has created the most comprehensive recruiting network available. For more than two decades, these school partners—and the companies that employ their students and alumni—look to us for advanced recruiting technology solutions, best practices, and innovation."
+
+	},
+		{
+        	"Name" : "McCracken Financial Software, Inc.",
+		"Logo" : "img/customers/71176_57942304007_5817168_n.jpg",
+        	"Type" : "SP",
+        	"Industry" : "Finance",
+        	"Description" : "We provide proven, servicing solutions for streamlining commercial servicing. And, we back those solutions with over 20 years of experience in the industry; we truly have been helping our customers get results for decades. Maybe that’s why our clients include over 40 of the leading finance companies. Today, McCracken customers process nearly $2 trillion in loans worldwide."
+	},
+		{		
+        	"Name" : "McCracken Financial Solutions Corp.",
+		"Logo" : "img/customers/logo632509696.png",
+        	"Type" : "SP",
+        	"Industry" : "Finance",
+        	"Description" : "We provide proven, servicing solutions for streamlining commercial servicing. And, we back those solutions with over 20 years of experience in the industry; we truly have been helping our customers get results for decades. Maybe that’s why our clients include over 40 of the leading finance companies. Today, McCracken customers process nearly $2 trillion in loans worldwide."
+	},
+		{		
+        	"Name" : "MCS",
+		"Logo" : "img/customers/mcs.gif",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "For over 30 years, The MCS Group has been the trusted outsourcing partner to law firms, insurance companies, corporations, government agencies, and educational institutions throughout the United States. These organizations rely on our comprehensive range of records retrieval and litigation support services, facilities management and back office solutions, and electronic discovery services to increase productivity and effectiveness, while lowering operational costs."
+	},
+		{
+        	"Name" : "Medpace",
+		"Logo" : "img/customers/MedpaceLogo.jpg",
+        	"Type" : "Healthcare",
+        	"Industry" : "Healthcare",
+        	"Description" : "<a href=\"www.medpace.com/\">www.medpace.com/</a><br>A global leader in research-based drug development, Medpace builds strong strategic partnerships with select Sponsors to advance the most efficient and cost-effective path to drug approval. As a therapeutically-focused Clinical Research Organization (CRO), we view ourselves as stewards of your drug, leveraging our extensive medical and regulatory expertise to deliver additional input, strategy, and efficiencies to each and every phase of the clinical trial. From custom solutions addressing the needs of small and midsize biotechnology companies to full-service offerings for global pharmaceutical companies, Medpace has the breadth, depth, and flexibility to deliver a superior result, specific to your needs, on six continents."
+	},
+		{		
+        	"Name" : "Mellon Consulting Group, LLC (Telerhythmics sub)",
+		"Logo" : "img/customers/logo_300x100.gif",
+        	"Type" : "SP",
+        	"Industry" : "",
+        	"Description" : "Mellon Consulting Group, LLC is dedicated to finding the right solution for the short and long term IT needs of its clients. We specialize in Software Development, Offsite Data Backup, Website Development, and Internet Marketing. Our team has a rich background with IT and Business experience with Fortune 100 companies as well as those with less than 100 employees. Through these specialties, experience, and adherence to industry standards and best practices, we are positioned to bring the right solution to our clients."
+	},
+		{		
+        	"Name" : "Mid Atlantic Web Design",
+		"Logo" : "img/customers/mas_logo2.gif",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Midatlantic Web Design can enable your business to fully compete globally or in your community. Allow Midatlantic Web Design to launch your business into the ever expanding business universe of the new millennium."
+
+	},
+		{
+        	"Name" : "Mortgage Investors Group",
+		"Logo" : "img/customers/logo1705441408.gif",
+        	"Type" : "EU",
+        	"Industry" : "Finance",
+        	"Description" : "In business since 1989, Mortgage Investors Group is Tennessee’s leading independent mortgage lender. The Company provides a diversified line of residential mortgage products, including conforming and non-conforming loan types. Mortgage Investors Group corporate headquarters is located in Knoxville, TN. The retail network has fifteen branches; (15) in Tennessee, (1) in Arkansas, and (1) in Missouri. The Direct Lending Community Banking network is located within the corporate headquarters, and has banking relationships in Tennessee, North Carolina, Kentucky, Georgia, Alabama and Arkansas. Mortgage loans are originated through retail offices, broker networks and community banking arrangements."
+	},
+		{		
+        	"Name" : "NAQ Technology",
+		"Logo" : "img/customers/naqlogo.gif",
+        	"Type" : "ISV",
+        	"Industry" : "Technology",
+        	"Description" : "We are committed to increasing business efficiency through the provision of innovative technology solutions. The NAQ Technology group is comprised of companies that provide specialised complementary systems and services. We continue to provide leading edge technology and proven solutions to enhance business processes and maximise time and cost efficiencies."
+	},
+		{		
+        	"Name" : "National Mailing Systems",
+		"Logo" : "img/customers/national_mailing_systems_logo_150_x_104.jpg",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Whether you process mail from your home office or in a mailroom at an enterprise-level corporation, National Mailing Systems has a system that will simplify and automate your mailing activities with its revolutionary technology."
+	},
+		{
+        	"Name" : "Naval Undersea Warfare Center",
+		"Logo" : "img/customers/NAVSEA_logo.jpg",
+        	"Type" : "EU",
+        	"Industry" : "Government",
+        	"Description" : "The Naval Undersea Warfare Center (NUWC) is a shore command of the U.S. Navy within the Naval Sea Systems Command (NAVSEA) Warfare Center Enterprise, which engineers, builds and supports America’s Fleet of ships and combat systems."
+	},
+		{		
+        	"Name" : "New England INDEX",
+		"Logo" : "img/customers/ne-index-logo.png",
+        	"Type" : "EU",
+        	"Industry" : "Government",
+        	"Description" : "Welcome to DisabilityInfo.org maintained by New England INDEX. Contained within this site is a wealth of information for people with disabilities, their friends, families and the people who serve them. Information within this site focuses on Massachusetts."
+	},
+		{		
+        	"Name" : "New Jersey Education Association",
+		"Logo" : "img/customers/newjersey.PNG",
+        	"Type" : "EU",
+        	"Industry" : "Government",
+        	"Description" : "The New Jersey Education Association is a diverse, democratic organization working to create an optimal environment to achieve excellence in public education in New Jersey."
+
+	},
+		{
+        	"Name" : "Noblis",
+		"Logo" : "img/customers/NoblisLogo.gif",
+        	"Type" : "SV",
+        	"Industry" : "",
+        	"Description" : "We are Noblis, a nonprofit organization with a unique mission to use the best of science, technology and strategy to serve the public good. Formerly known as Mitretek Systems, our name has changed, but our purpose and values never will."
+	},
+		{		
+        	"Name" : "North Central Ohio Computers",
+		"Logo" : "img/customers/833ead4149099cd1dcf8619dd660998d.png",
+        	"Type" : "EU",
+        	"Industry" : "Technology",
+        	"Description" : "The Heartland-Council of Governments/North Central Ohio Computer Cooperative is an organization that provides services to school districts and other agencies throughout north central Ohio. NCOCC is a regional Information Technology Center (ITC) formerly known as a DA Site (Data Acquisition Site). We are a member of the Ohio Education Computer Network (OECN). The OECN was established in 1979 by the 113th General Assembly to provide educational computer services to school districts. NCOCC became a member of the OECN in May, 1982. There are 23 other regional Information Technology Centers across the state."
+	},
+		{		
+        	"Name" : "Northpointe Institute for Public Mgmt, Inc",
+		"Logo" : "img/customers/115923v1v1.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "Northpointe was established in 1989 with a dedication to create and implement innovative solutions to the problems that affect the criminal justice system. Our experienced team works with you to address the problems you work with daily and to understand the causes and consequences they present to your organization. Our aim is to create improvements that target better outcomes and advance the knowledge base by fusing science with agency practice."
+	},
+		{
+        	"Name" : "NuView Systems",
+		"Logo" : "img/customers/574275_NuViewLogo.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "We specialize in global human capital management and Payroll software that enable business strategy through an advanced HR technology platform. Delivering business value to you with the best HR Software, Payroll Software and Talent Management is our main focus. Our product suite includes HR & Benefits Administration, Self-Service, Recruiting, Compensation, Training, Performance Management, Succession, Time Entry, Reporting, Metrics and Payroll."
+	},
+		{		
+        	"Name" : "Oncimmune",
+		"Logo" : "img/customers/OncimmuneLogo.jpg",
+        	"Type" : "Healthcare",
+        	"Industry" : "Healthcare",
+        	"Description" : "<a href=\"www.oncimmune.com/\">www.oncimmune.com/</a><br>Oncimmune (USA) LLC has a single goal: To advance early cancer detection to the greatest extent possible using autoantibody assay technology through the Early Cancer Detection Test."
+	},
+		{		
+        	"Name" : "Op5 Solutions",
+		"Logo" : "img/customers/op5Logo.jpg",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Op5 offers you end-to-end business solutions in four critical areas: web-based technology, fulfillment & distribution, brand awareness, and project management."
+
+	},
+		{
+        	"Name" : "Palo Colorado Software",
+		"Logo" : "img/customers/PaloColoradoSoftware.gif",
+        	"Type" : "SP",
+        	"Industry" : "Technology",
+        	"Description" : "Our mission is to provide high quality, cost effective computer solutions and services and use our experience to do the job right. Our breadth of experience lets us provide immediate benefits and our focus on long term strategic relationships means we continue to deliver the highest value."
+	},
+		{		
+        	"Name" : "Pangen Biosystems Inc.",
+		"Logo" : "img/customers/pangenlogo.jpg",
+        	"Type" : "Healthcare",
+        	"Industry" : "Healthcare",
+        	"Description" : "<a href=\"www.pangenbiosystems.com/en/index.htm\">www.pangenbiosystems.com/en/index.htm</a><br>Our mission: To provide creative innovation, cooperative energy, and technological expertise in the clinical trials arena to further the development of integrated, inter-communicative, and compatible global health care management systems."
+	},
+		{		
+        	"Name" : "Partner Consulting",
+		"Logo" : "img/customers/ares.png",
+        	"Type" : "ISV",
+        	"Industry" : "Technology",
+        	"Description" : "Partners Consulting provides a broad range of technology services, ranging from Managed IT Services, Supplemental Staffing and Permanent Placement. The combined organization has over 500 consultants, with operations in Atlanta, Buena Park, Irvine, Dallas, Houston, Laguna Hills and Pasadena."
+	},
+		{
+        	"Name" : "Patient Care Technology Systems",
+		"Logo" : "img/customers/PatientTechLogo.jpg",
+        	"Type" : "Technology",
+        	"Industry" : "Technology",
+        	"Description" : "<a href=\"www.awarepoint.com/\">www.awarepoint.com/</a><br>Awarepoint is the leader in providing workflow automation and tracking solutions to the acute care hospital marketplace. Real-time Location System (RTLS) solutions have quickly become must-have tools for hospitals tackling asset management, compliance, and efficient patient throughput challenges. Ever increasing numbers of advanced healthcare provider organizations are turning to Awarepoint and our software and technology platform solution as their RTLS-enabled workflow automation provider of choice. Awarepoint’s industry leading RTLS solutions portfolio addresses needs throughout the hospital enterprise versus a best-of-breed island approach that forces hospitals to manage a multitude of vendor solutions for asset tracking and patient flow."
+	},
+		{		
+        	"Name" : "PCI Global",
+		"Logo" : "img/customers/PCILogo.jpg",
+        	"Type" : "Healthcare",
+        	"Industry" : "Healthcare",
+        	"Description" : "<a href=\"www.pciglobal.org/\">www.pciglobal.org/</a><br>PCI's mission is to prevent disease, improve community health and promote sustainable development worldwide."
+	},
+		{		
+        	"Name" : "PDI Inc.",
+		"Logo" : "img/customers/PDIincLogo.jpg",
+        	"Type" : "Healthcare",
+        	"Industry" : "Healthcare",
+        	"Description" : "<a href=\"www.pdi-inc.com/\">www.pdi-inc.com/</a><br>PDI, Inc. is your partner for sales success in the increasingly competitive and cost-constrained biopharmaceutical industry. As one of the first Contract Services Organizations (CSO) to provide sales and marketing support to both established and emerging U.S.-based biopharmaceutical companies, PDI offers a track record of more than twenty years of accomplishment and innovation. Today, as a recognized industry pioneer and leader, PDI builds on this extensive experience to design and execute customized, integrated solutions that achieve superior results."
+
+	},
+		{
+        	"Name" : "PeopleStrategy",
+		"Logo" : "img/customers/PeopleStrategy.gif",
+        	"Type" : "ISV",
+        	"Industry" : "Technology",
+        	"Description" : "PeopleStrategy provides a Human Resource Management System (HRMS) delivering Fortune 500 level performance in a way that makes sense for companies of any size. If your organization is seeking to automate their enterprise HR processes using hosted, self-service and business workflow designed technology, PeopleStrategy is your single-source solution for workforce management."
+	},
+		{		
+        	"Name" : "Plus One Health Management",
+		"Logo" : "img/customers/PlusOneLogo.jpg",
+        	"Type" : "Healthcare",
+        	"Industry" : "Healthcare",
+        	"Description" : "<a href=\"www.plusonehealthmanagement.com/\">www.plusonehealthmanagement.com/</a><br>From the design, development, and management of on-site wellness centers, to the creation and execution of results-focused employee wellness programs, to the five-star delivery of hospitality spa and fitness services, Plus One applies an integrated approach to individual and employee wellness. Clients include Fortune 500 companies, financial services firms, law partnerships, and world leaders in the media, biotechnology, energy, and pharmaceutical industries. Founded in 1986, today Plus One employs more than 1,500 professionals nationwide."
+	},
+		{		
+        	"Name" : "Polaris Management Partners",
+		"Logo" : "img/customers/polaris_logo.png",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "Polaris is a management consulting firm helping life sciences companies with their compliance, finance, sales and marketing processes. Polaris offers a suite of services that specifically target the compliance risks confronting the Life Science industries."
+	},
+		{
+        	"Name" : "Prolifiq Software Inc.",
+		"Logo" : "img/customers/prolifiq-logo.png",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "Prolifiq Softwre, Inc. mobilizes the communications transaction of field salespeople bring speed, savings and compliance to their daily workflows."
+	},
+		{		
+        	"Name" : "Qantas Airways LTD",
+		"Logo" : "img/customers/qantas-airways-logo.jpg",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Founded in the Queensland outback in 1920, Qantas has grown to be Australia's largest domestic and international airline. Registered originally as the Queensland and Northern Territory Aerial Services Limited (QANTAS), Qantas is widely regarded as the world's leading long distance airline and one of the strongest brands in Australia."
+	},
+		{		
+        	"Name" : "Quarksoft, LLC",
+		"Logo" : "img/customers/Quarksoft-400x150-transparent_full.png",
+        	"Type" : "ISV",
+        	"Industry" : "Technology",
+        	"Description" : "Professional ECM suite for small to medium organizations with fewer than 100 users: offers a simple and affordable pricing structure with servers that are sold individually."
+
+	},
+		{
+        	"Name" : "Rasini & Company Ltd",
+		"Logo" : "img/customers/rasini1.gif",
+        	"Type" : "EU",
+        	"Industry" : "Financial",
+        	"Description" : "Rasini Fairway Capital is an independent financial advisory company specialized in advising fund of funds and devising and implementing tailor-made solutions for institutional clients."
+	},
+		{		
+        	"Name" : "RTEL India of Inchinnan (Amor Group)",
+		"Logo" : "img/customers/amor.png",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "With a truly global customer base, Amor Group is Scotland’s largest independent business technology solutions company. It has forecast revenues of £41m and over 500 staff across its Glasgow, Aberdeen, Coventry, Edinburgh, Manchester, London, Dubai and Houston offices. Amor Group brings over twenty years expertise and experience in the Energy, Transport and Public Sectors."
+	},
+		{		
+        	"Name" : "SAIC",
+		"Logo" : "img/customers/saicbluesig.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "Technology",
+        	"Description" : "We solve our customers' mission-critical problems with innovative applications of technology and expertise. In medical labs researching cancer cures, in the desert testing next-generation robotics, in the ocean deploying tsunami warning systems, SAIC people and technologies are there. In crime labs investigating new evidence, in Iraq helping protect and support our men and women in uniform, SAIC is there."
+	},
+		{		
+        	"Name" : "Salem Logistics",
+		"Logo" : "img/customers/292869v3v.jpg",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Salem Global Logistics believes that in order for companies who have Transportation and Distribution enterprises to succeed, companies must continuously improve customer service, reduce unnecessary costs and shorten billing cycles."
+	},
+		{		
+        	"Name" : "Samsung Telecommunications America Inc.",
+		"Logo" : "img/customers/samsung-logo.png",
+        	"Type" : "SP",
+        	"Industry" : "Telecommunications",
+        	"Description" : "Samsung Telecommunications America (STA) is one of the world's leaders in telecommunications, but that doesn't mean you have to be an engineer to have a fulfilling, creative career with us. What you do need is passion – passion to create the next generation of mobile products that will connect consumers to their social, information and entertainment needs, and a passion to be #1. We are looking for dynamic, motivated individuals from a wide variety of professional backgrounds. Whether you're looking to take your existing career further, or want to reinvent yourself by going into a new field, Samsung offers many rewarding, challenging job opportunities."
+
+	},
+		{
+        	"Name" : "Savana Inc.",
+		"Logo" : "img/customers/savana-logo.png",
+        	"Type" : "SP",
+        	"Industry" : "",
+        	"Description" : "Savana serves the Financial Services and Insurance industries with business process automation solutions that result in dramatically improved efficiency, business agility and operational control. Our EPITOME software solution provides the full range of traditional Business Process Management Suite (BPMS) and Enterprise Content Management (ECM) solutions in one native software application."
+	},
+		{		
+        	"Name" : "Scout Inc",
+		"Logo" : "img/customers/78351472.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "Scout Software is a leading supply chain / inventory management / warehousing software provider serving businesses in the retail, manufacturing, distribution, and medical sectors. Founded by Eric Luoma in 2002, the company capitalized on the growing need for SAAS (software as a service) based supply chain / inventory management / warehousing applications that can be easily integrated with a company's existing platform."
+	},
+		{		
+        	"Name" : "Seapine Software, Inc.",
+		"Logo" : "img/customers/seapine-logo.png",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "Seapine Software is the leading provider of Process-Centric product development solutions. Our suite of tools and services help ensure the consistent release of high quality products, while providing traceability, metrics and reporting, and compliance."
+
+	},
+		{		
+        	"Name" : "Serials Solutions",
+		"Logo" : "img/customers/serialssolutions-proquestbusiness.png",
+        	"Type" : "SP",
+        	"Industry" : "",
+        	"Description" : "Serials Solutions®, a member of the ProQuest family of companies, is the global leader in essential discovery and e-resource management solutions, which are powered by a comprehensive knowledgebase. Founded by a librarian for librarians in 2000, our popular suite of Software as a Service (SaaS) solutions helps improve access to and use of collections, eases librarian workloads and ultimately reduces operating costs. "
+	},
+		{		
+        	"Name" : "SETS Solutions",
+		"Logo" : "img/customers/sets.png",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "For over 20 years, Set Solutions, Inc.— a full service provider of network security, secure remote access and bandwidth management solutions—has been in the business of increasing business profitability and growth."
+
+	},
+		{
+        	"Name" : "SGS United Kingdom Ltd",
+		"Logo" : "img/customers/logo_sgs.jpg",
+        	"Type" : "SP",
+        	"Industry" : "",
+        	"Description" : "SGS is the global leader and innovator in inspection, verification, testing and certification services. Founded in 1878, SGS is recognised as the global benchmark in quality and integrity. With over 59,000 employees, SGS operates a network of over 1,000 offices and laboratories around the world."
+	},
+		{		
+        	"Name" : "ShopVisible",
+		"Logo" : "img/customers/Logo-ShopVisible--Jpeg-notResized.jpg",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "ShopVisible delivers evolving commerce solutions for companies who are seeking better experiences and relationships with their customers enabled by agile, extensible, and seamless technology. For ShopVisible, commerce is more than a well-facilitated transaction; it's an entire ecosystem of people, processes and technologies coming together. Our on-demand SaaS ecommerce solution provides the innovation and adaptive structure to help companies and their communities thrive everywhere. We provide unified management of the entire ecommerce ecosystem with the flexibility and insight to meet even the most complex business needs.",
+        	"CaseDoc" : "http://blog.izenda.com/listen-to-one-of-our-partners-shopvisible/"
+	},
+		{		
+        	"Name" : "Signature Solutions, LLC (Hunter Hollis)",
+		"Logo" : "img/customers/HUNTER_HOLLIS___FINAL_LOGO.gif",
+        	"Type" : "EU",
+        	"Industry" : "",
+        	"Description" : "Hunter Hollis specializes in placing top people in Accounting, Finance and Operations positions. From temporaries and contractors to direct hire, no one matches opportunity with need like Hunter Hollis."
+	},
+		{		
+        	"Name" : "SIRE Technologies",
+		"Logo" : "img/customers/sire-logo.png",
+        	"Type" : "SP",
+        	"Industry" : "",
+        	"Description" : "Technology projects don't have to be intimidating. At SIRE Technologies, our mission is to help you achieve Better Outcomes™ through industry leading, innovative solutions, exceptional support, and comprehensive services. Through our unique processes of discovery, project scoping, and implementation services, our clients enjoy great success with solution adoption, deployment, and rapid return on their investment."
+	},
+		{		
+        	"Name" : "Smart Business Technology",
+		"Logo" : "img/customers/Smart Business Technology logo.png",
+        	"Type" : "ISV",
+        	"Industry" : "Technology",
+        	"Description" : "Smart Business Technology is a leading global provider of transaction and point of service IT solutions. By leveraging years of experience and expertise in all aspects of payments and transactional technology, Smart Business Technology provides IT solutions to some of the most prestigious financial institutions, credit card processors and retailers in the world. In the very competitive world of transaction processing and financial services, SMART assists its clients with dramatic cost reductions as well as new revenue opportunities using advanced propriety tools for developing, integrating and supporting payment technology. From unique POS solutions, to sophisticated secure payment system development, SMART helps the world transact."
+
+	},
+		{
+        	"Name" : "Software Management, Inc. (SMI)",
+		"Logo" : "img/customers/softwaremgt.png",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "Founded in 1983 by Paul Franke Sr., Software Management, Inc. (SMI) is a Pittsburgh-based provider of CRM, CMS, web development and online and mobile marketing solutions to the travel, tourism and meetings & conventions industries, specializing in work with destination marketing organizations (DMO's)."
+	},
+		{		
+        	"Name" : "Software Sales Corp (iGen)",
+		"Logo" : "img/customers/igen10q05192011002.gif",
+        	"Type" : "ISV",
+        	"Industry" : "",
+        	"Description" : "I-Gen software Solution founded in 2010 is a professionally managed Business House specialized in providing innovative business solutions by offering quality IT Services with high performance and design efficiency."
+	},
+		{		
+        	"Name" : "Source Code Systems, Inc.",
+		"Logo" : "img/customers/sourcecodesystems.gif",
+        	"Type" : "SP",
+        	"Industry" : "",
+        	"Description" : "Our philosophy stresses two fundamental concepts. First, we believe that the best solutions spring from the recognition and exploitation of similarities among seemingly disparate tasks, goals, and fields of endeavor. Second, we believe success nearly always lies in the direction of greater simplicity and generality -- not greater complexity or single-purpose specialization."
+	},
+	{
+		"ID" : "ABG Financial Services",
+		"Name" : "ABG Financial Services",
+		"Logo" : "img/customers/ABGFinanicalLogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",	
+		"Description" : "<a href=\"http://www.abgfs.com/\">http://www.abgfs.com/</a>"
+	},
+	{
+		"ID" : "A.D.A.M.",
+		"Name" : "A.D.A.M.",
+		"Logo" : "img/customers/adamlogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"http://www.adam.com/\">http://www.adam.com/\"></a>"
+	},
+	{
+		"ID" : "Atwork Canada Inc",
+		"Name" : "Atwork Canada Inc",
+		"Logo" : "img/customers/atworkcanadalogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",	
+		"Description" : "<a href=\"www.atworkcanada.com/\">www.atworkcanada.com/</a>"
+	},
+	{
+		"ID" : "Blue Cross Blue Shield of Georgia",
+		"Name" : "Blue Cross Blue Shield of Georgia",
+		"Logo" : "img/customers/bluecbslogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",	
+		"Description" : "<a href=\"https://www.bcbsga.com/health-insurance/home/overview\">https://www.bcbsga.com/health-insurance/home/overview</a>"
+	},
+	{
+		"ID" : "Brain Bank",
+		"Name" : "Brain Bank",
+		"Logo" : "img/customers/brainbanklogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",	
+		"Description" : "<a href=\"www.brainbank.mclean.org/\">www.brainbank.mclean.org/</a>"
+	},
+	{
+		"ID" : "AdvancedMD Software, Inc.",
+		"Name" : "AdvancedMD Software, Inc.",
+		"Logo" : "img/customers/AdvancedMD SoftwareIncLogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",	
+		"Description" : "<a href=\"www.advancedmd.com/\">www.advancedmd.com/</a>"
+	},
+	{
+		"ID" : "Brenau University - Health Science Department",
+		"Name" : "Brenau University - Health Science Department",
+		"Logo" : "img/customers/brenau-504519296.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",	
+		"Description" : "<a href=\"www.brenau.edu/\">www.brenau.edu/</a>"
+	},
+	{
+		"ID" : "Centers for Disease Control and Prevention",
+		"Name" : "Centers for Disease Control and Prevention",
+		"Logo" : "img/customers/cdclogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",	
+		"Description" : "<a href=\"www.cdc.gov/\">www.cdc.gov/</a>"
+	},
+	{
+		"ID" : "Central States Universities, Inc.",
+		"Name" : "Central States Universities, Inc.",
+		"Logo" : "img/customers/CentralSUniLogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",	
+		"Description" : "<a href=\"www.csui.info/\">www.csui.info/</a>"
+	},
+	{
+		"ID" : "Chronologic Health Management Services",
+		"Name" : "Chronologic Health Management Services",
+		"Logo" : "img/customers/dcg112647616.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : ""
+	},
+	{
+		"ID" : "Corazon, Inc.",
+		"Name" : "Corazon, Inc.",
+		"Logo" : "img/customers/CorazonLogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"www.corazoninc.com/\">www.corazoninc.com/</a>"
+	},
+	{
+		"ID" : "Council of State and Territorial Epidemiologists",
+		"Name" : "Council of State and Territorial Epidemiologists",
+		"Logo" : "img/customers/cste-logo-947016448.png",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"www.cste.org/\">www.cste.org/</a>"
+	},
+	{
+		"ID" : "Cyfeon Solutions",
+		"Name" : "Cyfeon Solutions",
+		"Logo" : "img/customers/cyfeonlogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"cyfeon.com/\">cyfeon.com/</a>"
+	},
+	{
+		"ID" : "Developmental Disabilities Resource Board",
+		"Name" : "Developmental Disabilities Resource Board",
+		"Logo" : "img/customers/DDRBlogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"www.ddrb.org/\">www.ddrb.org/</a>"
+	},
+	{
+		"ID" : "Emory University - Campus Services/Healthcare Department",
+		"Name" : "Emory University - Campus Services/healthcare department",
+		"Logo" : "img/customers/EmoryLogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",	
+		"Description" : "<a href=\"www.campserv.emory.edu/\">www.campserv.emory.edu/</a>"
+	},
+	{
+		"ID" : "EMS Technology Solutions - formerly Data Technologies",
+		"Name" : "EMS Technology Solutions - formerly Data Technologies",
+		"Logo" : "img/customers/EMSLogo.gif",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",	
+		"Description" : "<a href=\"honeywell.com/Pages/Home.aspx\">honeywell.com/Pages/Home.aspx</a>"
+	},
+	{
+		"ID" : "JDA eHealth Systems",
+		"Name" : "JDA eHealth Systems",
+		"Logo" : "img/customers/JDALogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",	
+		"Description" : "<a href=\"www.jdaehealth.com/\">www.jdaehealth.com/</a>"
+	},
+	{
+		"ID" : "Medalign Corp.",
+		"Name" : "Medalign Corp.",
+		"Logo" : "img/customers/MedalignLogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"www.medalign.com/\">www.medalign.com/</a>"
+	},
+	{
+		"ID" : "Mediregs - Wolters Kluwer",
+		"Name" : "Mediregs - Wolters Kluwer",
+		"Logo" : "img/customers/WoltersKluwerlogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"www.mediregs.com/\">www.mediregs.com/</a>"
+	},
+	{
+		"ID" : "Memorial Sloan-Kettering Cancer Center",
+		"Name" : "Memorial Sloan-Kettering Cancer Center",
+		"Logo" : "img/customers/MemorialLogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",	
+		"Description" : "<a href=\"www.mskcc.org/\">www.mskcc.org/</a>"
+	},
+	{
+		"ID" : "Milliman Care Guidelines",
+		"Name" : "Milliman Care Guidelines",
+		"Logo" : "img/customers/MillimanLogo.png",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",	
+		"Description" : "<a href=\"www.careguidelines.com\">www.careguidelines.com</a>"
+	},
+	{
+		"ID" : "MySTRO - inventivhealth",
+		"Name" : "MySTRO - inventivhealth",
+		"Logo" : "img/customers/MySTROLogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"www.inventivhealth.com/\">www.inventivhealth.com/</a>"
+	},
+	{
+		"ID" : "North Central Ohio state University - Health Care Management",
+		"Name" : "North Central Ohio state University - Health Care Management",
+		"Logo" : "img/customers/CentralSUniLogo1780197824.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",	
+		"Description" : "<a href=\"www.ncstatecollege.edu/cms/index.php\">www.ncstatecollege.edu/cms/index.php</a>"
+	},
+	{
+		"ID" : "Outsource Management",
+		"Name" : "Outsource Management",
+		"Logo" : "img/customers/outsourcemanagmentlogo.png",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"www.outsourcemanagementgroup.com/\">www.outsourcemanagementgroup.com/</a>"
+	},
+	{
+		"ID" : "Skycape",
+		"Name" : "Skycape",
+		"Logo" : "img/customers/SkycapeLogo.gif",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",	
+		"Description" : "<a href=\"www.skyscape.com/index/home.aspx\">www.skyscape.com/index/home.aspx</a>"
+	},
+	{
+		"ID" : "St. Croix Systems",
+		"Name" : "St. Croix Systems",
+		"Logo" : "img/customers/StCroixLogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"www.stcroixsystems.com/\">www.stcroixsystems.com/</a>"
+	},
+	{
+		"ID" : "Stanford University School of Medicine",
+		"Name" : "Stanford University School of Medicine",
+		"Logo" : "img/customers/StanfordMedLogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",	
+		"Description" : "<a href=\"med.stanford.edu\">med.stanford.edu</a>"
+	},
+	{
+		"ID" : "Telerhythmics",
+		"Name" : "Telerhythmics",
+		"Logo" : "img/customers/Telerhythmicslogo.png",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"www.telerhythmics.com/\">www.telerhythmics.com/</a>"
+	},
+	{
+		"ID" : "Texas Tech University Health Sciences Center",
+		"Name" : "Texas Tech University Health Sciences Center",
+		"Logo" : "img/customers/TexasHealthLogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",	
+		"Description" : "<a href=\"www.ttuhsc.edu/\">www.ttuhsc.edu/</a>"
+	},
+	{
+		"ID" : "The Trizetto Group, Inc.",
+		"Name" : "The Trizetto Group, Inc.",
+		"Logo" : "img/customers/TrizettoLogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",	
+		"Description" : "<a href=\"www.trizetto.com/\">www.trizetto.com/</a>"
+	},
+	{
+		"ID" : "UMASS Medical School",
+		"Name" : "UMASS Medical School",
+		"Logo" : "img/customers/UMASSLogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",	
+		"Description" : "<a href=\"www.umassmed.edu/index.aspx\">www.umassmed.edu/index.aspx</a>"
+	},
+	{
+		"ID" : "United BioSource Corporation",
+		"Name" : "United BioSource Corporation",
+		"Logo" : "img/customers/UnitedBioLogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"unitedbiosource.com/redirect.aspx\">unitedbiosource.com/redirect.aspx</a>"
+	},
+	{
+		"ID" : "University of Florida",
+		"Name" : "University of Florida",
+		"Logo" : "img/customers/UnivFLLogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"www.ufl.edu/\">www.ufl.edu/</a>"
+	},
+	{
+		"ID" : "VeriSpan",
+		"Name" : "VeriSpan",
+		"Logo" : "img/customers/VeriSPanLogo.jpg",
+		"Type" : "Healthcare",
+		"Industry" : "Healthcare",
+		"Description" : "<a href=\"www.imshealth.com/\">www.imshealth.com/</a>"
+	}
+]
