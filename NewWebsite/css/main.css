@@ -451,15 +451,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
   #portfolio-list .block {
-    width: 250px;
+    width: 25%;
     height: 180px;
-    outline: 1px solid #ddd;
-    margin: 10px;
+    margin: 0px;
     overflow: hidden;
   }
 
   #portfolio-filter a {
-    box-shadow: 0px 0px 0px 2px #656870 inset;
     color: #656870;
   }
 
@@ -474,10 +472,13 @@ h1, h2, h3, h4, h5, h6, p {
   }
 
 .portfolio-image {
-  height: 100%; 
-  width: 100%;
-  min-height: 200px;
+  width: 95%;
   margin-bottom: 30px;
+  border: 1px solid #ddd;
+  margin: 10px;
+  -webkit-box-shadow: 0px 3px 12px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow:    0px 3px 12px 0px rgba(50, 50, 50, 0.3);
+  box-shadow:         0px 3px 12px 0px rgba(50, 50, 50, 0.3);
 }
 
 /* Clients speak section for responsive */

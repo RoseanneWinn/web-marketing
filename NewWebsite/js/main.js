@@ -218,7 +218,7 @@ $(document).ready(function() {
     $portfolio.isotope({
       itemSelector: '.block',
       layoutMode: 'fitRows',
-      gutter: 10
+      gutter: 0
     });
     loadImagesForFilter(currentFilter);
     $portfolio.isotope({ filter: '.' + currentFilter });
