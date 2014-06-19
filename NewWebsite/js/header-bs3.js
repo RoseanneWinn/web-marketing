@@ -23,7 +23,7 @@ function initializeIzendaHeader() {
   });
 
   // tryit free button
-  $('#izTryItFreeButton').click(function () {
+  $('#izTryItFreeButton, #izTryItFreeButton2').click(function () {
     window.location.href = 'http://www.izenda.com/Site/Pages/LandingPages/Ad-Hoc-Reporting.aspx';
   });
 
