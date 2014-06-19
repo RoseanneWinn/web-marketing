@@ -369,6 +369,20 @@ h1, h2, h3, h4, h5, h6, p {
   bottom: 177px;
 }
 
+@media (max-width: 767px) {
+  .sectional-move {
+    position: relative;
+    bottom: 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sectional-move {
+    position: relative;
+    top: 600px;
+   }
+}
+
 /* Specific divisions */
 
 #operational-divider {
