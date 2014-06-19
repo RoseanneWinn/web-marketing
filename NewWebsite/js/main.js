@@ -41,7 +41,7 @@ $(document).ready(function() {
     });
 
   $('.main-pic-overlay').click(function() {
-    var $embed = $('<embed src="http://www.youtube.com/v/1LlHesMCmYs?autoplay=1" type="application/x-shockwave-flash" />');
+    var $embed = $('<embed src="https://www.youtube.com/v/1LlHesMCmYs?autoplay=1" type="application/x-shockwave-flash" />');
     var $o = $(this);
     $o.empty();
     $o.css('background-color', 'transparent');
