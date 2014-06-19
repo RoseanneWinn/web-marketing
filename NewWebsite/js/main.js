@@ -4,7 +4,7 @@ $(document).ready(function() {
   console.log(pageUrl);
 
   $('#insert-header').load('templates/header.tmpl.html');
-  $('.site-footer').load('templates/sticky-footer.tmpl.html', function () {
+  $('.site-footer').load(function () {
     //////////////////////////////////////////////////////////////////////////////////////////
     // Back to top animation
     //////////////////////////////////////////////////////////////////////////////////////////
@@ -16,7 +16,8 @@ $(document).ready(function() {
     });
   });
 
-  //////////////////////////////////////////////////////////////////////////////////////////
+  ///change main pic image on hover
+    //////////////////////////////////////////////////////////////////////////////////////////
   // Main picture overlay
   //////////////////////////////////////////////////////////////////////////////////////////
   var populateMainPictureOverlay = function() {
@@ -33,6 +34,12 @@ $(document).ready(function() {
   $(window).resize(function() {
     populateMainPictureOverlay();
   });
+  
+  $('.main-pic-overlay').hover(function () {
+    $('.main-pic-container').attr('src', '../img/main/computers-hover.jpg') }, function() {
+    $('.main-pic-container').attr('src', '../img/main/computers.jpg')
+    });
+
   $('.main-pic-overlay').click(function() {
     var $embed = $('<embed src="http://www.youtube.com/v/1LlHesMCmYs?autoplay=1" type="application/x-shockwave-flash" />');
     var $o = $(this);
