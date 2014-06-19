@@ -91,10 +91,6 @@ textarea {
    Izenda Custom Styles
    ========================================================================== */
 
-* {
-  margin: 0;!important
-}
-
 html, body {
   height: 100%;
   font-family: "Lato", sans-serif;
@@ -108,7 +104,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .page-wrap {
   min-height: 100%;
-  margin-top: -10px;
 }
 
 .page-wrap:after {
@@ -122,7 +117,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .site-footer, .page-wrap:after {
-  height: 0px;
 }
 
 .why-izenda-text {
@@ -170,6 +164,9 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative;
   top: 75px;
   z-index: 10;
+  width: 400px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .not-so-big-font {
@@ -276,32 +273,15 @@ h1, h2, h3, h4, h5, h6, p {
   color: #0061a0;
 }
 
-/* Alignment fixes for pics */
-
-#pic-fix-me {
-  margin-left: 10px;
-  position: relative;
-  left: 15px;
-}
-
-#pic-fix-me-2 {
-  margin-left: 10px;
-}
-
-#pic-fix-me-3 {
-  margin-left: 10px;
-}
-
-#pic-fix-me-4 {
-  margin-left: 12px;
-}
-
 /* button colors & other stuff*/
 
 .description-text {
   position: relative;
   top: 80px;
   z-index: 10;
+  width: 400px;
+  font-size: 18px;
+  font-style: italic;
 }
 
 .btn {
@@ -585,6 +565,26 @@ h1, h2, h3, h4, h5, h6, p {
   width: 150px;
   height: auto;
 }
+
+.caption-movement {
+  position: relative;
+  right: 8px;
+}
+
+.img-features {
+  margin-left: 34px;
+  width: 80%;
+  height: auto;
+}
+
+#pic-fix-me {
+  margin-left: 39px;!important
+}
+
+#pic-fix-me-2 {
+  margin-left: 30px;
+}
+
 
 
 
