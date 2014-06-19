@@ -189,13 +189,83 @@ $(document).ready(function() {
       }, {
         a: 'img/gallery/custom_chart_style-full.png',
         img: 'img/gallery/integ17.jpg'
-      }]
+      }],
+    'additional-filter': [{
+      a: 'img/gallery/additionalImage1.png',
+      img: 'img/gallery/additionalImage1.png'
+    }, {
+      a: 'img/gallery/additionalImage2.png',
+      img: 'img/gallery/additionalImage2.png'
+    }, {
+      a: 'img/gallery/additionalImage3.png',
+      img: 'img/gallery/additionalImage3.png'
+    }, {
+      a: 'img/gallery/additionalImage4.png',
+      img: 'img/gallery/additionalImage4.png'
+    }, {
+      a: 'img/gallery/additionalImage5.png',
+      img: 'img/gallery/additionalImage5.png'
+    }, {
+      a: 'img/gallery/additionalImage6.jpg',
+      img: 'img/gallery/additionalImage6.jpg'
+    }, {
+      a: 'img/gallery/additionalImage7.png',
+      img: 'img/gallery/additionalImage7.png'
+    }, {
+      a: 'img/gallery/additionalImage8.jpg',
+      img: 'img/gallery/additionalImage8.jpg'
+    }]
   };
   var $portfolio = $('#portfolio-list');
   var $portfolioFilter = $('#portfolio-filter');
+
+  var appendMissingItems = function (filter) {
+    $('.block').removeClass('hidden');
+    var $items = $('.block.' + filter);
+    if ($items.length > 8) {
+      for (var i = 8; i < $items.length; i++) {
+        $($items[i]).addClass('hidden');
+      }
+    }
+    var result = [];
+    var $additionalFilters = $('.block.additional-filter');
+    $additionalFilters.addClass('hidden');
+    if ($items.length < 8) {
+      for (var i = $items.length; i <= 8; i++) {
+        var $additionalFilter = $($additionalFilters[i]);
+        $additionalFilter.removeClass('hidden');
+        result.push($additionalFilter);
+      }
+    }
+  };
+
+  var loadAdditionalFilters = function() {
+    if (izendaPortfolio.loadedFilters.indexOf('additional-filter') < 0) {
+      var images = izendaPortfolio['additional-filter'];
+      izendaPortfolio.loadedFilters.push('additional-filter');
+      for (var i = 0; i < images.length; i++) {
+        var image = images[i];
+        var $image = $(
+          '<div class="block additional-filter hidden" data-type="additional-filter">' +
+          '<a class="new portfolio-thumb" href="' + image.a + '" title="portfolio">' +
+          '<img class="portfolio-image" src="' + image.img + '" alt="Line Chart" />' +
+          '</a>' +
+          '</div>');
+        $image.children('.portfolio-thumb').click(function (e) {
+          e.preventDefault();
+          var $modal = $('#portfolioModal');
+          $modal.find('.modal-image').attr('src', image.a);
+          $modal.modal();
+        });
+        $portfolio.append($image);
+      }
+    }
+  };
+
   // load images to portfolio if needed
   var loadImagesForFilter = function (filter) {
     var result = [];
+    loadAdditionalFilters();
     if (filter in izendaPortfolio && izendaPortfolio.loadedFilters.indexOf(filter) < 0) {
       var images = izendaPortfolio[filter];
       izendaPortfolio.loadedFilters.push(filter);
@@ -208,15 +278,24 @@ $(document).ready(function() {
           '</a>' +
           '</div>');
         result.push($image);
-        $image.children('.portfolio-thumb').click(function (e) {
+        $image.children('.portfolio-thumb').click(function(e) {
           e.preventDefault();
           var $modal = $('#portfolioModal');
           $modal.find('.modal-image').attr('src', image.a);
           $modal.modal();
         });
-        $portfolio.append($image);
+        $portfolio.prepend($image);
+      }
+      // append additional filters
+      var additionals = appendMissingItems(filter);
+      if (additionals != null) {
+        $.each(additionals, function(iAdditional, additional) {
+          result.push(additional);
+        });
       }
       $portfolio.isotope('reloadItems', result);
+    } else {
+      appendMissingItems(filter);
     }
     return result;
   };
@@ -228,7 +307,7 @@ $(document).ready(function() {
       gutter: 0
     });
     loadImagesForFilter(currentFilter);
-    $portfolio.isotope({ filter: '.' + currentFilter });
+    $portfolio.isotope({ filter: '.' + currentFilter + ', .additional-filter' });
   }
   //filter items when filter link is clicked
   $('#portfolio-filter a').click(function () {
@@ -237,7 +316,8 @@ $(document).ready(function() {
     $(this).parent().addClass('active');
     currentFilter = selector.substr(1);
     loadImagesForFilter(currentFilter);
-    $portfolio.isotope({ filter: selector });
+
+    $portfolio.isotope({ filter: selector + ', .additional-filter' });
   });
 
   //Modal Video Change OnClick
