@@ -173,34 +173,13 @@ function initializeIzendaHeader() {
     $('.navbar-nav > li').removeClass('active');
     $($this.closest('.iz-menu')).addClass('active');
   });
-
-  //fancybox stuff for form submission
-  /*$(".modalbox").fancybox();*/
-
-  $("#send").on("click", function () {
-    var emailval = $("#email").val();
-    var firstval = $("#first_name").val();
-    var lastval = $("#last_name").val();
-    var phval = $("#form1_phone").val();
-    var comurl = $("#company_url").val();
-
-    // TODO: I didn't find validateEmail function implementation
-    if (validateEmail(emailval)) {
-      $("#email").removeClass("error");
-      // if both validate we attempt to send the e-mail
-      // first we hide the submit btn so the user doesnt click twice
-      $("#send").replaceWith("<em>sending...</em>");
-      $("#send").submit();
-    } else
-      $("#email").addClass("error");
-
-    // TODO: what to do if phval.length > 9 ???
-    if (phval.length < 9) {
-      $("#number").addClass("error");
-    } else if (phval.length == 9) {
-      $("#number").removeClass("error");
-    }
-  });
+  
+  $('#send').click(function() {
+      if ($('#pricing-form').valid()=== true) {
+      $('#send').addClass("hidden");
+      $('#pricing-loading-text').removeClass("hidden");
+      }
+     });
 };
 
 
