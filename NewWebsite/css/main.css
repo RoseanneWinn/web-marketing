@@ -1199,6 +1199,11 @@ p.text {
   cursor: pointer;
 }
 
+.main-pic-overlay:hover {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .main-pic-overlay > .glyphicon {
   color: #fff;
   font-size: 72px;
