@@ -64,13 +64,13 @@
   color: #fff;
 }
 
-.iz-header .navbar-nav > li.active > a {
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
-  border-bottom: 4px solid #74b3de;
-}
-
 @media (max-width: 1023px) {
+  .iz-header .navbar-nav > li.active > a {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    border-bottom: 4px solid #74b3de;
+  }
+
   .iz-header .navbar-nav > li.active > a {
     padding-top: 5px;
     color: #fff;

@@ -1191,3 +1191,14 @@ p.text {
   font-size: 72px;
   top: 40%;
 }
+
+.gallery-row > div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gallery-image {
+  border: 1px solid #dddddd;
+  width: 200px;
+  height: 130px;
+}
