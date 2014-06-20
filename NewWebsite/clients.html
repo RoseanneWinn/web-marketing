@@ -72,7 +72,7 @@
 
         <p>
           Clients Type
-          <select id="izendaClientTypes" style="margin-left: 20px; width: 400px;" ></select>
+          <select id="izendaClientTypes" class="form-control" ></select>
         </p>
         <br/>
         <div id="izendaClients" style="display: none;">
@@ -170,10 +170,10 @@
           }
           var html = 
 '<div class="row client-row" clientTypes="' + item.Type + '">' +
-'  <div class="col-md-3 client-logo-left">' +
-'    <img style="max-width: 200px;" src="' + logoUrl + '"/>' +
+'  <div class="col-md-3 client-logo-left" style="width: 200px; padding: 10px;">' +
+'    <img style="max-width: 200px; float: left;" src="' + logoUrl + '"/>' +
 '  </div>' +
-'  <div class="col-md-9">' +
+'  <div class="col-md-9 col-sm-12 col-xs-12">' +
 '    <h4><b>' + item.Name + '</b></h4>' +
 '    <p>' + item.Description + '</p>' +
 '  </div>' +

@@ -48,13 +48,6 @@
   border-bottom: 4px solid transparent;
 }
 
-@media (max-width: 1023px) {
-  .iz-header .navbar-nav > li > a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
-
 .iz-header .navbar-nav > li > a:hover,
 .iz-header .navbar-nav > li > a:focus {
   text-decoration: none;
@@ -64,11 +57,11 @@
   color: #fff;
 }
 
-@media (max-width: 1023px) {
-  .iz-header .navbar-nav > li.active > a {
+@media (max-width: 767px) {
+  .iz-header .navbar-nav > li > a {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
-    border-bottom: 4px solid #74b3de;
+    border-bottom: 4px solid transparent;
   }
 
   .iz-header .navbar-nav > li.active > a {
