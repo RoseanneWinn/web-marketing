@@ -122,7 +122,7 @@ capabilities.
           <div class="text-center">
             <span class="fsa-form-corner"></span>
           </div>
-         <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" role="form" id="form">
+         <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" role="form" id="landing-form">
           <input type="hidden" name="oid" value="00D70000000Ic28">
           <input type="hidden" name="retURL" value="http://www.izenda.com/bi/ReportListIntro.aspx">
           <input  id="00N70000001oGf6" name="00N70000001oGf6" type="hidden" value="1" />
@@ -163,9 +163,9 @@ capabilities.
                 <input id="fsaIsSoftWare" type="checkbox" />We are a software company
               </label>
             </div>-->
-            <h6 class="hidden center-block text-center" id="loading-text">...Please wait while we process this request...</h6>
+            <h6 class="hidden center-block text-center" id="landing-loading-text">...Please wait while we process this request...</h6>
             <div class="text-center">
-                    <button type="submit" id="submit" class="btn btn-lg fsa-btn-form-submit">Try Free!</button>
+                    <button type="submit" id="landing-submit" class="btn btn-lg fsa-btn-form-submit">Try Free!</button>
               <br/>
               <br/>
               We respect your <a href="http://www.izenda.com/Site/Pages/Privacy.aspx">privacy</a>.
@@ -201,13 +201,40 @@ capabilities.
   <div class="row fsa-footer-top"></div>
     <div class="row fsa-footer">
       <div class="col-md-12 text-center">
-        Home | Privacy Policy | Terms of Use | Contact Us
+              <a href="index.html">Home</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="contacts.html">Contact Us</a>
         <br/><br/>
         Contact Us: Sales - 678-500-9136, Support - 404-906-8710 - 1200 Lake Hearn Drive STE 475 Atlanta, GA 30319
         <br/>
         Copyright 2014 Izenda, LLC
+        <br /><br />
       </div>
-    </div>
+      <ul class="list-unstyled list-inline text-center">
+        <li><a href="#">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+            </span></a>
+          </li>
+          <li><a href="#">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+            </span></a>
+          </li>
+          <li><a href="#">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span></a>
+          </li>
+          <li><a href="#">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-google fa-stack-1x fa-inverse"></i>
+            </span></a>
+          </li>
+       </ul>
+     </div>
    </div>
   </div>
 
@@ -221,18 +248,8 @@ capabilities.
   <script type="text/javascript" src="js/smooth-scroll.js"></script>
   <script type="text/javascript" src="js/header-bs3.js"></script>
   <script type="text/javascript" src="js/vendor/jsrender.min.js"></script>
-  <script type="text/javascript" src="js/template-base.js"></script>
-  <script type="text/javascript" src="js/template.js"></script>
+  <!--<script type="text/javascript" src="js/template-base.js"></script>
+  <script type="text/javascript" src="js/template.js"></script>-->
   <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript">
-  $(document).ready(function() {
-    $('#submit').click(function() {
-      if ($('#form').valid()== true) {
-      $('#submit').addClass("hidden");
-      $('#loading-text').removeClass("hidden");
-      }
-     });
-    });
-   </script>
   </body>
 </html>
