@@ -253,8 +253,9 @@ $(document).ready(function() {
           '</div>');
         $image.children('.portfolio-thumb').click(function (e) {
           e.preventDefault();
+          var $a = $(this);
           var $modal = $('#portfolioModal');
-          $modal.find('.modal-image').attr('src', image.a);
+          $modal.find('.modal-image').attr('src', $a.attr('href'));
           $modal.modal();
         });
         $portfolio.append($image);
@@ -280,8 +281,9 @@ $(document).ready(function() {
         result.push($image);
         $image.children('.portfolio-thumb').click(function(e) {
           e.preventDefault();
+          var $a = $(this);
           var $modal = $('#portfolioModal');
-          $modal.find('.modal-image').attr('src', image.a);
+          $modal.find('.modal-image').attr('src', $a.attr('href'));
           $modal.modal();
         });
         $portfolio.prepend($image);
