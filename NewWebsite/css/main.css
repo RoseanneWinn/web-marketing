@@ -180,6 +180,12 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 24px;
 }
 
+@media (min-width: 1300px) {
+    .big-font {
+      font-size: 38px;
+     }
+}
+
 .big-font {
   font-size: 32px;
 }
@@ -285,7 +291,6 @@ h1, h2, h3, h4, h5, h6, p {
 .description-text {
   width: 400px;
   font-size: 18px;
-  font-style: italic;
 }
 
 .btn {
@@ -404,7 +409,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .description-list:before {
-  content: '\f111';
+  content: '\f096';
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
@@ -1210,6 +1215,8 @@ p.text {
 }
 
 .izenda-feature-main-btn {
+  position: relative;
+  right: 15px;
   margin-top: 80px;
   font-size: 32px;
   font-weight: bold;
@@ -1228,7 +1235,6 @@ p.text {
 
 .izenda-feature-description .izenda-feature-description-text {
   font-size: 18px;
-  font-style: italic;
   font-weight: normal;
   text-align: justify;
 }
