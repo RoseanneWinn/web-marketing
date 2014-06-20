@@ -171,9 +171,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .display-position {
-  position: relative;
-  top: 75px;
-  z-index: 10;
   width: 400px;
   font-size: 20px;
   font-weight: bold;
@@ -286,9 +283,6 @@ h1, h2, h3, h4, h5, h6, p {
 /* button colors & other stuff*/
 
 .description-text {
-  position: relative;
-  top: 80px;
-  z-index: 10;
   width: 400px;
   font-size: 18px;
   font-style: italic;
@@ -1190,4 +1184,45 @@ p.text {
   color: #fff;
   font-size: 72px;
   top: 40%;
+}
+
+/* FEATURES */
+
+.izenda-feature {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+}
+
+.izenda-feature .izenda-feature-description {
+  max-width: 400px;
+}
+
+.izenda-feature-main-btn {
+  margin-top: 80px;
+  font-size: 32px;
+  font-weight: bold;
+  width: 400px;
+}
+
+.izenda-feature-image {
+  margin-top: 80px;
+}
+
+.izenda-feature-description h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.izenda-feature-description .izenda-feature-description-text {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: normal;
+  text-align: justify;
+}
+
+.img-bottom {
+  position: absolute;
+  bottom: 0;
 }
