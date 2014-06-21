@@ -103,6 +103,10 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "Lato", sans-serif;
 }
 
+h1 {
+  font-weight: bold;
+}
+
 /* For sticky footer, wrap page in manipulative*/
 
 .page-wrap {
@@ -125,16 +129,8 @@ h1, h2, h3, h4, h5, h6, p {
 .why-izenda-text {
   position: relative;
   left: 10px;
-}
-
-.slight-move-left {
-  position: relative;
-  right: 5px;
-}
-
-.slight-move-right {
-  position: relative;
-  left: 5px;
+  font-weight: bold; 
+  color: #0061a0;
 }
 
 /* Primary image display for itertive function--not in iteration 1 */
@@ -591,17 +587,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .img-features {
-  margin-left: 34px;
-  width: 80%;
+  width: 50%;
   height: auto;
-}
-
-#pic-fix-me {
-  margin-left: 39px !important;
-}
-
-#pic-fix-me-2 {
-  margin-left: 30px;
 }
 
 .contact-btn {
