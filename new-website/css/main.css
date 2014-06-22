@@ -1004,7 +1004,6 @@ h1 {
   box-sizing: border-box;
   position: relative;
   padding: 20px 0;
-  margin-bottom: 200px;
 }
 
 .wrapper2 {
@@ -1173,11 +1172,6 @@ p.text {
   background-color: transparent;
   text-align: center;
   cursor: pointer;
-}
-
-.main-pic-overlay:hover {
-  background-color: #000000;
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .main-pic-overlay > .glyphicon {

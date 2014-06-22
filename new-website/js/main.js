@@ -34,11 +34,6 @@ $(document).ready(function() {
   $(window).resize(function() {
     populateMainPictureOverlay();
   });
-  
-  $('.main-pic-overlay').hover(function () {
-    $('.main-pic-container').attr('src', '../img/main/computers-hover.jpg') }, function() {
-    $('.main-pic-container').attr('src', '../img/main/computers.jpg')
-    });
 
   $('.main-pic-overlay').click(function() {
     var $embed = $('<embed src="https://www.youtube.com/v/1LlHesMCmYs?autoplay=1" type="application/x-shockwave-flash" />');
