@@ -481,7 +481,7 @@ h1 {
 
 /* Clients speak section for responsive */
 
-#form {
+#footer-form {
   max-width: 100%;
   border: 1px solid #d3d3d3;
   padding: 20px;
@@ -496,14 +496,14 @@ h1 {
   z-index: -1;
 }
 
-#submit {
+#footer-submit, #pricing-submit {
   max-width: 100%;
   background-color: #ed8c01;
   color: white;
   font-weight: bold;
 }
 
-#submit:hover {
+#footer-submit:hover, #pricing-submit:hover {
   opacity: .7;
   background-color: #fcbd02;
 }

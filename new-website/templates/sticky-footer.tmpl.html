@@ -12,9 +12,10 @@
    <div class="row">
     <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
       <br />
-      <form action="#" method="POST" role="form" id="footer-form">
+       <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" role="form" id="footer-form">
             <input type="hidden" name="oid" value="00D70000000Ic28">
             <input type="hidden" name="retURL" value="http://www.izenda.com/bi/ReportListIntro.aspx">
+            <input  id="00N70000001oGf6" name="00N70000001oGf6" type="hidden" value="1" />
             <div class="form-group">
               <label for="first_name">First Name</label>
               <input type="text" class="form-control" id="footer-first-name" name="first_name" placeholder="" required  minlength="2" />
@@ -35,12 +36,13 @@
               <label for="Company Url">Company URL</label>
               <input type="url" class="form-control required" id="footer-company-url" name="company" placeholder="" required />
             </div>
-            <input  id="00N700000034Qxz" maxlength="255" name="00N700000034Qxz" size="20" type="hidden" value="Sticky-Footer"/>
-            <input  id="00N40000001IMeh" maxlength="255" name="00N40000001IMeh" size="20" type="hidden" value="Interest" />
+            <input  id="00N700000034Qxz" maxlength="255" name="00N700000034Qxz" size="20" type="hidden" value="NewLanding"/>
+            <input  id="00N40000001IMeh" maxlength="255" name="00N40000001IMeh" size="20" type="hidden" value="LiveDemo" />
             <h2 class="hidden center-block text-center" id="footer-loading-text">...Please wait while we process this request...</h2>
             <div class="text-center center-block">
               <button type="submit" value="Submit" id="footer-submit" class="btn btn-lg">Submit</button>
-              <br/><br />
+              <br/>
+              <br />
               <p class="center-block">We respect your <a href="privacy.html">privacy</a></p>
             </div>
            </form>

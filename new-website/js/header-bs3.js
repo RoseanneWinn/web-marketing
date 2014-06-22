@@ -174,9 +174,9 @@ function initializeIzendaHeader() {
     $($this.closest('.iz-menu')).addClass('active');
   });
   
-  $('#send').click(function() {
-      if ($('#pricing-form').valid()=== true) {
-      $('#send').addClass("hidden");
+  $('#pricing-submit').click(function() {
+      if ($('#pricing-form').valid() == true) {
+      $('#pricing-submit').addClass("hidden");
       $('#pricing-loading-text').removeClass("hidden");
       }
      });

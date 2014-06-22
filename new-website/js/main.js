@@ -3,21 +3,17 @@ $(document).ready(function() {
   var pageUrl = document.URL;
   console.log(pageUrl);
 
-  $('#insert-header').load('templates/header.tmpl.html');
-  $('.site-footer').load(function () {
-    //////////////////////////////////////////////////////////////////////////////////////////
-    // Back to top animation
-    //////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+// Back to top animation
+//////////////////////////////////////////////////////////////////////////////////////////
     $('.back-to-top > a').click(function (e) {
       e.preventDefault();
       $('html, body').animate({
         scrollTop: 0
       }, 250);
     });
-  });
 
-  ///change main pic image on hover
-    //////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
   // Main picture overlay
   //////////////////////////////////////////////////////////////////////////////////////////
   var populateMainPictureOverlay = function() {
@@ -335,11 +331,8 @@ $(document).ready(function() {
       'src': null
     });
   });
-  
-  $('#footer-submit').click(function () {
-    $('#footer-submit').addClass('hidden');
-    $('#footer-loading-text').removeClass('hidden');
-    /*if ($('#footer-form').valid == true) {
+
+    /*if ($('#footer-form').valid() == true) {
       $('#footer-form').submit(function(e) {
         e.preventDefault();
           var data = {
@@ -366,16 +359,20 @@ $(document).ready(function() {
       }, 'json');
     });
     };*/
-  });
-
-
+    
+    $('#footer-submit').on("click", function() {
+      if ($('#footer-form').valid() === true) {
+        $('#footer-submit').addClass('hidden');
+        $('#footer-loading-text').removeClass('hidden');
+      }
+    });
 //////////////////////////////////////////////////////////////////////////////////////////
   // Landing form
 ////////////////////////////////////////////////////////////////////////////////////////////
-  $('#submit').click(function() {
-      if ($('#landing-form').valid()=== true) {
-      $('#submit').addClass("hidden");
+  $('#landing-submit').click(function() {
+      if ($('#landing-form').valid() === true) {
+      $('#landing-submit').addClass("hidden");
       $('#landing-loading-text').removeClass("hidden");
       }
-     }); 
+    });
 });
