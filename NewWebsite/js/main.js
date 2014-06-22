@@ -340,34 +340,38 @@ $(document).ready(function() {
       'src': null
     });
   });
-
-  $('#footer-form').validate({
-    submitHandler : function(form) {
-      $('#footer-submit').addClass('hidden');
-      $('#footer-loading-text').removeClass('hidden');
-      var data = {
-        'first-name': $('#footer-first-name').val(),
-        'last-name': $('#footer-last-name').val(),
-        'email': $('#footer-email').val(),
-        'phone-number': $('#footer-phone').val(),
-        'company-url': $('#footer-company-url').val(),
-        'web-source': 'FreeTrial & LiveDemo'
-      };
-      var sfData = _.extend({'page-url': pageUrl}, data);
-      $.post('http://izenda-services.herokuapp.com/create-salesforce-lead', sfData, function (sfLeadResponse) {
-        console.log(sfLeadResponse);
-      if (sfLeadResponse["success"] == true) {
-        console.log("About to post to free-trial");
-      $.post('http://izenda-services.herokuapp.com/free-trial', data, function (freeTrialResponse) {
-        console.log(freeTrialResponse);
-          if (freeTrialResponse["success"] == true) {
-            window.location = "http://www.izenda.com/bi/ReportListIntro.aspx";
+  
+  $('#footer-submit').click(function () {
+    $('#footer-submit').addClass('hidden');
+    $('#footer-loading-text').removeClass('hidden');
+    /*if ($('#footer-form').valid == true) {
+      $('#footer-form').submit(function(e) {
+        e.preventDefault();
+          var data = {
+          'first-name': $('#footer-first-name').val(),
+          'last-name': $('#footer-last-name').val(),
+          'email': $('#footer-email').val(),
+          'phone-number': $('#footer-phone').val(),
+          'company-url': $('#footer-company-url').val(),
+          'web-source': 'FreeTrial & LiveDemo'
+          };
+          var sfData = _.extend({'page-url': pageUrl}, data);
+          $.post('http://izenda-services.herokuapp.com/create-salesforce-lead', sfData, function (sfLeadResponse) {
+          console.log(sfLeadResponse);
+          if (sfLeadResponse["success"] == true) {
+            console.log("About to post to free-trial");
+            $.post('http://izenda-services.herokuapp.com/free-trial', data, function (freeTrialResponse) {
+              console.log(freeTrialResponse);
+              if (freeTrialResponse["success"] == true) {
+                window.location = "http://www.izenda.com/bi/ReportListIntro.aspx";
+              }
+            }, 'json');
           }
-        }, 'json');
-      }
-      console.log("something terrible happened");
-    }, 'json');
-  }});
+        console.log("something terrible happened");
+      }, 'json');
+    });
+    };*/
+  });
 
 
 //////////////////////////////////////////////////////////////////////////////////////////

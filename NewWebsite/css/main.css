@@ -571,16 +571,6 @@ h1 {
   height: 240px !important;
 }
 
-#Rick {
-  position: relative;
-  left: 30px;
-}
-
-#Scott {
-  position: relative;
-  right: 30px;
-}
-
 .partner-pics {
   width: 150px;
   height: auto;
@@ -1125,6 +1115,10 @@ p.text {
 
 .contact-item {
   padding-left: 30px;
+}
+.client-text {
+  font-weight: bold; 
+  color: #0160a2;
 }
 
 #clientsListContainer {
