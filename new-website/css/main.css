@@ -380,6 +380,10 @@ h1 {
     position: relative;
     top: 600px;
    }
+
+  .izenda-covers-you {
+    display: none;!important
+  }
 }
 
 /* Specific divisions */
