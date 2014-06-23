@@ -1,22 +1,10 @@
 //Ready the page before firing any js
-$(document).ready(function() {
-  var pageUrl = document.URL;
-  console.log(pageUrl);
+$(document).ready(function () {
 
-//////////////////////////////////////////////////////////////////////////////////////////
-// Back to top animation
-//////////////////////////////////////////////////////////////////////////////////////////
-    $('.back-to-top > a').click(function (e) {
-      e.preventDefault();
-      $('html, body').animate({
-        scrollTop: 0
-      }, 250);
-    });
-
-//////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////////////
   // Main picture overlay
   //////////////////////////////////////////////////////////////////////////////////////////
-  var populateMainPictureOverlay = function() {
+  var populateMainPictureOverlay = function () {
     var $mainPic = $('.main-pic-container > img');
     var $mainPicOverlay = $('.main-pic-overlay');
     if ($mainPic.length == 0 || $mainPicOverlay.length == 0)
@@ -27,11 +15,11 @@ $(document).ready(function() {
     $mainPicOverlay.removeClass('hidden');
   };
   populateMainPictureOverlay();
-  $(window).resize(function() {
+  $(window).resize(function () {
     populateMainPictureOverlay();
   });
 
-  $('.main-pic-overlay').click(function() {
+  $('.main-pic-overlay').click(function () {
     var $embed = $('<embed src="https://www.youtube.com/v/1LlHesMCmYs?autoplay=1" type="application/x-shockwave-flash" />');
     var $o = $(this);
     $o.empty();
@@ -230,7 +218,7 @@ $(document).ready(function() {
     }
   };
 
-  var loadAdditionalFilters = function() {
+  var loadAdditionalFilters = function () {
     if (izendaPortfolio.loadedFilters.indexOf('additional-filter') < 0) {
       var images = izendaPortfolio['additional-filter'];
       izendaPortfolio.loadedFilters.push('additional-filter');
@@ -270,7 +258,7 @@ $(document).ready(function() {
           '</a>' +
           '</div>');
         result.push($image);
-        $image.children('.portfolio-thumb').click(function(e) {
+        $image.children('.portfolio-thumb').click(function (e) {
           e.preventDefault();
           var $a = $(this);
           var $modal = $('#portfolioModal');
@@ -282,7 +270,7 @@ $(document).ready(function() {
       // append additional filters
       var additionals = appendMissingItems(filter);
       if (additionals != null) {
-        $.each(additionals, function(iAdditional, additional) {
+        $.each(additionals, function (iAdditional, additional) {
           result.push(additional);
         });
       }
@@ -332,47 +320,47 @@ $(document).ready(function() {
     });
   });
 
-    /*if ($('#footer-form').valid() == true) {
-      $('#footer-form').submit(function(e) {
-        e.preventDefault();
-          var data = {
-          'first-name': $('#footer-first-name').val(),
-          'last-name': $('#footer-last-name').val(),
-          'email': $('#footer-email').val(),
-          'phone-number': $('#footer-phone').val(),
-          'company-url': $('#footer-company-url').val(),
-          'web-source': 'FreeTrial & LiveDemo'
-          };
-          var sfData = _.extend({'page-url': pageUrl}, data);
-          $.post('http://izenda-services.herokuapp.com/create-salesforce-lead', sfData, function (sfLeadResponse) {
-          console.log(sfLeadResponse);
-          if (sfLeadResponse["success"] == true) {
-            console.log("About to post to free-trial");
-            $.post('http://izenda-services.herokuapp.com/free-trial', data, function (freeTrialResponse) {
-              console.log(freeTrialResponse);
-              if (freeTrialResponse["success"] == true) {
-                window.location = "http://www.izenda.com/bi/ReportListIntro.aspx";
-              }
-            }, 'json');
-          }
-        console.log("something terrible happened");
-      }, 'json');
-    });
-    };*/
-    
-    $('#footer-submit').on("click", function() {
-      if ($('#footer-form').valid() === true) {
-        $('#footer-submit').addClass('hidden');
-        $('#footer-loading-text').removeClass('hidden');
-      }
-    });
-//////////////////////////////////////////////////////////////////////////////////////////
+  /*if ($('#footer-form').valid() == true) {
+    $('#footer-form').submit(function(e) {
+      e.preventDefault();
+        var data = {
+        'first-name': $('#footer-first-name').val(),
+        'last-name': $('#footer-last-name').val(),
+        'email': $('#footer-email').val(),
+        'phone-number': $('#footer-phone').val(),
+        'company-url': $('#footer-company-url').val(),
+        'web-source': 'FreeTrial & LiveDemo'
+        };
+        var sfData = _.extend({'page-url': pageUrl}, data);
+        $.post('http://izenda-services.herokuapp.com/create-salesforce-lead', sfData, function (sfLeadResponse) {
+        console.log(sfLeadResponse);
+        if (sfLeadResponse["success"] == true) {
+          console.log("About to post to free-trial");
+          $.post('http://izenda-services.herokuapp.com/free-trial', data, function (freeTrialResponse) {
+            console.log(freeTrialResponse);
+            if (freeTrialResponse["success"] == true) {
+              window.location = "http://www.izenda.com/bi/ReportListIntro.aspx";
+            }
+          }, 'json');
+        }
+      console.log("something terrible happened");
+    }, 'json');
+  });
+  };*/
+
+  $('#footer-submit').on("click", function () {
+    if ($('#footer-form').valid() === true) {
+      $('#footer-submit').addClass('hidden');
+      $('#footer-loading-text').removeClass('hidden');
+    }
+  });
+  //////////////////////////////////////////////////////////////////////////////////////////
   // Landing form
-////////////////////////////////////////////////////////////////////////////////////////////
-  $('#landing-submit').click(function() {
-      if ($('#landing-form').valid() === true) {
+  ////////////////////////////////////////////////////////////////////////////////////////////
+  $('#landing-submit').click(function () {
+    if ($('#landing-form').valid() === true) {
       $('#landing-submit').addClass("hidden");
       $('#landing-loading-text').removeClass("hidden");
-      }
-    });
+    }
+  });
 });

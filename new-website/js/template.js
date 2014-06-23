@@ -18,6 +18,7 @@
     data: {},
     loaded: function (renderResult) {
       $('body').append(renderResult);
+      initializeIzendaFooter();
     }
   });
 
