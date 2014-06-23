@@ -19,7 +19,7 @@ $(document).ready(function () {
     populateMainPictureOverlay();
   });
 
-  $('.main-pic-overlay').click(function () {
+  $('.main-pic-overlay').on('click.mainpicoverlay', function () {
     var $embed = $('<embed src="https://www.youtube.com/v/1LlHesMCmYs?autoplay=1" type="application/x-shockwave-flash" />');
     var $o = $(this);
     $o.empty();
@@ -27,6 +27,7 @@ $(document).ready(function () {
     $embed.width($o.width());
     $embed.height($o.height());
     $o.append($embed);
+    $o.off('click.mainpicoverlay');
   });
 
   //////////////////////////////////////////////////////////////////////////////////////////
