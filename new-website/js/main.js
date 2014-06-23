@@ -10,7 +10,7 @@ $(document).ready(function () {
     if ($mainPic.length == 0 || $mainPicOverlay.length == 0)
       return;
     $mainPicOverlay.width($mainPic.width() + 40);
-    $mainPicOverlay.height($mainPic.height() + 40);
+    $mainPicOverlay.height($mainPic.height() + 20);
     $mainPicOverlay.css('left', $mainPic.offset().left - 20);
     $mainPicOverlay.removeClass('hidden');
   };
