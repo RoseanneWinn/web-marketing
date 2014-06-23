@@ -406,14 +406,25 @@ h1 {
 
 /* Description text properties */
 
-.description-list {
+/*.description-list {
   padding-left: 15px;
   font-size: 14px;
   font-style: normal;
   line-height: 2em;
+}*/
+
+ul.square {
+  list-style-type: square;
+  color: #74b3de;
 }
 
-.description-list:before {
+ul.square span {
+  color: black;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+}
+
+/*.description-list:before {
   content: '\f096';
   font-family: FontAwesome;
   font-style: normal;
@@ -423,7 +434,7 @@ h1 {
   margin-right: 8px;
   font-size: 22px;
   color: #74b3de;
-  }
+  }*/
 
 /* Specific photo adjustments */
 

@@ -349,12 +349,6 @@ $(document).ready(function () {
   });
   };*/
 
-  $('#footer-submit').on("click", function () {
-    if ($('#footer-form').valid() === true) {
-      $('#footer-submit').addClass('hidden');
-      $('#footer-loading-text').removeClass('hidden');
-    }
-  });
   //////////////////////////////////////////////////////////////////////////////////////////
   // Landing form
   ////////////////////////////////////////////////////////////////////////////////////////////
