@@ -24,12 +24,12 @@ function initializeIzendaHeader() {
 
   // tryit free button
   $('#izTryItFreeButton, #izTryItFreeButton2').click(function () {
-    window.location.href = 'http://www.izenda.com/Site/Pages/LandingPages/Ad-Hoc-Reporting.aspx';
+    window.location.href = '#from-try-it-free';
   });
 
   // contact phone button
   $('#izContactsPhoneButton').click(function () {
-    window.location.href = 'http://www.izenda.com/site/Pages/contactus.aspx';
+    window.location.href = 'contact.html';
   });
 
   // contact email button
