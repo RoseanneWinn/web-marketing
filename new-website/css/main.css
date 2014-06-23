@@ -94,6 +94,10 @@ textarea {
   margin: 0px;
 }
 
+.dropdown {
+  z-index: 10;
+}
+
 html, body {
   height: 100%;
   font-family: "Lato", sans-serif;
