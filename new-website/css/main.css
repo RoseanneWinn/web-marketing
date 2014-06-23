@@ -604,10 +604,6 @@ ul.square span {
   height: auto;
 }
 
-.contact-btn {
-  width: 60px;
-}
-
 .contact-btn:hover {
   opacity: .7;
 }
