@@ -109,6 +109,40 @@ $(document).ready(function () {
     loadedFilters: [],
     'products-filter':
       [{
+      desc: 'Interactive-Search',
+      a: 'img/gallery/additionalImage1.png',
+      img: 'img/gallery/additionalImage1.png'
+    }, {
+      desc: 'Enhanced Charting',
+      a: 'img/gallery/additionalImage2.png',
+      img: 'img/gallery/additionalImage2.png'
+    }, {
+      desc: 'Maps',
+      a: 'img/gallery/additionalImage3.png',
+      img: 'img/gallery/additionalImage3.png'
+    }, {
+      desc: 'Visualizations',
+      a: 'img/gallery/additionalImage4.png',
+      img: 'img/gallery/additionalImage4.png'
+    }, {
+      desc: 'Language Support',
+      a: 'img/gallery/additionalImage5.png',
+      img: 'img/gallery/additionalImage5.png'
+    }, {
+      desc: 'Traditional Forms',
+      a: 'img/gallery/additionalImage6.jpg',
+      img: 'img/gallery/additionalImage6.jpg'
+    }, {
+      desc: 'Customization',
+      a: 'img/gallery/additionalImage7.png',
+      img: 'img/gallery/additionalImage7.png'
+    }, {
+      desc: 'Fusion',
+      a: 'img/gallery/additionalImage8.jpg',
+      img: 'img/gallery/additionalImage8.jpg'
+    }],
+    'visualizations-filter':
+      [{
         desc: 'Line Chart',
         a: 'img/gallery/linechart1-large.gif',
         img: 'img/gallery/linechart1-large.gif'
@@ -116,103 +150,131 @@ $(document).ready(function () {
         desc: 'Combo',
         a: 'img/gallery/combo1-large.gif',
         img: 'img/gallery/combo1-large.gif'
-      }],
-    'visualizations-filter':
-      [{
-        desc: 'Grid',
+      }, {
+        desc: 'Heat-Map',
         a: 'img/gallery/grid1-large.gif',
         img: 'img/gallery/grid1-large.gif'
       }, {
+        desc: 'Combo',
         a: 'img/gallery/combo1-large.gif',
         img: 'img/gallery/combo1-large.gif'
       }, {
+        desc: 'Mind-Map',
         a: 'img/gallery/mindmap1-large.gif',
         img: 'img/gallery/mindmap1-large.gif'
       }, {
+        desc: 'Dashboards',
         a: 'img/gallery/animated-dashboard-full.gif',
         img: 'img/gallery/animated-dashboard-full.gif'
       }, {
+        desc: 'Timeline',
         a: 'img/gallery/timeline1-large.gif',
         img: 'img/gallery/timeline1-large.gif'
       }, {
+        desc: 'Interactive Time Bubble',
         a: 'img/gallery/timebubble1-large.gif',
         img: 'img/gallery/timebubble1-large.gif'
       }],
     'integration-filter':
       [{
+        desc: '1',
         a: 'img/gallery/integ1.jpg',
         img: 'img/gallery/integ1.jpg'
       }, {
+        desc: '2',
         a: 'img/gallery/integ2.jpg',
         img: 'img/gallery/integ2.jpg'
       }, {
+        desc: '3',
         a: 'img/gallery/stilized-full.png',
         img: 'img/gallery/integ3.jpg'
       }, {
+        desc: '4',
         a: 'img/gallery/budget_dash-full.png',
         img: 'img/gallery/integ4.jpg'
       }, {
+        desc: '5',
         a: 'img/gallery/animated-dashboard-full.gif',
         img: 'img/gallery/integ5.jpg'
       }, {
+        desc: '6',
         a: 'img/gallery/Line_large.gif',
         img: 'img/gallery/integ6.jpg'
       }, {
+        desc: '7',
         a: 'img/gallery/custom_chart_style-full.png',
         img: 'img/gallery/integ7.jpg'
       }, {
+        desc: '8',
         a: 'img/gallery/custom_chart_style-full.png',
         img: 'img/gallery/integ8.jpg'
       }, {
+        desc: '9',
         a: 'img/gallery/custom_chart_style-full.png',
         img: 'img/gallery/integ9.jpg'
       }, {
+        desc: '10',
         a: 'img/gallery/custom_chart_style-full.png',
         img: 'img/gallery/integ10.jpg'
       }, {
+        desc: '11',
         a: 'img/gallery/custom_chart_style-full.png',
         img: 'img/gallery/integ11.jpg'
       }, {
+        desc: '12',
         a: 'img/gallery/custom_chart_style-full.png',
         img: 'img/gallery/integ12.jpg'
       }, {
+        desc: 'Port-3',
         a: 'img/gallery/intef3.jpg',
         img: 'img/gallery/integ3.jpg'
       }, {
+        desc: 'Port-4',
         a: 'img/gallery/portfolio-4.png',
         img: 'img/gallery/portfolio-4.png'
       }, {
+        desc: '1',
         a: 'img/gallery/integ1.jpg',
         img: 'img/gallery/integ1.jpg'
       }, {
+        desc: 'Traditional',
         a: 'img/gallery/formshare-full.png',
         img: 'img/gallery/formshare-full.png'
       }, {
+        desc: '17',
         a: 'img/gallery/integ17.jpg',
         img: 'img/gallery/integ17.jpg'
       }],
     'additional-filter': [{
+      desc: 'Interactive-Search',
       a: 'img/gallery/additionalImage1.png',
       img: 'img/gallery/additionalImage1.png'
     }, {
+      desc: 'Enhanced Charting',
       a: 'img/gallery/additionalImage2.png',
       img: 'img/gallery/additionalImage2.png'
     }, {
+      desc: 'Maps',
       a: 'img/gallery/additionalImage3.png',
       img: 'img/gallery/additionalImage3.png'
     }, {
+      desc: 'Visualizations',
       a: 'img/gallery/additionalImage4.png',
       img: 'img/gallery/additionalImage4.png'
     }, {
+      desc: 'Language Support',
       a: 'img/gallery/additionalImage5.png',
       img: 'img/gallery/additionalImage5.png'
     }, {
+      desc: 'Traditional Forms',
       a: 'img/gallery/additionalImage6.jpg',
       img: 'img/gallery/additionalImage6.jpg'
     }, {
+      desc: 'Customization',
       a: 'img/gallery/additionalImage7.png',
       img: 'img/gallery/additionalImage7.png'
     }, {
+      desc: 'Fusion',
       a: 'img/gallery/additionalImage8.jpg',
       img: 'img/gallery/additionalImage8.jpg'
     }]
