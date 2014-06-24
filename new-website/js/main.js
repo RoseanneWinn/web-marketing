@@ -1,3 +1,16 @@
+if (!Array.prototype.indexOf) {
+  Array.prototype.indexOf = function (elt /*, from*/) {
+    var len = this.length >>> 0;
+    var from = Number(arguments[1]) || 0;
+    from = (from < 0) ? Math.ceil(from) : Math.floor(from);
+    if (from < 0) from += len;
+    for (; from < len; from++) {
+      if (from in this && this[from] === elt) return from;
+    }
+    return -1;
+  };
+}
+
 //Ready the page before firing any js
 $(document).ready(function () {
 
@@ -267,7 +280,7 @@ $(document).ready(function () {
   };
 
   var loadAdditionalFilters = function () {
-    if (izendaPortfolio.loadedFilters.indexOf('additional-filter') < 0) {
+    if (izendaPortfolio.loadedFilters.length == 0 || izendaPortfolio.loadedFilters.indexOf('additional-filter') < 0) {
       var images = izendaPortfolio['additional-filter'];
       izendaPortfolio.loadedFilters.push('additional-filter');
       for (var i = 0; i < images.length; i++) {
@@ -294,7 +307,7 @@ $(document).ready(function () {
   var loadImagesForFilter = function (filter) {
     var result = [];
     loadAdditionalFilters();
-    if (filter in izendaPortfolio && izendaPortfolio.loadedFilters.indexOf(filter) < 0) {
+    if (filter in izendaPortfolio && (izendaPortfolio.loadedFilters.length == 0 || izendaPortfolio.loadedFilters.indexOf(filter) < 0)) {
       var images = izendaPortfolio[filter];
       izendaPortfolio.loadedFilters.push(filter);
       for (var i = 0; i < images.length; i++) {

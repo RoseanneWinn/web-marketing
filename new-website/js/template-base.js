@@ -1,4 +1,10 @@
-﻿function SiteTemplateRenderer() {
+﻿if (typeof String.prototype.trim !== 'function') {
+  String.prototype.trim = function() {
+    return this.replace(/^\s+|\s+$/g, '');
+  };
+}
+
+function SiteTemplateRenderer() {
 };
 
 SiteTemplateRenderer.prototype.renderExternalTemplate = function (templateParameters) {
