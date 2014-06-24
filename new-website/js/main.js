@@ -177,71 +177,35 @@ $(document).ready(function () {
       }],
     'integration-filter':
       [{
-        desc: '1',
-        a: 'img/gallery/integ1.jpg',
-        img: 'img/gallery/integ1.jpg'
-      }, {
-        desc: '2',
-        a: 'img/gallery/integ2.jpg',
-        img: 'img/gallery/integ2.jpg'
-      }, {
-        desc: '3',
+        desc: 'User Roles',
         a: 'img/gallery/stilized-full.png',
-        img: 'img/gallery/integ3.jpg'
-      }, {
-        desc: '4',
-        a: 'img/gallery/budget_dash-full.png',
-        img: 'img/gallery/integ4.jpg'
-      }, {
-        desc: '5',
-        a: 'img/gallery/animated-dashboard-full.gif',
-        img: 'img/gallery/integ5.jpg'
-      }, {
-        desc: '6',
-        a: 'img/gallery/Line_large.gif',
-        img: 'img/gallery/integ6.jpg'
-      }, {
-        desc: '7',
-        a: 'img/gallery/custom_chart_style-full.png',
-        img: 'img/gallery/integ7.jpg'
-      }, {
-        desc: '8',
-        a: 'img/gallery/custom_chart_style-full.png',
-        img: 'img/gallery/integ8.jpg'
-      }, {
-        desc: '9',
-        a: 'img/gallery/custom_chart_style-full.png',
-        img: 'img/gallery/integ9.jpg'
-      }, {
-        desc: '10',
-        a: 'img/gallery/custom_chart_style-full.png',
         img: 'img/gallery/integ10.jpg'
       }, {
-        desc: '11',
-        a: 'img/gallery/custom_chart_style-full.png',
+        desc: 'Advantage',
+        a: 'img/gallery/budget_dash-full.png',
         img: 'img/gallery/integ11.jpg'
       }, {
-        desc: '12',
+        desc: 'Consulting Network',
+        a: 'img/gallery/integ5.jpg',
+        img: 'img/gallery/integ5.jpg'
+      }, {
+        desc: 'Custom Visuals',
         a: 'img/gallery/custom_chart_style-full.png',
-        img: 'img/gallery/integ12.jpg'
+        img: 'img/gallery/custom_chart_style-full.png'
       }, {
-        desc: 'Port-3',
-        a: 'img/gallery/intef3.jpg',
-        img: 'img/gallery/integ3.jpg'
-      }, {
-        desc: 'Port-4',
+        desc: 'Custom-Dashboards',
         a: 'img/gallery/portfolio-4.png',
         img: 'img/gallery/portfolio-4.png'
       }, {
-        desc: '1',
-        a: 'img/gallery/integ1.jpg',
-        img: 'img/gallery/integ1.jpg'
+        desc: 'Mahoney',
+        a: 'img/gallery/integ4.jpg',
+        img: 'img/gallery/integ4.jpg'
       }, {
-        desc: 'Traditional',
-        a: 'img/gallery/formshare-full.png',
-        img: 'img/gallery/formshare-full.png'
+        desc: 'Formatting',
+        a: 'img/gallery/integ9.jpg',
+        img: 'img/gallery/integ9.jpg'
       }, {
-        desc: '17',
+        desc: 'Education',
         a: 'img/gallery/integ17.jpg',
         img: 'img/gallery/integ17.jpg'
       }],
