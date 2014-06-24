@@ -308,14 +308,14 @@ $(document).ready(function () {
     var height = $(this).attr('data-height') || 300;
     var width = $(this).attr('data-width') || 400;
 
-    $("#myModal iframe").attr({
+    $("#myModal iframe, #mainModal iframe").attr({
       'src': src,
       'height': height,
       'width': width
     });
   });
 
-  $('#myModal').on('hide.bs.modal', function (e) {
+  $('#myModal, #mainModal').on('hide.bs.modal', function (e) {
     $("#myModal iframe").attr({
       'src': null
     });

@@ -149,7 +149,7 @@ h1 {
 }
 
 .logos {
-  max-width: 100%;
+  max-width: 90%;
   height: 180px;
   background: url('../img/full-spectrum-analitycs/logos.jpg') no-repeat;
   background-size: contain;
@@ -308,6 +308,7 @@ h1 {
   -moz-box-shadow: 0px 5px 20px 1px #c7cee0;
   -webkit-box-shadow: 0px 5px 20px 1px #c7cee0;
   box-shadow: 0px 5px 20px 1px #c7cee0;
+  cursor: default;
 }
 
 #btn-traditional {
@@ -1215,7 +1216,7 @@ p.text {
   font-size: 20px;
   font-weight: bold;
   font-family: "Lato", sans-serif;
-  height: 650px;
+  height: 500px;
   margin-top: -11px;
 }
 
@@ -1233,6 +1234,7 @@ p.text {
 }
 
 .izenda-feature-image {
+  height: 400px;
   margin-top: 80px;
 }
 
