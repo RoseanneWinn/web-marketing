@@ -141,16 +141,16 @@ function initializeIzendaHeader() {
   //
 
   if ($(window).width() <= 1023) {
-    $('.iz-menu > a[tc="KB/Integration"]').text('KB');
+    $('.iz-menu > a[tc="wiki.izenda.us"]').text('WIKI');
   } else {
-    $('.iz-menu > a[tc="KB/Integration"]').text('KNOWLEDGE BASE');
+    $('.iz-menu > a[tc="wiki.izenda.us"]').text('WIKI');
   }
 
   $(window).resize(function () {
     if ($(window).width() <= 1023) {
-      $('.iz-menu > a[tc="KB/Integration"]').text('KB');
+      $('.iz-menu > a[tc="wiki.izenda.us"]').text('WIKI');
     } else {
-      $('.iz-menu > a[tc="KB/Integration"]').text('KNOWLEDGE BASE');
+      $('.iz-menu > a[tc="wiki.izenda.us"]').text('WIKI');
     }
   });
 
