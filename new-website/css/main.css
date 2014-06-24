@@ -185,6 +185,7 @@ h1 {
 }
 
 .logos {
+  width: 1024px;
   max-width: 90%;
   height: 180px;
   background: url('../img/full-spectrum-analitycs/logos.jpg') no-repeat;
@@ -197,6 +198,10 @@ h1 {
 
 .alt-back-color {
   background-color: #f8f8f8;
+}
+
+.alt-back-color2 {
+  background-color: #EBEBEB;
 }
 
 .break-push-down {
@@ -637,8 +642,7 @@ ul.square span {
 }
 
 .img-features {
-  width: 50%;
-  height: auto;
+  margin: 0 auto;
 }
 
 .contact-btn:hover {
@@ -1258,6 +1262,7 @@ p.text {
 
 .izenda-feature .izenda-feature-description {
   max-width: 400px;
+  margin-right: 50px;
 }
 
 .izenda-feature-main-btn {
