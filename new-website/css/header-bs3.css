@@ -156,8 +156,8 @@
 /* Search panel */
 
 .iz-header .iz-search {
-  border-bottom: 4px solid #fff;
-  border-top: 4px solid #fff;
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
 }
 
 #izSearchBtn {
@@ -325,6 +325,7 @@
   height: 36px;
   margin-top: 7px;
   padding: 5px 4px;
+  margin-right: 7px;
 }
 
 .iz-header .navbar-toggle > img {
