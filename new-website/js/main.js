@@ -1,10 +1,28 @@
 //Ready the page before firing any js
 $(document).ready(function () {
 
+//Video resizing for modals
+
+  var $allVideos = $("iframe[src^='http://www.youtube.com']"),
+
+  $fluidWidth = $('.modal-body');
+
+  $allVideos.each(function() {
+    $(this).attr('data-aspectRatio', this.height / this.width).removeAttr('height').removeAttr('width');
+  });
+
+  $(window).resize(function() {
+    var newWidth = $fluidWidth.width();
+    $allVideos.each(function() {
+      var e = $(this);
+      e.width(newWidth).height(newWidth * e.attr('data-aspectRatio'));
+    });
+  }).resize();
+
   //////////////////////////////////////////////////////////////////////////////////////////
   // Main picture overlay
   //////////////////////////////////////////////////////////////////////////////////////////
-  var populateMainPictureOverlay = function () {
+/*  var populateMainPictureOverlay = function () {
     var $mainPic = $('.main-pic-container > img');
     var $mainPicOverlay = $('.main-pic-overlay');
     if ($mainPic.length == 0 || $mainPicOverlay.length == 0)
@@ -29,7 +47,7 @@ $(document).ready(function () {
     $o.append($embed);
     $o.off('click.mainpicoverlay');
   });
-
+*/
   //////////////////////////////////////////////////////////////////////////////////////////
   // Set embed video size
   //////////////////////////////////////////////////////////////////////////////////////////
