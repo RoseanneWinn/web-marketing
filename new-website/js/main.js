@@ -117,30 +117,30 @@ $(document).ready(function () {
       }],
     'visualizations-filter':
       [{
-        a: 'img/gallery/Pareto_large.gif',
+        a: 'img/gallery/grid1-large.gif',
         img: 'img/gallery/grid1-large.gif'
       }, {
-        a: 'img/gallery/portfolio-4.png',
-        img: 'img/gallery/journals1-large.gif'
+        a: 'img/gallery/combo1-large.gif',
+        img: 'img/gallery/combo1-large.gif'
       }, {
-        a: 'img/gallery/Stacked_large.gif',
+        a: 'img/gallery/mindmap1-large.gif',
         img: 'img/gallery/mindmap1-large.gif'
       }, {
-        a: 'img/gallery/formshare-full.png',
-        img: 'img/gallery/spider1-large.gif'
+        a: 'img/gallery/animated-dashboard-full.gif',
+        img: 'img/gallery/animated-dashboard-full.gif'
       }, {
-        a: 'img/gallery/HorizontalBar_large.gif',
+        a: 'img/gallery/timeline1-large.gif',
         img: 'img/gallery/timeline1-large.gif'
       }, {
-        a: 'img/gallery/portfolio-8.png',
+        a: 'img/gallery/timebubble1-large.gif',
         img: 'img/gallery/timebubble1-large.gif'
       }],
     'integration-filter':
       [{
-        a: 'img/gallery/portfolio-10.png',
+        a: 'img/gallery/integ1.jpg',
         img: 'img/gallery/integ1.jpg'
       }, {
-        a: 'img/gallery/BarSeparator_large.gif',
+        a: 'img/gallery/integ2.jpg',
         img: 'img/gallery/integ2.jpg'
       }, {
         a: 'img/gallery/stilized-full.png',
@@ -173,19 +173,19 @@ $(document).ready(function () {
         a: 'img/gallery/custom_chart_style-full.png',
         img: 'img/gallery/integ12.jpg'
       }, {
-        a: 'img/gallery/custom_chart_style-full.png',
-        img: 'img/gallery/integ13.jpg'
+        a: 'img/gallery/intef3.jpg',
+        img: 'img/gallery/integ3.jpg'
       }, {
-        a: 'img/gallery/custom_chart_style-full.png',
-        img: 'img/gallery/integ15.jpg'
+        a: 'img/gallery/portfolio-4.png',
+        img: 'img/gallery/portfolio-4.png'
       }, {
-        a: 'img/gallery/custom_chart_style-full.png',
-        img: 'img/gallery/integ14.jpg'
+        a: 'img/gallery/integ1.jpg',
+        img: 'img/gallery/integ1.jpg'
       }, {
-        a: 'img/gallery/custom_chart_style-full.png',
-        img: 'img/gallery/integ16.jpg'
+        a: 'img/gallery/formshare-full.png',
+        img: 'img/gallery/formshare-full.png'
       }, {
-        a: 'img/gallery/custom_chart_style-full.png',
+        a: 'img/gallery/integ17.jpg',
         img: 'img/gallery/integ17.jpg'
       }],
     'additional-filter': [{
