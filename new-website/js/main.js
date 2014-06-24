@@ -285,11 +285,11 @@ $(document).ready(function () {
   var appendMissingItems = function (filter) {
     $('.block').removeClass('hidden');
     var $items = $('.block.' + filter);
-    if ($items.length > 8) {
+    /*if ($items.length > 8) {
       for (var i = 8; i < $items.length; i++) {
         $($items[i]).addClass('hidden');
       }
-    }
+    }*/
     var result = [];
     var $additionalFilters = $('.block.additional-filter');
     $additionalFilters.addClass('hidden');
