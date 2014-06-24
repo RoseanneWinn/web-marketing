@@ -109,14 +109,17 @@ $(document).ready(function () {
     loadedFilters: [],
     'products-filter':
       [{
+        desc: 'Line Chart',
         a: 'img/gallery/linechart1-large.gif',
         img: 'img/gallery/linechart1-large.gif'
       }, {
+        desc: 'Combo',
         a: 'img/gallery/combo1-large.gif',
         img: 'img/gallery/combo1-large.gif'
       }],
     'visualizations-filter':
       [{
+        desc: 'Grid',
         a: 'img/gallery/grid1-large.gif',
         img: 'img/gallery/grid1-large.gif'
       }, {
@@ -245,7 +248,7 @@ $(document).ready(function () {
         var image = images[i];
         var $image = $(
           '<div class="block additional-filter hidden" data-type="additional-filter">' +
-          '<a class="new portfolio-thumb" href="' + image.a + '" title="portfolio">' +
+          '<a class="new portfolio-thumb" href="' + image.a + '" title="' + image.desc + '">' +
           '<img class="portfolio-image" src="' + image.img + '" alt="Line Chart" />' +
           '</a>' +
           '</div>');
@@ -272,7 +275,7 @@ $(document).ready(function () {
         var image = images[i];
         var $image = $(
           '<div class="block ' + filter + '" data-type="' + filter + '">' +
-          '<a class="new portfolio-thumb" href="' + image.a + '" title="portfolio">' +
+          '<a class="new portfolio-thumb" href="' + image.a + '" title="' + image.desc + '">' +
           '<img class="portfolio-image" src="' + image.img + '" alt="Line Chart" />' +
           '</a>' +
           '</div>');
