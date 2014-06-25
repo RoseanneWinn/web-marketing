@@ -1088,7 +1088,8 @@ ul.square span {
   text-align: center;
 }
 
-.iz-feature-embed-container > embed {
+.iz-feature-embed-container > embed, 
+.iz-feature-embed-container > iframe {
   width: 80%;
   height: 80%;
 }
