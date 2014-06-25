@@ -375,8 +375,8 @@ $(document).ready(function () {
     });
   });
 
-  $('#myModal, #mainModal').on('hide.bs.modal', function (e) {
-    $("#myModal iframe").attr({
+$('#myModal, #mainModal').on('hide.bs.modal', function (e) {
+  $("#myModal iframe, #mainModal iframe").attr({
       'src': null
     });
   });
