@@ -67,7 +67,7 @@
           <h3 class="subheader">Product Information</h3>
           <div class="row gallery-row">
             <div class="col-md-4 col-sm-6">
-              <a href="#" class="gallery-integration text-left" target-video="https://www.youtube.com/v/95RNWfVvTb0">
+              <a href="#" class="gallery-integration text-left" target-video="https://www.youtube.com/embed/95RNWfVvTb0?wmode=transparent">
                 <img class="img-responsive gallery-image" src="img/gallery/izenda-introduction.png"/>
                 <div class="text-left">Product Introduction</div>
               </a>
@@ -79,7 +79,7 @@
               </a>
             </div>
             <div class="col-md-4 col-sm-6">
-              <a href="#" class="gallery-integration text-left" target-video="https://www.youtube.com/v/aqbAZxwDknc">
+              <a href="#" class="gallery-integration text-left" target-video="https://www.youtube.com/embed/aqbAZxwDknc?wmode=transparent">
                 <img class="img-responsive gallery-image" src="img/gallery/izenda-fusion.png"/>
                 <div class="text-left">Izenda Fusion</div>
               </a>
@@ -88,37 +88,37 @@
           <h3 class="subheader">What Customers To Say</h3>
           <div class="row gallery-row">
             <div class="col-md-4 col-sm-6">
-              <a href="#" class="gallery-integration text-left" target-video="https://www.youtube.com/v/1sxzNt7M19w">
+              <a href="#" class="gallery-integration text-left" target-video="https://www.youtube.com/embed/1sxzNt7M19w?wmode=transparent">
                 <img class="img-responsive gallery-image" src="img/gallery/grasp-technologies.png"/>
                 <div class="text-left">Grasp Technologies</div>
               </a>
             </div>
             <div class="col-md-4 col-sm-6">
-              <a href="#" class="gallery-integration text-left" target-video="https://www.youtube.com/v/PMmOZG5LvpI">
+              <a href="#" class="gallery-integration text-left" target-video="https://www.youtube.com/embed/PMmOZG5LvpI?wmode=transparent">
                 <img class="img-responsive gallery-image" src="img/gallery/VCS-online.png"/>
                 <div class="text-left">VCS Online</div>
               </a>
             </div>
             <div class="col-md-4 col-sm-6">
-              <a href="#" class="gallery-integration text-left" target-video="https://www.youtube.com/v/Tae566md_V0">
+              <a href="#" class="gallery-integration text-left" target-video="https://www.youtube.com/embed/Tae566md_V0?wmode=transparent">
                 <img class="img-responsive gallery-image" src="img/gallery/outsource-management.png"/>
                 <div class="text-left">Outsource Management</div>
               </a>
             </div>
             <div class="col-md-4 col-sm-6">
-              <a href="#" class="gallery-integration text-left" target-video="https://www.youtube.com/v/xWkLNszDvhk">
+              <a href="#" class="gallery-integration text-left" target-video="https://www.youtube.com/embed/xWkLNszDvhk?wmode=transparent">
                 <img class="img-responsive gallery-image" src="img/gallery/shop-visible.png"/>
                 <div class="text-left">ShopVisible Success Story</div>
               </a>
             </div>
             <div class="col-md-4 col-sm-6">
-              <a href="#" class="gallery-integration text-left" target-video="https://www.youtube.com/v/BGDRiI_w-PE">
+              <a href="#" class="gallery-integration text-left" target-video="https://www.youtube.com/embed/BGDRiI_w-PE?wmode=transparent">
                 <img class="img-responsive gallery-image" src="img/gallery/people-strategy-2.png"/>
                 <div class="text-left">People Strategy Success Story</div>
               </a>
             </div>
             <div class="col-md-4 col-sm-6">
-              <a href="#" class="gallery-integration text-left" target-video="https://www.youtube.com/v/jQcOjqpw-lI">
+              <a href="#" class="gallery-integration text-left" target-video="https://www.youtube.com/embed/jQcOjqpw-lI?wmode=transparent">
                 <img class="img-responsive gallery-image" src="img/gallery/hiperos.png"/>
                 <div class="text-left">Hiperos Success Story</div>
               </a>
@@ -438,8 +438,10 @@
           }
           var targetVideo = $this.attr('target-video');
           if (targetVideo != null) {
-            $modalBody.append($('<iframe title="YouTube video player" class="youtube-player" type="text/html" ' +
-              'style="width:100%;height:600px;" src="' + targetVideo + '" frameborder="0" allowFullScreen></iframe>'));
+            /*$modalBody.append($('<iframe title="YouTube video player" class="youtube-player" type="text/html" ' +
+              'style="width:100%;height:600px;" src="' + targetVideo + '" frameborder="0" allowFullScreen></iframe>'));*/
+            $modalBody.append($('<iframe title="YouTube video player" style="width:100%;height:600px;"' +
+              'src="' + targetVideo + '" frameborder="0" wmode="Opaque" allowFullScreen></iframe>'));
           }
           var targetVideoSc = $this.attr('target-video-screencast');
           if (targetVideoSc != null) {
