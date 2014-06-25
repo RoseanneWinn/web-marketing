@@ -1253,6 +1253,10 @@ p.text {
 
 /* FEATURES */
 
+.feature-hub {
+  margin-top: -8px;
+}
+
 .izenda-feature {
   font-size: 20px;
   font-weight: bold;
@@ -1262,7 +1266,7 @@ p.text {
 }
 
 .izenda-feature .izenda-feature-description {
-  max-width: 400px;
+  width: 400px;
   margin-right: 50px;
 }
 
@@ -1278,6 +1282,29 @@ p.text {
 .izenda-feature-image {
   height: 400px;
   margin-top: 80px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .feature-image-right {
+    position: relative;
+    top: 50px;
+    left: 50px;
+  }
+
+  .feature-image-left {
+    position: relative;
+    top: 40px;
+  }
+
+  #global1024 {
+    position: relative;
+    top: 130px;
+  }
+
+  #interactive1024 {
+    position: relative;
+    top: 40px;
+  }
 }
 
 .izenda-feature-description h3 {
