@@ -1,4 +1,4 @@
- style="margin-bottom: -200px;"/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+ /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -1266,7 +1266,7 @@ p.text {
 }
 
 .izenda-feature .izenda-feature-description {
-  width: 400px;
+  min-width: 350px;
   margin-right: 50px;
 }
 
@@ -1276,7 +1276,7 @@ p.text {
   margin-top: 80px;
   font-size: 32px;
   font-weight: bold;
-  width: 400px;
+  min-width: 350px;
 }
 
 .izenda-feature-image {
@@ -1288,7 +1288,7 @@ p.text {
   .feature-image-right {
     position: relative;
     top: 50px;
-    left: 50px;
+    /*left: 50px;*/
   }
 
   .feature-image-left {
@@ -1324,4 +1324,8 @@ p.text {
 
 .videoModal {
   cursor: pointer;
+}
+
+.videoModalImage {
+  margin: 0 auto;
 }
