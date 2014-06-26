@@ -239,37 +239,21 @@ $(document).ready(function () {
         img: 'img/gallery/integ17.jpg'
       }],
     'additional-filter': [{
-      desc: 'Interactive-Search',
-      a: 'img/gallery/additionalImage1.png',
-      img: 'img/gallery/additionalImage1.png'
+      desc: 'Customize',
+      a: 'img/maps/map1.jpg',
+      img: 'img/maps/map1.jpg'
     }, {
-      desc: 'Enhanced Charting',
-      a: 'img/gallery/additionalImage2.png',
-      img: 'img/gallery/additionalImage2.png'
+      desc: 'Visual',
+      a: 'img/maps/map3.jpg',
+      img: 'img/maps/map3.jpg'
     }, {
       desc: 'Maps',
       a: 'img/gallery/additionalImage3.png',
       img: 'img/gallery/additionalImage3.png'
     }, {
-      desc: 'Visualizations',
-      a: 'img/gallery/additionalImage4.png',
-      img: 'img/gallery/additionalImage4.png'
-    }, {
-      desc: 'Language Support',
-      a: 'img/gallery/additionalImage5.png',
-      img: 'img/gallery/additionalImage5.png'
-    }, {
-      desc: 'Traditional Forms',
-      a: 'img/gallery/additionalImage6.jpg',
-      img: 'img/gallery/additionalImage6.jpg'
-    }, {
-      desc: 'Customization',
-      a: 'img/gallery/additionalImage7.png',
-      img: 'img/gallery/additionalImage7.png'
-    }, {
-      desc: 'Fusion',
-      a: 'img/gallery/additionalImage8.jpg',
-      img: 'img/gallery/additionalImage8.jpg'
+      desc: 'With Dashboards',
+      a: 'img/gallery/portfolio-9.png',
+      img: 'img/gallery/portfolio-9.png'
     }]
   };
   var $portfolio = $('#portfolio-list');
@@ -287,7 +271,7 @@ $(document).ready(function () {
     var $additionalFilters = $('.block.additional-filter');
     $additionalFilters.addClass('hidden');
     if ($items.length < 8) {
-      for (var i = $items.length; i <= 8; i++) {
+      for (var i = $items.length; i <= 3; i++) {
         var $additionalFilter = $($additionalFilters[i]);
         $additionalFilter.removeClass('hidden');
         result.push($additionalFilter);
