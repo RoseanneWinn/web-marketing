@@ -287,9 +287,11 @@ $(document).ready(function () {
         var image = images[i];
         var $image = $(
           '<div class="block additional-filter hidden" data-type="additional-filter">' +
+          '<div class="portfolio-image-wrapper">' +
           '<a class="new portfolio-thumb" href="' + image.a + '" title="' + image.desc + '">' +
           '<img class="portfolio-image" src="' + image.img + '" alt="Line Chart" />' +
           '</a>' +
+          '</div>' +
           '</div>');
         $image.children('.portfolio-thumb').click(function (e) {
           e.preventDefault();
@@ -314,9 +316,11 @@ $(document).ready(function () {
         var image = images[i];
         var $image = $(
           '<div class="block ' + filter + '" data-type="' + filter + '">' +
+          '<div class="portfolio-image-wrapper">' +
           '<a class="new portfolio-thumb" href="' + image.a + '" title="' + image.desc + '">' +
           '<img class="portfolio-image" src="' + image.img + '" alt="Line Chart" />' +
           '</a>' +
+          '</div>' +
           '</div>');
         result.push($image);
         $image.children('.portfolio-thumb').click(function (e) {

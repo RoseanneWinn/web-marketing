@@ -532,12 +532,17 @@ ul.square span {
     box-shadow: none;
   }
 
-.portfolio-image {
+.portfolio-image-wrapper {
   width: 95%;
   height: 90%;
-  margin-bottom: 30px;
-  border: 1px solid #ddd;
-  margin: 10px;
+  outline: 1px solid #ddd;
+  margin: 5px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.portfolio-image {
+  width: 100%;
 }
 
 /* Clients speak section for responsive */
