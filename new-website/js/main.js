@@ -14,19 +14,19 @@ if (!Array.prototype.indexOf) {
 //Ready the page before firing any js
 $(document).ready(function () {
 
-//Video resizing for modals
+  //Video resizing for modals
 
   var $allVideos = $("iframe[src^='http://www.youtube.com']"),
 
   $fluidWidth = $('.modal-body');
 
-  $allVideos.each(function() {
+  $allVideos.each(function () {
     $(this).attr('data-aspectRatio', this.height / this.width).removeAttr('height').removeAttr('width');
   });
 
-  $(window).resize(function() {
+  $(window).resize(function () {
     var newWidth = $fluidWidth.width();
-    $allVideos.each(function() {
+    $allVideos.each(function () {
       var e = $(this);
       e.width(newWidth).height(newWidth * e.attr('data-aspectRatio'));
     });
@@ -35,32 +35,32 @@ $(document).ready(function () {
   //////////////////////////////////////////////////////////////////////////////////////////
   // Main picture overlay
   //////////////////////////////////////////////////////////////////////////////////////////
-/*  var populateMainPictureOverlay = function () {
-    var $mainPic = $('.main-pic-container > img');
-    var $mainPicOverlay = $('.main-pic-overlay');
-    if ($mainPic.length == 0 || $mainPicOverlay.length == 0)
-      return;
-    $mainPicOverlay.width($mainPic.width() + 40);
-    $mainPicOverlay.height($mainPic.height() + 20);
-    $mainPicOverlay.css('left', $mainPic.offset().left - 20);
-    $mainPicOverlay.removeClass('hidden');
-  };
-  populateMainPictureOverlay();
-  $(window).resize(function () {
+  /*  var populateMainPictureOverlay = function () {
+      var $mainPic = $('.main-pic-container > img');
+      var $mainPicOverlay = $('.main-pic-overlay');
+      if ($mainPic.length == 0 || $mainPicOverlay.length == 0)
+        return;
+      $mainPicOverlay.width($mainPic.width() + 40);
+      $mainPicOverlay.height($mainPic.height() + 20);
+      $mainPicOverlay.css('left', $mainPic.offset().left - 20);
+      $mainPicOverlay.removeClass('hidden');
+    };
     populateMainPictureOverlay();
-  });
-
-  $('.main-pic-overlay').on('click.mainpicoverlay', function () {
-    var $embed = $('<embed src="https://www.youtube.com/v/1LlHesMCmYs?autoplay=1" type="application/x-shockwave-flash" />');
-    var $o = $(this);
-    $o.empty();
-    $o.css('background-color', 'transparent');
-    $embed.width($o.width());
-    $embed.height($o.height());
-    $o.append($embed);
-    $o.off('click.mainpicoverlay');
-  });
-*/
+    $(window).resize(function () {
+      populateMainPictureOverlay();
+    });
+  
+    $('.main-pic-overlay').on('click.mainpicoverlay', function () {
+      var $embed = $('<embed src="https://www.youtube.com/v/1LlHesMCmYs?autoplay=1" type="application/x-shockwave-flash" />');
+      var $o = $(this);
+      $o.empty();
+      $o.css('background-color', 'transparent');
+      $embed.width($o.width());
+      $embed.height($o.height());
+      $o.append($embed);
+      $o.off('click.mainpicoverlay');
+    });
+  */
   //////////////////////////////////////////////////////////////////////////////////////////
   // Set embed video size
   //////////////////////////////////////////////////////////////////////////////////////////
@@ -122,38 +122,38 @@ $(document).ready(function () {
     loadedFilters: [],
     'products-filter':
       [{
-      desc: 'Interactive-Search',
-      a: 'img/gallery/additionalImage1.png',
-      img: 'img/gallery/additionalImage1.png'
-    }, {
-      desc: 'Enhanced Charting',
-      a: 'img/gallery/additionalImage2.png',
-      img: 'img/gallery/additionalImage2.png'
-    }, {
-      desc: 'Maps',
-      a: 'img/gallery/additionalImage3.png',
-      img: 'img/gallery/additionalImage3.png'
-    }, {
-      desc: 'Visualizations',
-      a: 'img/gallery/additionalImage4.png',
-      img: 'img/gallery/additionalImage4.png'
-    }, {
-      desc: 'Language Support',
-      a: 'img/gallery/additionalImage5.png',
-      img: 'img/gallery/additionalImage5.png'
-    }, {
-      desc: 'Traditional Forms',
-      a: 'img/gallery/additionalImage6.jpg',
-      img: 'img/gallery/additionalImage6.jpg'
-    }, {
-      desc: 'Customization',
-      a: 'img/gallery/additionalImage7.png',
-      img: 'img/gallery/additionalImage7.png'
-    }, {
-      desc: 'Fusion',
-      a: 'img/gallery/additionalImage8.jpg',
-      img: 'img/gallery/additionalImage8.jpg'
-    }],
+        desc: 'Interactive-Search',
+        a: 'img/gallery/additionalImage1.png',
+        img: 'img/gallery/additionalImage1.png'
+      }, {
+        desc: 'Enhanced Charting',
+        a: 'img/gallery/additionalImage2.png',
+        img: 'img/gallery/additionalImage2.png'
+      }, {
+        desc: 'Maps',
+        a: 'img/gallery/additionalImage3.png',
+        img: 'img/gallery/additionalImage3.png'
+      }, {
+        desc: 'Visualizations',
+        a: 'img/gallery/additionalImage4.png',
+        img: 'img/gallery/additionalImage4.png'
+      }, {
+        desc: 'Language Support',
+        a: 'img/gallery/additionalImage5.png',
+        img: 'img/gallery/additionalImage5.png'
+      }, {
+        desc: 'Traditional Forms',
+        a: 'img/gallery/additionalImage6.jpg',
+        img: 'img/gallery/additionalImage6.jpg'
+      }, {
+        desc: 'Customization',
+        a: 'img/gallery/additionalImage7.png',
+        img: 'img/gallery/additionalImage7.png'
+      }, {
+        desc: 'Fusion',
+        a: 'img/gallery/additionalImage8.jpg',
+        img: 'img/gallery/additionalImage8.jpg'
+      }],
     'visualizations-filter':
       [{
         desc: 'Line Chart',
@@ -368,15 +368,16 @@ $(document).ready(function () {
     var height = $(this).attr('data-height') || 300;
     var width = $(this).attr('data-width') || 400;
 
-    $("#myModal iframe, #mainModal iframe").attr({
+    $("#mainModal iframe").attr({
       'src': src,
       'height': height,
       'width': width
     });
+    $("#mainModal").modal();
   });
 
-$('#myModal, #mainModal').on('hide.bs.modal', function (e) {
-  $("#myModal iframe, #mainModal iframe").attr({
+  $('#mainModal').on('hide.bs.modal', function (e) {
+    $("#mainModal iframe").attr({
       'src': null
     });
   });
