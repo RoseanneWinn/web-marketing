@@ -157,7 +157,7 @@ $(document).ready(function () {
     'visualizations-filter':
       [{
         desc: 'Bar Separators',
-        a: 'img/gallery/BarSeparator_large.gif',
+        a: 'img/gallery/BarSeparator_preview.png',
         img: 'img/gallery/BarSeparator_large.gif'
       }, {
         desc: 'Horizontal Bars',
