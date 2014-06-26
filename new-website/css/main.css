@@ -539,6 +539,7 @@ ul.square span {
   margin: 5px;
   vertical-align: middle;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .portfolio-image {
