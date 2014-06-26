@@ -156,6 +156,42 @@ $(document).ready(function () {
       }],
     'visualizations-filter':
       [{
+        desc: 'Bar Separators',
+        a: 'img/gallery/BarSeparator_large.gif',
+        img: 'img/gallery/BarSeparator_large.gif'
+      }, {
+        desc: 'Horizontal Bars',
+        a: 'img/gallery/HorizontalBar_large.gif',
+        img: 'img/gallery/HorizontalBar_large.gif'
+      }, {
+        desc: 'Line',
+        a: 'img/gallery/line_large.gif',
+        img: 'img/gallery/line_large.gif'
+      }, {
+        desc: 'Maps',
+        a: 'img/gallery/Map_large.gif',
+        img: 'img/gallery/Map_large.gif'
+      }, {
+        desc: 'Pareto',
+        a: 'img/gallery/Pareto_large.gif',
+        img: 'img/gallery/Pareto_large.gif'
+      }, {
+        desc: 'Pie',
+        a: 'img/gallery/Pie_large.gif',
+        img: 'img/gallery/Pie_large.gif'
+      }, {
+        desc: 'Stacked',
+        a: 'img/gallery/Stacked_large.gif',
+        img: 'img/gallery/Stacked_large.gif'
+      }, {
+        desc: 'Spider',
+        a: 'img/gallery/spider1_large.gif',
+        img: 'img/gallery/spider1_large.gif'
+      }, {
+        desc: 'Journals',
+        a: 'img/gallery/journals1_large.gif',
+        img: 'img/gallery/journals1_large.gif'
+      }, {
         desc: 'Line Chart',
         a: 'img/gallery/linechart1-large.gif',
         img: 'img/gallery/linechart1-large.gif'
@@ -167,10 +203,6 @@ $(document).ready(function () {
         desc: 'Heat-Map',
         a: 'img/gallery/grid1-large.gif',
         img: 'img/gallery/grid1-large.gif'
-      }, {
-        desc: 'Combo',
-        a: 'img/gallery/combo1-large.gif',
-        img: 'img/gallery/combo1-large.gif'
       }, {
         desc: 'Mind-Map',
         a: 'img/gallery/mindmap1-large.gif',
