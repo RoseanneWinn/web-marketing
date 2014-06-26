@@ -14,6 +14,9 @@ if (!Array.prototype.indexOf) {
 //Ready the page before firing any js
 $(document).ready(function () {
 
+  initializeIzendaHeader();
+  initializeIzendaFooter();
+
   //Video resizing for modals
 
   var $allVideos = $("iframe[src^='http://www.youtube.com']"),
