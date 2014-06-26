@@ -165,8 +165,8 @@ $(document).ready(function () {
         img: 'img/gallery/HorizontalBar_large.gif'
       }, {
         desc: 'Line',
-        a: 'img/gallery/line_large.gif',
-        img: 'img/gallery/line_large.gif'
+        a: 'img/gallery/Line_large.gif',
+        img: 'img/gallery/Line_large.gif'
       }, {
         desc: 'Maps',
         a: 'img/gallery/Map_large.gif',
@@ -185,12 +185,12 @@ $(document).ready(function () {
         img: 'img/gallery/Stacked_large.gif'
       }, {
         desc: 'Spider',
-        a: 'img/gallery/spider1_large.gif',
-        img: 'img/gallery/spider1_large.gif'
+        a: 'img/gallery/spider1-large.gif',
+        img: 'img/gallery/spider1-large.gif'
       }, {
         desc: 'Journals',
-        a: 'img/gallery/journals1_large.gif',
-        img: 'img/gallery/journals1_large.gif'
+        a: 'img/gallery/journals1-large.gif',
+        img: 'img/gallery/journals1-large.gif'
       }, {
         desc: 'Line Chart',
         a: 'img/gallery/linechart1-large.gif',
