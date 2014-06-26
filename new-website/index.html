@@ -24,7 +24,7 @@
         m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-75560-1', 'www.izenda.com');
-    ga(‘set’, ‘&uid’, {{'UA-75560'}}); // Set the user ID using signed-in user_id.
+    ga(‘set’, ‘&uid’, {{'UA-75560-1'}}); // Set the user ID using signed-in user_id.
     ga('require', 'linkid', 'linkid.js');
     ga('send', 'pageview');
   </script>
@@ -37,8 +37,144 @@
   <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  
-    <!--<div id="#insert-header"></div>-->
+  <header class="iz-header">
+    <nav class="navbar navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle pull-left iz-toggle-nav" data-toggle="collapse" data-target="#izNavBar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <button id="izSearchBtnMobile" type="button" class="navbar-toggle pull-right">
+          <strong class="glyphicon glyphicon-search"></strong>
+        </button>
+        <button id="izTryItFreeButton" type="button" class="navbar-toggle iz-try-it-free">TRY IT FREE</button>
+        <button id="izContactsChatButton" type="button" class="navbar-toggle iz-contact-button">
+          <img src="img/header/ChatBox30.png" id="Img9" alt="chat" />
+        </button>
+        <button id="izContactsEmailButton" type="button" class="navbar-toggle iz-contact-button">
+          <img src="img/header/Email30.png" id="Img8" alt="email" />
+        </button>
+        <button id="izContactsPhoneButton" type="button" class="navbar-toggle iz-contact-button">
+          <img src="img/header/Phone30.png" id="Img7" alt="phone" />
+        </button>
+        <input id="izNavBarSearchMobile" class="form-control hidden pull-right" type="search" name="search" value="" placeholder="Search" />
+        <span class="iz-navbar-logo" title="Izenda Reports" onclick="location.href='index.html';" style="cursor: pointer;"></span>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div id="izNavBar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-default">
+          <li class="dropdown iz-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" tc="reports">PRODUCTS <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="reports.html">IZENDA REPORTS</a></li>
+              <li><a href="reports-mvc.html">IZENDA REPORTS FOR MVC</a></li>
+              <li><a href="dashboards.html">IZENDA DASHBOARDS</a></li>
+              <li><a href="maps.html">IZENDA MAPS</a></li>
+              <li><a href="language-pack.html">IZENDA LANGUAGE PACK</a></li>
+              <li><a href="fusion.html">IZENDA FUSION</a></li>
+              <li><a href="forms.html">IZENDA FORMS</a></li>
+              <li><a href="vision.html">IZENDA VISION</a></li>
+            </ul>
+          </li>
+          <li class="iz-menu">
+            <a href="#" class="modalbox" href="#inline" tc="#pricing" data-toggle="modal" data-target="#izendaPricingDialog">PRICING</a>
+          </li>
+          <li class="iz-menu">
+            <a class="dropdown-toggle" data-toggle="dropdown" tc="company">COMPANY <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="management-team.html">MANAGEMENT TEAM</a></li>
+              <li><a href="clients.html">OUR CUSTOMERS</a></li>
+              <li><a href="careers.html">CAREERS</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </li>
+          <li class="iz-menu"><a href="gallery.html" tc="gallery.html">GALLERY</a></li>
+          <li class="iz-menu"><a href="http://wiki.izenda.us" tc="wiki.izenda.us">WIKI</a></li>
+          <li class="iz-menu"><a href="http://blog.izenda.com/" tc="blog.izenda.com">BLOG</a></li>
+        </ul>
+        <ul id="izNavBarSearch" class="nav navbar-nav navbar-right iz-search hidden">
+          <li>
+            <strong id="izSearchIcon" class="icon-search"></strong>
+            <input id="izSearchInput" class="form-control" type="search" name="search" value="" placeholder="Search" />
+          </li>
+        </ul>
+        <ul id="izNavBarSearchBtn" class="nav navbar-nav navbar-right iz-search-btn">
+          <li>
+            <a id="izSearchBtn" href="#" title="Search"><strong class="glyphicon glyphicon-search"></strong></a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right iz-free-trial">
+          <li><a id="izFreeTrialButton" class="btn btn-warning" href="#from-try-it-free">TRY IT FREE</a></li>
+        </ul>
+        <div class="iz-header-button-list-main">
+          <a href="contact.html">
+            <img src="img/header/Phone30.png" id="Img4" alt="phone" /></a>
+          <a href="mailto:sales@izenda.com"><img src="img/header/Email30.png" id="Img5" alt="email" /></a>
+          <a href="#" onclick="SnapEngage.startLink();"><img src="img/header/ChatBox30.png" id="Img6" alt="chat" /></a>
+        </div>
+      <!-- /.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Pricing dialog -->
+    <div class="modal fade" id="izendaPricingDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header center-block text-center">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel"><b>You will be contacted within 24 hours by an Izenda sales representative to provide a quote for you.</b></h4>
+            <h4> Feel free to contact us before then at 1-888-493-6321 or <a href="mailto:sales@izenda.com">sales@izenda.com</a>. Thank you!</h4>
+          </div>
+          <div class="modal-body">
+          <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" role="form" id="pricing-form">
+            <input type="hidden" name="oid" value="00D70000000Ic28">
+            <input type="hidden" name="retURL" value="http://izenda.com/thank-you.html">
+            <input  id="00N70000001oGf6" name="00N70000001oGf6" type="hidden" value="1" />
+            <div class="form-group">
+              <label for="first_name">First Name</label>
+              <input type="text" class="form-control" id="pricing-first-name" name="first_name" placeholder="" required  minlength="2" />
+            </div>
+            <div class="form-group">
+              <label for="last_name">Last Name</label>
+              <input type="text" class="form-control" id="pricing-last-name" name="last_name" placeholder="" required minlength="4" />
+            </div>
+            <div class="form-group">
+              <label for="Email">Email</label>
+              <input type="email" class="form-control required" id="pricing-email" name="email" placeholder="" required />
+            </div>
+            <div class="form-group">
+              <label for="Phone">Phone</label>
+              <input type="text" class="form-control required" id="pricing-phone" name="phone" placeholder="xxx-xxx-xxxx or xxxxxxxxxx" required minlength="10" maxlength="30" />
+            </div>
+            <div class="form-group">
+              <label for="Company Url">Company URL</label>
+              <input type="url" class="form-control required" id="pricing-company-url" name="company" placeholder="http://www.example.com" required />
+            </div>
+            <input  id="00N700000034Qxz" maxlength="255" name="00N700000034Qxz" size="20" type="hidden" value="Keyword"/>
+            <input  id="00N40000001IMeh" maxlength="255" name="00N40000001IMeh" size="20" type="hidden" value="Pricing" />
+            <h2 class="hidden center-block text-center" id="pricing-loading-text">...Please wait while we process this request...</h2>
+            <div class="text-center center-block">
+              <button type="submit" value="Submit" id="pricing-submit" class="btn btn-lg">Submit</button>
+              <br/>
+              <br />
+              <p class="center-block">We respect your <a href="privacy.html">privacy</a></p>
+            </div>
+           </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <button id="izTryItFreeButton2" type="button" class="navbar-toggle iz-try-it-free">TRY IT FREE</button>
+      </div>
+     </div>
+     </div>
+    </header>
     <div class="container-fluid">
       <br />
       <br />
@@ -558,7 +694,6 @@
           </div>
         </div>
       </div>
-      
       <div class="container clients-speak hidden-xs">
         <div class="row">
           <div class="col-sm-4">
@@ -606,25 +741,120 @@
         </div>
       </div>
     </div>
-    
-  <div class="hidden">
-    <a href="reports.html">IZENDA REPORTS</a>
-    <a href="reports-mvc.html">IZENDA REPORTS FOR MVC</a>
-    <a href="dashboards.html">IZENDA DASHBOARDS</a>
-    <a href="maps.html">IZENDA MAPS</a>
-    <a href="language-pack.html">IZENDA LANGUAGE PACK</a>
-    <a href="fusion.html">IZENDA FUSION</a>
-    <a href="forms.html">IZENDA FORMS</a>
-    <a href="vision.html">IZENDA VISION</a>
-    <a href="about.html">ABOUT</a>
-    <a href="management-team.html">MANAGEMENT TEAM</a>
-    <a href="clients.html">OUR CUSTOMERS</a>
-    <a href="careers.html">CAREERS</a>
-    <a href="contact.html">CONTACT</a>
-    <a href="gallery.html" tc="gallery.html">GALLERY</a>
-    <a href="http://wiki.izenda.us" tc="wiki.izenda.us">WIKI</a>
-    <a href="http://blog.izenda.com/" tc="blog.izenda.com">BLOG</a>
+    <div class="container-fluid">
+   <div class="row text-center" style="background-color: #c5e0f1">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <h2 style="font-weight: bold;">See For Yourself</h2>
+      <h3 style="font-weight: bold; color: #2776ad;">Get started with Izenda today!</h3>
+      <br />
+    </div>
   </div>
+  <br />
+  <a id="from-try-it-free"></a>
+  <div class="container">
+   <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+      <br />
+       <form id="footer-form" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" role="form">
+            <input type="hidden" name="oid" value="00D70000000Ic28">
+            <input type="hidden" name="retURL" value="http://www.izenda.com/bi/ReportListIntro.aspx">
+            <input  id="00N70000001oGf6" name="00N70000001oGf6" type="hidden" value="1" />
+            <div class="form-group">
+              <label for="first_name">First Name</label>
+              <input type="text" class="form-control required" id="footer-first-name" name="first_name" placeholder="" required  minlength="2" />
+            </div>
+            <div class="form-group">
+              <label for="last_name">Last Name</label>
+              <input type="text" class="form-control required" id="footer-last-name" name="last_name" placeholder="" required minlength="4" />
+            </div>
+            <div class="form-group">
+              <label for="Email">Email</label>
+              <input type="email" class="form-control required" id="footer-email" name="email" placeholder="" required />
+            </div>
+            <div class="form-group">
+              <label for="Phone">Phone</label>
+              <input type="text" class="form-control required" id="footer-phone" name="phone" placeholder="xxx-xxx-xxxx or xxxxxxxxxx" required minlength="10" maxlength="30" />
+            </div>
+            <div class="form-group">
+              <label for="Company Url">Company URL</label>
+              <input type="url" class="form-control required" id="footer-company-url" name="company" placeholder="http://www.example.com" required />
+            </div>
+            <input  id="00N700000034Qxz" maxlength="255" name="00N700000034Qxz" size="20" type="hidden" value="Keyword"/>
+            <input  id="00N40000001IMeh" maxlength="255" name="00N40000001IMeh" size="20" type="hidden" value="Footer" />
+            <h2 class="hidden center-block text-center" id="footer-loading-text">...Please wait while we process this request...</h2>
+            <div class="text-center center-block">
+              <button type="submit" value="Submit" id="footer-submit" class="btn btn-lg">Submit</button>
+              <br/>
+              <br />
+              <p class="center-block">We respect your <a href="privacy.html">privacy</a></p>
+            </div>
+           </form>
+          </div>
+        </div>
+      </div>
+  <br />
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 top-background text-center change-top-background-margin">
+      <br />
+      <ul class="list-unstyled list-inline" id="footer-nav-list">
+        <li>
+          <a href="index.html">Home</a>  |
+        </li>
+        <li>
+          <a href="reports.html">Products</a>  |
+        </li>
+        <li>
+          <a href="gallery.html">Gallery</a>  |
+        </li>
+        <li>
+          <a href="about.html">Company</a>  |
+        </li>
+        <li>
+          <a href="http://wiki.izenda.us/Home">Wiki</a> |
+        </li>
+        <li>
+          <a href="http://blog.izenda.com">Blog</a>  |
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>  |
+        </li>
+      </ul>
+      <br />
+      <h5 class="media-the-footer" style="font-family: "Lato",sans-serif;">Sales: 678-500-9136, Support: 404-906-8710 - 1200 Lake Hearn Dr. STE 475 Atlanta, GA 30319</h5>
+      <br />
+      <h5 class="media-the-footer-2" style="font-family: "Lato",sans-serif;">Copyright 2014, IZENDA, LLC. All Rights Reserved</h5>
+      <br />
+      <ul class="list-unstyled list-inline social-listing">
+        <li>
+          <a class="new-window" id="linkedIn" href="https://www.linkedin.com/company/izenda">
+            <img src="img/footer/linkedin.png"/>
+          </a>
+        </li>
+        <li>
+          <a class="new-window" id="facebook" href="https://www.facebook.com/pages/Izenda/168642269874461">
+            <img src="img/footer/facebook.png"/></a>
+        </li>
+        <li>
+          <a class="new-window" id="twitter" href="https://twitter.com/Izenda">
+            <img src="img/footer/twitter.png" />
+          </a>
+        </li>
+        <li>
+          <a class="new-window" id="googleplus" href="https://plus.google.com/104341053395991821202/posts">
+            <img src="img/footer/google-plus.png" />
+          </a>
+        </li>
+      </ul>
+      <br />
+      <p>For more information, please visit our <a href="http://wiki.izenda.us"><span style="color: #ffa500;"> wiki </span></a> &amp; <a class="new-window" href="http://www.izenda.com/site/KB/Integration/94"><span style="color: #ffa500;"> Knowledge Base </span></a>.</p>
+      <p style="font-size: small">All logos, copyrights and registered trademarks are property of their respective owners.</p>
+      <div class="back-to-top hidden-sm hidden-xs">
+        <a id="backToTopBtn" class="glyphicon glyphicon-chevron-up" title="Back to top" href="#"></a>
+      </div>
+     </div>
+    </div>
+  </div>
+  
   <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
@@ -638,8 +868,8 @@
   <script src="js/vendor/jsrender.min.js"></script>
   <script src="js/vendor/isotope.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/template-base.js"></script>
-  <script src="js/template.js"></script>
+  <!--<script src="js/template-base.js"></script>
+  <script src="js/template.js"></script>-->
   <script src="js/main.js"></script>
   <script src="js/header-bs3.js"></script>
   <script src="js/footer.js"></script>  
