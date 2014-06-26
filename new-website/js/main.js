@@ -164,10 +164,6 @@ $(document).ready(function () {
         a: 'img/gallery/HorizontalBar_large.gif',
         img: 'img/gallery/HorizontalBar_large.gif'
       }, {
-        desc: 'Line',
-        a: 'img/gallery/line_large.gif',
-        img: 'img/gallery/line_large.gif'
-      }, {
         desc: 'Maps',
         a: 'img/gallery/Map_large.gif',
         img: 'img/gallery/Map_large.gif'
@@ -184,21 +180,9 @@ $(document).ready(function () {
         a: 'img/gallery/Stacked_large.gif',
         img: 'img/gallery/Stacked_large.gif'
       }, {
-        desc: 'Spider',
-        a: 'img/gallery/spider1_large.gif',
-        img: 'img/gallery/spider1_large.gif'
-      }, {
-        desc: 'Journals',
-        a: 'img/gallery/journals1_large.gif',
-        img: 'img/gallery/journals1_large.gif'
-      }, {
         desc: 'Line Chart',
         a: 'img/gallery/linechart1-large.gif',
         img: 'img/gallery/linechart1-large.gif'
-      }, {
-        desc: 'Combo',
-        a: 'img/gallery/combo1-large.gif',
-        img: 'img/gallery/combo1-large.gif'
       }, {
         desc: 'Heat-Map',
         a: 'img/gallery/grid1-large.gif',
