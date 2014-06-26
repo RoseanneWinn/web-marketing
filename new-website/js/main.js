@@ -293,7 +293,7 @@ $(document).ready(function () {
           '</a>' +
           '</div>' +
           '</div>');
-        $image.children('.portfolio-thumb').click(function (e) {
+        $image.find('.portfolio-thumb').click(function (e) {
           e.preventDefault();
           var $a = $(this);
           var $modal = $('#portfolioModal');
@@ -323,7 +323,7 @@ $(document).ready(function () {
           '</div>' +
           '</div>');
         result.push($image);
-        $image.children('.portfolio-thumb').click(function (e) {
+        $image.find('.portfolio-thumb').click(function (e) {
           e.preventDefault();
           var $a = $(this);
           var $modal = $('#portfolioModal');
