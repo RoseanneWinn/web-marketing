@@ -141,6 +141,10 @@
 
 /* Search button */
 
+#izNavBar {
+  padding-right: 20px;
+}
+
 .iz-header .iz-search-btn > li > a {
   background-color: transparent;
 }
