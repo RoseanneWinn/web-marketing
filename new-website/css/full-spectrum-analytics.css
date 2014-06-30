@@ -133,6 +133,7 @@ h1.fsa {
 }
 
 .ray-mock {
+  max-width: 240px;
   position: relative;
   left: 55px;
   font-size: 115%;
