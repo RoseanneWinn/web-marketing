@@ -40,6 +40,7 @@
   background-color: transparent;
 }
 .iz-header .navbar-nav > li > a {
+  cursor: pointer;
   font-weight: bold;
   color: #333;
   padding: 17px 8px;
