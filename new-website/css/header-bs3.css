@@ -277,6 +277,7 @@
 .iz-header .iz-try-it-free {
   background-color: orange;
   border: 1px solid rgb(238, 162, 54);
+  border-radius: 0;
   position: relative;
   color: #fff;
   font-weight: bold;
