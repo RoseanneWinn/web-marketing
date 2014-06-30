@@ -71,6 +71,11 @@
         <p>
           Clients Type
           <select id="izendaClientTypes" class="form-control" ></select>
+          <div class="checkbox">
+            <label>
+              <input id="izendaClientTypesCheckbox" type="checkbox" checked> Show clients with content available.
+            </label>
+          </div>
         </p>
         <br/>
         <div id="izendaClients" style="display: none;">
@@ -154,6 +159,7 @@
   <script type="text/javascript">
     $(document).ready(function () {
       var $types = $('#izendaClientTypes');
+      var $typesCheckbox = $('#izendaClientTypesCheckbox');
       var $clients = $('#izendaClients');
       var $clientsDescr = $('#izendaClientsDescr');
 
@@ -174,10 +180,13 @@
 '  </div>' +
 '  <div class="col-md-9 col-sm-12 col-xs-12">' +
 '    <h4><b>' + item.Name + '</b></h4>' +
-'    <p>' + item.Description + '</p>' +
+'    <p class="descr">' + item.Description + '</p>' +
 '  </div>' +
 '</div>';
           var $item = $(html);
+          if ($typesCheckbox.prop('checked') && !item.Description) {
+            $item.hide();
+          }
           $('#izendaClientItems').append($item);
         }
       }).error(function() {
@@ -206,9 +215,14 @@
       for (var clientType in data) {
         $types.append('<option value="' + clientType + '">' + clientType + '</option>');
       }
-      $types.change(function() {
+
+      // populate clients filter
+      var populateFilter = function() {
         var newType = $types.val();
         var dataTypeItem = data[newType];
+        var checked = $typesCheckbox.prop('checked');
+
+        // update filter description.
         var html = $('#' + dataTypeItem.id).find('.description').html();
         if (typeof (html) == 'string' && html != '') {
           $clients.fadeIn(200);
@@ -217,20 +231,42 @@
         }
         $('#izendaClientsDescr').html(html);
 
+        // update items by filter
         if (newType == 'All clients') {
           $('.client-row').show();
-          return;
+          $('.client-row').each(function(iRow, row) {
+            if (checked) {
+              var $row = $(row);
+              var $descr = $row.find('.descr');
+              if (!$descr.text()) {
+                $row.hide();
+              }
+            }
+          });
+        } else {
+          $('.client-row').each(function (iRow, row) {
+            var $row = $(row);
+            var types = $row.attr('clientTypes');
+            if (types != null && types.split(',').indexOf(dataTypeItem.id) >= 0) {
+              $row.show();
+            } else {
+              $row.hide();
+            }
+            if (checked) {
+              var $descr = $row.find('.descr');
+              if (!$descr.text()) {
+                $row.hide();
+              }
+            }
+          });
         }
+      };
 
-        $('.client-row').each(function(iRow, row) {
-          var $row = $(row);
-          var types = $row.attr('clientTypes');
-          if (types != null && types.split(',').indexOf(dataTypeItem.id) >= 0) {
-            $row.show();
-          } else {
-            $row.hide();
-          }
-        });
+      $types.change(function() {
+        populateFilter();
+      });
+      $typesCheckbox.change(function () {
+        populateFilter();
       });
     });
   </script>
