@@ -65,6 +65,10 @@ h1.fsa {
   text-align: center;
 }
 
+.fsa-form-header p {
+  margin-bottom: -1px;
+}
+
 .fsa-form-header-try {
   font-size: 32px;
   color: #fff;
@@ -137,6 +141,11 @@ h1.fsa {
 
 #landing-form span {
   color: #ffa500;
+}
+
+#landing-submit {
+  font-weight: bold;
+  width: 100%;
 }
 
 /*.fsa-logos {
