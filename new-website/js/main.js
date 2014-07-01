@@ -124,7 +124,8 @@ $(document).ready(function () {
   var izendaPortfolio = {
     loadedFilters: [],
     'products-filter':
-      [{
+    [
+      {
         desc: 'Interactive-Search',
         a: 'img/gallery/additionalImage1.png',
         img: 'img/gallery/additionalImage1.png'
@@ -156,9 +157,11 @@ $(document).ready(function () {
         desc: 'Fusion',
         a: 'img/gallery/additionalImage8.jpg',
         img: 'img/gallery/additionalImage8.jpg'
-      }],
+      }
+    ],
     'visualizations-filter':
-      [{
+    [
+      {
         desc: 'Bar Separators',
         a: 'img/gallery/BarSeparator_preview.png',
         img: 'img/gallery/BarSeparator_large.gif'
@@ -206,9 +209,11 @@ $(document).ready(function () {
         desc: 'Interactive Time Bubble',
         a: 'img/gallery/timebubble1-large.gif',
         img: 'img/gallery/timebubble1-large.gif'
-      }],
+      }
+    ],
     'integration-filter':
-      [{
+    [
+      {
         desc: 'User Roles',
         a: 'img/gallery/stilized-full.png',
         img: 'img/gallery/integ10.jpg'
@@ -240,8 +245,9 @@ $(document).ready(function () {
         desc: 'Education',
         a: 'img/gallery/integ17.jpg',
         img: 'img/gallery/integ17.jpg'
-      }],
-    'additional-filter': [{
+      }
+    ],
+    'maps-filter': [{
       desc: 'Customize',
       a: 'img/maps/map1.jpg',
       img: 'img/maps/map1.jpg'
@@ -257,7 +263,24 @@ $(document).ready(function () {
       desc: 'With Dashboards',
       a: 'img/gallery/portfolio-9.png',
       img: 'img/gallery/portfolio-9.png'
-    }]
+    }, {
+      desc: 'Vector',
+      a: 'img/gallery/maps-1.png',
+      img: 'img/gallery/maps-full1.png'
+    }, {
+      desc: '3D',
+      a: 'img/gallery/maps-2.png',
+      img: 'img/gallery/maps-full2.png'
+    }, {
+      desc: 'Colors',
+      a: 'img/gallery/maps-3.png',
+      img: 'img/gallery/maps-full3.png'
+    }, {
+      desc: 'Pseudocylindrical',
+      a: 'img/gallery/maps-4.png',
+      img: 'img/gallery/maps-full4.png'
+    }],
+    'additional-filter': []
   };
   var $portfolio = $('#portfolio-list');
   var $portfolioFilter = $('#portfolio-filter');
