@@ -21,7 +21,7 @@ h1.fsa {
 }
 
 .fsa-feature-text {
-  margin: 10px;
+  margin-top: 20px;
 }
 
 @media (max-width: 1199px) {
@@ -82,30 +82,23 @@ h1.fsa {
     font-size: 22px;
     }
   }
-
 @media (max-width: 991px) {
-  .fsa-form-header {
-    z-index: 10;
-    }
   .fsa-form-header p {
-    display: none;
-    }
-  .fsa-form-header-try {
     font-size: 18px;
-    }
   }
-
-@media (max-width: 746px) {
   .fsa-form-header-try {
-    font-size: 14px;
-    }
+    font-size: 32px;
   }
+}
 
-@media (max-width: 658px) {
-  .fsa-form-header-try {
-    font-size: 10px;
-    }
+@media (max-width: 446px) {
+  .fsa-form-header p {
+    font-size: 12px;
   }
+  .fsa-form-header-try {
+    font-size: 22px;
+  }
+}
 
 .fsa-form-corner-container {
   background-color: #fff;
@@ -120,12 +113,6 @@ h1.fsa {
   border-width: 30px 30px 0 30px;
   border-color: #f18e00 transparent transparent transparent;
 }
-
-@media (max-width: 991px) {
-  .fsa-form-corner {
-    visibility: hidden;
-    }
-  }
 
 .fsa-btn-form-submit {
   background-color: #f18e00;
@@ -159,12 +146,22 @@ h1.fsa {
   background: url('/img/full-spectrum-analitycs/form-shadow.jpg') no-repeat 0 0;
   background-size: 100%;
   max-width: 100%;
-  height: auto;
+  height: 100px;
 }
 
 .fsa-quote-block {
   padding-top: 50px;
   padding-bottom: 20px;
+}
+
+.case-study-quote {
+  color: #aeaeae;
+}
+
+@media (max-width: 791px) {
+  .case-study-quote {
+    font-size: 16px;
+  }
 }
 
 .fsa-quote {
