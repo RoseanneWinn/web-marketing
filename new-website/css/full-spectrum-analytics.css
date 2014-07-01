@@ -154,16 +154,27 @@ h1.fsa {
   padding-bottom: 20px;
 }
 
-.case-study-quote {
+.case-study-quote h4 {
   color: #aeaeae;
+  margin-left: 20px;
 }
 
-@media (max-width: 791px) {
-  .case-study-quote {
+@media (max-width: 871px) {
+  .case-study-quote h4 {
     font-size: 16px;
+    margin-left: 10px;
   }
 }
 
+@media (max-width: 767px) {
+  .case-study-quote h4 {
+    font-size: 16px;
+    text-align: center;
+  }
+  .fsa-quote-block .micro-pic {
+    margin: 10px auto 0px auto;
+  }
+}
 .fsa-quote {
   font-size: 24px;
   color: #aaa;
