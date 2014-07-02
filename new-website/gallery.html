@@ -68,7 +68,8 @@
               </a>
             </div>
             <div class="col-md-4 col-sm-6">
-              <a href="#" class="gallery-integration text-left" target-video-screencast="http://content.screencast.com/users/IzendaReports/folders/Default/media/0c8cf8cf-8f81-4124-96b3-e5f60817e3e6/scplayer.swf">
+              <a href="#" class="gallery-integration text-left" 
+                target-video-screencast="http://content.screencast.com/users/IzendaReports/folders/Default/media/0c8cf8cf-8f81-4124-96b3-e5f60817e3e6/scplayer.swf">
                 <img class="img-responsive gallery-image" src="img/gallery/izenda-integration.png"/>
                 <div class="text-left">15 Minute Integration</div>
               </a>
@@ -419,41 +420,52 @@
     <script type="text/javascript">
       $(function () {
         var $modal = $('#modalGallery');
+        var $modalBody = $modal.find('.modal-body');
+        var _this = null;
+        // modal shown
+        $modal.on('shown.bs.modal', function () {
+          // append image
+          var targetImg = _this.attr('target-img');
+          if (targetImg != null) {
+            $modalBody.append($('<img style="max-width: 100%;" src="' + targetImg + '"/>'));
+          }
+
+          // append video
+          var targetVideo = _this.attr('target-video');
+          if (targetVideo != null) {
+            $modalBody.append($('<iframe title="YouTube video player" style="width:100%;height:600px;"' +
+              'src="' + targetVideo + '" frameborder="0" wmode="Opaque" allowFullScreen></iframe>'));
+          }
+
+          // append screencast video
+          var targetVideoSc = _this.attr('target-video-screencast');
+          if (targetVideoSc != null) {
+//            var html =
+//              '<object id="scPlayer" class="embeddedObject" width="100%" height="600" type="application/x-shockwave-flash" data="http://content.screencast.com/users/izenda/folders/Jing/media/2be0dad8-5dc1-4651-adda-32b70909075e/jingh264player.swf" style="width: 100%; height: 600px;">' +
+//                '	<param name="movie" value="http://content.screencast.com/users/izenda/folders/Jing/media/2be0dad8-5dc1-4651-adda-32b70909075e/jingh264player.swf">' +
+//                '	<param name="quality" value="high">' +
+//                '	<param name="bgcolor" value="#FFFFFF">' +
+//                '	<param name="flashVars" value="thumb=http://content.screencast.com/users/izenda/folders/Jing/media/2be0dad8-5dc1-4651-adda-32b70909075e/FirstFrame.jpg&amp;containerwidth=992&amp;containerheight=632&amp;advseek=true&amp;content=http://content.screencast.com/users/izenda/folders/Jing/media/2be0dad8-5dc1-4651-adda-32b70909075e/2010-12-13_2049.mp4&amp;blurover=false">' +
+//                '	<param name="allowFullScreen" value="true">' +
+//                '	<param name="scale" value="showall">' +
+//                '	<param name="allowScriptAccess" value="always">' +
+//                '	<param name="base" value="http://content.screencast.com/users/izenda/folders/Jing/media/2be0dad8-5dc1-4651-adda-32b70909075e/">' +
+//                '	<iframe class="embeddedObject" type="text/html" frameborder="0" scrolling="no" style="overflow: hidden; width: 992px; height: 632px;" src="http://www.screencast.com/users/izenda/folders/Jing/media/2be0dad8-5dc1-4651-adda-32b70909075e/embed" height="600" width="100%"></iframe>' +
+//                '</object>';
+            var html =
+              '	<iframe class="embeddedObject" type="text/html" frameborder="0" scrolling="no" style="overflow: hidden; width: 100%; height: 600px;" src="http://www.screencast.com/users/izenda/folders/Jing/media/2be0dad8-5dc1-4651-adda-32b70909075e/embed" height="600" width="100%"></iframe>';
+            $modalBody.append($(html));
+          }
+        });
+
+        // modal hidden
         $('#modalGallery').on('hidden.bs.modal', function(e) {
-          var $modalBody = $modal.find('.modal-body');
           $modalBody.empty();
         });
         $('.gallery-integration').click(function (e) {
           e.preventDefault();
-          var $this = $(this);
-          var $modalBody = $modal.find('.modal-body');
+          _this = $(this);
           $modalBody.empty();
-
-          var targetImg = $this.attr('target-img');
-          if (targetImg != null) {
-            $modalBody.append($('<img style="max-width: 100%;" src="' + targetImg + '"/>'));
-          }
-          var targetVideo = $this.attr('target-video');
-          if (targetVideo != null) {
-            /*$modalBody.append($('<iframe title="YouTube video player" class="youtube-player" type="text/html" ' +
-              'style="width:100%;height:600px;" src="' + targetVideo + '" frameborder="0" allowFullScreen></iframe>'));*/
-            $modalBody.append($('<iframe title="YouTube video player" style="width:100%;height:600px;"' +
-              'src="' + targetVideo + '" frameborder="0" wmode="Opaque" allowFullScreen></iframe>'));
-          }
-          var targetVideoSc = $this.attr('target-video-screencast');
-          if (targetVideoSc != null) {
-            $modalBody.append($('<object width="1000" height="750" data="http://content.screencast.com/users/IzendaReports/folders/Default/media/0c8cf8cf-8f81-4124-96b3-e5f60817e3e6/scplayer.swf" type="application/x-shockwave-flash" class="embeddedObject" id="scPlayer" style="width: 800px; height: 600px;">' +
-              '<param value="http://content.screencast.com/users/IzendaReports/folders/Default/media/0c8cf8cf-8f81-4124-96b3-e5f60817e3e6/scplayer.swf" name="movie">' +
-              '<param value="high" name="quality">' +
-              '<param value="#FFFFFF" name="bgcolor">' +
-              '<param value="thumb=http://content.screencast.com/users/IzendaReports/folders/Default/media/0c8cf8cf-8f81-4124-96b3-e5f60817e3e6/FirstFrame.jpg&amp;containerwidth=1000&amp;containerheight=750&amp;autohide=true&amp;autostart=false&amp;loop=false&amp;showendscreen=true&amp;showsearch=false&amp;showstartscreen=true&amp;tocdoc=left&amp;xmp=sc.xmp&amp;advseek=true&amp;content=http://content.screencast.com/users/IzendaReports/folders/Default/media/0c8cf8cf-8f81-4124-96b3-e5f60817e3e6/IntWithSound.mp4&amp;blurover=false" name="flashVars">' +
-              '<param value="true" name="allowFullScreen">' +
-              '<param value="showall" name="scale">' +
-              '<param value="always" name="allowScriptAccess">' +
-              '<param value="http://content.screencast.com/users/IzendaReports/folders/Default/media/0c8cf8cf-8f81-4124-96b3-e5f60817e3e6/" name="base">' +
-              '<iframe width="1000" scrolling="no" height="750" frameborder="0" data-src="http://www.screencast.com/users/IzendaReports/folders/Default/media/0c8cf8cf-8f81-4124-96b3-e5f60817e3e6/embed" src="http://www.screencast.com/users/IzendaReports/folders/Default/media/0c8cf8cf-8f81-4124-96b3-e5f60817e3e6/embed" style="overflow: hidden; width: 800px; height: 600px;" type="text/html" class="embeddedObject"></iframe>' +
-            '</object>'));
-          }
           $modal.modal();
         });
       });

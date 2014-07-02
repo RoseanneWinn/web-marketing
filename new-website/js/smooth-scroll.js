@@ -1,10 +1,4 @@
 ﻿if (navigator.appVersion.indexOf('MSIE 8') < 0) {
-  if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
-  window.onmousewheel = document.onmousewheel = wheel;
-
-  var time = 200;
-  var distance = $(window).height() / 3;
-
   function wheel(event) {
     if (event.wheelDelta) delta = event.wheelDelta / 120;
     else if (event.detail) delta = -event.detail / 3;
@@ -12,6 +6,12 @@
     if (event.preventDefault) event.preventDefault();
     event.returnValue = false;
   }
+
+  if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
+  window.onmousewheel = document.onmousewheel = wheel;
+
+  var time = 200;
+  var distance = $(window).height() / 3;
 
   function handle() {
     distance = $(window).height() / 3;
