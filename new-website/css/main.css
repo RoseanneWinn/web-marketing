@@ -1095,9 +1095,10 @@ ul.square span {
 }
 
 .iz-feature-embed-container > embed, 
-.iz-feature-embed-container > iframe {
+.iz-feature-embed-container > iframe,
+.iz-feature-embed-container > object {
   width: 80%;
-  height: 80%;
+  height: 100%;
 }
 
 div.code {

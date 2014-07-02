@@ -67,16 +67,22 @@ $(document).ready(function () {
   //////////////////////////////////////////////////////////////////////////////////////////
   // Set embed video size
   //////////////////////////////////////////////////////////////////////////////////////////
-  jQuery(document).ready(function ($) {
-    var $container = $('.iz-feature-embed-container');
-    if ($container.find('embed').length > 0)
-      $container.height($container.width() * 9 / 16);
-  });
+  var updateVideoSize = function($cont) {
+    if ($cont.find('embed, object').length > 0) {
+      var ratio = $cont.attr('ratio');
+      if (ratio) {
+        var ratioItems = ratio.split(':');
+        $cont.height($cont.width() * parseFloat(ratioItems[1]) / parseFloat(ratioItems[0]));
+      } else {
+        $cont.height($cont.width() * 9 / 16);
+      }
+    }
+  };
 
-  jQuery(window).resize(function ($) {
-    var $container = jQuery('.iz-feature-embed-container');
-    if ($container.find('embed').length > 0)
-      $container.height($container.width() * 9 / 16);
+  var $container = $('.iz-feature-embed-container');
+  updateVideoSize($container);
+  $(window).resize(function () {
+    updateVideoSize($container);
   });
 
   //////////////////////////////////////////////////////////////////////////////////////////
