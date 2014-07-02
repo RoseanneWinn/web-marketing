@@ -220,36 +220,76 @@ $(document).ready(function () {
     'integration-filter':
     [
       {
-        desc: 'User Roles',
-        a: 'img/gallery/stilized-full.png',
-        img: 'img/gallery/integ10.jpg'
+        desc: 'Integration',
+        a: 'img/gallery/integ-full1.jpg',
+        img: 'img/gallery/integ1.jpg'
       }, {
-        desc: 'Advantage',
-        a: 'img/gallery/budget_dash-full.png',
-        img: 'img/gallery/integ11.jpg'
+        desc: 'Integration',
+        a: 'img/gallery/integ-full2.jpg',
+        img: 'img/gallery/integ2.jpg'
       }, {
-        desc: 'Consulting Network',
-        a: 'img/gallery/integ5.jpg',
-        img: 'img/gallery/integ5.jpg'
+        desc: 'Integration',
+        a: 'img/gallery/integ-full3.jpg',
+        img: 'img/gallery/integ3.jpg'
       }, {
-        desc: 'Custom Visuals',
-        a: 'img/gallery/custom_chart_style-full.png',
-        img: 'img/gallery/custom_chart_style-full.png'
-      }, {
-        desc: 'Custom-Dashboards',
-        a: 'img/gallery/portfolio-4.png',
-        img: 'img/gallery/portfolio-4.png'
-      }, {
-        desc: 'Mahoney',
-        a: 'img/gallery/integ4.jpg',
+        desc: 'Integration',
+        a: 'img/gallery/integ-full4.jpg',
         img: 'img/gallery/integ4.jpg'
       }, {
-        desc: 'Formatting',
-        a: 'img/gallery/integ9.jpg',
-        img: 'img/gallery/integ9.jpg'
+        desc: 'Integration',
+        a: 'img/gallery/integ-full5.jpg',
+        img: 'img/gallery/integ5.jpg'
       }, {
-        desc: 'Education',
-        a: 'img/gallery/integ17.jpg',
+        desc: 'Integration',
+        a: 'img/gallery/integ-full6.jpg',
+        img: 'img/gallery/integ6.jpg'
+      }, {
+        desc: 'Integration',
+        a: 'img/gallery/integ-full7.jpg',
+        img: 'img/gallery/integ7.jpg'
+      }, {
+        desc: 'Integration',
+        a: 'img/gallery/integ-full8.jpg',
+        img: 'img/gallery/integ8.jpg'
+      }, {
+        desc: 'Integration',
+        a: 'img/gallery/integ-full9.jpg',
+        img: 'img/gallery/integ1.jpg'
+      }, {
+        desc: 'Integration',
+        a: 'img/gallery/integ-full9.jpg',
+        img: 'img/gallery/integ1.jpg'
+      }, {
+        desc: 'Integration',
+        a: 'img/gallery/integ-full10.jpg',
+        img: 'img/gallery/integ10.jpg'
+      }, {
+        desc: 'Integration',
+        a: 'img/gallery/integ-full11.jpg',
+        img: 'img/gallery/integ11.jpg'
+      }, {
+        desc: 'Integration',
+        a: 'img/gallery/integ-full12.jpg',
+        img: 'img/gallery/integ12.jpg'
+      }, {
+        desc: 'Integration',
+        a: 'img/gallery/integ-full13.jpg',
+        img: 'img/gallery/integ13.jpg'
+      }, {
+        desc: 'Integration',
+        a: 'img/gallery/integ-full14.jpg',
+        img: 'img/gallery/integ14.jpg'
+      }, {
+        desc: 'Integration',
+        a: 'img/gallery/integ-full15.jpg',
+        img: 'img/gallery/integ15.jpg'
+      }, {
+        desc: 'Integration',
+        a: 'img/gallery/integ-full16.jpg',
+        img: 'img/gallery/integ16.jpg'
+      }, {
+        desc: 'Integration',
+        a: 'img/gallery/integ-full17.jpg',
         img: 'img/gallery/integ17.jpg'
       }
     ],
