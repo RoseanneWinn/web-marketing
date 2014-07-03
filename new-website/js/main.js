@@ -11,13 +11,22 @@ if (!Array.prototype.indexOf) {
   };
 }
 
-//Ready the page before firing any js
+//Ready the page before firing any js////////////////////////////////////
 $(document).ready(function () {
 
   initializeIzendaHeader();
   initializeIzendaFooter();
 
-  //Video resizing for modals
+//HubSpot////////////////////////////////////////////////////////////////
+
+  (function(d,s,i,r) {
+     if (d.getElementById(i)){return;}
+     var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+     n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/409433.js';
+     e.parentNode.insertBefore(n, e);
+   })(document,"script","hs-analytics",300000);
+
+//Video resizing for modals/////////////////////////////////////////////
 
   var $allVideos = $("iframe[src^='http://www.youtube.com']"),
 
