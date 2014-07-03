@@ -5,8 +5,8 @@
     url: 'templates/header.tmpl.html',
     selector: '#izendaHeaderTemplate',
     data: {},
-    loaded: function (renderResult) {
-      $('body').prepend(renderResult);
+    loaded: function ($renderResult) {
+      $('body').prepend($renderResult);
       initializeIzendaHeader();
     }
   });
@@ -16,8 +16,8 @@
     url: 'templates/sticky-footer.tmpl.html',
     selector: '#izendaFooterTemplate',
     data: {},
-    loaded: function (renderResult) {
-      $('body').append(renderResult);
+    loaded: function ($renderResult) {
+      $('body').append($renderResult);
       initializeIzendaFooter();
     }
   });
