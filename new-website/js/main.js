@@ -21,7 +21,24 @@ $(document).ready(function () {
   initializeIzendaHeader();
   initializeIzendaFooter();
 
-//HubSpot////////////////////////////////////////////////////////////////
+  //SnapEngage//////////////////////////////////////////////////////////
+  (function () {
+      var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+      se.src = '//commondatastorage.googleapis.com/code.snapengage.com/js/24c3b9f3-b9bb-4c8b-8a15-30c20ee6c4e8.js';
+      var done = false;
+      se.onload = se.onreadystatechange = function () {
+        if (!done && (!this.readyState || this.readyState === 'loaded' || this.readyState === 'complete')) {
+          done = true;
+          /* Place your SnapEngage JS API code below */
+          SnapEngage.allowChatSound(true);
+          SnapEngage.allowProactiveChat(true);
+        }
+      };
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+    })();
+
+
+  //HubSpot////////////////////////////////////////////////////////////////
 
   (function(d,s,i,r) {
      if (d.getElementById(i)){return;}
