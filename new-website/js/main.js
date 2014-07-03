@@ -11,6 +11,10 @@ if (!Array.prototype.indexOf) {
   };
 }
 
+//Analytics insert///////////////////////////////////////////////////////
+
+$('#analytics').load('../js/ga.js');
+
 //Ready the page before firing any js////////////////////////////////////
 $(document).ready(function () {
 
