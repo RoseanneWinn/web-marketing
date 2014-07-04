@@ -16,6 +16,10 @@ html {
     line-height: 1.4;
 }
 
+body {
+  width: 100%;
+}
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -428,7 +432,7 @@ h1 {
    }
 
   .izenda-covers-you {
-    display: none;!important
+    display: none !important;
   }
 }
 
@@ -653,9 +657,6 @@ ul.square span {
 
 .contact-btn:hover {
   opacity: .7;
-}
-body.modal-open {
-  overflow: hidden;
 }
 /* ==========================================================================
    Helper classes

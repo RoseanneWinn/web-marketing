@@ -16,10 +16,14 @@ function initializeMediaViewer(options) {
     var $modalHead = $mediaViewer.find('.modal-title');
     var newModalHeight = 0;
     var _this = null;
+    var backOverflow = $('body').css('overflow');
+    var backPosition = $('body').css('position');
 
     // modal shown event handler
     $mediaViewer.on('shown.bs.modal', function () {
-      // append image
+        // append image
+      $('body').css('overflow', 'hidden');
+      $('body').css('position', 'fixed');
       var targetImg = _this.attr('target-img');
       if (targetImg != null) {
         var $img = '<div style="background: url(\'' + targetImg + '\') no-repeat center 0;background-size:contain;width:100%;height:' + (newModalHeight - 30) + 'px"></div>';
@@ -55,6 +59,8 @@ function initializeMediaViewer(options) {
     // modal hidden event handler
     $mediaViewer.on('hidden.bs.modal', function (e) {
       $modalBody.empty();
+      $('body').css('overflow', backOverflow);
+      $('body').css('position', backPosition);
     });
 
     // modal open event handler
