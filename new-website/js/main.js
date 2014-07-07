@@ -398,17 +398,21 @@ $(document).ready(function () {
           '</div>' +
           '</a>' +
           '</div>');
-        mediaViewer.initializeMediaLinks([$image.find('a')]);
+        if (mediaViewer != null)
+          mediaViewer.initializeMediaLinks([$image.find('a')]);
         $portfolio.append($image);
       }
     }
   };
 
-  var mediaViewer = new IzendaMediaViewer({
-    titleFunc: function($link) {
-      return $link.attr('title');
-    }
-  });
+  var mediaViewer = null;
+  if (typeof (IzendaMediaViewer) != 'undefined') {
+    mediaViewer = new IzendaMediaViewer({
+      titleFunc: function ($link) {
+        return $link.attr('title');
+      }
+    });
+  }
 
   // load images to portfolio if needed
   var loadImagesForFilter = function (filter) {
@@ -429,8 +433,8 @@ $(document).ready(function () {
           '</a>' +
           '</div>');
         result.push($image);
-
-        mediaViewer.initializeMediaLinks([$image.find('a')]);
+        if (mediaViewer != null)
+          mediaViewer.initializeMediaLinks([$image.find('a')]);
         $portfolio.prepend($image);
       }
       // append additional filters
@@ -467,7 +471,8 @@ $(document).ready(function () {
     $portfolio.isotope({ filter: selector + ', .additional-filter' });
   });
 
-  mediaViewer.initializeMediaLinks($('a.videoModal'));
+  if (mediaViewer != null)
+    mediaViewer.initializeMediaLinks($('a.videoModal'));
 
   /*//Modal Video Change OnClick
   $('a.videoModal').on('click', function (e) {
