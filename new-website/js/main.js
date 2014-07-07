@@ -391,23 +391,24 @@ $(document).ready(function () {
         var image = images[i];
         var $image = $(
           '<div class="block additional-filter hidden" data-type="additional-filter">' +
-          '<a class="new portfolio-thumb" href="' + image.a + '" title="' + image.desc + '">' +
+          '<a class="new portfolio-thumb" href="' + image.a + '" title="' + image.desc + '" data-content="img:' +
+          image.a + '>' +
           '<div class="portfolio-image-wrapper">' +
           '<img class="portfolio-image" src="' + image.img + '" alt="Line Chart" />' +
           '</div>' +
           '</a>' +
           '</div>');
-        $image.find('.portfolio-thumb').click(function (e) {
-          e.preventDefault();
-          var $a = $(this);
-          var $modal = $('#portfolioModal');
-          $modal.find('.modal-image').attr('src', $a.attr('href'));
-          $modal.modal();
-        });
+        mediaViewer.initializeMediaLinks([$image.find('a')]);
         $portfolio.append($image);
       }
     }
   };
+
+  var mediaViewer = new IzendaMediaViewer({
+    titleFunc: function($link) {
+      return $link.attr('title');
+    }
+  });
 
   // load images to portfolio if needed
   var loadImagesForFilter = function (filter) {
@@ -420,20 +421,16 @@ $(document).ready(function () {
         var image = images[i];
         var $image = $(
           '<div class="block ' + filter + '" data-type="' + filter + '">' +
-          '<a class="new portfolio-thumb" href="' + image.a + '" title="' + image.desc + '">' +
+          '<a class="new portfolio-thumb" href="' + image.a + '" title="' + image.desc + '" data-content="img:' +
+          image.a + '">' +
           '<div class="portfolio-image-wrapper">' +
           '<img class="portfolio-image" src="' + image.img + '" alt="Line Chart" />' +
           '</div>' +
           '</a>' +
           '</div>');
         result.push($image);
-        $image.find('.portfolio-thumb').click(function (e) {
-          e.preventDefault();
-          var $a = $(this);
-          var $modal = $('#portfolioModal');
-          $modal.find('.modal-image').attr('src', $a.attr('href'));
-          $modal.modal();
-        });
+
+        mediaViewer.initializeMediaLinks([$image.find('a')]);
         $portfolio.prepend($image);
       }
       // append additional filters
@@ -470,7 +467,9 @@ $(document).ready(function () {
     $portfolio.isotope({ filter: selector + ', .additional-filter' });
   });
 
-  //Modal Video Change OnClick
+  mediaViewer.initializeMediaLinks($('a.videoModal'));
+
+  /*//Modal Video Change OnClick
   $('a.videoModal').on('click', function (e) {
     var src = $(this).attr('data-src');
     var height = $(this).attr('data-height') || 300;
@@ -488,7 +487,7 @@ $(document).ready(function () {
     $("#mainModal iframe").attr({
       'src': null
     });
-  });
+  });*/
 
   /*if ($('#footer-form').valid() == true) {
     $('#footer-form').submit(function(e) {
