@@ -391,7 +391,7 @@ $(document).ready(function () {
         var image = images[i];
         var $image = $(
           '<div class="block additional-filter hidden" data-type="additional-filter">' +
-          '<a class="new portfolio-thumb" href="' + image.a + '" title="' + image.desc + '" data-content="img:' +
+          '<a class="new portfolio-thumb" href="' + image.a + '" data-content="img:' +
           image.a + '>' +
           '<div class="portfolio-image-wrapper">' +
           '<img class="portfolio-image" src="' + image.img + '" alt="Line Chart" />' +
@@ -400,6 +400,9 @@ $(document).ready(function () {
           '</div>');
         if (mediaViewer != null)
           mediaViewer.initializeMediaLinks([$image.find('a')]);
+        $image.tooltip({
+          title: image.desc
+        });
         $portfolio.append($image);
       }
     }
@@ -425,8 +428,7 @@ $(document).ready(function () {
         var image = images[i];
         var $image = $(
           '<div class="block ' + filter + '" data-type="' + filter + '">' +
-          '<a class="new portfolio-thumb" href="' + image.a + '" title="' + image.desc + '" data-content="img:' +
-          image.a + '">' +
+          '<a class="new portfolio-thumb" href="' + image.a + '" data-content="img:' + image.a + '">' +
           '<div class="portfolio-image-wrapper">' +
           '<img class="portfolio-image" src="' + image.img + '" alt="Line Chart" />' +
           '</div>' +
@@ -435,6 +437,9 @@ $(document).ready(function () {
         result.push($image);
         if (mediaViewer != null)
           mediaViewer.initializeMediaLinks([$image.find('a')]);
+        $image.tooltip({
+          title: image.desc
+        });
         $portfolio.prepend($image);
       }
       // append additional filters
