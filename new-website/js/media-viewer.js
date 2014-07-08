@@ -46,6 +46,7 @@
     this.newModalHeight = 0;
     var backOverflow = $('body').css('overflow');
     var backPosition = $('body').css('position');
+    var backOverflowY = $('body').css('overflow-y');
     var backTop = 0;
 
     // modal shown event handler
@@ -55,6 +56,7 @@
       backTop = $(window).scrollTop();
       $('body').css('overflow', 'hidden');
       $('body').css('position', 'fixed');
+      $('body').css('overflow-y', 'scroll');
       $('body').css('top', -backTop);
 
       if (contentType == 'img') {
@@ -87,6 +89,7 @@
       _this.$modalBody.empty();
       $('body').css('overflow', backOverflow);
       $('body').css('position', backPosition);
+      $('body').css('overflow-y', backOverflowY);
       $(window).scrollTo(backTop);
     });
 
