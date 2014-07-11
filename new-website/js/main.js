@@ -47,6 +47,17 @@ $(document).ready(function () {
      e.parentNode.insertBefore(n, e);
    })(document,"script","hs-analytics",300000);
 
+  //HubSpot Form//////////////////////////////////////////////////////////
+  hbspt.forms.create({ 
+    portalId: '409433',
+    redirectUrl: 'http://www.izenda.com/bi/ReportListIntro.aspx',
+    formId: 'f64f87d1-bcc9-4333-a20f-170f4673bf58',
+    target: '#footer-form',
+    formInstanceId: '2',
+    css: '.hs-input{width:100%;padding:4px;font-family:"Lato",sans-serif;font-weight:400;color:#666;margin-top:10px;margin-bottom:10px;}span{color:orange;}',
+    submitButtonClass: 'footer-submit center-block btn btn-lg'
+  });
+
 //Video resizing for modals/////////////////////////////////////////////
 
   var $allVideos = $("iframe[src^='http://www.youtube.com']"),
@@ -64,17 +75,6 @@ $(document).ready(function () {
       e.width(newWidth).height(newWidth * e.attr('data-aspectRatio'));
     });
   }).resize();
-
-
-  //HubSpot Form//////////////////////////////////////////////////////////
-  hbspt.forms.create({ 
-    portalId: '409433',
-    formId: 'f64f87d1-bcc9-4333-a20f-170f4673bf58',
-    target: '#footer-form',
-    formInstanceId: '2',
-    css: '.hs-input{width:100%;padding:4px;font-family:"Lato",sans-serif;font-weight:400;color:#666;margin-top:10px;margin-bottom:10px;}span{color:orange;}',
-    submitButtonClass: 'footer-submit center-block btn btn-lg'
-  });
 
   //////////////////////////////////////////////////////////////////////////////////////////
   // Main picture overlay

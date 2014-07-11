@@ -25,14 +25,4 @@
     window.open(here);
     return false;
   });
-
-//////////////////////////////////////////////////////////////////////////////////////////
-//Submit in Footer
-//////////////////////////////////////////////////////////////////////////////////////////
-  $('#footer-submit').click(function() {
-    if ($('#footer-form').valid() == true) {
-      $('#footer-submit').addClass('hidden');
-      $('#footer-loading-text').removeClass('hidden');
-    }
-  });
 }
