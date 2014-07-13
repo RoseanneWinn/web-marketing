@@ -130,9 +130,15 @@ h1.fsa {
   color: #ffa500;
 }
 
-#landing-submit {
+.landing-submit {
   font-weight: bold;
+  background-color: #f18e00;
+  color: white;
   width: 100%;
+}
+
+.landing-submit:hover {
+  background-color: #fcbd02;
 }
 
 /*.fsa-logos {
@@ -143,6 +149,7 @@ h1.fsa {
 }*/
 
 .fsa-form-footer {
+  margin-top: -10px;
   background: url('/img/full-spectrum-analitycs/form-shadow.jpg') no-repeat 0 0;
   background-size: 100%;
   max-width: 100%;
@@ -207,15 +214,8 @@ h1.fsa {
   color: #298cd0;
 }
 
-.logo-positioning {
-  position: relative;
-  right: 25px;
-}
-
 .ray-mock {
   max-width: 240px;
-  position: relative;
-  left: 55px;
   font-size: 115%;
   line-height: 175%;
   text-align: center;

@@ -32,13 +32,13 @@
  <div class="page-w">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xs-3 col-xs-offset-1 pull-left">
+      <div class="col-xs-3 col-xs-offset-1">
         <a href="index.html" class="move-me-down">
-          <img src="img/logos/izenda-logo-new.png" class="img-responsive logo-positioning" alt="Izenda Reports" />
+          <img src="img/logos/izenda-logo-new.png" class="img-responsive center-block" alt="Izenda Reports" />
         </a>
       </div>
-      <div class="col-xs-3 col-xs-offset-4">
-        <h2 class="move-me-down-less color-change text-center ray-mock">Izenda toll&ndash;free at<br>
+      <div class="col-xs-3 col-xs-offset-4" style="padding-left: 40px;">
+        <h2 class="move-me-down-less color-change ray-mock">Izenda toll&ndash;free at<br>
           <em>1-888-493-6321</em>
         </h2>
       <div class="clearfix"></div>
@@ -122,58 +122,9 @@ capabilities.
           <div class="text-center">
             <span class="fsa-form-corner"></span>
           </div>
-         <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" role="form" id="landing-form">
-                 <br />
-          <input type="hidden" name="oid" value="00D70000000Ic28">
-          <input type="hidden" name="retURL" value="http://www.izenda.com/bi/ReportListIntro.aspx">
-          <input  id="00N70000001oGf6" name="00N70000001oGf6" type="hidden" value="1" />
-            <div class="form-group">
-              <label for="fsaFirstName">First Name <span>*</span></label>
-              <input type="text" class="form-control" id="first_name" name="first_name" placeholder="" required  minlength="2" />
-              <label for="fsaLastName">Last Name <span>*</span></label>
-              <input type="text" class="form-control" id="last_name" name="last_name" placeholder="" required minlength="2" />
-              <label for="fsaEmail">Email <span>*</span></label>
-              <input type="email" class="form-control required" id="email" name="email" placeholder="" required />
-              <label for="fsaPhone">Phone <span>*</span></label>
-              <input type="text" class="form-control required" id="phone" name="phone" placeholder="xxx-xxx-xxxx or xxxxxxxxxx" required minlength="10" maxlength="30" />
-              <label for="fsaUrl">Company URL <span>*</span></label>
-              <input type="url" class="form-control required" id="company_url" name="company" placeholder="http://www.example.com" value="http://" required />
-              <input  id="00N700000034Qxz" maxlength="255" name="00N700000034Qxz" size="20" type="hidden" value="Keyword"/>
-              <input  id="00N40000001IMeh" maxlength="255" name="00N40000001IMeh" size="20" type="hidden" value="Landing" />
-            </div>
-            <div class="checkbox">
-              <label>
-                <!--<input  id="00N70000002cOkX" name="00N70000002cOkX" type="checkbox"/>We are a software company-->
-              </label>
-            </div>
-            <!--<form role="form">
-            <div class="form-group">
-              <label for="fsaFirstName">First Name</label>
-              <input type="text" class="form-control" id="fsaFirstName" placeholder="" required />
-              <label for="fsaLastName">Last Name</label>
-              <input type="text" class="form-control" id="fsaLastName" placeholder="" required />
-              <label for="fsaEmail">Email</label>
-              <input type="email" class="form-control" id="fsaEmail" placeholder="" required />
-              <label for="fsaPhone">Phone</label>
-              <input type="text" class="form-control" id="fsaPhone" placeholder="" required />
-              <label for="fsaUrl">Company URL</label>
-              <input type="url" class="form-control" id="fsaUrl" placeholder="" required />
-            </div>
-            <div class="checkbox">
-              <label>
-                <input id="fsaIsSoftWare" type="checkbox" />We are a software company
-              </label>
-            </div>-->
-            <h6 class="hidden center-block text-center" id="landing-loading-text">...Please wait while we process this request...</h6>
-            <div class="text-center">
-                    <button type="submit" id="landing-submit" class="btn btn-lg fsa-btn-form-submit">Submit</button>
-              <br/>
-              <br/>
-              We respect your <a href="privacy.html">privacy</a>.
-            </div>
-            <br />
-          </form>
-          <br />
+          <div id="landing-form">
+          </div>
+          <p class="text-center" style="background-color: #f9f9f9; padding-bottom: 12px;"><br />We respect your <a href="privacy.html">privacy</a>.</p>
           <div class="fsa-form-footer"></div>
             <div class="text-center">
               <img class="img-responsive center-block" src="img/full-spectrum-analitycs/form-awards.jpg" />
