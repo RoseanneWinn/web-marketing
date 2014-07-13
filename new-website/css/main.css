@@ -567,14 +567,14 @@ ul.square span {
   z-index: -1;
 }
 
-.footer-submit, #pricing-submit {
+.footer-submit, .pricing-submit {
   max-width: 100%;
   background-color: #ed8c01;
   color: white;
   font-weight: bold;
 }
 
-.footer-submit:hover, #pricing-submit:hover {
+.footer-submit:hover, .pricing-submit:hover {
   opacity: .7;
   background-color: #fcbd02;
 }

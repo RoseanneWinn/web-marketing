@@ -173,13 +173,7 @@ function initializeIzendaHeader() {
     $('.navbar-nav > li').removeClass('active');
     $($this.closest('.iz-menu')).addClass('active');
   });
-  
-  $('#pricing-submit').click(function() {
-      if ($('#pricing-form').valid() == true) {
-      $('#pricing-submit').addClass("hidden");
-      $('#pricing-loading-text').removeClass("hidden");
-      }
-     });
+
 };
 
 

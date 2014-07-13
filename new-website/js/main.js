@@ -47,7 +47,18 @@ $(document).ready(function () {
      e.parentNode.insertBefore(n, e);
    })(document,"script","hs-analytics",300000);
 
-  //HubSpot Form//////////////////////////////////////////////////////////
+  /*HubSpot Form Landing Page///////////////////////////////////////////////////
+  hbspt.forms.create({ 
+    portalId: '409433',
+    redirectUrl: 'http://www.izenda.com/bi/ReportListIntro.aspx',
+    formId: 'f64f87d1-bcc9-4333-a20f-170f4673bf58',
+    target: '#landing-form',
+    formInstanceId: '3',
+    css: '.hs-input{width:100%;padding:4px;font-family:"Lato",sans-serif;font-weight:400;color:#666;margin-top:10px;margin-bottom:10px;}span{color:orange;}',
+    submitButtonClass: 'footer-submit center-block btn btn-lg'
+  });*/
+
+   //HubSpot Form Footer//////////////////////////////////////////////////////////
   hbspt.forms.create({ 
     portalId: '409433',
     redirectUrl: 'http://www.izenda.com/bi/ReportListIntro.aspx',
@@ -56,6 +67,16 @@ $(document).ready(function () {
     formInstanceId: '2',
     css: '.hs-input{width:100%;padding:4px;font-family:"Lato",sans-serif;font-weight:400;color:#666;margin-top:10px;margin-bottom:10px;}span{color:orange;}',
     submitButtonClass: 'footer-submit center-block btn btn-lg'
+  });
+
+  //HubSpot Form Pricing/////////////////////////////////////////////////////////
+  hbspt.forms.create({ 
+    portalId: '409433',
+    formId: '9ce951de-c2a7-47e9-aab7-13e3b1c1e636',
+    target: '#pricing-form',
+    formInstanceId: '1',
+    css: '.hs-input{width:100%;padding:4px;font-family:"Lato",sans-serif;font-weight:400;color:#666;margin-top:10px;margin-bottom:10px;}span{color:orange;}',
+    submitButtonClass: 'pricing-submit center-block btn btn-lg'
   });
 
 //Video resizing for modals/////////////////////////////////////////////

@@ -75,20 +75,6 @@
 
 /**/
 
-/* send button on pricing form */
-#send {
-  background-color: #ed8c01;
-  color: white;
-  font-weight: bold;
-  border: none;
-}
-
-#send:hover {
-  background-color: #fdd14e;
-}
-
-/**/
-
 .iz-header .navbar {
   border-bottom: 1px solid #ddd;
   background-color: #ffffff;
