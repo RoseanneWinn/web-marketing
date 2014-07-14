@@ -21,7 +21,7 @@ $(document).ready(function () {
   initializeIzendaHeader();
   initializeIzendaFooter();
 
-  //SnapEngage//////////////////////////////////////////////////////////
+//SnapEngage//////////////////////////////////////////////////////////
   (function () {
       var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
       se.src = '//commondatastorage.googleapis.com/code.snapengage.com/js/24c3b9f3-b9bb-4c8b-8a15-30c20ee6c4e8.js';
@@ -38,7 +38,7 @@ $(document).ready(function () {
     })();
 
 
-  //HubSpot////////////////////////////////////////////////////////////////
+//HubSpot////////////////////////////////////////////////////////////////
 
   (function(d,s,i,r) {
      if (d.getElementById(i)){return;}
@@ -47,7 +47,7 @@ $(document).ready(function () {
      e.parentNode.insertBefore(n, e);
    })(document,"script","hs-analytics",300000);
 
-  //HubSpot Form Landing Page///////////////////////////////////////////////////
+//HubSpot Form Landing Page///////////////////////////////////////////////////
   hbspt.forms.create({ 
     portalId: '409433',
     formId: 'ffba7f4e-cb6b-4df0-b441-13c57ff3c6ae',
@@ -57,7 +57,7 @@ $(document).ready(function () {
     submitButtonClass: 'landing-submit center-block btn btn-lg'
   });
 
-   //HubSpot Form Footer//////////////////////////////////////////////////////////
+//HubSpot Form Footer//////////////////////////////////////////////////////////
   hbspt.forms.create({ 
     portalId: '409433',
     redirectUrl: 'http://www.izenda.com/bi/ReportListIntro.aspx',
@@ -68,7 +68,7 @@ $(document).ready(function () {
     submitButtonClass: 'footer-submit center-block btn btn-lg'
   });
 
-  //HubSpot Form Pricing/////////////////////////////////////////////////////////
+//HubSpot Form Pricing/////////////////////////////////////////////////////////
   hbspt.forms.create({ 
     portalId: '409433',
     formId: '9ce951de-c2a7-47e9-aab7-13e3b1c1e636',
@@ -78,8 +78,7 @@ $(document).ready(function () {
     submitButtonClass: 'pricing-submit center-block btn btn-lg'
   });
 
-//Video resizing for modals/////////////////////////////////////////////
-
+//Video resizing for modals///////////////////////////////////////////////////
   var $allVideos = $("iframe[src^='http://www.youtube.com']"),
 
   $fluidWidth = $('.modal-body');
@@ -148,9 +147,7 @@ $(document).ready(function () {
     updateVideoSize($container);
   });
 
-  //////////////////////////////////////////////////////////////////////////////////////////
-  // Resize photos for new design
-  //////////////////////////////////////////////////////////////////////////////////////////
+//Resize photos for new design//////////////////////////////////////////////////
   var rtime = new Date(1, 1, 2000, 12, 00, 00);
   var timeout = false;
   var delta = 200;
@@ -187,9 +184,7 @@ $(document).ready(function () {
   resizeBlockPhoto();
 
 
-  //////////////////////////////////////////////////////////////////////////////////////////
-  //Isotope portfolio
-  //////////////////////////////////////////////////////////////////////////////////////////
+//Isotope portfolio/////////////////////////////////////////////////////////////
   var izendaPortfolio = {
     loadedFilters: [],
     'products-filter':
@@ -448,7 +443,7 @@ $(document).ready(function () {
     });
   }
 
-  // load images to portfolio if needed
+//load images to portfolio if needed///////////////////////////////////////////
   var loadImagesForFilter = function (filter) {
     var result = [];
     loadAdditionalFilters();
@@ -510,57 +505,7 @@ $(document).ready(function () {
   if (mediaViewer != null)
     mediaViewer.initializeMediaLinks($('a.videoModal'));
 
-  /*//Modal Video Change OnClick
-  $('a.videoModal').on('click', function (e) {
-    var src = $(this).attr('data-src');
-    var height = $(this).attr('data-height') || 300;
-    var width = $(this).attr('data-width') || 400;
-
-    $("#mainModal iframe").attr({
-      'src': src,
-      'height': height,
-      'width': width
-    });
-    $("#mainModal").modal();
-  });
-
-  $('#mainModal').on('hide.bs.modal', function (e) {
-    $("#mainModal iframe").attr({
-      'src': null
-    });
-  });*/
-
-  /*if ($('#footer-form').valid() == true) {
-    $('#footer-form').submit(function(e) {
-      e.preventDefault();
-        var data = {
-        'first-name': $('#footer-first-name').val(),
-        'last-name': $('#footer-last-name').val(),
-        'email': $('#footer-email').val(),
-        'phone-number': $('#footer-phone').val(),
-        'company-url': $('#footer-company-url').val(),
-        'web-source': 'FreeTrial & LiveDemo'
-        };
-        var sfData = _.extend({'page-url': pageUrl}, data);
-        $.post('http://izenda-services.herokuapp.com/create-salesforce-lead', sfData, function (sfLeadResponse) {
-        console.log(sfLeadResponse);
-        if (sfLeadResponse["success"] == true) {
-          console.log("About to post to free-trial");
-          $.post('http://izenda-services.herokuapp.com/free-trial', data, function (freeTrialResponse) {
-            console.log(freeTrialResponse);
-            if (freeTrialResponse["success"] == true) {
-              window.location = "http://www.izenda.com/bi/ReportListIntro.aspx";
-            }
-          }, 'json');
-        }
-      console.log("something terrible happened");
-    }, 'json');
-  });
-  };*/
-
-  //////////////////////////////////////////////////////////////////////////////////////////
-  // Landing form
-  ////////////////////////////////////////////////////////////////////////////////////////////
+//Landing form/////////////////////////////////////////////////////////////////
   $('#landing-submit').click(function () {
     if ($('#landing-form').valid() === true) {
       $('#landing-submit').addClass("hidden");
