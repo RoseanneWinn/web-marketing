@@ -54,10 +54,10 @@
       var contentType = _this.$modal.find('#content-type').val();
       var contentUrl = _this.$modal.find('#content-url').val();
       backTop = $(window).scrollTop();
-      $('body').css('overflow', 'hidden');
+      /*$('body').css('overflow', 'hidden');
       $('body').css('position', 'fixed');
       $('body').css('overflow-y', 'scroll');
-      $('body').css('top', -backTop);
+      $('body').css('top', -backTop);*/
 
       if (contentType == 'img') {
         var $img = '<div style="background: url(\'' + contentUrl + '\') no-repeat center 0;background-size:contain;width:100%;height:' + (_this.newModalHeight - 30) + 'px"></div>';
@@ -87,10 +87,10 @@
     // modal hidden event handler
     this.$modal.on('hidden.bs.modal', function (e) {
       _this.$modalBody.empty();
-      $('body').css('overflow', backOverflow);
+      /*$('body').css('overflow', backOverflow);
       $('body').css('position', backPosition);
       $('body').css('overflow-y', backOverflowY);
-      $(window).scrollTo(backTop);
+      $(window).scrollTo(backTop);*/
     });
 
     initializeMediaLinks(this.options.links);
