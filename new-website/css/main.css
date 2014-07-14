@@ -1339,3 +1339,21 @@ p.text {
 .videoModalImage {
   margin: 0 auto;
 }
+
+.download-button {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.screenshot {
+  max-width: 600px !important;
+}
+
+.screenshot > img {
+  max-width: 600px !important;
+}
+
+.izenda-article-instruction > li {
+  margin-bottom: 20px;
+}

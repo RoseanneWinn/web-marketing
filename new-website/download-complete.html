@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <title>Izenda Clients</title>
+  <meta name="description" content="Izenda Reports is the industry leader for Ad Hoc Reporting on the ASP.NET platform.  Izenda makes it fast and simple to integrate reports and dashboards.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta content="playlab" name="author">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index, follow" content="Revist-After" content="30 Days">
+
+  <!--Fonts-->
+  <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+
+  <!--Styles-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/header-bs3.css" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link href="img/header/IzendaDarkSmall.png" rel="shortcut icon">
+
+  <!--Modernizr-->
+  <script src="js/vendor/modernizr-2.8.0.min.js" type="text/javascript"></script>
+
+  <!--[if lt IE 9]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!--Google Analytics-->
+  <div class="hidden" id="analytics"></div>
+</head>
+<body class="page-aqua">
+  <section class="services first">
+    <div class="wrapper2 bg-colored ">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h2>Thank you for registering!</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services">
+    <div class="wrapper bg-white">
+      <div class="container izenda-article">
+        <p>
+          <b>Step 1.</b> Click here to request a license key when you are ready to start your 14 day downloadable trial. If you need the OData, VB, or MVCRazor version of Izenda Reports, note this in the email, otherwise proceed and download the default C# Izenda Reports below.
+        </p>
+        <p>
+          <a href="mailto:sales@izenda.com?subject=License%20Key%20Request" class="btn btn-primary text-capitalize download-button">
+            <img width="24" height="24" src="img/download-completed/key.png" />&nbsp;&nbsp;Request License Key
+          </a>
+        </p>
+        <p>
+          <b>Step 2.</b> Download the default C# version of Izenda Reports.
+        </p>
+        <p>
+          <a href="http://archives.izenda.us/ri/webforms-cs.zip" class="btn btn-primary text-capitalize download-button">
+            <span class="glyphicon glyphicon-download-alt download-button"></span>&nbsp;Downloads
+          </a>
+        </p>
+        <p>
+          By downloading software of Izenda, LLC from this site, you agree to the 
+          <a href="http://www.izenda.com/site/downloads/izendaeula.pdf">End User License Agreement (EULA)</a>
+          If you do not agree with such terms and conditions do not download the software.
+        </p>
+        <fieldset>
+          <input id="chkAgree" type="radio" name="agree" value="yes" checked="checked">
+          <label for="chkAgree">I agree</label><br>
+          <input id="chkNotAgree" type="radio" name="agree" value="no">
+          <label for="chkNotAgree">I do not agree</label><br>
+        </fieldset>
+        <p>
+          If you do not recieve your License Key within 24 hours, please check your SPAM box or contact 
+          <a href="mailto:sales@Izenda.com">sales@izenda.com</a>
+        </p>
+
+        <h3>Izenda Reports Quick Setup</h3>
+        <p>
+          To start using Izenda Reports Starting Kit you should take a few simple steps. If you need more information 
+          about setup process, configuring reports, additional features or special cases please visit our 
+          <a href="http://www.izenda.com/Site/KB/Integration/94">Knowledge Base</a>.
+        </p>
+        <ul>
+          <li><a href="#step1">Step 1. Download Starter Kit and unzip the contents</a></li>
+          <li><a href="#step2">Step 2. Configure website under IIS</a></li>
+          <li><a href="#step3">Step 3. Set license key and database connection</a></li>
+          <li><a href="#step4">Step 4. Start using Izenda Reports</a></li>
+          <li><a href="#step5">Step 5. Preview and Save report</a></li>
+          <li><a href="#step6">Troubleshooting Tip</a></li>
+          <li><a href="#step7">How to Install Izenda on Windows 2008 with IIS 7</a></li>
+          <li><a href="#step8">Full Integration Guide</a></li>
+        </ul>
+        
+        <a id="step1" style="display: block; position:relative; top:-70px;"></a>
+        <h4>Step 1. Download Starter Kit and unzip the contents</h4>
+        <ul>
+          <li>Unzip Reporting.zip into a directory. Once unzipped, copy this directory to <b>C:\inetpub\wwwroot</b>, or wherever your websites are located.<br>
+            <a class="screenshot" href="#" data-content="img:img/download-completed/InstUnzipNEW.png">
+              <img class="img-responsive" alt="Unzip Starter Kit" src="img/download-completed/InstUnzipNEW.png"></a>
+            <br />
+          </li>
+          <li>Once this directory is in your C: Drive, name it Reporting, i.e. <b>C:\inetpub\wwwroot\Reporting</b><br>
+            <a class="screenshot" href="#" data-content="img:img/download-completed/InstCreateFolderNEW.png">
+              <img class="img-responsive" alt="Create site folder" src="img/download-completed/InstCreateFolderNEW.png"></a>
+            <br />
+          </li>
+        </ul>
+        
+        <a id="step2" style="display: block; position:relative; top:-70px;"></a>
+        <h4>Step 2. Configure website under IIS</h4>
+        <p>
+          If you don't have IIS, please see following:<br>
+          <ul>
+            <li><a href="install-iis.html">Install IIS</a><br>
+            </li>
+            <li><a href="install-aspnet.html">Install ASP.NET under IIS</a><br>
+            </li>
+          </ul>
+          Once you have IIS installed, continue with the following:
+          <ul>
+            <li>To access IIS Manager (click <b>Start &gt; Control Panel &gt; Administrative Tools &gt; Internet Information Services (IIS) Manager</b>) and add new application or virtual directory under Default Web Site.<br>
+              <a class="screenshot" href="#" data-content="img:img/download-completed/InstOpenIIS.png">
+                <img class="img-responsive" alt="Open IIS" src="img/download-completed/InstOpenIIS.png"></a>
+              <br />
+            </li>
+            <li>Select Internet Information Services (IIS) Manager, and open the application.<br>
+              <a class="screenshot" href="#" data-content="img:img/download-completed/InstRunIIS.png">
+                <img class="img-responsive" alt="Run IIS Manager" src="img/download-completed/InstRunIIS.png">
+              </a>
+              <br />
+            </li>
+            <li>Within Internet Information Services Manager add a new application or virtual directory under <b>Default Web Site</b>. Select drop down arrows, until you see the <b>Default Web Site</b><br>
+              <a class="screenshot" href="#" data-content="img:img/download-completed/InstDefaultWebsite.png">
+                <img class="img-responsive" alt="Default Web Site" src="img/download-completed/InstDefaultWebsite.png"></a>
+              <br />
+            </li>
+            <li>Right-click on <b>Default Web Site</b>, and select <b>Add Application</b>. Fill out the <b>Alias</b> text box, and name it <b>Reporting</b> or whatever name you can remember. Once named, select the <b>Select</b> button on the right. Once the drop-down menu appears, select <b>Classic.NET AppPool</b> and <b>OK</b>.<br>
+              <a class="screenshot" href="#" data-content="img:img/download-completed/InstAppPool.png">
+                <img class="img-responsive" alt="Application Pool" src="img/download-completed/InstAppPool.png"></a>
+              <br />
+            </li>
+            <li>Create and choose Physical Path to the <b>\Reporting</b> folder and give website a name. 
+              Select the button with 3 dots <b>(...)</b>, and it will allow you to browse for a folder to place the application. Select your C: drive and the <b>Reporting</b> folder<br>
+              <a class="screenshot" href="#" data-content="img:img/download-completed/InstFoldernew.png">
+                <img class="img-responsive" alt="Web Site Folder" src="img/download-completed/InstFoldernew.png"></a>
+              <br />
+            </li>
+            <li>Before continuing, make sure the site folder (<b>...\Reporting</b>) has read permissions for <b>NETWORK SERVICE</b> user. Make sure the reports folder (<b>...\Reporting\Reports</b>) and Izenda.config (<b>...\Reporting\Izenda.config</b>) have write permissions for <b>NETWORK SERVICE</b> user (Right click on <b>MySite\Reporting folder =&gt; Properties =&gt; Security =&gt; Edit... =&gt; Add... =&gt; Type "NETWORK SERVICE" and press OK =&gt;  Click 'NETWORK SERVICE' Click 'Allow - Full Control' Click OK=&gt; Click OK)</b>.<br />
+            </li>
+          </ul>
+          <br/>
+        </p>
+        
+        <a id="step3" style="display: block; position:relative; top:-70px;"></a>
+        <h4>Step 3. Set license key and database connection</h4>
+        <p>
+          Open the website that you just created <b>http://localhost/reporting</b>. You will be redirected to the Settings page. 
+          Go to the Database tab and fill License Key and Connection String fields with real data. You should receive your trial 
+          License Key via email.If you have not received a key please contact your account manager with Izenda or 
+          <a href="mailto:sales@izenda.com">sales@izenda.com</a>.<br>
+          <a class="screenshot" href="#" data-content="img:img/download-completed/src4_settingsnew.png">
+            <img class="img-responsive" alt="Set license key and database connection" src="img/download-completed/src4_settingsnew.png"></a>
+          <br/>
+        </p>
+        
+        <a id="step4" style="display: block; position:relative; top:-70px;"></a>
+        <h4>Step 4. Start using Izenda Reports</h4>
+        <p>
+          Now you are ready to start taking advantage of the opportunities in Izenda's self-service reporting platform. 
+          Open <b>http://localhost/Reporting/ReportDesigner.aspx</b> and create your first report easily!<br>
+          <br>
+          Select your datasources at the first tab ('Data Sources'). Then go to the 'Fields' tab and select the fields 
+          you want to use in the report. There are various options and settings like filters, operators, functions etc. 
+          Make sure to check it all out, but for your first report just selecting several fields will be enough.<br>
+          <br>
+          For more information about report designer features please visit our 
+          <a href="http://www.izenda.com/Site/KB/Integration/94">Knowledge Base</a>.<br>
+          <a class="screenshot" href="#" data-content="img:img/download-completed/src5_designnew.png">
+            <img class="img-responsive" alt="Using Izenda Reports" src="img/download-completed/src5_designnew.png"></a>
+          <br/>
+        </p>
+        
+        <a id="step5" style="display: block; position:relative; top:-70px;"></a>
+        <h4>Step 5. Preview and Save report</h4>
+        <p>
+          After you select all data you want to see in report, click <b>Preview</b> and see the results immediately. 
+          Click <b>Save</b> at the tool bar to save your first report report. Categories can be created in the save 
+          menu to group reports. Categories self delete when depopulated (empty).<br>
+          <a class="screenshot" href="#" data-content="img:img/download-completed/src6_previewnew.png">
+            <img class="img-responsive" alt="Preview and Save report" src="img/download-completed/src6_previewnew.png"></a>
+          <br/>
+        </p>
+        
+        <a id="step6" style="display: block; position:relative; top:-70px;"></a>
+        <h4>Troubleshooting Tip</h4>
+        <p>
+          If you encounter any unexpected behaviors or exceptions, simply perform an IISReset, or a refresh of the 
+          individual Izenda site. To achieve this, Click 'START'; type 'cmd' into your search dialogue, right click 
+          the program and choose 'Run as Administrator'. In the command prompt type 'iisreset' and hit enter. Be sure 
+          to refresh your browser and empty cache to ensure you see updated pages.<br>
+          <a class="screenshot" href="#" data-content="img:img/download-completed/iisresetfinal.png">
+            <img class="img-responsive" alt="IISReset" src="img/download-completed/iisresetfinal.png"></a>
+          <br/>
+        </p>
+        
+        <a id="step7" style="display: block; position:relative; top:-70px;"></a>
+        <h4>How to Install Izenda on Windows 2008 with IIS 7</h4>
+        <p>
+          This video demonstrates a simple install process for Izenda on Windows Server 2008 with IIS 7, connecting to 
+          SQL Server 2008 R2.
+          <iframe type="text/html" style="width: 480px; height: 360px;" frameborder="0" src="http://www.youtube.com/embed/4E0npCxLi4o"></iframe>
+          <br/>
+        </p>
+        
+        <a id="step8" style="display: block; position:relative; top:-70px;"></a>
+        <h4>Full Integration Guide</h4>
+        <p>
+          If you have not yet installed Izenda on IIS, please watch the install videos for Windows 2003 or Windows 2008.
+          <iframe type="text/html" style="width: 480px; height: 360px;" frameborder="0" src="http://www.youtube.com/embed/2FXYG6sqKF0"></iframe>
+          <br/>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Javascript  -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+  <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+  <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.scrollTo.min.js"></script>
+  <script type="text/javascript" src="js/smooth-scroll.js"></script>
+  <script charset="utf-8" src="//js.hsforms.net/forms/current.js"></script>
+  <script type="text/javascript" src="js/header-bs3.js"></script>
+  <script type="text/javascript" src="js/footer.js"></script>
+  <script type="text/javascript" src="js/vendor/jsrender.min.js"></script>
+  <script type="text/javascript" src="js/template-base.js"></script>
+  <script type="text/javascript" src="js/template.js"></script>
+  <script type="text/javascript" src="js/ga.js"></script>
+  <script type="text/javascript" src="js/media-viewer.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <!-- initialize gallery viewer -->
+  <script type="text/javascript">
+    (function () {
+      var mediaViewer = new IzendaMediaViewer({});
+      mediaViewer.initializeMediaLinks($('.screenshot'));
+    })();
+  </script>
+</body>
+</html>
