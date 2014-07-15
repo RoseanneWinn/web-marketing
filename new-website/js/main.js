@@ -251,28 +251,62 @@ $(document).ready(function () {
         img: 'img/gallery/Stacked_large.gif'
       }, {
         desc: 'Line Chart',
-        a: 'img/gallery/linechart1-large.gif',
-        img: 'img/gallery/linechart1-large.gif'
+        a: 'img/gallery/transition-large.gif',
+        img: 'img/gallery/transition-small.gif'
       }, {
         desc: 'Heat-Map',
-        a: 'img/gallery/grid1-large.gif',
-        img: 'img/gallery/grid1-large.gif'
+        a: 'img/gallery/heatmap-large.gif',
+        img: 'img/gallery/heatmap-small.gif'
       }, {
         desc: 'Mind-Map',
-        a: 'img/gallery/mindmap1-large.gif',
-        img: 'img/gallery/mindmap1-large.gif'
+        a: 'img/gallery/tree-large.gif',
+        img: 'img/gallery/tree-small.gif'
       }, {
         desc: 'Dashboards',
         a: 'img/gallery/animated-dashboard-full.gif',
         img: 'img/gallery/animated-dashboard-full.gif'
       }, {
         desc: 'Timeline',
-        a: 'img/gallery/timeline1-large.gif',
-        img: 'img/gallery/timeline1-large.gif'
+        a: 'img/gallery/crossfilter-large.gif',
+        img: 'img/gallery/crossfilter-small.gif'
       }, {
         desc: 'Interactive Time Bubble',
-        a: 'img/gallery/timebubble1-large.gif',
-        img: 'img/gallery/timebubble1-large.gif'
+        a: 'img/gallery/timebubble-large.gif',
+        img: 'img/gallery/timebubble-small.gif'
+      },
+
+			{
+				desc: 'Auto chart',
+				a: 'img/gallery/autochart-large.gif',
+				img: 'img/gallery/autochart-small.gif'
+			}, {
+				desc: 'Combo',
+				a: 'img/gallery/combo-large.gif',
+				img: 'img/gallery/combo-small.gif'
+			}, {
+				desc: 'Bubble Grid',
+				a: 'img/gallery/bubblegrid-large.gif',
+				img: 'img/gallery/bubblegrid-small.gif'
+			}, {
+				desc: 'Matrix',
+				a: 'img/gallery/matrix-large.gif',
+				img: 'img/gallery/matrix-small.gif'
+			}, {
+				desc: 'Polar',
+				a: 'img/gallery/polar-large.gif',
+				img: 'img/gallery/polar-small.gif'
+			}, {
+				desc: 'Sunburst',
+				a: 'img/gallery/sunburst-large.gif',
+				img: 'img/gallery/sunburst-small.gif'
+			}, {
+				desc: 'Timeline',
+				a: 'img/gallery/timeline-large.gif',
+				img: 'img/gallery/timeline-small.gif'
+			}, {
+				desc: 'Waterfall',
+				a: 'img/gallery/waterfall-large.gif',
+				img: 'img/gallery/waterfall-small.gif'
       }
     ],
     'integration-filter':
@@ -369,20 +403,20 @@ $(document).ready(function () {
       img: 'img/gallery/portfolio-9.png'
     }, {
       desc: 'Vector',
-      a: 'img/gallery/maps-1.png',
-      img: 'img/gallery/maps-full1.png'
+      a: 'img/gallery/arcmap-large.gif',
+      img: 'img/gallery/arcmap-small.gif'
     }, {
       desc: '3D',
-      a: 'img/gallery/maps-2.png',
-      img: 'img/gallery/maps-full2.png'
+      a: 'img/gallery/worldtour-large.gif',
+      img: 'img/gallery/worldtour-small.gif'
     }, {
       desc: 'Colors',
       a: 'img/gallery/maps-3.png',
       img: 'img/gallery/maps-full3.png'
     }, {
       desc: 'Pseudocylindrical',
-      a: 'img/gallery/maps-4.png',
-      img: 'img/gallery/maps-full4.png'
+      a: 'img/gallery/projectedmap-large.gif',
+      img: 'img/gallery/projectedmap-small.gif'
     }],
     'additional-filter': []
   };
