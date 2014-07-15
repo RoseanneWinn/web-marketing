@@ -190,11 +190,11 @@ $(document).ready(function () {
     'products-filter':
     [
       {
-        desc: 'Interactive-Search',
+        desc: 'Reports-MVC Addition,
         a: 'img/gallery/additionalImage1.png',
         img: 'img/gallery/additionalImage1.png'
       }, {
-        desc: 'Enhanced Charting',
+        desc: 'Dashboards',
         a: 'img/gallery/additionalImage2.png',
         img: 'img/gallery/additionalImage2.png'
       }, {
@@ -202,7 +202,7 @@ $(document).ready(function () {
         a: 'img/gallery/additionalImage3.png',
         img: 'img/gallery/additionalImage3.png'
       }, {
-        desc: 'Visualizations',
+        desc: 'Vision',
         a: 'img/gallery/additionalImage4.png',
         img: 'img/gallery/additionalImage4.png'
       }, {
@@ -210,11 +210,11 @@ $(document).ready(function () {
         a: 'img/gallery/additionalImage5.png',
         img: 'img/gallery/additionalImage5.png'
       }, {
-        desc: 'Traditional Forms',
+        desc: 'Forms',
         a: 'img/gallery/additionalImage6.jpg',
         img: 'img/gallery/additionalImage6.jpg'
       }, {
-        desc: 'Customization',
+        desc: 'Reports',
         a: 'img/gallery/additionalImage7.png',
         img: 'img/gallery/additionalImage7.png'
       }, {
