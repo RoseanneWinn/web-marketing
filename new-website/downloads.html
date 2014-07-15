@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-  <title>Izenda Clients</title>
+  <title>Maintenance Release & Downloads</title>
   <meta name="description" content="Izenda Reports is the industry leader for Ad Hoc Reporting on the ASP.NET platform.  Izenda makes it fast and simple to integrate reports and dashboards.">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <meta content="playlab" name="author">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="robots" content="index, follow" content="Revist-After" content="30 Days">
 
@@ -35,6 +34,115 @@
   <div class="hidden" id="analytics"></div>
 </head>
 <body class="page-aqua">
+  <header class="iz-header">
+    <nav class="navbar navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle pull-left iz-toggle-nav" data-toggle="collapse" data-target="#izNavBar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <button id="izSearchBtnMobile" type="button" class="navbar-toggle pull-right">
+          <strong class="glyphicon glyphicon-search"></strong>
+        </button>
+        <button id="izTryItFreeButton" type="button" class="navbar-toggle iz-try-it-free">TRY IT FREE</button>
+        <button id="izContactsChatButton" type="button" class="navbar-toggle iz-contact-button">
+          <img src="img/header/ChatBox30.png" id="Img9" alt="chat" />
+        </button>
+        <button id="izContactsEmailButton" type="button" class="navbar-toggle iz-contact-button">
+          <img src="img/header/Email30.png" id="Img8" alt="email" />
+        </button>
+        <button id="izContactsPhoneButton" type="button" class="navbar-toggle iz-contact-button">
+          <img src="img/header/Phone30.png" id="Img7" alt="phone" />
+        </button>
+        <input id="izNavBarSearchMobile" class="form-control hidden pull-right" type="search" name="search" value="" placeholder="Search" />
+        <span class="iz-navbar-logo" title="Izenda Reports" onclick="location.href='index.html';" style="cursor: pointer;"></span>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div id="izNavBar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-default">
+          <li class="dropdown iz-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" tc="reports">PRODUCTS <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="reports.html">IZENDA REPORTS</a></li>
+              <li><a href="reports-mvc.html">IZENDA REPORTS FOR MVC</a></li>
+              <li><a href="dashboards.html">IZENDA DASHBOARDS</a></li>
+              <li><a href="language-pack.html">IZENDA LANGUAGE PACK</a></li>
+              <li><a href="fusion.html">IZENDA FUSION</a></li>
+              <li><a href="forms.html">IZENDA FORMS</a></li>
+              <li><a href="vision.html">IZENDA VISION</a></li>
+              <li><a href="maps.html">IZENDA MAPS</a></li>
+            </ul>
+          </li>
+          <li class="iz-menu">
+            <a href="#" class="modalbox" href="#inline" tc="#pricing" data-toggle="modal" data-target="#izendaPricingDialog">PRICING</a>
+          </li>
+          <li class="iz-menu">
+            <a class="dropdown-toggle" data-toggle="dropdown" tc="company" style="cursor: pointer;">COMPANY <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="management-team.html">MANAGEMENT TEAM</a></li>
+              <li><a href="clients.html">OUR CUSTOMERS</a></li>
+              <li><a href="careers.html">CAREERS</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </li>
+          <li class="iz-menu"><a href="gallery.html" tc="gallery.html">GALLERY</a></li>
+          <li class="iz-menu"><a href="http://wiki.izenda.us" tc="wiki.izenda.us">WIKI</a></li>
+          <li class="iz-menu"><a href="http://blog.izenda.com/" tc="blog.izenda.com">BLOG</a></li>
+        </ul>
+        <ul id="izNavBarSearch" class="nav navbar-nav navbar-right iz-search hidden">
+          <li>
+            <strong id="izSearchIcon" class="icon-search"></strong>
+            <input id="izSearchInput" class="form-control" type="search" name="search" value="" placeholder="Search" />
+          </li>
+        </ul>
+        <ul id="izNavBarSearchBtn" class="nav navbar-nav navbar-right iz-search-btn">
+          <li>
+            <a id="izSearchBtn" href="#" title="Search"><strong class="glyphicon glyphicon-search"></strong></a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right iz-free-trial">
+          <li><a id="izFreeTrialButton" class="btn btn-warning" href="#from-try-it-free">TRY IT FREE</a></li>
+        </ul>
+        <div class="iz-header-button-list-main">
+          <a href="contact.html">
+            <img src="img/header/Phone30.png" id="Img4" alt="phone" /></a>
+          <a href="mailto:sales@izenda.com"><img src="img/header/Email30.png" id="Img5" alt="email" /></a>
+          <a href="#" onclick="SnapEngage.startLink();"><img src="img/header/ChatBox30.png" id="Img6" alt="chat" /></a>
+        </div>
+      <!-- /.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Pricing dialog -->
+    <div class="modal fade" id="izendaPricingDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header center-block text-center">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel"><b>You will be contacted within 24 hours by an Izenda sales representative to provide a quote for you.</b></h4>
+            <h4> Feel free to contact us before then at 1-888-493-6321 or <a href="mailto:sales@izenda.com">sales@izenda.com</a>. Thank you!</h4>
+          </div>
+          <div class="modal-body">
+            <div id="pricing-form">
+            </div>
+            <h2 class="hidden center-block text-center" id="pricing-loading-text">...Please wait while we process this request...</h2>
+            <p class="text-center">We respect your <a href="privacy.html">privacy</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <button id="izTryItFreeButton2" type="button" class="navbar-toggle iz-try-it-free">TRY IT FREE</button>
+      </div>
+     </div>
+     </div>
+    </header>
   <section class="services first">
     <div class="wrapper2 bg-colored ">
       <div class="container">
@@ -50,27 +158,29 @@
     <div class="wrapper bg-white">
       <div class="container izenda-article">
         <br/>
-        <p>Please note that to utilize a new version your maintenance will need to be current. To renew your maintenance please contact
+        <p class="text-center">Please note that to utilize a new version your maintenance will need to be current. To renew your maintenance please contact
           <a href="mailto:support@izenda.com">services@izenda.com</a>
         </p>
         <h3 class="text-center"><a href="http://wiki.izenda.us/Release-Notes">Release Notes</a></h3>
         <div class="container-fluid">
           <h3 class="text-center" style="color: red;">Important Information Regarding Maintenance Release 6.7 272</h3>
           <p class="text-center">Please reference the following <a href="http://wiki.izenda.us/FAQ/UpdatingReportDesigner-for-Izenda-v6-7-272"> article</a> before updating to maintenance 6.7.0.272</p>
+          <br />
           <div class="row">
-            <div class="col-sm-6 text-center"><h4>6.7-RELEASE (6.7.0.256)</h4></div>
-            <div class="col-sm-6 text-center"><h4>6.7-MAINTENANCE (6.7.0.271)</h4></div>
+            <div class="col-xs-6 text-center"><h4>6.7-RELEASE (6.7.0.256)</h4></div>
+            <div class="col-xs-6 text-center"><h4>6.7-MAINTENANCE (6.7.0.271)</h4></div>
           </div>
           <div class="row">
-            <div class="col-sm-6 text-center">February 8, 2014</div>
-            <div class="col-sm-6 text-center">July 7, 2014</div>
+            <div class="col-xs-6 text-center">February 8, 2014</div>
+            <div class="col-xs-6 text-center">July 7, 2014</div>
           </div>
+          <br />
           <div class="row">
-            <div class="col-sm-6 text-center">
+            <div class="col-xs-6 text-center">
               <a href="http://archives.izenda.us/core/6.7.0.256/izenda.adhoc.6.7.0.256.zip" 
                 class="btn btn-primary text-capitalize"><span class="glyphicon glyphicon-download-alt" style="color: #fff;"></span> download</a>
             </div>
-            <div class="col-sm-6 text-center">
+            <div class="col-xs-6 text-center">
               <a href="http://archives.izenda.us/core/6.7.0.271/izenda.adhoc.6.7.0.271.zip" 
                 class="btn btn-primary text-capitalize"><span class="glyphicon glyphicon-download-alt" style="color: #fff;"></span> download</a>
             </div>
@@ -79,6 +189,67 @@
       </div>
     </div>
   </section>
+  <br />
+  <section>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 top-background text-center change-top-background-margin">
+        <br />
+        <ul class="list-unstyled list-inline" id="footer-nav-list">
+          <li>
+            <a href="index.html">Home</a>  |
+          </li>
+          <li>
+            <a href="reports.html">Products</a>  |
+          </li>
+          <li>
+            <a href="gallery.html">Gallery</a>  |
+          </li>
+          <li>
+            <a href="about.html">Company</a>  |
+          </li>
+          <li>
+            <a href="http://wiki.izenda.us/Home">Wiki</a> |
+          </li>
+          <li>
+            <a href="http://blog.izenda.com">Blog</a>  |
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>  |
+          </li>
+        </ul>
+        <br />
+        <h5 class="media-the-footer" style="font-family: "Lato",sans-serif;">Sales: 678-500-9136, Support: 404-906-8710 - 1200 Lake Hearn Dr. STE 475 Atlanta, GA 30319</h5>
+        <br />
+        <h5 class="media-the-footer-2" style="font-family: "Lato",sans-serif;">Copyright 2014, IZENDA, LLC. All Rights Reserved</h5>
+        <br />
+        <ul class="list-unstyled list-inline social-listing">
+          <li>
+            <a class="new-window" id="linkedIn" href="https://www.linkedin.com/company/izenda">
+              <img src="img/footer/linkedin.png"/>
+            </a>
+          </li>
+          <li>
+            <a class="new-window" id="facebook" href="https://www.facebook.com/pages/Izenda/168642269874461">
+              <img src="img/footer/facebook.png"/></a>
+          </li>
+          <li>
+            <a class="new-window" id="twitter" href="https://twitter.com/Izenda">
+              <img src="img/footer/twitter.png" />
+            </a>
+          </li>
+          <li>
+            <a class="new-window" id="googleplus" href="https://plus.google.com/104341053395991821202/posts">
+              <img src="img/footer/google-plus.png" />
+            </a>
+          </li>
+        </ul>
+        <br />
+        <p>For more information, please visit our <a href="http://wiki.izenda.us"><span style="color: #ffa500;"> wiki </span></a> &amp; <a class="new-window" href="http://www.izenda.com/site/KB/Integration/94"><span style="color: #ffa500;"> Knowledge Base </span></a>.</p>
+        <p style="font-size: small">All logos, copyrights and registered trademarks are property of their respective owners.</p>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Javascript  -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -93,10 +264,10 @@
   <script type="text/javascript" src="js/smooth-scroll.js"></script>
   <script charset="utf-8" src="//js.hsforms.net/forms/current.js"></script>
   <script type="text/javascript" src="js/header-bs3.js"></script>
-  <script type="text/javascript" src="js/footer.js"></script>
+  <!--<script type="text/javascript" src="js/footer.js"></script>-->
   <script type="text/javascript" src="js/vendor/jsrender.min.js"></script>
-  <script type="text/javascript" src="js/template-base.js"></script>
-  <script type="text/javascript" src="js/template.js"></script>
+  <!--<script type="text/javascript" src="js/template-base.js"></script>-->
+  <!--<script type="text/javascript" src="js/template.js"></script>-->
   <script type="text/javascript" src="js/ga.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   </body>

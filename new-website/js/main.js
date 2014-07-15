@@ -507,11 +507,4 @@ $(document).ready(function () {
   if (mediaViewer != null)
     mediaViewer.initializeMediaLinks($('a.videoModal'));
 
-//Landing form/////////////////////////////////////////////////////////////////
-  $('#landing-submit').click(function () {
-    if ($('#landing-form').valid() === true) {
-      $('#landing-submit').addClass("hidden");
-      $('#landing-loading-text').removeClass("hidden");
-    }
-  });
 });

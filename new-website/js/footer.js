@@ -19,7 +19,7 @@
     updateBackToTopVisibility();
   });
 
-//Social media new windows
+//click for new windows
   $('.new-window').click(function() {
     var here=$(this).prop("href");
     window.open(here);
