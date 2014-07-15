@@ -427,7 +427,8 @@ $(document).ready(function () {
         if (mediaViewer != null)
           mediaViewer.initializeMediaLinks([$image.find('a')]);
         $image.tooltip({
-          title: image.desc
+          title: image.desc,
+          template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
         });
         $portfolio.append($image);
       }
@@ -464,7 +465,8 @@ $(document).ready(function () {
         if (mediaViewer != null)
           mediaViewer.initializeMediaLinks([$image.find('a')]);
         $image.tooltip({
-          title: image.desc
+          title: image.desc,
+          template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow hidden"></div><div style="font-family: Arial; font-size: 14px;" class="tooltip-inner"></div></div>'
         });
         $portfolio.prepend($image);
       }
