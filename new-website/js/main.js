@@ -190,7 +190,7 @@ $(document).ready(function () {
     'products-filter':
     [
       {
-        desc: 'Reports-MVC Addition,
+        desc: 'Reports-MVC Addition',
         a: 'img/gallery/additionalImage1.png',
         img: 'img/gallery/additionalImage1.png'
       }, {
