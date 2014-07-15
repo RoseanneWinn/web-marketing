@@ -312,75 +312,75 @@ $(document).ready(function () {
     'integration-filter':
     [
       {
-        desc: 'Integration',
+        desc: 'Modern Viewer',
         a: 'img/gallery/integ-full1.jpg',
         img: 'img/gallery/integ1.jpg'
       }, {
-        desc: 'Integration',
+        desc: 'Modern Report List',
         a: 'img/gallery/integ-full2.jpg',
         img: 'img/gallery/integ2.jpg'
       }, {
-        desc: 'Integration',
+        desc: 'High-Def 3D Dashboard',
         a: 'img/gallery/integ-full3.jpg',
         img: 'img/gallery/integ3.jpg'
       }, {
-        desc: 'Integration',
+        desc: 'Education Dynamics Integration',
         a: 'img/gallery/integ-full4.jpg',
         img: 'img/gallery/integ4.jpg'
       }, {
-        desc: 'Integration',
+        desc: 'eConsulting Network Integration',
         a: 'img/gallery/integ-full5.jpg',
         img: 'img/gallery/integ5.jpg'
       }, {
-        desc: 'Integration',
+        desc: 'Custom Report Template',
         a: 'img/gallery/integ-full6.jpg',
         img: 'img/gallery/integ6.jpg'
       }, {
-        desc: 'Integration',
+        desc: 'Sharepoint',
         a: 'img/gallery/integ-full7.jpg',
         img: 'img/gallery/integ7.jpg'
       }, {
-        desc: 'Integration',
+        desc: 'Custom Scheduler',
         a: 'img/gallery/integ-full8.jpg',
         img: 'img/gallery/integ8.jpg'
       }, {
-        desc: 'Integration',
-        a: 'img/gallery/integ-full9.jpg',
-        img: 'img/gallery/integ1.jpg'
+        desc: 'Custom Report Manager',
+        a: 'img/gallery/custom_report_manager.png',
+        img: 'img/gallery/custom_report_manager.png'
       }, {
-        desc: 'Integration',
+        desc: 'Detailed Report List',
         a: 'img/gallery/integ-full9.jpg',
-        img: 'img/gallery/integ1.jpg'
+        img: 'img/gallery/detailed_report_list.png'
       }, {
-        desc: 'Integration',
+        desc: 'Stylized Report List',
         a: 'img/gallery/integ-full10.jpg',
         img: 'img/gallery/integ10.jpg'
       }, {
-        desc: 'Integration',
+        desc: 'Budget Dashboard',
         a: 'img/gallery/integ-full11.jpg',
         img: 'img/gallery/integ11.jpg'
       }, {
-        desc: 'Integration',
+        desc: 'Stylized Budget Dashboard',
         a: 'img/gallery/integ-full12.jpg',
         img: 'img/gallery/integ12.jpg'
       }, {
-        desc: 'Integration',
-        a: 'img/gallery/integ-full13.jpg',
-        img: 'img/gallery/integ13.jpg'
+        desc: 'Risk & Compliance',
+        a: 'img/gallery/risk_compliance.png',
+        img: 'img/gallery/risk_compliance.png'
       }, {
-        desc: 'Integration',
+        desc: 'Dashboard With Custom Chart Styes',
         a: 'img/gallery/integ-full14.jpg',
         img: 'img/gallery/integ14.jpg'
       }, {
-        desc: 'Integration',
+        desc: 'Custom Report Manager',
         a: 'img/gallery/integ-full15.jpg',
         img: 'img/gallery/integ15.jpg'
       }, {
-        desc: 'Integration',
-        a: 'img/gallery/integ-full16.jpg',
-        img: 'img/gallery/integ16.jpg'
+        desc: 'Comparative Analytics',
+        a: 'img/gallery/comparative_analytics.png',
+        img: 'img/gallery/comparative_analytics.png'
       }, {
-        desc: 'Integration',
+        desc: 'On Screen Navigation Tree',
         a: 'img/gallery/integ-full17.jpg',
         img: 'img/gallery/integ17.jpg'
       }
