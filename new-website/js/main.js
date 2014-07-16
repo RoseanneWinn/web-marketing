@@ -227,28 +227,28 @@ $(document).ready(function () {
     [
       {
         desc: 'Bar Separators',
-        a: 'img/gallery/BarSeparator_preview.png',
-        img: 'img/gallery/BarSeparator_large.gif'
+        a: 'img/gallery/BarSeparator_large.gif',
+        img: 'img/gallery/BarSeparator_preview.png'
       }, {
         desc: 'Horizontal Bars',
         a: 'img/gallery/HorizontalBar_large.gif',
-        img: 'img/gallery/HorizontalBar_large.gif'
+        img: 'img/gallery/HorizontalBar_preview.png'
       }, {
         desc: 'Maps',
         a: 'img/gallery/Map_large.gif',
-        img: 'img/gallery/Map_large.gif'
+        img: 'img/gallery/Map_preview.png'
       }, {
         desc: 'Pareto',
         a: 'img/gallery/Pareto_large.gif',
-        img: 'img/gallery/Pareto_large.gif'
+        img: 'img/gallery/Pareto_preview.png'
       }, {
         desc: 'Pie',
         a: 'img/gallery/Pie_large.gif',
-        img: 'img/gallery/Pie_large.gif'
+        img: 'img/gallery/Pie_preview.png'
       }, {
         desc: 'Stacked',
         a: 'img/gallery/Stacked_large.gif',
-        img: 'img/gallery/Stacked_large.gif'
+        img: 'img/gallery/Stacked_preview.png'
       }, {
         desc: 'Line Chart',
         a: 'img/gallery/transition-large.gif',
@@ -264,7 +264,7 @@ $(document).ready(function () {
       }, {
         desc: 'Dashboards',
         a: 'img/gallery/animated-dashboard-full.gif',
-        img: 'img/gallery/animated-dashboard-full.gif'
+        img: 'img/gallery/animated-dashboard.png'
       }, {
         desc: 'Timeline',
         a: 'img/gallery/crossfilter-large.gif',
