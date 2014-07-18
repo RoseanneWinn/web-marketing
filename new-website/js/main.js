@@ -50,6 +50,7 @@ $(document).ready(function () {
 //HubSpot Form Landing Page///////////////////////////////////////////////////
   hbspt.forms.create({ 
     portalId: '409433',
+    redirectUrl: 'http://www.izenda.com/bi/ReportListIntro.aspx',
     formId: 'ffba7f4e-cb6b-4df0-b441-13c57ff3c6ae',
     target: '#landing-form',
     formInstanceId: '3',
