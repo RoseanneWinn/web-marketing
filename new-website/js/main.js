@@ -190,38 +190,38 @@ $(document).ready(function () {
     loadedFilters: [],
     'products-filter':
     [
-      {
-        desc: 'Reports-MVC Addition',
-        a: 'img/gallery/additionalImage1.png',
-        img: 'img/gallery/additionalImage1.png'
-      }, {
-        desc: 'Dashboards',
-        a: 'img/gallery/additionalImage2.png',
-        img: 'img/gallery/additionalImage2.png'
-      }, {
+       {
         desc: 'Maps',
         a: 'img/gallery/additionalImage3.png',
         img: 'img/gallery/additionalImage3.png'
+      }, {
+        desc: 'Language Pack',
+        a: 'img/gallery/additionalImage5.png',
+        img: 'img/gallery/additionalImage5.png'
       }, {
         desc: 'Vision',
         a: 'img/gallery/additionalImage4.png',
         img: 'img/gallery/additionalImage4.png'
       }, {
-        desc: 'Language Support',
-        a: 'img/gallery/additionalImage5.png',
-        img: 'img/gallery/additionalImage5.png'
+        desc: 'Fusion',
+        a: 'img/gallery/additionalImage8.jpg',
+        img: 'img/gallery/additionalImage8.jpg'
       }, {
         desc: 'Forms',
         a: 'img/gallery/additionalImage6.jpg',
         img: 'img/gallery/additionalImage6.jpg'
       }, {
+        desc: 'Dashboards',
+        a: 'img/gallery/additionalImage2.png',
+        img: 'img/gallery/additionalImage2.png'
+      }, {
+        desc: 'Reports-MVC Addition',
+        a: 'img/gallery/additionalImage1.png',
+        img: 'img/gallery/additionalImage1.png'
+      }, {
         desc: 'Reports',
         a: 'img/gallery/additionalImage7.png',
         img: 'img/gallery/additionalImage7.png'
-      }, {
-        desc: 'Fusion',
-        a: 'img/gallery/additionalImage8.jpg',
-        img: 'img/gallery/additionalImage8.jpg'
       }
     ],
     'visualizations-filter':
@@ -261,7 +261,7 @@ $(document).ready(function () {
       }, {
         desc: 'Mind-Map',
         a: 'img/gallery/tree-large.gif',
-        img: 'img/gallery/tree-small.gif'
+        img: 'img/gallery/mind-map.png'
       }, {
         desc: 'Dashboards',
         a: 'img/gallery/animated-dashboard-full.gif',
@@ -291,7 +291,7 @@ $(document).ready(function () {
 			}, {
 				desc: 'Matrix',
 				a: 'img/gallery/matrix-large.gif',
-				img: 'img/gallery/matrix-small.gif'
+				img: 'img/gallery/matrix.png'
 			}, {
 				desc: 'Polar',
 				a: 'img/gallery/polar-large.gif',
@@ -299,7 +299,7 @@ $(document).ready(function () {
 			}, {
 				desc: 'Sunburst',
 				a: 'img/gallery/sunburst-large.gif',
-				img: 'img/gallery/sunburst-small.gif'
+				img: 'img/gallery/sunburst.png'
 			}, {
 				desc: 'Timeline',
 				a: 'img/gallery/timeline-large.gif',
