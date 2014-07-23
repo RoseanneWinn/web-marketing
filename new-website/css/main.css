@@ -105,22 +105,24 @@ textarea {
 html, body {
   height: 100%;
   font-family: "Lato", Arial, Verdana, Tahoma, sans-serif;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased; 
-  -moz-osx-font-smoothing: grayscale; 
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased; !important
+  -moz-osx-font-smoothing: grayscale; !important
 
 }
 
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Lato", Arial, Verdana, Tahoma, sans-serif;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased; !important
+  -moz-osx-font-smoothing: grayscale; !important
 
 }
 
 h1 {
   font-weight: bold;
+  -webkit-font-smoothing: antialiased; !important
+  -moz-osx-font-smoothing: grayscale; !important
 }
 /* Bootstrap thumbnail changes */
 .caption {
