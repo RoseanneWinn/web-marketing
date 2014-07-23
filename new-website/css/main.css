@@ -104,13 +104,13 @@ textarea {
 
 html, body {
   height: 100%;
-  font-family: "Lato", sans-serif, arial, verdana, tahoma;
+  font-family: "Lato", Arial, Verdana, Tahoma, sans-serif;
   font-weight: 400;
 
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  font-family: "Lato", sans-serif, arial, verdana, tahoma;
+  font-family: "Lato", Arial, Verdana, Tahoma, sans-serif;
   font-weight: 400;
 }
 
