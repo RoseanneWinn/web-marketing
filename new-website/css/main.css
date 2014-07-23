@@ -106,21 +106,14 @@ html, body {
   height: 100%;
   font-family: "Lato", Arial, Verdana, Tahoma, sans-serif;
   font-weight: 400;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-font-smoothing: subpixel-antialiased;
-  -o-font-smoothing: subpixel-antialiased;
-  font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased; !important
 
 }
 
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Lato", Arial, Verdana, Tahoma, sans-serif;
   font-weight: 400;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-font-smoothing: subpixel-antialiased;
-  -o-font-smoothing: subpixel-antialiased;
-  font-smoothing: subpixel-antialiased;
-
+  -webkit-font-smoothing: antialiased; !important
 }
 
 h1 {
