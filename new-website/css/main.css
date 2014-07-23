@@ -105,17 +105,19 @@ textarea {
 html, body {
   height: 100%;
   font-family: "Lato", Arial, Verdana, Tahoma, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased; !important
   -moz-osx-font-smoothing: grayscale; !important
+  -webkit-text-stroke: 0.Xpx;
 
 }
 
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Lato", Arial, Verdana, Tahoma, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased; !important
   -moz-osx-font-smoothing: grayscale; !important
+  -webkit-text-stroke: 0.Xpx;
 
 }
 
