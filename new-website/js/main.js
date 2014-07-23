@@ -11,9 +11,18 @@ if (!Array.prototype.indexOf) {
   };
 }
 
-//Analytics insert///////////////////////////////////////////////////////
+//Analytics (Google/Hubspot) ///////////////////////////////////////////////////////
 
-$('#analytics').load('../js/ga.js');
+  $('#analytics').load('../js/ga.js');
+
+//HubSpot////////////////////////////////////////////////////////////////
+
+  (function(d,s,i,r) {
+     if (d.getElementById(i)){return;}
+     var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+     n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/409433.js';
+     e.parentNode.insertBefore(n, e);
+   })(document,"script","hs-analytics",300000);
 
 //Ready the page before firing any js////////////////////////////////////
 $(document).ready(function () {
@@ -37,15 +46,6 @@ $(document).ready(function () {
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
     })();
 
-
-//HubSpot////////////////////////////////////////////////////////////////
-
-  (function(d,s,i,r) {
-     if (d.getElementById(i)){return;}
-     var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
-     n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/409433.js';
-     e.parentNode.insertBefore(n, e);
-   })(document,"script","hs-analytics",300000);
 
 //HubSpot Form Landing Page///////////////////////////////////////////////////
   hbspt.forms.create({ 
